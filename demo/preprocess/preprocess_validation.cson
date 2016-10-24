@@ -1,0 +1,63 @@
+rules: [
+  {
+    query:
+      domain: 'dashboards'
+      country: 'United States'
+    validation: [
+      {
+        type: 'rows'
+        expected: 6
+      },
+      {
+        type: 'columns'
+        expected: ['metric', 'target']
+      },
+      {
+        type: 'data_type'
+        expected: 'string'
+        params:
+          column: 'domain'
+      }
+    ]
+  },
+  {
+    query:
+      domain: 'dashboards'
+    validation: [
+      {
+        type: 'unique_values'
+        expected: ['France', 'United States']
+        params:
+          column: 'country'
+      },
+      {
+        type: 'no_duplicates'
+        params:
+          columns: ['metric']
+      },
+      {
+        type: 'no_duplicates'
+        params:
+          columns: 'all'
+      },
+      {
+        type: 'columns'
+        expected: ['country', 'zone', 'metric', 'default', 'target']
+      }
+    ]
+  },
+  {
+    query:
+      domain: 'dashboards'
+      country: 'United States'
+      metric: 10
+    validation: [
+      {
+        type: 'value'
+        expected: 30
+        params:
+          column: 'target'
+      }
+    ]
+  }
+]
