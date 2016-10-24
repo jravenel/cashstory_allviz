@@ -1,0 +1,17 @@
+**/data_sources
+# Python bytecode
+*.pyc
+
+# Operating system system files
+.DS_Store
+
+# Cache store
+*.hdf
+*.hdf5
+*.h5
+
+# pycharm files
+.idea
+
+# Ignore vault pass file
+.vault_pass.txt
