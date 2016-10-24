@@ -1,0 +1,108 @@
+entityName: "{{ dashboards }}"
+entityGroup: "Region"
+id: "{{ id }}"
+report: "{{ report_id }}"
+default: "true"
+
+categories: [
+  name: "Group Total"
+  kpis: [
+    name: "Revenue"
+    value: "{{ kpi1 }}"
+    unit: "Billion €"
+    slide: 10001
+    source: "Bilan 2014"
+    badge: "evolution_up"
+    badgeSentiment: "better"
+    comment: "Revenue of 29 Billions in 2013"
+    id: 0
+  ,
+    type: "media-img"
+    src: "images/arnaud.png"
+  ,
+    name: "Growth"
+    value: "{{ kpi2 }}"
+    unit: "%"
+    source: "Bilan 2014"
+    id: 1
+    badge: "evolution_down"
+    comment: "Growt of 8% in 2013"
+  # ,
+  #   type: "media-img"
+  #   src: "images/crea-home.jpg"
+  # ,
+  #   type: "media-video"
+  #   id: "50352359"
+  ]
+,
+  name: "Financial Performance"
+  kpis: [
+    name: "Net Financial Debt"
+    type: "line"
+    chartOptions:
+      date: "date"
+      value: "value"
+      data:
+        file:
+          name: "{{ report_id }}_100"
+    unit: " M€"
+  ,
+    name: "Free Cash Flow"
+    type: "line"
+    chartOptions:
+      value: "value"
+      label: "label"
+      date: "date"
+      data: 
+        file: 
+          name: "{{ report_id }}_101"
+    unit: "M€"      
+  ]
+,
+  name: "Business Group"
+  kpis: [
+    name: "Wines & Spirits"
+    value: "{{ kpi3 }}"
+    unit: "M€"
+    badge: "evolution_down"
+    badgeSentiment: "worse"
+    slide: 20001
+    comment: "Revenue of 4173 M€ in 2013"
+  ,
+    type: "media-img"
+    src: "images/fondation.png"
+
+  ,
+    name: "Fashion & Leather Goods"
+    value: "{{ kpi4 }}"
+    unit: "M€"
+    slide: 20101
+    badge: "evolution_up"
+    badgeSentiment: "better"
+    comment: "Revenue of 9883 M€ in 2013"
+  ,
+    name: "Perfumes & Cosmetics"
+    value: "{{ kpi5 }}"
+    unit: "M€"
+    slide: 20201
+    badge: "evolution_up"
+    badgeSentiment: "better"
+    comment: "Revenue of 3717 M€ in 2013"
+  ,
+    name: "Selective Retailing"
+    value: "{{ kpi6 }}"
+    unit: "M€"
+    slide: 20301
+    badge: "evolution_up"
+    badgeSentiment: "better"
+    comment: "Revenue of 8903 M€ in 2013"
+  ,
+    name: "Watches & jewelry"
+    value: "{{ kpi7 }}"
+    unit: "M€"
+    slide: 20401
+    badge: "evolution_up"
+    badgeSentiment: "better"
+    comment: "Revenue of 2697 M€ in 2013"
+  ]
+]

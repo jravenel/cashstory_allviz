@@ -1,0 +1,28 @@
+entityName: "{{ dashboards }}"
+entityGroup: "Region"
+id: "{{ id }}"
+report: "{{ report_id }}"
+default: false
+
+categories: [
+  name: "Group Total"
+  kpis: [
+    name: "Revenue"
+    value: "{{ kpi1 }}"
+    unit: "Billion €"
+    slide: 10001
+    source: "Bilan 2014"
+    badge: "evolution_up"
+    badgeSentiment: "better"
+    comment: "Revenue of 29 Billions in 2013"
+    id: 0
+  ,
+    name: "Growth"
+    value: "{{ kpi2 }}"
+    unit: "%"
+    source: "Bilan 2014"
+    id: 1
+    badge: "evolution_down"
+    comment: "Growt of 8% in 2013"
+  ]
+]

@@ -1,0 +1,122 @@
+DATA_SOURCES: [
+    domain: "market-breakdown"
+    type: "excel"
+    file: "data-market-breakdown.xls"
+    sheetname: "Data"
+,
+    domain: "dashboards"
+    type: "excel"
+    file: "dashboards.xls"
+    sheetname: "Data"
+,
+    domain: "gsheets"
+    type: "google_spreadsheet"
+    spreadsheet_id: '1IUnro5OfBv-PzWCl8hZ27FyX-ynoMcFmeid1WnIKmjM'
+    sheetname: "test"
+,
+    domain: "ranks"
+    type: "csv"
+    file: "test.csv"
+    skip_rows: 0
+,
+    domain: "lines1"
+    type: "csv"
+    file: "lines_1.csv"
+,
+    domain: "lines2"
+    type: "csv"
+    file: "lines_2.csv"
+,
+    domain: "dynamic_barlinechart"
+    type: "csv"
+    file: "dynamic_barlinechart.csv"
+,
+    domain: "funnelchart"
+    type: "csv"
+    file: "funnelchart.csv"
+# ,
+#     domain: "ga_example"
+#     type: "google_analytics"
+#     name: "SomeGoogleAnalyticsProvider"
+#     report_request: """{
+#                   "viewId": "ga:99476610",
+#                   "dateRanges": [
+#                       {"startDate": "2016-01-01", "endDate": "2016-02-01"}
+#                   ],
+#                   "metrics": [
+#                       {"expression": "ga:pageviews"}
+#                   ],
+#                   "dimensions": [
+#                       {"name": "ga:hostname"}
+#                   ]
+#               }"""
+#    ,
+    # domain: 'db_test'
+    # type: 'external_database'
+    # name: 'Some MySQL provider'
+    # table: 'City'
+#,
+#  domain: "gbq_ventes"
+#  type: "google_bigquery"
+#  name: "SomeGoogleBigQueryProvider"
+#  query: """SELECT * FROM test.ventes LIMIT 10;"""
+]
+DATA_PROVIDERS: [
+  # name: "Some cube"
+  # type: "SSAS"
+  # options:
+  #   server_url: "http://some_server_url/OLAP/msmdpump.dll"
+# ,
+  name: 'Some MySQL provider'
+  type: 'MySQL'
+  options:
+    host: 'localhost'  # REQUIRED
+    db: 'circle_test'  # REQUIRED
+    user: 'ubuntu'  # REQUIRED
+    password: ''  # OPTIONAL
+    port: 3306  # OPTIONAL
+,
+  name: 'SomeGoogleAnalyticsProvider'
+  type: 'GoogleAnalytics'
+  options:
+    authentication_file: 'test-connector-ga-47f3cded59c8.json' # Put this file in app/parameters
+,
+  name: "SomeGoogleBigQueryProvider"
+  type: "GoogleBigQuery"
+  options:
+    project_id: "carbide-parser-133123"
+    authentication_file: "test-psa-1a4033d8f4ca.json"
+,
+  name: 'Some SapHana provider'
+  type: 'SapHana'
+  options:
+    host: 'localhost'
+    port: 30015
+    user: 'DEV_AF81GAMQVVPNWUA4MUI5C218K'
+    password: 'Gv87XkSuSz1JEHf'
+]
+REPORTS: [
+  query:
+    domain: "dashboards"
+    default: 1.0
+  template: "report"
+]
+DASHBOARDS: [
+  query:
+    domain: "dashboards"
+  report: "country"
+  template: "dashboard"
+]
+PERMISSIONS_DATA:
+  query:
+    domain: "dashboards"
+    default: 1.0
+MAX_SELECTABLE_REPORTS: 500
+MAX_SELECTABLE_DASHBOARDS: 500
+MONGO_INDEXES: [
+  "domain"
+  [
+    "domain"
+    "report"
+  ]
+]

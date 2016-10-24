@@ -1,0 +1,68 @@
+entityName: "{{ dashboards }}"
+entityGroup: "Business Group"
+id: "{{ id }}"
+report: "{{ report_id }}"
+default: false
+
+categories: [
+  name: "Business Group Total"
+  kpis: [
+    name: "Revenue"
+    value: "{{ kpi1 }}"
+    unit: "M€"
+    # slide: 10001
+    source: "Bilan 2014"
+    id: 0
+  ,
+    type: "media-img"
+    src: "{{images}}"
+  ,
+    name: "Growth"
+    value: "{{ kpi2 }}"
+    unit: "%"
+    source: "Bilan 2014"
+    id: 1
+  # ,
+  #   type: "media-video"
+  #   id: "50352359"
+  ]
+,
+  name: "Performance"
+  kpis: [
+    name: "Profit from Recurring OP"
+    value: "{{ kpi8 }}"
+    unit: "M€"
+    badge: "bullet"
+    comment: "In 2013, {{ Compkpi8}} M€"
+  ,
+    name: "Operating Investments"
+    value: "{{ kpi9 }}"
+    unit: "M€"
+    badge: "bullet"
+    comment: "In 2013, {{ Compkpi9}} M€"
+         
+  ]
+# ,
+#   name: "Business Group"
+#   kpis: [
+#     name: "Wines & Spirits"
+#     value: "{{ kpi1 }}"
+#     unit: "M€"
+#   ,
+#     name: "Fashion & Leather Goods"
+#     value: "{{ kpi1}}"
+#     unit: "M€"
+#   ,
+#     name: "Perfumes & Cosmetics"
+#     value: "{{ kpi1}}"
+#     unit: "M€"
+#   ,
+#     name: "Selective Retailing"
+#     value: "{{ kpi1}}"
+#     unit: "M€"
+#   ,
+#     name: "Watches & jewelry"
+#     value: "{{ kpi1}}"
+#     unit: "M€"
+#   ]
+]

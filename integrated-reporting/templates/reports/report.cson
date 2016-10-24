@@ -1,0 +1,13 @@
+# This is an example of report template
+# Customize it!
+name:"Integrated Reporting"
+entityName: "{{ report }}"
+id: "{{ index }}"
+date: "January 2016"
+background:
+  id: 6
+  overlay: false
+
+dashboards:
+  default: 0
+slideInfos:{}

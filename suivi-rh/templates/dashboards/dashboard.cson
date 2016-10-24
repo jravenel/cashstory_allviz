@@ -1,0 +1,102 @@
+entityName: "{{ dashboards }}"
+id: "{{index}}"
+report: "0"
+default: "{{default}}"
+
+categories: [
+  name: "Effectifs"
+  kpis: [
+    name: "Effectif total"
+    value: "{{effectifs}}"
+    unit: " salariés"
+    badge: "evolution_up"
+    comment: "+1% vs 2014"
+    slide: 101
+    source: "2015, source interne"
+    id: 0
+  ,
+    name: "Absentéisme"
+    source: "2015, internal source"
+    type: "line"
+    slide: 201
+    unit: " %"
+    chartOptions:
+      value: "value"
+      date: "date"
+      label: "label"
+      data:
+        file:
+          name: "0_10"
+      badge: "bullet"
+      badgeSentiment: "better"
+      source: "source interne"
+
+    id: 1
+  ,
+    type: "media-video"
+    provider:'vimeo'
+    id: "92918969"
+  ]
+,
+  name: "Socio Démo"
+  kpis: [
+    name: "Répartition par contrat"
+    source: "2015, source interne"
+    type: "leaderboard"
+
+    chartOptions:
+      value: "value"
+      label: "label"
+
+      data:
+        file:
+          name: "0_11"
+      units:
+        value:" %"
+  ,
+
+    name: "Répartition par CSP"
+    source: "2015, source interne"
+    type: "leaderboard"
+
+    chartOptions:
+      value: "value"
+      label: "label"
+
+      data:
+        file:
+          name: "0_12"
+      units:
+        value: " %"
+  ,
+
+    name: "Répartition par sexe"
+    source: "2015, source interne"
+    type: "leaderboard"
+
+    chartOptions:
+      value: "value"
+      label: "label"
+
+      data:
+        file:
+          name: "0_13"
+      units:
+        value: " %"
+  ,
+
+    name: "Temps partiel / temps plein "
+    source: "2015, source interne"
+    type: "leaderboard"
+
+    chartOptions:
+      value: "value"
+      label: "label"
+
+      data:
+        file:
+          name: "0_14"
+      units:
+        value: " %"
+  ]
+]

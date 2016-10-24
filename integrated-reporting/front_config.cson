@@ -1,0 +1,489 @@
+settings:
+  comparison:
+    description: "Sur tous les écrans de comparaison, comparer avec :"
+    values: [
+      "Par défaut"
+      "Entity A"
+      "Entity B"
+      "Entity C"
+    ]
+    default: "Par défaut"
+glossary:
+  title: 'Glossaire'
+  terms: [
+    term: "Revenue"
+    meaning: "Net activity for the entire group over the past year"
+  ,
+    term: "Business Groups"
+    meaning: "The 5 Entities of the LVMH group:<br> Wines & Spirits, <br>Fashion & Leather Goods, <br>Perfumes & Cosmetics, <br>Watches & Jewelry, <br>Selective Retailing."
+  ]
+
+home:
+  skipToReport: 0
+offline: 'all'
+
+sharingOptions: true
+comments: true
+
+slides: [
+  {
+    level: 0
+    id: 0
+  }
+ {
+    level: 1
+    title: "Holistic vision"
+    id: 70
+  }
+  {
+    level: 1
+    title: "Financial"
+    id: 10
+  }
+  {
+    level: 1
+    title: "Manufactured"
+    id: 20
+  }
+  {
+    level: 1
+    title: "Intellectual"
+    id: 30
+  }
+  {
+    level: 1
+    title: "Human"
+    id: 40
+  }
+  {
+    level: 1
+    title: "Social and relationship"
+    id: 50
+  }
+  {
+    level: 1
+    title: "Natural"
+    id: 60
+  }
+  {
+    level: 3
+    title: "Evolution du CA"
+    charts: [
+          {
+            data:
+              query:
+                domain: "linechart"
+            chartType: "linechart"
+            units:
+              value: " M€"
+              date: ""
+            crossfilter:
+              on: "date"
+              datasets: [1]
+            groups: "label"
+            legend: true
+            date: "date"
+            value: "value"
+            size: 0.3
+            style: "secondary"
+            cr: 4
+            id: 0
+          }
+          {
+            data:
+              query:
+                domain:"classement_bu"
+            chartType: "horizontalBarchart"
+            value: "value"
+            label: "label"
+            variation: "evo"
+            variationLegend: "Variation // 2011"
+            units:
+              value: " K€"
+              evo:'%'
+
+            sparklines:
+              data:
+                query:
+                  domain: "sparklines"
+                precision:
+                  value:'.0f'
+                date:
+                  selector: "date"
+                  format: "%d/%m/%y"
+              joins: ["label"]
+              legend: "Évolution<br>sur 6 mois"
+              value: "value"
+              date: "date"
+              dateFormat: "%d/%m/%y"
+              unit: " "
+          size: 0.6
+          id: 1
+          }
+  ]
+
+    parent_id: 10
+
+    id: 10201
+  }
+  {
+    level: 3
+    title: "Evolution de l'EBITDA"
+    parent_id: 10
+    id: 10202
+    charts: [
+          {
+            data:
+              query:
+                domain: "linechart"
+              precision:
+                value_ebitda:'.0f'
+            chartType: "linechart"
+            units:
+              value_ebitda: " % CA"
+              date: ""
+            crossfilter:
+              on: "date"
+              datasets: [1]
+            groups: "line_ebitda"
+            legend: true
+            date: "date"
+            value: "value_ebitda"
+            size: 0.3
+            style: "secondary"
+            cr: 4
+            id: 0
+          }
+          {
+            data:
+              query:
+                domain: "classement_bu"
+            chartType: "leaderboardCenteredAverage"
+            value: "evo"
+            label: "label"
+            units:
+              evo: " % CA"
+            averageText: ' '
+            average:
+              data:
+                query:
+                  domain: "finance_kpi_contributive_new"
+                  kpi: "moy"
+              joins: ['BU']
+            hideAverageBox:true
+            size: 0.6
+            id: 1
+          }
+
+  ]
+
+  }
+  {
+    level: 3
+    title:"Cash flow analysis"
+
+    kpi:
+      unit: " M€"
+      badge:
+        comment: "Juin 2014"
+
+    parent_id: 10
+    chartOptions:
+      data:
+        file:
+          name: "financial"
+      chartType: "waterfall"
+      value: "2013"
+      label: "label"
+      sublabel: "label_sublevel"
+      units:
+        "2013": " k€"
+    id: 10203
+    }
+  {
+    level: 3
+    title: "Satisfaction client"
+    parent_id: 50
+    id: 50301
+    commentary:"Evolution de la satisfaction client par marché et par canal"
+    filters:
+      "bottom-right":
+        on: "canal"
+        type:"buttons"
+    chartOptions:
+      data:
+        query:
+          domain: "satisfaction"
+        # date:
+        #   selector:"date"
+        #   format:"%Y-%m"
+      chartType: "linechart"
+      units:
+        value: "%"
+        date: ""
+      value: "value"
+      groups: "marché"
+      date: "date"
+      legend:true
+  }
+  {
+    level: 3
+    title: "Absentéisme - <br>Fréquence vs Gravité"
+    parent_id: 40
+    filters:
+      "bottom-right":
+        on: "breakdown"
+        type: "buttons"
+
+    chartOptions:
+      data:
+        file:
+          name: "human"
+      chartType: "bubblechart"
+      label: "label"
+      legend:
+        cy: "Fréquence"
+        cx: "Gravité"
+        r: "salariés"
+      units:
+        cx: " jours"
+        cy: " %"
+        r: " salariés"
+
+      cy: "Fréquence"
+      cx: "Gravité"
+      r: "effectif"
+      color: "color"
+      withBenchmark: true
+
+
+    id: 30202
+  }
+  {
+    level: 3
+    title:"Overall Performance"
+    filters:
+      "bottom-right":
+        on: "breakdown"
+        type: "buttons"
+
+    parent_id: 70
+    chartOptions:
+      data:
+        file:
+          name: "heatmap"
+      chartType: "heatmap"
+      legend: true
+      x: "capital"
+      y: "BU"
+      ypack: "zone"
+      value: "value"
+      target: "target"
+      variation: "variation"
+      reverse: true
+      sentiment:
+        value:
+          domain: ['target']
+          range: ['negative','positive']
+      meta: []
+      units:
+        value: '%'
+        variation: 'pt'
+
+    id: 30203
+  }
+
+  {
+    level: 3
+    title: "Production cost Evolution"
+    parent_id: 20
+    id: 32205
+    charts: [
+      {
+        data:
+          query:
+            domain: "linechart_prod"
+        chartType: "linechart"
+        units:
+          value: " €"
+          date: ""
+
+        crossfilter:
+          on: "date"
+          datasets:[1]
+        groups: "Centre"
+        date: "date"
+        value: "value"
+        size: 0.25
+        style: "secondary"
+        cr: 4
+        id: 0
+      }
+      {
+        data:
+          query:
+            domain: "bu_prod"
+        chartType: "horizontalBarchart"
+        value: "value"
+        label: "Centre"
+        variation: "evolution"
+        variationLegend: "vs n-1"
+        sort:"desc"
+        units:
+          value: " €"
+          evolution: " %"
+
+        size: 0.75
+        id: 1
+      }
+    ]
+  }
+  {
+    level: 3
+    title:"Production cost<br>in global CA"
+    parent_id: 20
+    id: 32204
+    commentary:"Part des coûts de production dans le CA global"
+    filters:
+      "bottom-right":
+        on: "breakdown"
+        type: "buttons"
+    chartOptions:
+      data:
+        query:
+          domain: "prod_cost"
+        precision:
+          value:'.0f'
+          evo:'.0%'
+      chartType: "horizontalBarchart"
+      value: "value"
+      label: "label"
+      variation: "evo"
+      variationLegend: "vs n-1"
+      sort:"desc"
+      units:
+        value: "%"
+        evo: ""
+  }
+  {
+    level: 3
+    title:"R&D incentives"
+    parent_id: 30
+    id: 32300
+    filters:
+      "bottom-right":
+        on: "Activité"
+        type: "buttons"
+        order:
+          custom:[
+            "Tous marchés"
+            "Focus Grand Public"
+          ]
+
+    chartOptions:
+      data:
+        query:
+          domain: "invt_barlinechart"
+      chartType: "barlinechart"
+      units:
+        value:[
+          unit: "%"
+          where:
+            kpi: "Poids invt R&D"
+        ,
+          unit: " "
+          where:
+            kpi: "Brevets déposés"
+        ]
+      date: "date"
+      kpi:
+        kpi: [
+          {
+            type: "line"
+            label: "Poids invt R&D"
+          }
+          {
+            type: "bar"
+            label: "Brevets déposés"
+          }
+        ]
+      value: "value"
+      label: "label"
+      legend: 'minimal'
+  }
+  {
+    level: 3
+    title:"Résultat<br>opérationnel"
+
+    kpis: [
+      unit: " M€"
+      label: "S1 2014"
+    ]
+    parent_id: 201
+    chartOptions:
+      chartType: "waterfall"
+      label: [
+        "label"
+        "label_sublevel"
+      ]
+      value: "value"
+      units:
+        "value": " M€"
+
+    id: 20103
+  }
+  {
+    level: 3
+    title: "Traitement des déchets"
+    parent_id: 60
+    id: 10600
+    commentary:"Taux de traitement des déchets du Groupe par année et découpage par BU"
+    charts: [
+      {
+        data:
+          query:
+              domain: "traitement_dechet"
+          date:
+            selector:"date"
+            format:"%Y"
+          precision:
+            "taux de traitement des déchets":".2%"
+        chartType: "barchart"
+        units:
+          date:""
+          "taux de traitement des déchets":""
+        order:"date"
+        crossfilter:
+          on: "date"
+          datasets:[1]
+        value: "taux de traitement des déchets"
+        label:"date"
+        size: 0.3
+        id: 0
+      }
+      {
+        data:
+          query:
+            domain: "action_bu"
+          date:
+            selector:"date"
+            format:"%Y"
+          precision:
+            "actions":",.0f"
+            "taux de traitement des déchets":'.2%'
+        chartType: "horizontalBarchart"
+        value: "actions"
+        variation:"taux de traitement des déchets"
+        variationLegend:"Taux de traitement<br>des déchets"
+        label: "bu"
+        units:
+          "actions": " actions"
+          "taux de traitement des déchets":''
+        sort:"desc"
+        size: 0.7
+        id: 1
+        # legend:true
+      }
+    ]
+  }
+]

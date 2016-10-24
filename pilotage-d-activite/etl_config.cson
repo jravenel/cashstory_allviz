@@ -1,0 +1,155 @@
+etl_config:
+  DATA_SOURCE_DIR: "data_sources"
+  DATA_SOURCES: [
+    domain: "customer_article_progress"
+    type: "excel"
+    file: "indicateurs-formule-de-vente-articles-par-client-082015.xls"
+    sheetname: "ARTICLES Client VALEUR ET PROG"
+  ,
+    domain: "article_progress"
+    type: "excel"
+    file: "indicateurs-formule-de-vente-articles-082015.xls"
+    sheetname: "ARTICLES NOMBRE ET PROG"
+  ,
+    domain: "turnover_progress"
+    type: "excel"
+    file: "indicateurs-formule-de-vente-chiffre-d-affaires-082015.xls"
+    sheetname: "CA OBJ  REEL PROG N-1"
+  ,
+    domain: "turnover"
+    type: "excel"
+    file: "chiffre-d-affaires.xls"
+    sheetname: "CHIFFRE d'AFFAIRES"
+  ,
+    domain: "customer_progress"
+    type: "excel"
+    file: "indicateurs-formule-de-vente-clients-082015.xls"
+    sheetname: "CLIENTS NOMBRE ET PROG"
+  ,
+    domain: "average_price_progress"
+    type: "excel"
+    file: "indicateurs-formule-de-vente-prix-de-vente-moyen-082015.xls"
+    sheetname: "PVM articles VALEUR ET PROG"
+  ,
+    domain: "average_basket_progress"
+    type: "excel"
+    file: "indicateurs-formule-de-vente-panier-moyen-082015.xls"
+    sheetname: "PANIER MOYEN VALEUR ET PROG"
+  ,
+    domain: "staff_fees"
+    type: "excel"
+    file: "total-frais-de-personnel.xls"
+    sheetname: "Total des frais de personnel"
+  ,
+    domain: "known_demarques"
+    type: "excel"
+    file: "demarques-connues-092015.xls"
+    sheetname: "demarques connues"
+  ,
+    domain: "unknown_demarques"
+    type: "excel"
+    file: "demarques-inconnues-092015.xls"
+    sheetname: "demarques inconnues"
+  ,
+    domain: "global_margins"
+    type: "excel"
+    file: "marge-globale-092015.xls"
+    sheetname: "MARGE GLOBALE"
+  ,
+    domain: "taux_transport"
+    type: "excel"
+    file: "taux-de-transport.xls"
+    sheetname: "Taux de transport"
+  ,
+    domain: "net_margins"
+    type: "excel"
+    file: "marge-nette-092015.xls"
+    sheetname: "MARGE NETTE"
+  ,
+    domain: "markdown"
+    type: "excel"
+    file: "markdown.xls"
+    sheetname: "Total des demarques"
+  ,
+    domain: "disbursed_fees"
+    type: "excel"
+    file: "total-frais-decaisses.xls"
+    sheetname: "Total des frais decaisses"
+  ,
+    domain: "immutable_fees"
+    type: "excel"
+    file: "total-des-frais-non-influencables.xls"
+    sheetname: "Total des frais non influ"
+  ,
+    domain: "mutable_fees"
+    type: "excel"
+    file: "total-des-frais-influencable.xls"
+    sheetname: "Total des frais influ hors FP"
+  ,
+    domain: "subscription_fees"
+    type: "excel"
+    file: "frais-siege-et-cotisations.xls"
+    sheetname: "Frais Siege et Cotisations"
+  ,
+    domain: "mutable_amortization"
+    type: "excel"
+    file: "amortissements-influencables-082015.xls"
+    sheetname: "AMORTISSEMENTS INFLU"
+  ,
+    domain: "immutable_amortization"
+    type: "excel"
+    file: "amortissements-non-influencables-082015.xls"
+    sheetname: "AMORTISSEMENTS NON INFLU"
+  ,
+    domain: "raw_cash_flow"
+    type: "excel"
+    file: "raw-cash-flow.xls"
+    sheetname: "Cash Flow Brut"
+  ,
+    domain: "net_cash_flow"
+    type: "excel"
+    file: "net-cash-flow.xls"
+    sheetname: "Participation"
+  ,
+    domain: "impots"
+    type: "excel"
+    file: "impots.xls"
+    sheetname: "Impots"
+  ,
+    domain: "participation"
+    type: "excel"
+    file: "participation.xls"
+    sheetname: "Participation"
+  ,
+    domain: "iris_data_Caen"
+    type: "google_spreadsheet"
+    sheetname: "iris_data_Caen"
+    spreadsheet_id: "1wN6d8iWn5AXWznxhBnJgt3qwcmxbiF34vAbH92WsdRI"
+  ,
+    domain: "malls_loc_Caen"
+    type: "google_spreadsheet"
+    sheetname: "malls_loc_Caen"
+    spreadsheet_id: "1wN6d8iWn5AXWznxhBnJgt3qwcmxbiF34vAbH92WsdRI"
+  ]
+  REPORTS: [
+    query:
+      domain: "progresses"
+      Date: "08/2015"
+      Label: "TOTAL France"
+    template: "report"
+  ]
+  DASHBOARDS: [
+    query:
+      domain: "progresses"
+      Date: '08/2015'
+    report: "Date"
+    template: "dashboard"
+  ]
+  MAX_SELECTABLE_DASHBOARDS: 500
+  MONGO_INDEXES: [
+    "domain"
+    [
+      "domain"
+      "subdomain"
+    ]
+  ]

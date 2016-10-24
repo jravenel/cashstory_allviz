@@ -1,0 +1,13 @@
+id: "0"
+name: "Company"
+slug: "test"
+date: "Données au 31/10/12"
+entityName: "Retail France"
+background:
+  id: 3
+  overlay: false
+
+dashboards:
+  search: "Recherchez par Division"
+
+slideInfos: {}

@@ -1,0 +1,28 @@
+users: [
+    {
+        username: "toucantoco"
+        password: "toucantocorocks!"
+        roles: [
+            "ADMIN"
+            "USER"
+        ]
+    }
+    {
+        username: "iamtheadminmofo"
+        password: "iamtheadminmofo"
+        roles: [
+            "USER"
+            "ADMIN"
+        ]
+    }
+    {
+        username: "toucanuser"
+        password: "toucantocoisawesome"
+        roles: ["USER"]
+    }
+    {
+        username: "simply"
+        password: "simply"
+        roles: ["USER"]
+    }
+]

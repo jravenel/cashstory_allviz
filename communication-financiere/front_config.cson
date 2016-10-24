@@ -1,0 +1,248 @@
+settings:
+  comparison:
+    description: "Sur tous les écrans de comparaison, comparer avec :"
+    values: [
+      "Par défaut"
+      "Entity A"
+      "Entity B"
+      "Entity C"
+    ]
+    default: "Par défaut"
+glossary:
+  title: 'Glossaire'
+  terms: [
+    term: "Revenue"
+    meaning: "Net activity for the entire group over the past year"
+  ,
+    term: "Business Groups"
+    meaning: "The 5 Entities of the LVMH group:<br> Wines & Spirits, <br>Fashion & Leather Goods, <br>Perfumes & Cosmetics, <br>Watches & Jewelry, <br>Selective Retailing."
+  ]
+
+home:
+  skipToReport: 0
+
+sharingOptions: true
+comments: true
+offline: 'all'
+
+slides: [
+  {
+    level: 0
+    id: 0
+  }
+  {
+    level: 1
+    title: "By Region"
+    id: 10
+  }
+  {
+    level: 1
+    title: "By Business Group"
+    id: 20
+  }
+  {
+    level: 2
+    title: "Wines & Spirits"
+    id: 200
+    parent_id: 20
+  }
+  {
+    level: 2
+    title: "Fashion & Leather Goods"
+    id: 201
+    parent_id: 20
+  }
+  {
+    level: 2
+    title: "Perfumes & Cosmetics"
+    id: 202
+    parent_id: 20
+  }
+  {
+    level: 2
+    title: "Selective Retailing"
+    id: 203
+    parent_id: 20
+  }
+  {
+    level: 2
+    title: "Watches & Jewelry"
+    id: 204
+    parent_id: 20
+  }
+  {
+    level: 3
+    title: "Revenue & Profit"
+
+    parent_id: 10
+    filters:
+      "bottom-right":
+        on: "filter"
+        type: "buttons"
+    chartOptions:
+      data:
+        file:
+          name: "<%= report.id %>_10001"
+      chartType: "horizontalBarchart"
+      label: "label"
+      value: "value"
+      sort: "desc"
+      units:
+        value:
+          "filter":
+            " Revenue in €": "M€"
+            "% of Revenue": "%"
+
+      source: "Tucana Sample Data"
+      sparklines:
+        prefix: "sparkline"
+        legend: "Over the past 4 years"
+        unit: "%"
+
+    id: 10001
+  }
+  {
+    level: 3
+    title: "Stores Network"
+
+    chartOptions:
+      data:
+        file:
+          name: "<%= report.id %>_10002"
+      chartType: "horizontalBarchart"
+      label: "label"
+      value: "value"
+      sort: "desc"
+      units:
+        value:
+          breakdown:
+            " Nb of Stores": " Stores"
+            "% of Revenue": "%"
+      packs: "groups"
+
+    filters:
+      "upper-middle":
+        on: "breakdown"
+        type: "buttons"
+
+    parent_id: 10
+
+    id: 10002
+  }
+  {
+    level: 3
+    title: "Revenue Map"
+
+
+    chartOptions:
+      data:
+        file:
+          name: "<%= report.id %>_10003"
+      chartType: "carto"
+      join: "Country Code"
+      label: "Country Name"
+      value: "Value"
+      peers: " "
+      levels: 4
+      projection: "world"
+      kpi: "kpi"
+      cartoFiles:
+        " ": "world-topojson.json"
+
+      units:
+        value: "M €"
+    parent_id: 10
+
+    id: 10003
+  }
+  {
+    level: 3
+    title: "Revenue & Profit"
+    recommendation:
+       advert: "Brands"
+       content: "Business group's Brands <br><br> <img src='images/WS-brands.png'></img>"
+
+    charts: [
+          {
+            data:
+              file:
+                name: "<%= report.id %>_20001_0"
+            chartType: "linechart"
+            units:
+              value: " M€"
+              date: ""
+
+            crossfilter:
+              on: "date"
+              datasets: [1]
+            groups: "label"
+            legend: true
+            date: "date"
+            value: "value"
+            size: 0.3
+            style: "secondary"
+            cr: 4
+            id: 0
+          }
+          {
+            data:
+              file:
+                name: "<%= report.id %>_20001_1"
+            chartType: "horizontalBarchart"
+            value: "revenue"
+            crossfilter:
+              on: "date"
+            label: "label"
+            # variation: "evolution"
+            # variationLegend: "Écart // 2011"
+            units:
+              "revenue": " M€"
+
+            size: 0.6
+            id: 1
+          }
+
+  ]
+
+    parent_id: 200
+
+    id: 20001
+  }
+  {
+    level: 3
+    title: "Sales in Volume"
+
+    parent_id: 200
+    chartOptions:
+      data:
+        file:
+          name: "<%= report.id %>_20002"
+      chartType: "waterfall"
+      label: "label"
+      sublabel: "label_sublevel"
+      # meta: ["proportion"]
+      evolution: "evolution"
+      value: "value"
+      units:
+        value: "M of bottles"
+        evolution: "%"
+      legend: true
+
+    id: 20002
+  }
+  {
+    level: 3
+    title: "Brands"
+    chartOptions:
+      data:
+        file:
+          name: "<%= report.id %>_20003"
+          extension: 'md'
+      chartType: "text"
+      label: "label"
+      value: "value"
+    parent_id: 200
+    id: 20003
+  }
+
+]

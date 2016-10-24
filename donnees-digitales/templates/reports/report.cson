@@ -1,0 +1,15 @@
+name: "Web"
+entityName: "{{ country }}"
+id: "{{ index }}"
+date: "Mars 2016"
+background:
+  id: 1
+  overlay: true
+execsumTitle: "Web Analytics"
+
+dashboards:
+  # default: 0
+  search: "Recherchez par Business Unit"
+
+slideInfos:
+  {}

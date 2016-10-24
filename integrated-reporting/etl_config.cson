@@ -1,0 +1,81 @@
+etl_config:
+    DATA_SOURCE_DIR: "data_sources"
+    DATA_SOURCES: [
+        domain: "market-breakdown"
+        type: "excel"
+        file: "data-market-breakdown.xls"
+        sheetname: "Data"
+    ,
+        domain: "reports"
+        type: "csv"
+        file: "reports.csv"
+    ,
+        domain: "linechart"
+        type: "csv"
+        file: "linechart.csv"
+    ,
+        domain: "classement_bu"
+        type: "csv"
+        file: "classement_bu.csv"
+    ,
+        domain: "sparklines"
+        type: "csv"
+        file: "sparklines.csv"
+    ,
+        domain: "bu_prod"
+        type: "csv"
+        file: "bu_prod.csv"
+    ,
+        domain: "linechart_prod"
+        type: "csv"
+        file: "linechart_prod.csv"
+    ,
+        domain: "prod_cost"
+        type: "csv"
+        file: "prod_cost.csv"
+    ,
+        domain: "satisfaction"
+        type: "csv"
+        file: "linechart_satisfaction.csv"
+    ,
+        domain: "invt_barlinechart"
+        type: "csv"
+        file: "invt_barlinechart.csv"
+    ,
+        domain: "action_bu"
+        type: "csv"
+        file: "action_bu.csv"
+    ,
+        domain: "traitement_dechet"
+        type: "csv"
+        file: "traitement_dechets.csv"
+    ]
+    REPORTS: [
+      query:
+        domain: "reports"
+      template: "report"
+    ]
+    DASHBOARDS: [
+      query:
+        domain: "reports"
+      report: "report"
+      template: "dashboard"
+    ]
+    MAX_DASHBOARDS: 500
+    MONGO_INDEXES: [
+      "domain"
+      "version"
+      [
+        "domain"
+        "subdomain"
+      ]
+      [
+        "domain"
+        "version"
+      ]
+      [
+        "domain"
+        "subdomain"
+        "version"
+      ]
+    ]

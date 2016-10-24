@@ -1,0 +1,44 @@
+etl_config:
+    DATA_SOURCE_DIR: "data_sources"
+    DATA_SOURCES: [
+        domain: "dashboards"
+        type: "excel"
+        file: "dashboards.xls"
+        sheetname: "Data"
+    ]
+    DATA_PROVIDERS: [
+      # name: "Some cube
+      # type: "SSAS"
+      # options:
+      #   server_url: "http://some_server_url/OLAP/msmdpump.dll"
+    ]
+    REPORTS: [
+      query:
+        domain: "dashboards"
+        default: 1.0
+      template: "report"
+    ]
+    DASHBOARDS: [
+      query:
+        domain: "dashboards"
+      report: "country"
+      template: "dashboards"
+    ]
+    MAX_DASHBOARDS: 500
+    MONGO_INDEXES: [
+      "domain"
+      "version"
+      [
+        "domain"
+        "subdomain"
+      ]
+      [
+        "domain"
+        "version"
+      ]
+      [
+        "domain"
+        "subdomain"
+        "version"
+      ]
+    ]

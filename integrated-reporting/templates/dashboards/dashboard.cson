@@ -1,0 +1,172 @@
+entityName: "{{ report }}"
+id: "0"
+report: "{{ report_id }}"
+default: true
+
+categories: [
+
+  name: "The 6 Capital Review"
+  kpis: [
+    name: "Financial"
+    value: "-7"
+    unit: " %"
+    badge: "evolution_down"
+    badgeSentiment: "worse"
+    comment: "efficient payroll policy"
+    slide: 32104
+
+  ,
+
+    name: "Manufactured"
+    value: "14"
+    unit: "M€"
+    badge: "evolution_up"
+    badgeSentiment: "better"
+    comment: "New sites production"
+    slide: 37101
+  ,
+    name: "Intellectual"
+    value: "-9"
+    unit: "%"
+    badge: "evolution_down"
+    badgeSentiment: "worse"
+    comment: "patents' valorization"
+    slide: 32204
+  ,
+    type: "media-img"
+    src: "images/Integrated_reporting.jpg"
+  ,
+
+    type: "separator"
+  ,
+    name: "Human"
+    value: "120 000"
+    unit: " employees"
+    badge: "evolution_up"
+    badgeSentiment: "better"
+    comment: "+2% vs S2 2015"
+    slide: 35201
+   ,
+
+    name: "Social and relationship"
+    value: "190"
+    unit: " sites opening"
+    badgeSentiment: "better"
+    slide: 34201
+  ,
+    name: "Natural"
+    value: "-10"
+    unit: "%"
+    badge: "evolution_up"
+    badgeSentiment: "better"
+    comment: "Lower greenhouse gas emission"
+    slide: 38101
+   ]
+,
+  name: "Get the Spirit"
+  kpis: [
+    type: "media-video"
+    provider:"youtube"
+    id: "UawLTZ3asYE"
+  ,
+    type: "media-video"
+    provider:"youtube"
+    id: "Z1rR1KvwnB0"
+   ]
+# ,
+#   name: "Situation Fiancière"
+#   kpis: [
+#     name: "Chiffre d'Affaires 2014"
+#     value: "2 203,9"
+#     unit: " M€"
+#     badge: "evolution_up"
+#     badgeSentiment: "better"
+#     comment: "+10% par rapport à l'année 2013 en demi-teinte"
+#     slide: 10201
+#     source: "2014, source Smart Toucan"
+#     id: 0
+#   ,
+#     name: "Croissance des ventes"
+#     badge: 'bullet'
+#     badgeSentiment: 'better'
+#     value: "6"
+#     unit: "%"
+#     comment: "croissance organiques sur le semestre"
+#     source: "2014, source Smart Toucan"
+#     id: 1
+#   ,
+#     name: "Ebidta"
+#     unit: " M€"
+#     value: "600"
+#     type: "line"
+#     chartOptions:
+#       {
+#         value: "value"
+#         date: "month"
+#       }
+#     badge: 'bullet'
+#     badgeSentiment: 'better'
+#     source: "2014, source Smart Toucan"
+#     id: 2
+#   ,
+#     name: "PORTEFEUILLE"
+#     maintext: "Très bonne rotation sur 2 ans"
+#     badge: "evolution_up"
+#     badgeSentiment: "better"
+#     comment: "+20% par rapport au S1 2014"
+#     source: "2014, source Smart Toucan"
+#     id: 3
+#   ,
+#     name: "Action de l'entreprise"
+#     value: "84,9"
+#     unit: "€"
+#     badge: "bullet"
+#     badgeSentiment: "better"
+#     source: "2014, source Smart Toucan"
+#     id: 4
+#   ,
+#     name: "Carnet de commandes"
+#     value: "579,7"
+#     unit: "M€"
+#     badge: "evolution_down"
+#     badgeSentiment: "worse"
+#     comment: "-30,6 M€ par rapport à mai-juin 13"
+#     source: "2014, source Smart Toucan"
+#     id: 5
+#    ]
+,
+  name: "Branch Benchmark"
+  kpis: [
+    name: "Market Turnover 2016"
+    value: "120 000"
+    unit: " M€"
+    badge: "evolution_down"
+    badgeSentiment: "worse"
+    comment: "-2% vs S2 2015"
+    source: "2016, source Smart Toucan"
+  ,
+    name: "Branch's investment rate"
+    value: "10"
+    unit: " %"
+    badge: "evolution_up"
+    badgeSentiment: "better"
+    comment: "higher investment rate shows markets' trust"
+    source: "2016, source Smart Toucan"
+  ,
+    name: "New markets"
+    value: "4"
+    unit: " opportunities"
+    badge: "bullet"
+    badgeSentiment: "better"
+    comment: "High potential markets in developping countries"
+    source: "2016, source Smart Toucan"
+  ,
+    name: "Legal"
+    type: "text"
+    value: "Upcoming favorable regulation in Brussels"
+    badge: "bullet"
+    badgeSentiment: "better"
+    comment: "Favorable law to fight global warming"
+
+   ]
+ ]

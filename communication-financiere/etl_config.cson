@@ -1,0 +1,36 @@
+etl_config:
+  DATA_SOURCE_DIR: "data_sources"
+  DATA_SOURCES: [{
+    domain: "reports"
+    type: "csv"
+    file: "reports.csv"
+    sheetname: "Data"
+  }]
+  REPORTS: []
+  DASHBOARDS: [
+    report: "report"
+    template: "main-dashboard"
+    query:
+      domain: "reports"
+      filters: "main"
+  ,
+    report: "report"
+    template: "bg-dashboard"
+    query:
+      domain: "reports"
+      filters: "Business Group"
+  ,
+    report: "report"
+    template: "region-dashboard"
+    query:
+      domain: "reports"
+      filters: "Region"
+  ]
+  MAX_DASHBOARDS: 500
+  MONGO_INDEXES: [
+    "domain"
+    [
+      "domain"
+      "subdomain"
+    ]
+  ]

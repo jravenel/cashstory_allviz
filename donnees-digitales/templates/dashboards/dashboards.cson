@@ -1,0 +1,185 @@
+entityName: "{{ zone }}"
+id: "{{ index }}"
+report: "{{ report_id }}"
+default: "{{ default }}"
+
+
+categories: [
+  name: "Web"
+  kpis: [
+    name: "Visits"
+    value: "905"
+    unit: "k visits"
+    badge: "evolution_up"
+    badgeSentiment: "better"
+    comment: "+1% compared to May 2015"
+    slide: 10001
+    source: "2015, source Smart Toucan"
+    id: 0
+  ,
+    name: "New Visitors"
+    value: "740"
+    unit: "k visitors"
+    badge: "evolution_down"
+    badgeSentiment: "worse"
+    comment: "-3.2% compared to May 2015"
+    slide: 10001
+    source: "2015, source Smart Toucan"
+    id: 9
+  ,
+    name: "Bounce Rate"
+    value: "21"
+    unit: "%"
+    badge: "evolution_down"
+    badgeSentiment: "better"
+    comment: "-2% compared to May 2015"
+    slide: 10001
+    source: "2015, source Smart Toucan"
+    id: 2
+   ]
+,
+  name: "Mobile"
+  kpis: [
+    name: "Downloads"
+    value: "2300"
+    unit: "Dl"
+    badge: "evolution_up"
+    badgeSentiment: "better"
+    comment: "+3% compared to May 2015"
+    slide: 20001
+    source: "2015, source Smart Toucan"
+    id: 3
+  ,
+    name: "Returning Rate"
+    value: "20"
+    unit: "%"
+    badge: "evolution_up"
+    badgeSentiment: "better"
+    comment: "+4% compared to May 2015"
+    slide: 20001
+    source: "2015, source Smart Toucan"
+    id: 4
+  ,
+    name: "Time Spent"
+    value: "3"
+    unit: " min"
+    source: "2015, source Smart Toucan"
+    slide: 20001
+    id: 5
+   ]
+,
+  name: "Social"
+  kpis: [
+    name: "Facebook Fans"
+    value: "19.3"
+    unit: "M Fans"
+    badge: "bullet"
+    badgeSentiment: "better"
+    comment: "First Competitor: 15.4M Fans"
+    slide: 30001
+    source: "2015, source Smart Toucan"
+    id: 6
+  ,
+    name: "Twitter Followers"
+    value: "29"
+    unit: "M Followers"
+    badge: "bullet"
+    badgeSentiment: "better"
+    comment: "First Competitor: 19M Followers"
+    slide: 30001
+    source: "2015, source Smart Toucan"
+    id: 7
+  ,
+    name: "Youtube Views"
+    value: "20"
+    unit: "M Views"
+    badge: "bullet"
+    badgeSentiment: "better"
+    comment: "First Competitor: 3M Views"
+    slide: 30001
+    source: "2015, source Smart Toucan"
+    id: 8
+  ,
+    name: "Talking about on Social Medias"
+    unit: "M times"
+    value: "20"
+    unit: "M Views"
+    badge: "bullet"
+    badgeSentiment: "better"
+    slide: 30001
+    badge: 'bullet'
+    badgeSentiment: 'better'
+    source: "2014, source Smart Toucan"
+    # data:
+    #     date:
+    #         format: ""
+    #         selector: "date"
+    id: 1
+  ,
+    type: "separator"
+  ,
+    name: "Fais Marquants"
+    type: "text"
+    value: "Grand succès campagne Community Management Parfums"
+    badge: "bullet"
+    badgeSentiment: "better"
+    comment: "+12% de Fans Facebook par rapport à la concurrence"
+    slide: 30002
+    source: "2014, source Smart Toucan"
+    id: 10
+
+  ]
+,
+  name: "Search"
+  kpis: [
+    name: "Quality Score"
+    value: "9.5"
+    unit: " "
+    badge: "bullet"
+    badgeSentiment: "better"
+    comment: "+3 pts vs last year"
+    slide: 4003
+    source: "2015, source Smart Toucan"
+    id: 21
+  ,
+    name: "Impr"
+    value: "354968"
+    unit: " impr"
+    badge: "bullet"
+    badgeSentiment: "better"
+    comment: "+2 pts vs last year"
+    slide: 4003
+    source: "2015, source Smart Toucan"
+    id: 22
+  ,
+    name: "Clics"
+    value: "56048"
+    unit: " Clics"
+    badge: "bullet"
+    badgeSentiment: "better"
+    comment: "+1 pts vs last year"
+    slide: 4003
+    source: "2015, source Smart Toucan"
+    id: 23
+  ,
+    name: "CTR"
+    value: "15.79"
+    unit: " %"
+    badge: "bullet"
+    badgeSentiment: "worse"
+    comment: "-1 pts vs last year"
+    slide: 4003
+    source: "2015, source Smart Toucan"
+    id: 24
+  ,
+    name: "Conv"
+    value: "931"
+    unit: " Conv"
+    badge: "bullet"
+    badgeSentiment: "better"
+    comment: "+3 pts vs last year"
+    slide: 4003
+    source: "2015, source Smart Toucan"
+    id: 25
+  ]
+ ]

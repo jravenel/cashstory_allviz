@@ -1,0 +1,671 @@
+settings:
+  comparison:
+    description: "Sur tous les écrans de comparaison, comparer avec :"
+    values: [
+      "Par défaut"
+      "Entity A"
+      "Entity B"
+      "Entity C"
+    ]
+    default: "Par défaut"
+
+glossary:
+  key: 'Glossary'
+  terms: [
+    term: "Data"
+    meaning: "An android from the 24th century who serves on the star ship Enterprise.<br><em>Data kicked some borg ass and then fed his cat lunch.</em>"
+  ,
+    term: "Hipsterectomy"
+    meaning: "The removal or dismissal of what is largely accepted to be cool or trendy. The process of de-hipsterizing someone or something."
+  ,
+    term: "Graph"
+    meaning: "A slang term for a sketching of what someone plans on tagging. graffiti. <br><em>NOT A CHART!</em>"
+  ]
+
+home:
+  skipToReport: 0
+
+offline: 'all'
+
+slides: [
+  {
+    level: 0
+    id: 0
+  }
+  {
+    level: 1
+    title: "WEB"
+    id: 10
+  }
+  {
+    level: 1
+    title: "Mobile"
+    id: 20
+  }
+  {
+    level: 1
+    title: "Social"
+    id: 30
+  }
+  {
+    level: 1
+    title: "Search"
+    id: 40
+  }
+  {
+    level: 3
+    title: "Channels"
+    parent_id: 10
+    id: 10001
+
+    chartOptions:
+      data:
+        file:
+          name: '0_10001'
+      chartType: "waterfall"
+      value: "value"
+      evolution: "variation"
+      label: "label"
+      sublabel:  "label_sublevel"
+      units:
+        value: "Visits"
+  }
+  {
+    level: 3
+    title: "Countries/domains"
+    parent_id: 10
+    id: 10002
+
+    chartOptions:
+      chartType: "bulletChart"
+      data:
+          file:
+            name: '0_10002'
+      value: "Visits"
+      label: "label"
+      target: "target"
+      comparison: "2014"
+      alignTargets: true
+      meta: []
+      variation: "evolution"
+      variationLegend: "Evol. Mois précédent"
+      units:
+        "Visits": [
+            unit: ' visits'
+            where:
+              "breakdown": "Visits"
+          ,
+            unit: "%"
+            where:
+              "breakdown": "Bounce Rate"
+        ]
+        "target": [
+            unit: ' visits'
+            where:
+              "breakdown": "Visits"
+          ,
+            unit: "%"
+            where:
+              "breakdown": "Bounce Rate"
+        ]
+        "2014": [
+            unit: ' visits'
+            where:
+              "breakdown": "Visits"
+          ,
+            unit: "%"
+            where:
+              "breakdown": "Bounce Rate"
+        ]
+    filters:
+      "bottom-right":
+        on: "breakdown"
+        type: "buttons"
+        order:
+          custom: ['Visits','Bounce Rate']
+  }
+  {
+    level: 3
+    title: "Sources Acquisitions"
+    parent_id: 10
+    id: 10003
+
+    charts:[
+         {
+           chartType: "linechart"
+           data:
+             file:
+               name: '0_10003_0'
+             date:
+               selector: "date"
+               format: "%m-%Y"
+           units:
+             value: " views"
+             date: ""
+
+           crossfilter:
+             on: "date"
+             datasets: [1]
+           groups: "Centre"
+           date: "date"
+           value: "value"
+           size: 0.25
+           style: "secondary"
+           cr: 4
+           id: 0
+         }
+         {
+           chartType: "horizontalBarchart"
+           value: "value"
+           label: "label"
+           date: "date"
+           sort: "desc"
+           data:
+             file:
+               name: '0_10003_1'
+             date:
+               selector: "date"
+               format: "%m-%Y"
+           units:
+             value: [
+                unit: " Visits"
+                where:
+                  "breakdown": "Visits"
+              ,
+                unit: "%"
+                where:
+                  "breakdown": "% New Visitors"
+             ]
+
+
+           packs: "group"
+           size: 0.75
+           id: 1
+
+
+           filters:
+              "upper-middle":
+                on: "breakdown"
+                type: "buttons"
+                datasets: [1]
+                order:
+                  custom: ['Visits','% New Visitors']
+
+         }
+       ]
+
+  }
+  {
+    level: 3
+    title: "Sources Behaviour"
+    parent_id: 10
+    id: 10004
+
+    charts:[
+         {
+           chartType: "linechart"
+           units:
+             value: " views"
+             date: ""
+
+           crossfilter:
+             on: "date"
+             datasets: [1]
+           groups: "Centre"
+           data:
+             file:
+               name: '0_10004_0'
+             date:
+               selector: "date"
+               format: "%m-%Y"
+           date: "date"
+           value: "value"
+           size: 0.25
+           style: "secondary"
+           cr: 4
+           id: 0
+         }
+         {
+           chartType: "horizontalBarchart"
+           value: "value"
+           label: "label"
+           date: "date"
+           sort: "desc"
+           data:
+             file:
+               name: '0_10004_1'
+             date:
+               selector: "date"
+               format: "%m-%Y"
+           units:
+             value: [
+                unit: "pages"
+                where:
+                  "breakdown": "Pages / Sessions"
+              ,
+                unit: "%"
+                where:
+                  "breakdown": "Bounce Rate"
+              ,
+                unit: "min"
+                where:
+                  "breakdown": "Avg Session Time"
+             ]
+
+
+           packs: "group"
+           size: 0.75
+           id: 1
+
+
+           filters:
+              "upper-middle":
+                on: "breakdown"
+                type: "buttons"
+                datasets: [1]
+                # order:
+                #   custom: ['Visits','% New Visitors']
+
+         }
+       ]
+
+  }
+  {
+    level: 3
+    title: "Sources Conversions"
+    parent_id: 10
+    id: 10005
+
+    charts:[
+         {
+           chartType: "linechart"
+           units:
+             value: " views"
+             date: ""
+
+           crossfilter:
+             on: "date"
+             datasets: [1]
+           groups: "Centre"
+           data:
+             file:
+               name: '0_10005_0'
+             date:
+               selector: "date"
+               format: "%m-%Y"
+           date: "date"
+           value: "value"
+           size: 0.25
+           style: "secondary"
+           cr: 4
+           id: 0
+         }
+         {
+           chartType: "horizontalBarchart"
+           value: "value"
+           label: "label"
+           date: "date"
+           sort: "desc"
+           data:
+             file:
+               name: '0_10005_1'
+             date:
+               selector: "date"
+               format: "%m-%Y"
+           units:
+             value: [
+                unit: "%"
+                where:
+                  "breakdown": "Goal Conversion Rate"
+              ,
+                unit: "%"
+                where:
+                  "breakdown": "Goal Completions"
+              ,
+                unit: "€"
+                where:
+                  "breakdown": "Goal Value"
+             ]
+
+
+           packs: "group"
+           size: 0.75
+           id: 1
+
+
+           filters:
+              "upper-middle":
+                on: "breakdown"
+                type: "buttons"
+                datasets: [1]
+                order:
+                  custom: ['Goal Conversion Rate','Goal Completions',"Goal Value"]
+
+         }
+       ]
+
+  }
+  {
+    level: 3
+    title: "My App"
+    parent_id: 20
+    id: 20001
+
+    chartOptions:
+      data:
+          file:
+            name: '0_20001'
+      chartType: "score-card"
+      variation: "variation"
+      value: "value"
+      label: "label"
+      groups: "groups"
+      sort: "desc"
+
+      sparklines:
+          prefix: "sparkline"
+          legend: "Month trend"
+
+      units:
+        "variation": "%"
+        value: [
+          unit: " dl"
+          where:
+            label: "Downloads"
+        ,
+          unit: " visits"
+          where:
+            label: "Visits"
+        ,
+          unit: " Visitors"
+          where:
+            label: "Unique Visitors"
+        ,
+          unit: "%"
+          where:
+            label: "Returning Rate"
+        ,
+          unit: " min"
+          where:
+            label: "Time Spent"
+        ]
+  }
+  {
+    level: 3
+    title: "Details Downloads"
+    parent_id: 20
+    id: 20002
+
+    chartOptions:
+      data:
+          file:
+            name: '0_20002'
+      chartType: "horizontalBarchart"
+      label: "label"
+      value: "value"
+      legend: true
+      variation: "evolution"
+      variationLegend: "Previous month"
+      sort: "desc"
+
+      sparklines:
+        prefix: "sparkline"
+        legend: "Month trend"
+
+      units:
+        "evolution": "%"
+        value: " dl"
+
+      filters:
+        "upper-right":
+          on: "filtre"
+          type: "dropdown"
+          withSize: true
+          reset: "Tous"
+
+  }
+  {
+    level: 3
+    title: "App Returning Rate"
+    parent_id: 20
+    id: 20003
+    commentary: "Répartition du traffic en terme de nombre de visites par utilisateur unique."
+
+    chartOptions:
+      data:
+          file:
+            name: '0_20003'
+      chartType: "horizontalBarchart"
+      label: "label"
+      value: "value"
+      units:
+        value: "%"
+
+  }
+  {
+    level: 3
+    title: "Share of Fans"
+    parent_id: 30
+    id: 30001
+
+    chartOptions:
+      data:
+          file:
+            name: '0_30001'
+      chartType: "horizontalBarchart"
+      label: "label"
+      value: "value"
+      sort: "desc"
+      units:
+        value: "k fans"
+
+    filters:
+      "bottom-right":
+        on: "breakdown"
+        type: "buttons"
+  }
+  {
+    level: 3
+    title: "Facebook trends talking about"
+    parent_id: 30
+    id: 30002
+
+    chartOptions:
+      data:
+        file:
+          name: '0_30002'
+        date:
+          format: "%m-%Y"
+          selector: "date"
+      chartType: "linechart"
+      groups: "label"
+      value: "value"
+      legend: true
+      units:
+        "value": "Nbr of Fans"
+      date: "date"
+      events: [
+       {
+         date: "10-2014"
+         label: "John Doe"
+         name: "Campagne Community Management"
+       }
+     ]
+  }
+  {
+    level: 3
+    title: "Youtube Views"
+    parent_id: 30
+    id: 30003
+    commentary: "Evolution du total des vues Youtube par mois, ainsi que leur répartition par format."
+
+    charts: [
+      {
+        chartType: "linechart"
+        units:
+          value: " views"
+          date: ""
+
+        crossfilter:
+          on: "date"
+          datasets: [1]
+        groups: "Centre"
+        data:
+         file:
+           name: '0_30003_0'
+          date:
+            selector: "date"
+            format: "%m-%Y"
+        date: "date"
+        value: "value"
+        size: 0.25
+        style: "secondary"
+        cr: 4
+        id: 0
+      }
+      {
+        chartType: "horizontalBarchart"
+        value: "value"
+        label: "label"
+        date: "date"
+        sort: "desc"
+        data:
+          file:
+            name: '0_30003_1'
+          date:
+            selector: "date"
+            format: "%m-%Y"
+        units:
+          value: " views"
+
+        packs: "group"
+        size: 0.75
+        id: 1
+      }
+    ]
+
+  }
+  {
+    level: 3
+    title: "Campaigns' performance"
+    parent_id: 40
+    id: 4001
+
+    chartOptions:
+      data:
+          file:
+            name: '0_4001'
+      chartType: "horizontalBarchart"
+      label: "label"
+      value: "value"
+      sort: "desc"
+      variation:"evolution"
+      variationLegend: "Evolution <br> N-1"
+      units:
+        value:
+          breakdown:
+            Impr: " impr"
+            Clics: " clics"
+            "Coût": " €"
+            "Tx de conv": " %"
+        evolution: "%"
+
+
+    filters:
+      "bottom-right":
+        on: "breakdown"
+        type: "buttons"
+        order:
+          custom: [
+            "Impr"
+            "Clics"
+            "Coût"
+            "Tx de conv"
+          ]
+  }
+  {
+    level: 3
+    title: "Conversions vs CPA"
+    id: 4002
+
+    parent_id: 40
+    chartOptions:
+      data:
+        file:
+          name: '0_4002'
+        date:
+          selector: 'date'
+          format: "%d/%m/%Y"
+      chartType: "linechart"
+      value: "value"
+      groups:"label"
+      date: "date"
+      units:
+        "Conversions": " conv"
+        "CPA": " €"
+      events: [
+        {
+          date: "27/07/2015"
+          label: "Conversions"
+          name: "Boost Adwords"
+        }
+        {
+          date: "02/08/2015"
+          label: "Conversions"
+          name: "Adwords campaign<br> canceled"
+        }
+      ]
+
+      legend: true
+
+
+  }
+  {
+    level: 3
+    title: "Global performance"
+
+    chartOptions:
+      data:
+        file:
+          name: '0_4003'
+      chartType: "score-card"
+      variation: "evolution"
+      variationLegend: "Evolution <br> N-1"
+      value: "value"
+      groups: "groups"
+      label: "label"
+      units:
+        value: [
+          unit: " €"
+          where:
+            label: "Coût"
+        ,
+          unit: " €"
+          where:
+            label: "CPC Moyen"
+        ,
+          unit: " %"
+          where:
+            label: "CTR"
+        ,
+          unit: " %"
+          where:
+            label: "Taux de Conv"
+        ,
+          unit: " €"
+          where:
+            label: "Coût / Conv"
+        ,
+          unit: " €"
+          where:
+            label: "Val de Conv"
+        ]
+        evolution: "%"
+
+    parent_id: 40
+    id: 4003
+  }
+
+
+
+]
