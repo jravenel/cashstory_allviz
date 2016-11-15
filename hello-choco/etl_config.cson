@@ -1,0 +1,282 @@
+etl_config:
+  DATA_SOURCES: [
+    domain:'barchart'
+    type:'excel'
+    file:'barchart.xls'
+    sheetname:'my_sheet'
+  ,
+    domain:'barchart_full_features'
+    type:'excel'
+    file:'barchart_full_features.xls'
+    sheetname:'my_sheet'
+  ,
+    domain: "market-breakdown"
+    type: "excel"
+    file: "data-market-breakdown.xls"
+    sheetname: "Data"
+  ,
+    domain: "dashboards"
+    type: "excel"
+    file: "dashboards.xls"
+    sheetname: "Data"
+  ,
+    domain:'barlinechart'
+    type:'excel'
+    file:'barlinechart.xls'
+    sheetname:'my_sheet'
+  # ,
+  #   domain:'horizontal_barchart_sparklines'
+  #   type:'excel'
+  #   file:'horizontal_barchart_sparklines.xls'
+  #   sheetname:'my_sheet'
+  ,
+    domain:'horizontal_barchart_sparklines'
+    type:'csv'
+    file:'horizontal_barchart_sparklines.csv'
+  ,
+    domain:'horizontal_barchart'
+    type:'csv'
+    file:'horizontal_barchart.csv'
+  ,
+    domain:'leaderboard_centered_avg'
+    type:'csv'
+    file:'leaderboard_centered_avg.csv'
+  ,
+    domain:'leaderboard_centered_avg_avg'
+    type:'csv'
+    file:'leaderboard_centered_avg_avg.csv'
+  ,
+    domain:'heatmap'
+    type:'excel'
+    file:'heatmap.xlsx'
+    sheetname:'my_sheet'
+  ,
+    domain:'horizontalBarchart_full_features_main'
+    type:'excel'
+    file:'horizontalBarchart_full_features.xls'
+    sheetname:'main_data'
+  ,
+    domain:'horizontalBarchart_full_features_spark'
+    type:'excel'
+    file:'horizontalBarchart_full_features.xls'
+    sheetname:'sparklines_data'
+  ,
+    domain:'centered_avg_data'
+    type:'excel'
+    file:'centered_avg.xls'
+    sheetname:'full_data'
+  ,
+    domain:'centered_avg_avg'
+    type:'excel'
+    file:'centered_avg.xls'
+    sheetname:'average_data'
+  ,
+    domain:'bubble'
+    type:'csv'
+    file:'bubble.csv'
+  ,
+    domain:'stacked_barchart'
+    type:'csv'
+    file:'stacked_barchart.csv'
+  ,
+    domain: "ranks"
+    type: "excel"
+    file: "test.xls"
+    sheetname:'my_sheet'
+  ,
+    domain: "lines1"
+    type: "csv"
+    file: "lines_1.csv"
+  ,
+    domain: "lines2"
+    type: "csv"
+    file: "lines_2.csv"
+  ,
+    domain:'mon_texte'
+    type:'csv'
+    file:'mon_texte.csv'
+  ,
+    domain: "my_scorecard"
+    type: "excel"
+    file: 'my_scorecard.xls'
+    sheetname: "my_sheet"
+  # ,
+  #     domain: "gsheets"
+  #     type: "google_spreadsheet"
+  #     spreadsheet_id: '1O5yDtjOZCCvtRCxnw_MwQQ2aT3TW9J3i_WvOu0zXVXk'
+  #     sheetname: "Sheet1"
+  # ,
+  #     domain: "funnelchart"
+  #     type: "csv"
+  #     file: "demofunnelchartdefault" 
+  # ,
+  #     domain: "maitre_esclave_line_leader_main"
+  #     type: "google_spreadsheet"
+  #     spreadsheet_id: '1HdgWo__ICO_KaJ0ugo3NnAsgqctz8ONGP8XrQpEyJCk'
+  #     sheetname: "main"
+  #   ,
+  #     domain: "maitre_esclave_line_leader_detail"
+  #     type: "google_spreadsheet"
+  #     spreadsheet_id: '1HdgWo__ICO_KaJ0ugo3NnAsgqctz8ONGP8XrQpEyJCk'
+  #     sheetname: "detail"
+  #   ,
+  #     domain: "barchart1"
+  #     type: "google_spreadsheet"
+  #     spreadsheet_id: '1ihwBbgIkEUrtuhk7A2Yhq0LHTQCkwh8bqcHkQgG310E'
+  #     sheetname: "Feuille 1"
+    # ,
+    #   domain: "barchart"
+    #   type: "google_spreadsheet"
+    #   spreadsheet_id: '1N3rqXo6RtP9nT2w3Ya7eUoij9C7x9ZEyqbnNQ0j7fIE'
+    #   sheetname: "Feuille 2"
+    # ,
+    #   domain: "dashboards"
+    #   type: "google_spreadsheet"
+    #   spreadsheet_id: '1wId4j1eTStmtfshDT5jVlKzTWcVidCY_CFxcbtSoox0'
+    #   sheetname: "Data"
+    # ,
+    #   domain: "horizontal_barchart_sparklines"
+    #   type: "google_spreadsheet"
+    #   spreadsheet_id: '1O1Orp9_gGfx4ot59vZjDEXHKWkwXPXd7EqX7B70-cMg'
+    #   sheetname: "Feuille 1"
+
+    # ,
+    #   domain: "bulletchart"
+    #   type: "google_spreadsheet"
+    #   spreadsheet_id: '1Myzv7u7uilqMvXodIOl9w-Jwm4ObxNDwW0BXQI2_TcU'
+    #   sheetname: "Sheet1"
+    # ,
+    #   domain: "sample_centered_avg"
+    #   type: "google_spreadsheet"
+    #   spreadsheet_id: '1LZeX3Rfkn8Xq4h7D9YVkmOtCRYXas44ZQC7ITo_jyNo'
+    #   sheetname: "Feuille 1"
+    # ,
+    #   domain: "sample_centered_avg_averages"
+    #   type: "google_spreadsheet"
+    #   spreadsheet_id: '1LZeX3Rfkn8Xq4h7D9YVkmOtCRYXas44ZQC7ITo_jyNo'
+    #   sheetname: "Feuille 2"
+    # ,
+    #   domain: "heatmap"
+    #   type: "google_spreadsheet"
+    #   spreadsheet_id: '1PrHaVzLdfgob_kLwPWQ45KYFLvUs2ZzjEA6iMqzf69w'
+    #   sheetname: "Feuille 1"
+    # ,
+    #   domain: "slopegraph"
+    #   type: "google_spreadsheet"
+    #   spreadsheet_id: '1ljmW1xUqrMQwjjXBZ3hpSu8cvt3vD1j1unhytYfJm9g'
+    #   sheetname: "Feuille 1"
+    # ,
+    #   domain: "linechart"
+    #   type: "google_spreadsheet"
+    #   spreadsheet_id: '18ya48YgRCYV8-Xy7tnM_HgByWmvSdp4gF6TM_eC2VFM'
+    #   sheetname: "Feuille 1"
+    # ,
+    #   domain: "worldmap"
+    #   type: "google_spreadsheet"
+    #   spreadsheet_id: '1J5jRLBTkdgV_OTpnIjSId5K3jCanR4ndN4vYqIxJUBY'
+    #   sheetname: "Feuille 1"
+    # ,
+    #   domain: "verbatim"
+    #   type: "google_spreadsheet"
+    #   spreadsheet_id: '1XpWY6VBDQUSToSPi2AClP94CwS8-zL6VVNKopn21ZL8'
+    #   sheetname: "Feuille 1"
+    # ,
+    #   domain: "maitre_esclave_bar_leader_main"
+    #   type: "google_spreadsheet"
+    #   spreadsheet_id: '1WOU-47k5drdG43E-al5OMjV93f_y01kL2kpIUIgDasg'
+    #   sheetname: "Feuille 1"
+    # ,
+    #   domain: "maitre_esclave_bar_leader_detail"
+    #   type: "google_spreadsheet"
+    #   spreadsheet_id: '1S3IHQObZKTti7Zg84WrePv7AF07OEnAYb0_gfkEP91k'
+    #   sheetname: "Feuille 1"
+    # ,
+    #   domain: "treemap"
+    #   type: "google_spreadsheet"
+    #   spreadsheet_id: '1TCk4_7OS5egFZsLbKFP-sKP715TzB6b3pS_CLGF-tIM'
+    #   sheetname: "Feuille 1"
+    # ,
+    #   domain: "bubblechart"
+    #   type: "google_spreadsheet"
+    #   spreadsheet_id: '1we5wmiewJyrv16-K-XNl1e_zN5Prd-waDUuBz6zQHSM'
+    #   sheetname: "Feuille 1"
+    # ,
+    #   domain: "waterfall"
+    #   type: "google_spreadsheet"
+    #   spreadsheet_id: '1QOpx2BYixovWaa21CFR_fW5UJfw-39nVqLNfNeZutYI'
+    #   sheetname: "Feuille 1"
+    # ,
+    #   domain: "forcedirectedchart"
+    #   type: "google_spreadsheet"
+    #   spreadsheet_id: '1taqzxdKZKvRfGf_7nMyjH6UUD-ja0Dv8cphNl_3_Cq4'
+    #   sheetname: "Feuille 1"
+    # ,
+    #   domain: "stackedbarchart"
+    #   type: "google_spreadsheet"
+    #   spreadsheet_id: '1ZQqEeTPYVER_Vjwrr-6YSGxJs3PAOXWThlWjI19sZGc'
+    #   sheetname: "Feuille 1"
+    # ,
+    #   domain: "testaurelie"
+    #   type: "google_spreadsheet"
+    #   spreadsheet_id: '19VgstmsbpXEpOvnExdBv3y9SVl5EhBcODRuCEwHFYUo'
+    #   sheetname: "Feuille 1"
+    # ,
+    #   domain: "barlinechart"
+    #   type: "google_spreadsheet"
+    #   spreadsheet_id: '1r7jm1c1H_XLBYklL0El8uGioEQXqc8o5y2ycDn6OMUg'
+    #   sheetname: "barlinechart"
+    # ,
+    #   domain: "demo-with-markers-cities"
+    #   type: "google_spreadsheet"
+    #   spreadsheet_id: '1cFx3ptBP1tl7Ut6VCs8Vgl2RzM--xTjs3vDTisuGZmU'
+    #   sheetname: "demo-with-markers-cities"
+    # ,
+    #   domain: "demo-data-dept"
+    #   type: "google_spreadsheet"
+    #   spreadsheet_id: '1cFx3ptBP1tl7Ut6VCs8Vgl2RzM--xTjs3vDTisuGZmU'
+    #   sheetname: "demo-data-dept"
+  ]
+
+  REPORTS: [
+    query:
+      domain: "dashboards"
+      default: 1.0
+    template: "report"
+  ]
+
+  DASHBOARDS: [
+    query:
+      domain: "dashboards"
+      default: 1
+    report: "country"
+
+    template: "dashboard"
+  ,
+    query:
+      domain: "dashboards"
+    report: "country"
+
+    template: "dashboard-country"
+  ]
+  PERMISSIONS_DATA:
+    query:
+      domain: "dashboards"
+      default: 1.0
+  # MAX_DASHBOARDS: 500
+  MONGO_INDEXES: [
+    "domain"
+    "version"
+    [
+      "domain"
+      "subdomain"
+    ]
+    [
+      "domain"
+      "version"
+    ]
+    [
+      "domain"
+      "subdomain"
+      "version"
+    ]
+  ]

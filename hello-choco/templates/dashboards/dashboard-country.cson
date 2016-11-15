@@ -1,0 +1,112 @@
+entityName: "{{ zone }}"
+id: "{{ index }}"
+report: "{{ report_id }}"
+default: "{{ default }}"
+
+categories: [
+  name: "Performance"
+  kpis: [
+    name: "Metric"
+    type: 'value-dynamic'
+    value: "value"
+    unit: "%"
+    slide: 32204
+    badge: 'badge'
+    sentiment:
+      value:
+        domain: ['comparison']
+        range: ['negative','positive']
+    precision:
+      value: '.1f'
+    data:
+      value:
+        query:
+          domain: "ranks"
+          "Retailer name": "France"
+          breakdown: "<%= requestersManager.date %>"
+        field: "value"
+      comparison:
+        query:
+          domain: "dashboards"
+          country: "France"
+          default: 1
+        field: "target"
+    compute:
+      badge: 'value - comparison'
+    source: "2015, source Smart Toucan"
+    id: 0
+  ,
+    name: "Classement"
+    type: "leaderboard"
+    chartOptions:
+      value: "value"
+      label: "Retailer name"
+      data:
+        query:
+          domain: 'ranks'
+          breakdown: "<%= requestersManager.date %>"
+      units:
+        value: " €"
+    source: "2015, source Smart Toucan"
+    slide: 100
+  ]
+,
+  name: "Evolution"
+  kpis: [
+    name: "Traffic"
+    type: "line"
+    chartOptions:
+      value: "value"
+      date: "month"
+      data:
+        query:
+          domain: 'lines1'
+          breakdown: "<%= requestersManager.date %>"
+    unit: " p/h"
+    source: "2015, source Smart Toucan"
+  ,
+    name: "Satisfaction"
+    type: "value-sparkline"
+    value: "9.8"
+    chartOptions:
+      value: "value"
+      date: "month"
+      data:
+        query:
+          domain: 'lines2'
+          breakdown: "<%= requestersManager.date %>"
+    unit: " / 10"
+    source: "2015, source Smart Toucan"
+  ]
+,
+  name: "Metrics"
+  kpis: [
+    type: "media-img"
+    src: "crea-home.jpg"
+  ,
+    type: "media-video"
+    provider: 'vimeo'
+    id: "50352359"
+  ]
+
+,
+  name: "Miscellaneous"
+  kpis: [
+    name: "Long free text"
+    type: "text-dynamic"
+    data: query: domain: "text_home"
+    content: "content"
+    source: "2015, source Smart Toucan"
+  ,
+    name: "Votre Business Case"
+    type: "text-dynamic"
+    data:
+      file:
+        name: "free_pdf_home"
+        type: "pdf"
+
+    style:
+      width: '700px'
+    content: "content"
+  ]
+]
