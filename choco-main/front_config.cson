@@ -1,0 +1,1264 @@
+settings:
+  comparison:
+    description: "Sur tous les écrans de comparaison, comparer avec :"
+    values: [
+      "Par défaut"
+      "Entity A"
+      "Entity B"
+      "Entity C"
+    ]
+    default: "Par défaut"
+
+glossary:
+  title: '%%Glossary%%'
+  terms: [
+
+    term: "Data"
+    meaning: "An android from the 24th century who serves on the star ship Enterprise.<br><em>Data kicked some borg ass and then fed his cat lunch.</em>"
+  ,
+    term: "Hipsterectomy"
+    meaning: "The removal or dismissal of what is largely accepted to be cool or trendy. The process of de-hipsterizing someone or something."
+  ,
+    term: "Graph"
+    meaning: "A slang term for a sketching of what someone plans on tagging. graffiti. <br><em>NOT A CHART!</em>"
+
+    # lorsque je souhaite faire apparaitre une définition sur un écran précis:
+    {
+      slides: [
+        10001
+      ]
+      term: 'Satisfaction Globale'
+      meaning: 'Moyenne arithmétique des 6 résultats bimestriels du BNSC sur la Q7 - Source : BNSC Q7'
+    }
+  ]
+offline: 'report' # other offline options: 'false' or 'all'
+
+slidePdfEnabled: true
+dashboardPdfEnabled: true
+# Don't forget to activate this to authorize PDF :
+sharingOptions: true
+
+comments: true
+
+# dataProviders:
+#   "google-sheets": {}
+
+home:
+  skipToReport: "0"
+# Exemple of report selector:
+# home:
+#   search:
+#     text: 'Pilotage'
+#     placeholder: 'Magasin'
+#     helper: 'Rentrez les 3 premières lettres du magasin'
+#   widget:
+#     type: "list"
+
+slides: [
+  {
+    level: 0
+    id: 0
+  }
+  {
+    level: 1
+    title: "%%Master-slave%%"
+    # the %% is for translation
+    id: 10
+  }
+  {
+    level: 1
+    title: "%%Barcharts%%"
+    id: 20
+  }
+  {
+    level: 1
+    title: "Barandlinechart"
+    id: 700
+  }
+  {
+    level: 1
+    title: "%%Bullet Chart%%"
+    id: 30
+  }
+  {
+    level: 1
+    title: "%%Centered Average%%"
+    id: 40
+  }
+  {
+    level: 1
+    title: "%%Heatmap%%"
+    id: 50
+  }
+  {
+    level: 1
+    title: "Slopegraph"
+    id: 60
+  }
+  {
+    level: 1
+    title: "Linechart"
+    id: 70
+  }
+  {
+    level: 1
+    title: "Maps"
+    id: 80
+  }
+  {
+    level: 1
+    title: "Verbatim"
+    id: 90
+  }
+  {
+    level: 1
+    title: "Scorecard"
+    id: 100
+  }
+  {
+    level: 1
+    title: "Treemap"
+    id: 200
+  }
+  {
+    level: 1
+    title: "Bubblechart"
+    id: 300
+  }
+  {
+    level: 1
+    title: "Waterfall"
+    id: 400
+  }
+  {
+    level: 1
+    title: "Force Directed Chart"
+    id: 500
+  }
+  {
+    level: 1
+    title: "Stacked Barchart"
+    id: 600
+  }
+  {
+    level: 1
+    title: "Funnel Chart"
+    id: 101
+  }
+  {
+    level: 1
+    title: "Timeline"
+    id: 900
+  }
+  {
+    level: 3
+    title: "Maitre esclave line leaderboard"
+    Commentary:"Comment"
+    parent_id: 10
+    id: 10001
+    # each id has to be unique
+    source: 'Choco source'
+    # source will appear on the bottom left of the screen
+    filters:
+      "bottom-right":
+        on: "my_filter"
+        type: "buttons"
+        datasets: [0,1]
+        # specify the datasets according to graphs id given here under. In this case, both the master and slave will be sorted by the filter. Check the next graph to see only the slave filtered.
+        defaultSelected:"euro"
+    # Bottom filter is ALWAYS here, out of chartoptions
+
+    charts: [
+      {
+        data:
+          query:
+            domain: "maitre_esclave_line_leader_main"
+          # date selector is ALWAYS in query (NOT domain) to specify the format of the date that MUST be the same in the slave file
+          date:
+            selector: 'my_period'
+            format: '%Y'
+            # exemple: '%d-%m-%Y' or '%m/%Y'
+          precision:
+          # Precision the number of decimals on all numbers
+            my_value: ",.1f"
+            # ",.2f" means 2 after the comma
+            # ",.2%" will transform your number into % and automatically multiply it by 100
+
+        chartType: "linechart"
+        units:
+          'my_value':[
+            unit:" €"
+            where:
+              my_filter:"euro"
+          ,
+            unit:" $"
+            where:
+              my_filter:"dollars"
+          ]
+        value: "my_value"
+        crossfilter:
+          on: "my_period"
+          datasets:[1]
+        # groups: "groups"
+        date: "my_period"
+        legend: true
+        events: [{
+          "date": "2011"
+          "name": "Travaux"
+          # "label": ""
+        }]
+        size:0.3
+        id:0
+      }
+      {
+        data:
+          query:
+            domain: "maitre_esclave_line_leader_detail"
+          date:
+            selector: 'my_period'
+            format: '%Y'
+          precision:
+            my_value: ",.1f"
+            my_variation: ",.1f"
+
+        chartType: "horizontalBarchart"
+        units:
+          'my_value':[
+            unit:" €"
+            where:
+              my_filter:"euro"
+          ,
+            unit:" $"
+            where:
+              my_filter:"dollars"
+          ]
+          'my_variation':[
+            unit:" €"
+            where:
+              my_filter:"euro"
+          ,
+            unit:" $"
+            where:
+              my_filter:"dollars"
+          ]
+        # groups: "group"
+        value: "my_value"
+        label: "my_label"
+
+        average: 700
+        averageText: "Objectif / Moyenne"
+        # for a different average depending on the date for ex.:
+        # average:
+        #   data:
+        #     query:
+        #       domain: "maitre_esclave_line_leader_detail"
+        #   value: "value_avg"
+        #   joins: [
+        #     "which column?"
+        #   ]
+
+        variation:"my_variation"
+        variationLegend:"Variation"
+        # legend: true
+        # size:0.55
+        sort: 'desc'
+        id:1
+      }
+    ]
+
+  }
+  {
+    level: 3
+    title:"Maître esclave Bar Leaderboard"
+    parent_id: 10
+    id: 10002
+    filters:
+      "bottom-right":
+        on: "metric"
+        type: "buttons"
+        datasets: [1]
+
+    charts: [
+      {
+        data:
+          query:
+            domain: "maitre_esclave_bar_leader_main"
+        # Here there's no date selector format because the month are written in text
+        chartType: "barchart"
+        units:
+          value: ""
+        crossfilter:
+          on: "month"
+          datasets: ["1"]
+        # you cannot use the crossfilter on 0,1 or nothing will appear on screen
+
+
+        label: "month"
+        value: "value"
+        # size: 0.25
+        id: 0
+        style: "secondary"
+      }
+      {
+        data:
+          query:
+            domain: "maitre_esclave_bar_leader_detail"
+
+        chartType: "horizontalBarchart"
+        value: "value"
+        label: "label"
+        groups: "Group"
+        # = a group of bars together
+        packs: "Packs"
+        # = a group of groups together
+        packNames: true
+        units:
+          value: " $$"
+        # size: 0.75
+        id: 1
+      }
+    ]
+
+  }
+  {
+    title: "New horizontal barchart"
+    level: 3
+    parent_id: 10
+    id: 10003
+    commentary: "Résultat des enquêtes qualité perçue par notre clientèle<br>click on the bar to show legend"
+    chartOptions:
+      chartType: "horizontal-barchart"
+      data:
+        query:
+          domain:"new-horizontal"
+      value: "my-value"
+      label: "my-label"
+      meta:[
+        "Nombre d'enquêtes au total"
+        "Raison d'échec"
+      ]
+      sort: "desc"
+
+      units:
+        "value": "%"
+
+
+      legend: true
+  }
+  {
+    level: 3
+    title: "Barchart"
+    parent_id: 20
+    commentary: "Slide title"
+    filters:
+      "bottom-right":
+        on: "my_metric"
+        type: "buttons"
+    chartOptions:
+      data:
+        query:
+          domain: "barchart1"
+        date:
+          selector: "my_date"
+          format: "%Y"
+        precision:
+          "my_value":[
+            precision: ',.0f'
+            where:
+              my_metric: 'metric 1'
+          ,
+            precision: ',.2f'
+            where:
+              my_metric: 'metric 2'
+            ]
+      chartType: "barchart"
+      value: "my_value"
+      label: "my_date"
+      groups: "my_serie"
+      meta: ["Objectif"]
+      metaSerie: ["% atteinte de l'objectif"]
+      units:
+        "my_value":[
+          unit: ' €'
+          where:
+            my_metric: 'metric 1'
+        ,
+          unit: ' %'
+          where:
+            my_metric: 'metric 2'
+          ]
+      legend:
+        type: 'identity-card'
+        filter: 'bottom-right'
+
+    id: 20001
+  }
+  {
+    level: 3
+    title: "Barchart avec Colonnes Unités"
+
+    parent_id: 20
+    commentary: "Bartchart 2"
+    filters:
+      "bottom-right":
+        on: "bottom_filter"
+        type: "buttons"
+    chartOptions:
+      filters:
+        "upper-middle":
+          on: "middle_filter"
+          type: "buttons"
+        # "upper-right": #PAS TROIS FILTRES A LA FOIS
+        #   on: "middle_filter"
+        #   type: "dropdown"
+      data:
+        query:
+          domain: "barchart"
+        precision:
+          "my_value": "my_precision"
+      chartType: "barchart"
+      value: "my_value"
+      label: "my_date"
+      groups: "my_serie"
+      legend:
+        type: 'identity-card'
+        filter: 'upper-middle'
+      units:
+        "my_value": "unite"
+
+    id: 20002
+  }
+  {
+    level: 3
+    title: "Barchart with ordinal scaled sparklines"
+
+    parent_id: 20
+    chartOptions:
+      data:
+        query:
+          domain: "horizontal_barchart_sparklines"
+
+      chartType: "horizontalBarchart"
+      value: "Pourcentage"
+      variation: "my_evolution"
+      variationLegend: "Écart<br>année passée"
+      label: "Evenements"
+      units:
+        Pourcentage: " %"
+        "my_evolution": "%"
+
+      sort: "desc"
+      sparklines:
+        prefix:'sparkline'
+        legend: ''
+      # sparklines:
+      #   data:
+      #     query:
+      #       domain: "horizontal_barchart_sparklines"
+      #   joins: ["Evenements"]
+      #   legend: "Évolution<br>sur 8 mois"
+      #   value: "my_evolution"
+      #   date: "Date"
+      #   unit: "%"
+      #   orderDates: true
+      showAverage: true
+      meta: "Effectif"
+
+    id: 20003
+  }
+
+
+  {
+    level: 3
+    title: "Barandlinechart"
+    parent_id: 700
+    id: 70001
+    filters:
+      "upper-middle":
+        on: "indicateur"
+        type: "dropdown"
+    # #     order:
+    #       custom:[
+    #         "YoY changes"
+    #         "Pay-out ratio"
+    #       ]
+    chartOptions:
+      data:
+        precision: value: ",.2f"
+        query:
+          domain: "barlinechart"
+        date:
+          selector: "date"
+          format: "%d/%m/%Y"
+      # customLineScale: [0, 10]
+      chartType: "barlinechart"
+
+      units:
+        value: [
+          unit: "%"
+          where:
+            kpi: "Qualité produite"
+        ,
+          unit: ""
+          where:
+            kpi: "Qualité perçue"
+
+      ]
+
+      # meta: [
+      #   "Var CA"
+      #   "Var Marge"
+      # ]
+
+      date: "date"
+      dateFormat: "%d/%m/%Y"
+      kpi:
+        kpi: [
+          {
+            type: "line"
+            label: "Qualité perçue"
+          }
+
+          {
+            type: "bar"
+            label: "Qualité produite"
+          }
+        ]
+      value: "value"
+      label: "date"
+      legend: 'minimal'
+
+  }
+
+  {
+    title: "Bullet chart"
+    level: 3
+    parent_id: 30
+    chartOptions:
+      data:
+        query:
+          domain: "bulletchart"
+
+      chartType: "bulletChart"
+      packs: "packs"
+      packNames: true
+      label: "label"
+      value: "Current year"
+      target: "Objective"
+      comparison: "Last year"
+      colorTargets: true
+      sort: "desc"
+      sparklines:
+        prefix: "sparkline"
+        legend: "Évolution<br>sur un an"
+        unit: " M€"
+      units:
+        "Current year": " M€"
+        "Objective": " M€"
+        "Last year": " M€"
+        "evolution": " %"
+
+    id: 30001
+    legend: true
+  }
+  {
+    title: "Centered Average"
+    level: 3
+    parent_id: 40
+    filters:
+      "bottom-right":
+        on: "type"
+        type: "buttons"
+    chartOptions:
+      filters:
+        "upper-middle":
+          on: "time"
+          type: "buttons"
+      data:
+        query:
+          domain: "sample_centered_avg"
+      chartType: "leaderboardCenteredAverage"
+      value: "value"
+      label: "entity"
+      variation: "evolution"
+      units:
+        value: "%"
+        evolution: "%"
+      legend: false
+      average:
+        data:
+          query:
+            domain: "sample_centered_avg_averages"
+        joins: ["type", "time"]
+        value: "average_value"
+        unit:
+          'average_value': "%"
+        precision:
+          'average_value': ".0f"
+      packs: "pack"
+    id: 40001
+  }
+  {
+    level: 3
+    title: "Heatmap"
+    commentary: "Heatmap"
+    filters:
+      "bottom-right":
+        on: "breakdown"
+        type: "buttons"
+
+    parent_id: 50
+    chartOptions:
+      data:
+        query:
+          domain: "heatmap"
+      chartType: "heatmap"
+      legend: true
+      x: "x"
+      xpack: "xpack"
+      y: "y"
+      ypack: "ypack"
+      value: "my_value"
+      target: "my_target"
+      variation: "my_variation"
+      reverse: true
+      sentiment:
+        my_value:
+          domain: ['0.9*my_target','my_target']
+          range: ['negative','neutral','positive']
+      meta: []
+      units:
+        my_value: ' %'
+        my_variation: ' pt'
+    id: 50001
+  }
+  {
+    level: 3
+    title: "Slopegraph"
+    commentary: "<strong>Evolution</strong> N-1"
+    filters:
+      "bottom-right":
+        on: "my_metric"
+        type: "buttons"
+
+    parent_id: 60
+    chartOptions:
+      data:
+        query:
+          domain: "slopegraph"
+      chartType: "slopegraph"
+      label: "Activite"
+      meta: ["proportion"]
+      evolution: "my_evolution"
+      value: "my_value"
+      date: "annee"
+      units:
+        "my_value": " €"
+        "proportion": " %"
+        "my_evolution": " pt"
+
+
+    id: 60001
+  }
+  {
+    level: 3
+    title:"Evolution de la production"
+    parent_id: 70
+    id: 70003
+
+    filters:
+      "bottom-right":
+        on: "breakdown"
+        type:"buttons"
+        order:
+          custom:[
+            "€"
+            "%"]
+    chartOptions:
+      data:
+        query:
+          domain: "linechart"
+        precision:
+          my_value:[
+            precision: ",.0f"
+            where:
+              type: " €"
+          ,
+            precision: ".2%"
+            where:
+              type: "%"
+          ]
+        my_date:
+          selector:"position"
+          format:"%d/%m/%Y"
+          # format:"%Y"
+          # format:"%m/%Y"
+      chartType: "linechart"
+      units:
+        my_value: [
+          unit: " €"
+          where:
+            breakdown: "numbers"
+        ,
+          unit: "%"
+          where:
+            breakdown: "%"
+        ]
+        date: ""
+      value: "my_value"
+      groups: "lines"
+      date: "my_date"
+      legend:true
+  }
+  {
+     level: 3
+     title: "World Map"
+     parent_id: 80
+     chartOptions:
+       data:
+        query:
+          domain: "worldmap"
+        precision:
+          my_value: ",.0f"
+       chartType: "carto"
+       join: "Country Code"
+       label: "Country Name"
+       value: "my_value"
+       peers: " "
+       levels: 4
+       projection: "world"
+       kpi: "kpi"
+       cartoFiles:
+         " ": "world-topojson.json"
+
+
+
+       units:
+         "my_value": " Mds €"
+
+     id: 80001
+  }
+  {
+    level: 3
+    title: "Zones only"
+    filters:
+      "bottom-right":
+        on: "breakdown"
+        type: "buttons"
+        datasets: ['dept_data']
+    parent_id: 80
+
+    datasets:
+      dept_data:
+        query:
+          domain: "demo-data-dept"
+
+    chartOptions:
+      chartType: "mapchart"
+      zones:
+        dataset: 'dept_data'
+        shapes: "depts-details-topojson.json"
+        join:
+          shapes: "CODE_DEPT"
+          data: "CODE_DEPT"
+        color: "value"
+
+      tiles: {}
+
+      zoom:
+        scale: 1415
+        translate: [455, 1794]
+
+    id: 80002
+  }
+  {
+    level: 3
+    title: "With tiles"
+
+    filters:
+      "bottom-right":
+        on: "breakdown"
+        type: "buttons"
+        datasets: ['dept_data']
+    parent_id: 80
+
+    datasets:
+      dept_data:
+        query:
+          domain: "demo-data-dept"
+
+    chartOptions:
+      chartType: "mapchart"
+      zones:
+        dataset: 'dept_data'
+        shapes: "depts-details-topojson.json"
+        join:
+          shapes: "CODE_DEPT"
+          data: "CODE_DEPT"
+        color: "value"
+      tiles: {}
+
+    id: 80003
+  }
+  {
+    level: 3
+    title: "With markers"
+
+    parent_id: 80
+
+    datasets:
+      cities_data:
+        query:
+          domain: "demo-with-markers-cities"
+
+    chartOptions:
+      chartType: "mapchart"
+      markers:
+        dataset: 'cities_data'
+        latitude: 'latitude'
+        longitude: 'longitude'
+        label: 'name'
+        color: "country"
+      tiles: {}
+
+    id: 80004
+  }
+  {
+    level: 3
+    title: "With filtered markers"
+
+    filters:
+      "bottom-right":
+        on: "type"
+        type: "buttons"
+        datasets: ['demo-with-markers-cities']
+    parent_id: 80
+
+    datasets:
+      cities_data:
+        query:
+          domain: "demo-with-markers-cities"
+
+    chartOptions:
+      chartType: "mapchart"
+      markers:
+        dataset: 'cities_data'
+        latitude: 'latitude'
+        longitude: 'longitude'
+        label: 'name'
+        color: "country"
+      tiles: {}
+
+    id: 80005
+  }
+  {
+    level: 3
+    title: "With open street map tiles"
+
+    filters:
+      "bottom-right":
+        on: "breakdown"
+        type: "buttons"
+        datasets: ['dept_data']
+    parent_id: 80
+
+    datasets:
+      dept_data:
+        query:
+          domain: "demo-data-dept"
+
+    chartOptions:
+      chartType: "mapchart"
+      zones:
+        dataset: 'dept_data'
+        shapes: "depts-details-topojson.json"
+        join:
+          shapes: "CODE_DEPT"
+          data: "CODE_DEPT"
+        color: "value"
+      tiles:
+        src: "http://a.tile.openstreetmap.org/{{Z}}/{{X}}/{{Y}}.png"
+
+    id: 80006
+  }
+  {
+    level: 3
+    title: "Retours clients"
+    kpi:
+      unit: " verbatims"
+      badge:
+        comment: "sept 2014"
+
+    parent_id: 90
+    filters:
+      "upper-middle":
+        on: "Theme"
+        type: "dropdown"
+    chartOptions:
+      data:
+        query:
+          domain:"verbatim"
+
+      chartType: "verbatim"
+      categories: [
+        "Theme"
+        "Agence"
+        "Segment"
+        "Age"
+      ]
+      verbatimSelector: "Verbatims"
+
+
+
+    id: 90001
+  }
+
+  {
+    level: 3
+    title: "Chiffres-clefs"
+    parent_id: 100
+    id: 100001
+
+    chartOptions:
+      data:
+        query:
+          domain: "scorecard"
+      chartType: "score-card"
+      variation: "evolution"
+      variationLegend: "Compared with last year"
+      value: "Value"
+      label: "Label"
+      packs: "Group"
+      sort: "desc"
+      units:
+        Value: [
+          unit: " To"
+          where:
+            Label: "Volumetrie"
+        ,
+          unit: "%"
+          where:
+            Label: "Mutualises"
+        ,
+          unit: " pts"
+          where:
+            Label: "Notes"
+        ,
+          unit: " pts"
+          where:
+            Label: "BNL"
+        ,
+          unit: "%"
+          where:
+            Label: "Stock"
+        ,
+          unit: "%"
+          where:
+            Label: "Souscription"
+        ,
+          unit: "%"
+          where:
+            Label: "Consommation"
+        ]
+        evolution: [
+          unit: "%"
+        ,
+          unit: " pts"
+          where:
+            Label: "Notes"
+        ]
+  }
+  {
+    level: 3
+    title: "Treemap"
+    filters:
+      "bottom-right":
+        on: "breakdown"
+        type: "buttons"
+
+    parent_id: 200
+    chartOptions:
+      data:
+        query:
+          domain: "treemap"
+        precision:
+          pop: ',.1f'
+      chartType: "treemap"
+      value: "pop"
+      units:
+        pop: " €"
+      color: true
+      target: "my_target"
+      sortByValues: true
+      labels: ['year','cat','type']
+      filters:
+        "upper-middle":
+          reset: "All"
+          on: "cat"
+          type: "dropdown"
+     # sentiment:
+     #   target:
+     #     domain: [-5,5]
+     #     range: ['negative','warning','positive']
+      meta: []
+    id: 200001
+  }
+  {
+    level: 3
+    title: "Contribution<br>à la satisfaction"
+
+    kpi:
+      unit: " %"
+
+    filters:
+      "bottom-right":
+        on: "type"
+        type: "buttons"
+
+    parent_id: 300
+    chartOptions:
+      data:
+        query:
+          domain: "bubblechart"
+      chartType: "bubblechart"
+      legend: true
+      label: "label"
+      units:
+        cx: "%"
+        cy: "%"
+        r: " répondants"
+
+      cx: "Satisfaction"
+      cy: "Contribution"
+      r: "effectif"
+      color: "evolution"
+      drill:
+        group: "drillGroup"
+        level: "drillLevel"
+        levelsOrder: ['main','sub']
+
+    id: 300001
+  }
+  {
+    level: 3
+    title: "Free cash flow"
+
+    kpi:
+      unit: " M€"
+      badge:
+        comment: "Juin 2014"
+
+    parent_id: 400
+    chartOptions:
+      data:
+        query:
+          domain: "waterfall"
+      chartType: "waterfallchart"
+      filters:
+        "upper-middle":
+          on: "type"
+          type: "buttons"
+      value: "2013"
+      label: "label"
+      sublabel: "label_sublevel"
+      units:
+        "2013": " k€"
+
+    id: 400001
+  }
+  {
+    level: 3
+    title: "Canaux de<br>communication"
+    parent_id: 500
+    filters:
+      "bottom-right":
+        on: "marche"
+        type: "buttons"
+
+
+    chartOptions:
+      data:
+        query:
+          domain: "forcedirectedchart"
+      chartType: "forceDirectedChart"
+      label: "comportement"
+      value: "pourcentage"
+      links: [
+        source: "Tel/mails exclusivement"
+        target: "Tous les canaux"
+      ,
+        source: "Face à face exclusivement"
+        target: "Tous les canaux"
+      ,
+        source: "Canaux digitaux exclusivement"
+        target: "Tous les canaux"
+      ,
+        source: "Tel/mails exclusivement"
+        target: "Tel/mails et canaux digitaux"
+      ,
+        source: "Tel/mails exclusivement"
+        target: "Face à face et téléphone"
+      ,
+        source: "Face à face exclusivement"
+        target: "Face à face et téléphone"
+      ,
+        source: "Face à face exclusivement"
+        target: "Face à face et canaux digitaux"
+      ,
+        source: "Canaux digitaux exclusivement"
+        target: "Face à face et canaux digitaux"
+      ,
+        source: "Canaux digitaux exclusivement"
+        target: "Tel/mails et canaux digitaux"
+      ]
+
+      meta: [
+        "pourcentage"
+        "effectif"
+      ]
+
+      units:
+        pourcentage: " %"
+        "pourcentage groupe": " %"
+        "effectif": " clients"
+        "effectif groupe": " clients"
+
+      groups: "groupe"
+      groupsMeta: [
+        "pourcentage groupe"
+        "effectif groupe"
+      ]
+
+      selection:
+        label: "canal"
+
+      legend: true
+
+    id: 500001
+  }
+  {
+    level: 3
+    title: "Stacked Barchart"
+    parent_id: 600
+    filters:
+      "bottom-right":
+        on: "breakdown"
+        type: "buttons"
+        # datasets: [1]
+    chartOptions:
+      data:
+        query:
+          domain: "stackedbarchart"
+      chartType: "stackedBarchart"
+      groups: "group"
+      label: "poi_id"
+      time: "date"
+      meta: ["total"]
+      value: "nb"
+      units:
+        nb: " visites"
+
+      visualSelection: true
+      reorderOnSelection: true
+      legend: true
+      selection:
+        label: "poi_id"
+      # size: 0.7
+      style: "gray-bg vertical-padding"
+
+    id: 600001
+
+  }
+  {
+    level: 3
+    title: "Funnelchart"
+    parent_id: 101
+    id: 700001
+    filters:
+      "bottom-right":
+        type: "buttons"
+        on: "breakdown"
+    chartOptions:
+      chartType: "funnelChart"
+      value: "value"
+      label: 'label'
+      variation: "variation"
+      variationLegend: 'Versus last year'
+      data:
+        query:
+          domain: 'funnelchart'
+      units:
+        value: "%"
+        variation: "%"
+    highlightedKpis: [
+      name: "Conversion rate"
+      value: "value"
+      unit: "%"
+      badge: 'evolution'
+      comment: "vs 2015"
+      sentiment:
+        value:
+          domain: [0]
+          range: ['negative','positive']
+      precision:
+        value: ',.0f'
+      data:
+        value:
+          query:
+            domain: 'funnelchart'
+          field: 'value'
+    ,
+      name: "Churn rate"
+      value: "value"
+      unit: "%"
+      badge: 'evolution'
+      comment: "vs 2015"
+      sentiment:
+        value:
+          domain: [0]
+          range: ['negative','positive']
+      precision:
+        value: ',.0f'
+      data:
+        value:
+          query:
+            domain: 'funnelchart'
+          field: 'variation'
+    ]
+  }
+  {
+    level: 3
+    title: "Timeline"
+    parent_id: 900
+    id: 91002
+    filters:
+      "bottom-right":
+        type: "buttons"
+        on: "type"
+    chartOptions:
+      chartType: "timeline"
+      data:
+        date:
+          selector: "start_date"
+          format: "%d.%m.%Y"
+        query:
+          domain: "timeline"
+      startDate: "start_date"
+      endDate: "end_date"
+      headline: "event" #name of the event
+      text: "text_description" #short description of the event
+      content: "content"#long description of the event
+      mediaType: "media_type"#media type : asset or video
+      mediaSource: "media_source" #source : youtube or assets
+      caption: "caption"
+      meta: [
+        "text"
+      ]
+      # filters:
+      #   "upper-right":
+      #     on: "tipo"
+      #     type: "dropdown"
+
+  }
+
+]

@@ -1,0 +1,244 @@
+etl_config:
+  DATA_SOURCES: [
+    #   domain: "maitre_esclave_line_leader_main"
+    #   type: "excel"
+    #   file: "maitre_esclave_line_leader.xlsx"
+    #   sheetname: "main"
+    # ,
+
+      domain: "text_home"
+      type: "google_spreadsheet"
+      spreadsheet_id: '1n0M0MOS8L7CzeJuv6yWt7xXI2BnIJ09bcf-1t9_I1-k'
+      sheetname: "text_home"
+    ,
+      domain: "timeline"
+      type: "google_spreadsheet"
+      spreadsheet_id: '1Pcp_16JK9GRMnILVpU81zYil6Pzht6TDMMQ8tVTmT3g'
+      sheetname: "Feuille 1"
+    ,
+      domain: "scorecard_home"
+      type: "csv"
+      file: "scorecard_home.csv"
+  
+    ,
+      domain: "market-breakdown"
+      type: "excel"
+      file: "data-market-breakdown.xls"
+      sheetname: "Data"
+  ,
+      domain: "dashboards"
+      type: "excel"
+      file: "dashboards.xls"
+      sheetname: "Data"
+
+  ,
+      domain: "ranks"
+      type: "csv"
+      file: "test.csv"
+  ,
+      domain: "funnelchart"
+      type: "csv"
+      file: "demofunnelchartdefault"
+  ,
+      domain: "lines1"
+      type: "csv"
+      file: "lines_1.csv"
+  ,
+      domain: "lines2"
+      type: "csv"
+      file: "lines_2.csv"
+  ,
+      domain: "maitre_esclave_line_leader_main"
+      type: "google_spreadsheet"
+      spreadsheet_id: '1HdgWo__ICO_KaJ0ugo3NnAsgqctz8ONGP8XrQpEyJCk'
+      sheetname: "main"
+    ,
+      domain: "maitre_esclave_line_leader_detail"
+      type: "google_spreadsheet"
+      spreadsheet_id: '1HdgWo__ICO_KaJ0ugo3NnAsgqctz8ONGP8XrQpEyJCk'
+      sheetname: "detail"
+    ,
+      domain: "barchart1"
+      type: "google_spreadsheet"
+      spreadsheet_id: '1ihwBbgIkEUrtuhk7A2Yhq0LHTQCkwh8bqcHkQgG310E'
+      sheetname: "Feuille 1"
+    ,
+      domain: "barchart"
+      type: "google_spreadsheet"
+      spreadsheet_id: '1N3rqXo6RtP9nT2w3Ya7eUoij9C7x9ZEyqbnNQ0j7fIE'
+      sheetname: "Feuille 2"
+    # ,
+    #   domain: "dashboards"
+    #   type: "google_spreadsheet"
+    #   spreadsheet_id: '1wId4j1eTStmtfshDT5jVlKzTWcVidCY_CFxcbtSoox0'
+    #   sheetname: "Data"
+    ,
+      domain: "horizontal_barchart_sparklines"
+      type: "google_spreadsheet"
+      spreadsheet_id: '1O1Orp9_gGfx4ot59vZjDEXHKWkwXPXd7EqX7B70-cMg'
+      sheetname: "Feuille 1"
+
+    ,
+      domain: "bulletchart"
+      type: "google_spreadsheet"
+      spreadsheet_id: '1Myzv7u7uilqMvXodIOl9w-Jwm4ObxNDwW0BXQI2_TcU'
+      sheetname: "Sheet1"
+    ,
+      domain: "sample_centered_avg"
+      type: "google_spreadsheet"
+      spreadsheet_id: '1LZeX3Rfkn8Xq4h7D9YVkmOtCRYXas44ZQC7ITo_jyNo'
+      sheetname: "Feuille 1"
+    ,
+      domain: "sample_centered_avg_averages"
+      type: "google_spreadsheet"
+      spreadsheet_id: '1LZeX3Rfkn8Xq4h7D9YVkmOtCRYXas44ZQC7ITo_jyNo'
+      sheetname: "Feuille 2"
+    ,
+      domain: "heatmap"
+      type: "google_spreadsheet"
+      spreadsheet_id: '1PrHaVzLdfgob_kLwPWQ45KYFLvUs2ZzjEA6iMqzf69w'
+      sheetname: "Feuille 1"
+    ,
+      domain: "slopegraph"
+      type: "google_spreadsheet"
+      spreadsheet_id: '1ljmW1xUqrMQwjjXBZ3hpSu8cvt3vD1j1unhytYfJm9g'
+      sheetname: "Feuille 1"
+    ,
+      domain: "linechart"
+      type: "google_spreadsheet"
+      spreadsheet_id: '18ya48YgRCYV8-Xy7tnM_HgByWmvSdp4gF6TM_eC2VFM'
+      sheetname: "Feuille 1"
+    ,
+      domain: "worldmap"
+      type: "google_spreadsheet"
+      spreadsheet_id: '1J5jRLBTkdgV_OTpnIjSId5K3jCanR4ndN4vYqIxJUBY'
+      sheetname: "Feuille 1"
+    ,
+      domain: "verbatim"
+      type: "google_spreadsheet"
+      spreadsheet_id: '1XpWY6VBDQUSToSPi2AClP94CwS8-zL6VVNKopn21ZL8'
+      sheetname: "Feuille 1"
+    ,
+      domain: "maitre_esclave_bar_leader_main"
+      type: "google_spreadsheet"
+      spreadsheet_id: '1WOU-47k5drdG43E-al5OMjV93f_y01kL2kpIUIgDasg'
+      sheetname: "Feuille 1"
+    ,
+      domain: "maitre_esclave_bar_leader_detail"
+      type: "google_spreadsheet"
+      spreadsheet_id: '1S3IHQObZKTti7Zg84WrePv7AF07OEnAYb0_gfkEP91k'
+      sheetname: "Feuille 1"
+    ,
+      domain: "new-horizontal"
+      type: "google_spreadsheet"
+      spreadsheet_id: '1S3IHQObZKTti7Zg84WrePv7AF07OEnAYb0_gfkEP91k'
+      sheetname: "new-horizontal"
+    ,
+      domain: "scorecard"
+      type: "google_spreadsheet"
+      spreadsheet_id: '1aEC09pIc_c7481eGzlwEwkmdG8d5o6IV6wV4z2-dI6A'
+      sheetname: "Feuille 1"
+    ,
+      domain: "treemap"
+      type: "google_spreadsheet"
+      spreadsheet_id: '1TCk4_7OS5egFZsLbKFP-sKP715TzB6b3pS_CLGF-tIM'
+      sheetname: "Feuille 1"
+    ,
+      domain: "bubblechart"
+      type: "google_spreadsheet"
+      spreadsheet_id: '1we5wmiewJyrv16-K-XNl1e_zN5Prd-waDUuBz6zQHSM'
+      sheetname: "Feuille 1"
+    ,
+      domain: "waterfall"
+      type: "google_spreadsheet"
+      spreadsheet_id: '1QOpx2BYixovWaa21CFR_fW5UJfw-39nVqLNfNeZutYI'
+      sheetname: "Feuille 1"
+    ,
+      domain: "forcedirectedchart"
+      type: "google_spreadsheet"
+      spreadsheet_id: '1taqzxdKZKvRfGf_7nMyjH6UUD-ja0Dv8cphNl_3_Cq4'
+      sheetname: "Feuille 1"
+    ,
+      domain: "stackedbarchart"
+      type: "google_spreadsheet"
+      spreadsheet_id: '1ZQqEeTPYVER_Vjwrr-6YSGxJs3PAOXWThlWjI19sZGc'
+      sheetname: "Feuille 1"
+    ,
+      domain: "testaurelie"
+      type: "google_spreadsheet"
+      spreadsheet_id: '19VgstmsbpXEpOvnExdBv3y9SVl5EhBcODRuCEwHFYUo'
+      sheetname: "Feuille 1"
+    ,
+      domain: "barlinechart"
+      type: "google_spreadsheet"
+      spreadsheet_id: '1r7jm1c1H_XLBYklL0El8uGioEQXqc8o5y2ycDn6OMUg'
+      sheetname: "barlinechart"
+    ,
+      domain: "demo-with-markers-cities"
+      type: "google_spreadsheet"
+      spreadsheet_id: '1cFx3ptBP1tl7Ut6VCs8Vgl2RzM--xTjs3vDTisuGZmU'
+      sheetname: "demo-with-markers-cities"
+    ,
+      domain: "demo-data-dept"
+      type: "google_spreadsheet"
+      spreadsheet_id: '1cFx3ptBP1tl7Ut6VCs8Vgl2RzM--xTjs3vDTisuGZmU'
+      sheetname: "demo-data-dept"
+
+  ]
+  # DATA_PROVIDERS: [
+  #   # name: "Some cube"
+  #   # type: "SSAS"
+  #   # options:
+  #   #   server_url: "http://some_server_url/OLAP/msmdpump.dll"
+  # # ,
+  #   name: 'Some MySQL provider'
+  #   type: 'MySQL'
+  #   options:
+  #     host: 'localhost'  # REQUIRED
+  #     db: 'circle_test'  # REQUIRED
+  #     user: 'ubuntu'  # REQUIRED
+  #     password: ''  # OPTIONAL
+  #     port: 3306  # OPTIONAL
+  # ]
+  REPORTS: [
+    query:
+      domain: "dashboards"
+      default: 1.0
+    template: "report"
+  ]
+  DASHBOARDS: [
+    query:
+      domain: "dashboards"
+      default: 1
+    report: "country"
+
+    template: "dashboard"
+  ,
+    query:
+      domain: "dashboards"
+    report: "country"
+
+    template: "dashboard-country"
+  ]
+  PERMISSIONS_DATA:
+    query:
+      domain: "dashboards"
+      default: 1.0
+  # MAX_DASHBOARDS: 500
+  MONGO_INDEXES: [
+    "domain"
+    "version"
+    [
+      "domain"
+      "subdomain"
+    ]
+    [
+      "domain"
+      "version"
+    ]
+    [
+      "domain"
+      "subdomain"
+      "version"
+    ]
+  ]
