@@ -1,6 +1,0 @@
-DATA_SOURCES: []
-REPORTS: []
-DASHBOARDS: []
-MONGO_INDEXES: [
-	"domain"
-]
