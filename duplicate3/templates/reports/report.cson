@@ -1,0 +1,20 @@
+name: "Sales Report"
+entityName: "{{ country }}"
+id: "{{ index }}"
+
+#date: 'Janvier 2016'
+date:
+  id: "date"
+  type: "buttons"
+  query:
+    domain: 'ranks'
+  fields: ['breakdown']
+background:
+  assetName: "bg-1"
+  overlay: false
+
+'execsumNote': '<div class=\'execsumNote-container\'><div class=\'execsumNote-title\'><a href=\'http://www.toucantoco.com/\' target=\'_blank\'>Retour au site Toucan Toco</a></div><div class=\'social-icon-container\'><a href=\'https://twitter.com/toucan_toco?lang=fr\' target=\'_blank\'><img class=\'social-icon\' src=\'https://api-euler.toucantoco.com/static/images/twitter-icon.png\' alt=\'logo twitter\'></a><a href=\'https://https://fr.linkedin.com/company/toucan-toco\' target=\'_blank\'><img class=\'social-icon\' src=\'https://api-euler.toucantoco.com/static/images/linkedin-icon.png\' alt=\'logo linkedin\'></a><a href=\'https://plus.google.com/+ToucanTocoParis/about\' target=\'_blank\'><img class=\'social-icon\' src=\'https://api-euler.toucantoco.com/static/images/google+-icon.png\' alt=\'logo google+\'></a><a href=\'https://www.facebook.com/toucantocodata\' target=\'_blank\'><img class=\'social-icon\' src=\'https://api-euler.toucantoco.com/static/images/fb-icon.png\' alt=\'logo facebook\'></a></div></div>'
+
+dashboards:
+  search: "Recherchez par zone"
+# !!! To activate a report selector, go to the front_config to the 'home : skip to report' section !!!
