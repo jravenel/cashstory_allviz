@@ -1,3 +1,6 @@
+home:
+  skipToReport: 0
+
 settings:
   comparison:
     description: "Sur tous les écrans de comparaison, comparer avec :"
@@ -9,19 +12,8 @@ settings:
     ]
     default: "Par défaut"
 
-glossary:
-  title: 'Glossaire'
-  terms: [
-    term: "Effectifs"
-    meaning: "Effectifs inscrits sous contrats à la fin de la période"
-  ]
-
 sharingOptions: true
 comments: true
-
-
-home:
-  skipToReport:0
 
 slides: [
   {
@@ -30,160 +22,65 @@ slides: [
   }
   {
     level: 1
-    title: "Effectifs"
+    title: "Growth"
     id: 10
   }
   {
     level: 1
-    title: "Absentéisme"
+    title: "Competitors"
     id: 20
   }
   {
-    level: 3
-    parent_id: 10
-    title: "Compositions des effectifs"
-    commentary: "Cliquez pour observer ce que contient chaque BU"
-
-    chartOptions:
-      data:
-        file:
-          name: "<%= report.id %>_101"
-      chartType: "waterfall"
-      value: "value"
-      label: "label"
-      sublabel: "label_sublevel"
-      units:
-        value: " salariés"
-      source: "Source interne"
-    id: 101
+    level: 1
+    title: "Versus"
+    id: 30
   }
+  # {
+  #   level: 2
+  #   title: "Performance"
+  #   parent_id: 10
+  #   id: 201
+  # }
+  # {
+  #   level: 2
+  #   title: "Tendance de fond"
+  #   parent_id: 10
+  #   id: 202
+  # }
+  # {
+  #   level: 2
+  #   title: "Segmentation marketing"
+  #   parent_id: 10
+  #   id: 206
+  # }
+  # {
+  #   level: 2
+  #   title: "Analyse par zone"
+  #   parent_id: 10
+  #   id: 204
+  # }
+  # {
+  #   level: 2
+  #   title: "Structure financière"
+  #   parent_id: 10
+  #   id: 207
+  # }
   {
     level: 3
-    title: "Effectifs par entreprise"
+    title: "Growth"
+    commentary: "The brand compared to market"
     parent_id: 10
-    commentary: "Findus France emploie le plus de salariés"
-
-    filters:
-      "bottom-right":
-        on: "breakdown"
-        type: "buttons"
-        order: 
-          custom: [
-            "Total"
-            "Cadres"
-            "TAM"
-            "Employés"
-          ]
-    
-    chartOptions:
-      data:
-        file:
-          name: "<%= report.id %>_102"
-       
-          
-      chartType: "horizontalBarchart"
-      sparklines:
-        prefix: "sparkline"
-        legend: "Évolution<br>sur 3 ans"
-        unit: " "
-      label: "label"
-      value: "value"
-      variation: "evolution"
-      variationLegend: "par rapport à N-1"
-
-
-      units:
-        value: 
-          breakdown:
-            Total: " Salariés"
-            Cadres: " Cadres"
-            TAM: " TAM"
-            Employés: " Employés"
-        evolution: " %"
-
-      source: "Source interne"
-
-    id: 102
-  }
-  {
-    level: 3
-    title: "Répartition des effectifs"
-    parent_id: 10
-    commentary: {
-      "âge": "L'âge moyen est de 43 ans"
-      "Ancienneté": "L'ancienneté moyenne est de 14 ans"
-    }
-    filters:
-      "bottom-right":
-        on: "breakdown"
-        type: "buttons"
-        order:
-          custom: [
-            "âge"
-            "Ancienneté"
-          ]
-    
-    chartOptions:
-      data:
-        file:
-          name: "<%= report.id %>_103"
-       
-          
-      chartType: "horizontalBarchart"
-      label: "label"
-      value: "value"
-      variation: "evolution"
-      variationLegend: "par rapport à Décembre 2014"
-
-
-      units:
-        value: " salariés"
-        evolution: " %"
-
-      source: "Source interne"
-
-    id: 103
-  }
-  {
-    level: 3
-    title: "Répartition géographique"
-    commentary: "Cliquez et zommer sur la carte pour plus de détail"
-    parent_id: 10
-    chartOptions:
-      data:
-        file:
-          name: "<%= report.id %>_rep_geo"
-      chartType: "carto"
-      join: "CODE_DEPT"
-      label: "NOM_DEPT"
-      value: "value"
-      kpi: "breakdown"
-      peers: " "
-      levels: 4
-      projection: "departement"
-      cartoFiles:
-        " ": "depts-details-topojson.json"
-      units:
-        "value": " Salariés"
-    id: 104
-  }
-  {
-    level: 3
-    title: "Absentéisme dans le temps et par motif"
-    parent_id: 20
-    commentary: "L'absentéisme est en baisse depuis 2013"
 
     charts: [
       {
         data:
           file:
-            name: "<%= report.id %>_201_0"
-          precision: 1
-
+            name: "<%= report.id %>_101_0"
         chartType: "linechart"
         units:
-          value: " %"
-          date: ""
+          value: " M€"
+          date: " "
+
 
         crossfilter:
           on: "date"
@@ -199,201 +96,286 @@ slides: [
       {
         data:
           file:
-            name: "<%= report.id %>_201_1"
+            name: "<%= report.id %>_101_1"
           precision: 1
+          order:
+            by: "packs"
+            custom: [
+              "Total",
+              "Fragrances",
+              "Skincare",
+              "Makeup"
+            ]
 
-        chartType: "horizontalBarchart"
-        value: "value"
-        sort: "desc"
+        chartType: "leaderboardCenteredAverage"
         label: "label"
+        value: "value"
+        packs: "packs"
+        packNames: true
         units:
           value: "%"
-          
+        averageText: "0%"
+        average: " "
+
         size: 0.75
         id: 1
       }
     ]
-    
-    id: 201
+
+    id: 101
   }
   {
     level: 3
-    title: "Absentéisme Maladie <br> & AT par CSP"
+    parent_id: 10
+    title: "Top 10 products"
+    commentary: "This chart allows you to understand wether your value share <br> by products is increasing or decreasing"
+
+    chartOptions:
+      data:
+        file:
+          name: "<%= report.id %>_102"
+      chartType: "waterfall"
+      # evolution: "evolution"
+      value: "value"
+      label: "label"
+      sublabel: "label_sublevel"
+      units:
+        value: " "
+        # evolution: " points"
+
+    id: 102
+  }
+  {
+    level: 3
+    title: "Top division"
     parent_id: 20
+    commentary: "Ranking of division by value and value share"
     filters:
       "bottom-right":
         on: "breakdown"
         type: "buttons"
-        order: 
+
+    chartOptions:
+      data:
+        file:
+          name: "<%= report.id %>_201"
+        order:
+          by: "label"
           custom: [
-            "Toutes CSP"
-            "Cadres"
-            "TAM"
-            "Employés"
+            "Dior",
+            "Chanel",
+            "Guerlain",
+            "Lancome",
+            "Clarins Paris",
+            "Yves Saint Laurent",
+            "Sisley",
+            "Paco Rabanne",
+            "Hermes",
+            "Giorgio Armani",
+            "Estee Lauder",
+            "Givenchy",
+            "Clinique",
+            "Kenzo",
+            "Thierry Mugler"
           ]
+      chartType: "horizontalBarchart"
+      label: "label"
+      variation: "evolution"
+      variationLegend: "Variation vs last month"
+      # sparklines:
+      #   prefix: "sparkline"
+      #   legend: "Évolution<br>since 2013"
+      #   unit: " "
+      value: "value"
+      sort: "desc"
+      filters:
+        "upper-middle":
+          on: "upper"
+          type: "buttons"
+
+      units:
+        value: [
+          unit: " M€"
+          where:
+            breakdown: "Value"
+        ,
+          unit: " %"
+          where:
+            breakdown: "Value Share"
+          ]
+        evolution: " points"
+
+
+
+    id: 201
+  }
+  {
+    level: 3
+    title: "Category Summary"
+    parent_id: 20
+    commentary: "The brand has the biggest turnover this year in all fields"
+    filters:
+      "bottom-right":
+        on: "breakdown"
+        type: "buttons"
+
     chartOptions:
       data:
         file:
           name: "<%= report.id %>_202"
-        precision: 1
-      chartType: "barchart"
-      value: "value"
+
+      chartType: "horizontalBarchart"
       label: "label"
-      groups: "center"
+      variation: "evolution"
+      variationLegend: "Variation vs last month"
+      value: "value"
+      sort: "desc"
+      filters:
+        "upper-middle":
+          on: "upper"
+          type: "buttons"
+          order:
+            custom: [
+              "Women"
+              "Men"
+            ]
+      sort: "desc"
       units:
-        value: " %"
-      legend: true
+        value: " M€"
+        evolution: " points"
+
+
 
     id: 202
   }
   {
     level: 3
-    title: "Fréquence vs Gravité"
+    title: "Realized vs Target"
+    commentary: "Sales Real vs Target by brand and by market"
     filters:
       "bottom-right":
         on: "breakdown"
         type: "buttons"
-    parent_id: 20
+
+    parent_id: 30
     chartOptions:
       data:
         file:
-          name: "<%= report.id %>_209"
-      chartType: "bubblechart"
-      label: "label"
-      legend:
-        cy: "Fréquence"
-        cx: "Gravité"
-        r: "salariés"
-      units:
-        cx: " jours"
-        cy: " %"
-        r: " salariés"
-
-      cy: "Fréquence"
-      cx: "Gravité"
-      r: "effectif"
-      color: "color"
-      withBenchmark: true
-
-    id: 209
-  }
-  {
-    level: 3
-    title: "Absentéisme par DG"
-    parent_id: 20
-    commentary: "Seule la DGRPO a un taux d'absentéisme supérieur à la moyenne nationale"
-
-    chartOptions:
-      data:
-        file:
-          name: "<%= report.id %>_203"
-      chartType: "leaderboardCenteredAverage"
-      groups: "groups"
+          name: "heatmap"
+      chartType: "heatmap"
+      legend: true
+      x: "voiture"
+      xpack: "segment"
+      y: "pays"
+      ypack: "zone"
       value: "value"
-      label: "label"
-      variation: "evolution"
-      variationLegend: "variation sur 1 an"
-      reverse: true
-      sparklines:
-        prefix: "sparkline"
-        legend: "Évolution<br>depuis 2012"
-        unit: "%"
+      target: "target"
+      variation: "variation"
+      sentiment:
+        value:
+          domain:['target']
+          range: ['negative','positive']
+      meta: []
       units:
-        value: " %"
-        evolution: " pts"
-
-      sort: 'desc'
-      average: 6.1
-      averageText: "Moyenne nationnale"
-
-
-    id: 203
+        value: '%'
+        variation: 'pt'
+    id: 20600
   }
   {
     level: 3
-    title: "Absentéisme Maladie <br> & AT par CSP"
-    parent_id: 20
+    title: "Market Leadership"
+
+    kpi:
+      unit: " %"
+
+    filters:
+      "bottom-right":
+        on: "type"
+        type: "buttons"
+
+    parent_id: 30
+    chartOptions:
+      data:
+        file:
+          name: "<%= report.id %>_35201"
+      chartType: "bubblechart"
+      legend: true
+      label: "label"
+      units:
+        cx: "M€"
+        cy: "M€"
+        r: "M€"
+
+      cx: "Marketing"
+      cy: "R&D"
+      r: "Revenues"
+      color: "evolution"
+      drill:
+        group: "drillGroup"
+        level: "drillLevel"
+        levelsOrder: ['main','sub']
+
+    id: 35201
+  }
+  {
+    level: 3
+    title: "Versus"
+    commentary: "Key products' value share compared to competition"
+    parent_id: 30
     filters:
       "bottom-right":
         on: "breakdown"
         type: "buttons"
-    
+
+    recommendation:
+       advert: "Info"
+       content: """
+        On Fragrances and Makeup a new competitor appeared that will challenge the incumbent
+       """
     chartOptions:
       data:
         file:
-          name: "<%= report.id %>_204"
+          name: "<%= report.id %>_301"
         precision: 1
-        order:
-          by: "label"
-          custom: [
-            "Toutes Directions",
-            "DEXI",
-            "DOA",
-            "DEXI & DOA",
-          ]
-      chartType: "barchart"
+      chartType: "horizontalBarchart"
       filters:
         "upper-middle":
           on: "upper"
           type: "buttons"
-      value: "value"
+          order:
+            custom: [
+              "Women"
+              "Men"
+            ]
       label: "label"
-      groups: "center"
+      variation: "evolution"
+      variationLegend: "Variation vs last month"
+      # sparklines:
+      #   prefix: "sparkline"
+      #   legend: "Evolution<br>since 2013"
+      #   unit: " "
+      value: "value share"
+      groups: "groups"
+      packs:"packs"
+      packNames: true
+
+      sort: "desc"
       units:
-        value: " %"
+        "value share": [
+          unit: " K€"
+          where:
+            breakdown: "value"
+        ,
+          unit: " %"
+          where:
+            breakdown: "value share"
+          ]
+        evolution: " points"
 
-      legend: true
 
-    id: 204
+
+    id: 301
   }
-  # {
-  #   level: 3
-  #   title: "Classement<br>Performance"
-
-  #   kpi:
-  #     unit: " visits"
-  #     badge:
-  #       comment: "Juillet 2014"
-
-  #   parent_id: 201
-  #   filters:
-  #     "bottom-right":
-  #       on: "breakdown"
-  #       type: "buttons"
-  #   chartOptions:
-  #     data:
-  #       file:
-  #         name: "<%= report.id %>_30202"
-  #     chartType: "horizontalBarchart"
-  #     groups: "group"
-  #     label: "Retailer name"
-  #     value: "value"
-  #     filters:
-  #       "upper-right":
-  #         on: "Branch level 2"
-  #         type: "dropdown"
-  #         reset: "All"
-  #         withSize: true
-
-  #     units:
-  #       GLA: "points de vente"
-  #       value:
-  #         breakdown:
-  #           Promotion: ""
-  #           "Points de vente": ""
-  #           "Croissance du marché": "%"
-  #           Sales: "%"
-
-  #     legend: true
-  #     sort: "desc"
-  #     meta: [
-  #       "GLA"
-  #       "Lease end"
-  #     ]
-  #     showAverage: true
-
-  #   id: 30202
-  # }
 
   # {
   #   level: 3
@@ -781,6 +763,8 @@ slides: [
 
   #   chartOptions:
   #     data:
+  #       file:
+  #         name: "<%= report.id %>_30206"
   #       order:
   #         by: "fréquence"
   #         custom: [
@@ -939,6 +923,46 @@ slides: [
   #   id: 32101
   # }
 
+  # {
+  #   level: 3
+  #   title: "Ventes par<br>departements"
+
+  #   kpi:
+  #     unit: "M€"
+  #     badge:
+  #       comment: "Cantal"
+
+  #   filters:
+  #     "bottom-right":
+  #       on: "breakdown"
+  #       type: "buttons"
+  #   parent_id: 204
+  #   chartOptions:
+  #     data:
+  #       file:
+  #         name: "<%= report.id %>_34201"
+  #     chartType: "carto"
+  #     join: "CODE_DEPT"
+  #     label: "NOM_DEPT"
+  #     value: "value"
+  #     peers: " "
+  #     levels: 4
+  #     meta: [
+  #       "population"
+  #       "chomage 4 2012"
+  #     ]
+  #     projection: "departement"
+  #     cartoFiles:
+  #       " ": "depts-details-topojson.json"
+
+  #     units:
+  #       "Faits élucidés": ""
+  #       "Faits constatés": " "
+  #       population: " habitants"
+  #       "chomage 4 2012": "% de chomage"
+
+  #   id: 34201
+  # }
   # {
   #   level: 3
   #   title: "Origine des<br>visiteurs"

@@ -4,7 +4,7 @@ slug: "test"
 date: "Données au 31/10/12"
 entityName: "Retail France"
 background:
-  id: 3
+  assetName: 'bg-1'
   overlay: false
 
 dashboards:

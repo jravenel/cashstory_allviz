@@ -23,7 +23,6 @@ home:
 
 sharingOptions: true
 comments: true
-offline: 'all'
 
 slides: [
   {

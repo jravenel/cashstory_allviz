@@ -1,0 +1,53 @@
+etl_config:
+    DATA_SOURCE_DIR: "data_sources"
+    DATA_SOURCES: [
+        domain: "market-breakdown"
+        type: "excel"
+        file: "data-market-breakdown.xls"
+        sheetname: "Data"
+    ,
+        domain: "dashboards"
+        type: "csv"
+        file: "dashboards.csv"
+        separator: ","
+    ,
+        domain: "reports"
+        type: "csv"
+        file: "reports.csv"
+        separator: ","
+    ,
+        domain: "overall_growth"
+        type: "excel"
+        file: "overall_growth.xls"
+        sheetname: "Data"
+    ,
+        domain: "top_div_country"
+        type: "csv"
+        file: "top_div_country.csv"
+        separator: ","
+    ,
+        domain: "versus"
+        type: "csv"
+        file: "versus.csv"
+        separator: ","
+
+    ]
+    REPORTS: [
+      query:
+        domain: "reports"
+      template: "report"
+    ]
+    DASHBOARDS: [
+      query:
+        domain: 'dashboards'
+      report: 'continent'
+      template: "dashboard"
+    ]
+
+    MONGO_INDEXES: [
+        "domain"
+        [
+            "domain"
+            "subdomain"
+        ]
+    ]

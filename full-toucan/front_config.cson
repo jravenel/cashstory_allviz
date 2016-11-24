@@ -27,7 +27,6 @@ dashboardPdfEnabled: false
 sharingOptions: true
 comments: true
 embedCharts: true
-offline: 'all'
 
 noDataError:
   message: "<div class=\"error-first-word\">Désolé,</div>aucune donnée n'est disponible. Pour obtenir des données sur cet écran choisissez un autre rapport"
