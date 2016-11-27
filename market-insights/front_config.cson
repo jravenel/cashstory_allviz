@@ -114,8 +114,9 @@ slides: [
         packNames: true
         units:
           value: "%"
-        averageText: "0%"
-        average: " "
+        hideAverageBox: true
+        average:
+          values: [0]
 
         size: 0.75
         id: 1
