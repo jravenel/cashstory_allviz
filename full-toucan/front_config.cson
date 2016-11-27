@@ -260,6 +260,7 @@ slides: [
 
         crossfilter:
           on: "date"
+          datasets: [1]
         groups: "Centre"
         date: "date"
         value: "value"
@@ -283,7 +284,8 @@ slides: [
           Effectif: " répondants"
 
         meta: "Effectif"
-        average: 77
+        average: 
+          values: [77]
         packs: "group"
         packsOrder: ["Caraibes", "Autres"]
         size: 0.75
