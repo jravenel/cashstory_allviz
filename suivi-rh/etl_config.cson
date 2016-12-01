@@ -1,11 +1,6 @@
 etl_config:
     DATA_SOURCE_DIR: "data_sources"
     DATA_SOURCES: [
-        domain: "market-breakdown"
-        type: "excel"
-        file: "data-market-breakdown.xls"
-        sheetname: "Data"
-    ,
         domain: "dashboards"
         type: "excel"
         file: "dashboards.xls"
@@ -43,7 +38,6 @@ etl_config:
       report: "report_name"
       template: "dashboard"
     ]
-    MAX_DASHBOARDS: 500
     MONGO_INDEXES: [
         "domain"
         [
