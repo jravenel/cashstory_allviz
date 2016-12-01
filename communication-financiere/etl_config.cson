@@ -4,7 +4,14 @@ etl_config:
     domain: "reports"
     type: "csv"
     file: "reports.csv"
-    sheetname: "Data"
+  ,
+    domain: "0_100"
+    type: "csv"
+    file: "0_100.csv"
+  ,
+    domain: "0_101"
+    type: "csv"
+    file: "0_101.csv"
   }]
   REPORTS: []
   DASHBOARDS: [

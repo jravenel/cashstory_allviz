@@ -43,8 +43,8 @@ categories: [
       date: "date"
       value: "value"
       data:
-        file:
-          name: "{{ report_id }}_100"
+        query:
+          domain: "{{ report_id }}_100"
     unit: " M€"
   ,
     name: "Free Cash Flow"
@@ -53,10 +53,10 @@ categories: [
       value: "value"
       label: "label"
       date: "date"
-      data: 
-        file: 
-          name: "{{ report_id }}_101"
-    unit: "M€"      
+      data:
+        query:
+          domain: "{{ report_id }}_101"
+    unit: "M€"
   ]
 ,
   name: "Business Group"
