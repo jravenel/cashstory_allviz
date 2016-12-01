@@ -10,6 +10,26 @@ etl_config:
         type: "excel"
         file: "dashboards.xls"
         sheetname: "Data"
+    ,
+        domain: "0_10"
+        type: "csv"
+        file: "0_10.csv"
+    ,
+        domain: "0_11"
+        type: "csv"
+        file: "0_11.csv"
+    ,
+        domain: "0_12"
+        type: "csv"
+        file: "0_12.csv"
+    ,
+        domain: "0_13"
+        type: "csv"
+        file: "0_13.csv"
+    ,
+        domain: "0_14"
+        type: "csv"
+        file: "0_14.csv"
     ]
     REPORTS: [
       query:

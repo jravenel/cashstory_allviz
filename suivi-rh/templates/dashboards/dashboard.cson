@@ -25,8 +25,8 @@ categories: [
       date: "date"
       label: "label"
       data:
-        file:
-          name: "0_10"
+        query:
+          domain: "0_10"
       badge: "bullet"
       badgeSentiment: "better"
       source: "source interne"
@@ -49,8 +49,8 @@ categories: [
       label: "label"
 
       data:
-        file:
-          name: "0_11"
+        query:
+          domain: "0_11"
       units:
         value:" %"
   ,
@@ -64,8 +64,8 @@ categories: [
       label: "label"
 
       data:
-        file:
-          name: "0_12"
+        query:
+          domain: "0_12"
       units:
         value: " %"
   ,
@@ -79,8 +79,8 @@ categories: [
       label: "label"
 
       data:
-        file:
-          name: "0_13"
+        query:
+          domain: "0_13"
       units:
         value: " %"
   ,
@@ -94,8 +94,8 @@ categories: [
       label: "label"
 
       data:
-        file:
-          name: "0_14"
+        query:
+          domain: "0_14"
       units:
         value: " %"
   ]
