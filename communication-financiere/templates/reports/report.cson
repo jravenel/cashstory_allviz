@@ -6,7 +6,7 @@ slug: "test 1"
 id: "0"
 date: "Snapshot 2014"
 background:
-  id: 2
+  assetName: 'bg-1'
   overlay: false
 execsumTitle: "Group's financial results"
 # execsumNote: "* And you should start to <strong>customize</strong> it"
