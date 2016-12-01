@@ -1,6 +1,6 @@
 etl_config:
   DATA_SOURCE_DIR: "data_sources"
-  DATA_SOURCES: [{
+  DATA_SOURCES: [
     domain: "reports"
     type: "csv"
     file: "reports.csv"
@@ -12,7 +12,7 @@ etl_config:
     domain: "0_101"
     type: "csv"
     file: "0_101.csv"
-  }]
+  ]
   REPORTS: []
   DASHBOARDS: [
     report: "report"
