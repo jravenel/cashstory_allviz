@@ -22,7 +22,7 @@ glossary:
     meaning: "A slang term for a sketching of what someone plans on tagging. graffiti. <br><em>NOT A CHART!</em>"
   ]
 
-slidePdfEnabled: false
+slidePdfEnabled: true
 dashboardPdfEnabled: false
 sharingOptions: true
 comments: true
