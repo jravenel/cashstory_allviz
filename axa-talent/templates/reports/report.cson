@@ -1,0 +1,18 @@
+# This is an example of report template
+# Customize it!
+
+entityName: "Entity"
+slug: "entity"
+id: "0"
+date: "Janvier 2015"
+background:
+  id: 1
+  overlay: false
+execsumTitle: "It's a brand new project with <strong>Toucan Toco</strong>! *"
+execsumNote: "* And you should start to <strong>customize</strong> it"
+
+dashboards:
+  default: 0
+  search: "Recherchez dans les dashboards..."
+
+slideInfos: {}
