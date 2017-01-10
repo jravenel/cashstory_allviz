@@ -1,0 +1,1054 @@
+#les settings peuvent activer certaines options
+#nous ne nous en servons pas pour l'instant --> []
+settings:[]
+
+#Comment paramétrer un glossaire?
+glossary:
+  #Nom à afficher pour le glossaire
+  title: 'Glossaire'
+  #liste des termes à afficher
+  terms: [
+    #1er terme
+    term: "Data"
+    #et sa définition
+    meaning: "An android from the 24th century who serves on the star ship Enterprise.<br><em>Data kicked some borg ass and then fed his cat lunch.</em>"
+    #pas de 'slides' --> cette définition sera affichée dans le glossaire de tous les écrans
+  ,
+    term: "Hipsterectomy"
+    meaning: "The removal or dismissal of what is largely accepted to be cool or trendy. The process of de-hipsterizing someone or something."
+    #cet écran ne sera disponible que pour l'écran 10001
+    slides:[10001]
+  ,
+    term: "Graph"
+    meaning: "A slang term for a sketching of what someone plans on tagging. graffiti. <br><em>NOT A CHART!</em>"
+  ]
+
+###
+
+Les slides correspondent aux écrans visibles dans les différents 'chapitres' de l'application
+Les slides correspondent à une liste de configuration
+Chaque élément de la liste est entre bracket : {ma configuration}
+ou plutôt :
+[
+  {
+    ma configuration 1
+  }
+  {
+    ma configuration 2
+  }
+]
+
+###
+
+slides: [
+#Le niveau 0 correspond au squelette de l'application
+#Tous les autres éléments viennent s'y rattacher
+#2 informations : le level et l'id (qui doit être UNIQUE)
+  {
+    level: 0
+    id: 0
+  }
+  #Les niveaux 1 définissent des chapitres (qui peuvent contenir des sous-chapitres ou directement des écrans)
+  #3 informations : 
+  # - le level (1 forcémment!),
+  # - l'id (UNIQUE! A vous de le choisir comme vousle souhaitez nous préconisons d'uiliser des 10aines)
+  # - le titre : à vous de le choisir, n'est pas forcémment unique
+  # Les levels 1 ont forcémment pour parent le level 0
+  {
+    level: 1
+    id: 10
+    title: "Introduction"
+  }
+  #Les niveaux 2 définissent des sous-chapitres (qui contiennent des écrans)
+  #4 informations : 
+  # - le parent_id (NEW!!) : on choisit ses parents chez ToucanToco (sauf les level 1) --> à toi de rattacher un sous-chapitre à un chapitre en indiquant
+  # comme parent_id l'id du parent souhaité
+
+  #et les 3 que nous connaissons déjà
+  # - le level (2 forcémment!),
+  # - l'id (UNIQUE! A vous de le choisir comme vousle souhaitez nous préconisons d'uiliser des 100aines)
+  # - le titre : à vous de le choisir, n'est pas forcémment unique
+  {
+    level: 2
+    id: 101
+    parent_id:10
+    
+    title: "Je suis un titre de niveau 2"
+  }
+  
+  #Les autres level1 et leurs propres sous-chapitres (ne pas s'y attarder pour le moment)
+  {
+    level: 1
+    id: 20
+    title: "Construire un écran"
+  }
+  {
+    level: 2
+    id: 201
+    parent_id:20
+    
+    title: "barchart"
+  }
+  {
+    level: 2
+    id: 202
+    parent_id:20
+    
+    title: "linechart"
+  }
+  {
+    level: 2
+    id: 203
+    parent_id:20
+    
+    title: "horizontalBarchart"
+  }
+  {
+    level: 2
+    id: 204
+    parent_id:20
+    
+    title: "leaderboardCenteredAverage"
+  }
+  {
+    level: 2
+    id: 205
+    parent_id:20
+    
+    title: "heatmap"
+  }
+  {
+    level: 2
+    id: 206
+    parent_id:20
+    
+    title: "bubblechart"
+  }
+  {
+    level: 2
+    id: 207
+    parent_id:20
+    
+    title: "stackedBarchart"
+  }
+  {
+    level: 1
+    id: 30
+    title: "Features avancées"
+  }
+
+  #Les niveaux 3 définissent des écrans --> en plus des 4 informations de base, tu vas trouver tout un tas d'autres éléments :)
+  #Nous allons les survoler ici et rentrer dans le détail au fur et à mesure.
+  
+  {
+    #TO DO : Lire avec ATTENTION, ou juste lire, en tout cas ne pas passer directement à la suite :)
+    #--> Ok next!
+    
+    #Nous retrouvons les 4 informations précédentes :
+    level: 3#3 forcémment!
+    parent_id: 101#on choisit ses parents chez ToucanToco --> à toi de rattacher cet écran à un sous-chapitre ou directement un chapitre en indiquant
+ #comme parent_id l'id du parent souhaité
+    id: 10001#UNIQUE! A vous de le choisir comme vousle souhaitez nous préconisons d'uiliser des 10aines de milliers)
+    title: "Simple Barchart"#à toi de le choisir, n'est pas forcémment unique
+
+    #Eléments de contexte (en plus du titre) : pas de commentaire, sens transparent! 
+    commentary: "Je suis un commentaire"
+    source:'Je suis une source'
+    
+    chartOptions:
+      
+      data:#où trouver les données à afficher dans mon graph?
+        query:
+          domain: "barchart"
+          bottom_filter:'metric1'
+        date:
+          selector:'my_date'
+          format:'%Y-%m-%d %X'
+        precision:
+          "my_value": "my_precision"
+      
+      chartType: "barchart"#comment représenter ces données? une courbe? une carte? un diagramme?
+      
+      filters:#ces données doivent elles pouvoir être filtrées par l'utilisateur? Sur quel champ? Quel type de filtre utiliser?
+        "upper-middle":
+          on: "middle_filter"
+          type: "buttons"
+
+      #Paramètres du graph : 
+      value: "my_value"#quelle valeur utiliser pour afficher les barres de mon histogramme?     
+      label: "my_date"#Quel champ contient leur nom?
+      groups: "my_serie"#Quel champ indque les groupes que je souhaite afficher?
+
+      legend:#est-ce que je souhaite afficher une légende?
+        type: 'identity-card'#Quel type?
+        filter: 'upper-middle'#Correspondant à quel filtre?
+      
+      units:
+        "my_value": "unite"#quelle est l'unité des valeurs que j'affiche? Et oui elle peut être différente en fonction des valeurs :)
+  }
+  {
+    #TO DO :
+    #- Fais moi apparaitre au dessus de Simple Barchart
+    #- Créé un chapitre de niveau 1 et appelle le  'Chapitre de test' (appelle le comme tu veux en fait)
+    #- Créé un chapitre de niveau 2 au sein de  'Chapitre de test'(ou un autre nom si tu n'as pas pu t'empêcher de le nommer autrement),
+    # 'Je suis la cible du déplacement'
+    #- Déplace moi au sein du chapitre 'Je suis la cible du déplacement'
+#--> Drop moi dans l'interface et check le résultat!Tu ne sais pas comment me dropper dans l'interface? Dis à ton GO qu'il n'a pas fait sont boulot
+#ou demande lui directement de te montrer ça.
+#--> Ok next!
+
+    level: 3
+    parent_id: 101
+    id: 10002
+
+    title: "Comprendre la structure"
+    commentary: "Je suis un commentaire"
+    source:'Je suis une source'
+    
+    chartOptions:
+      
+      data:
+        query:
+          domain: "barchart"
+          bottom_filter:'metric1'
+        date:
+          selector:'my_date'
+          format:'%Y-%m-%d %X'
+        precision:
+          "my_value": "my_precision"
+      
+      chartType: "barchart"
+      
+      filters:
+        "upper-middle":
+          on: "middle_filter"
+          type: "buttons"
+
+      value: "my_value"
+      label: "my_date"
+      groups: "my_serie"
+
+      legend:
+        type: 'identity-card'
+        filter: 'upper-middle'
+      units:
+        "my_value": "unite"
+  }
+  {
+     #TO DO
+     #Changer tous les éléments de contextes ci-dessous :
+     # - titre
+     # - commentaire
+     # - recommendation
+     # - source
+#--> Drop moi dans l'interface et check le résultat!
+#--> Ok next!
+
+    level: 3
+    parent_id: 101
+    id: 10003
+
+    title: "Changer le Contexte"
+    commentary:'Ce texte est du html, je peux <strong>mettre en gras</strong> ou en <em>italique</em> ou <br>passer à la ligne'
+    recommendation:
+      advert:'Info'
+      content:'Je suis aussi du html'
+    source:'Je suis une source'
+
+    filters:
+      "upper-middle":
+        on: "indicateur"
+        type: "dropdown"
+
+    chartOptions:
+      data:
+        query:
+          domain: "barlinechart"
+        precision:
+         value: ",.2f"
+        date:
+          selector: "date"
+          format: '%Y-%m-%d %X'
+
+      chartType: "barlinechart"
+
+      units:
+        value: [
+          unit: "%"
+          where:
+            kpi: "Qualité produite"
+        ,
+          unit: ""
+          where:
+            kpi: "Qualité perçue"
+      ]
+
+      date: "date"
+      kpi:
+        kpi: [
+          {
+            type: "line"
+            label: "Qualité perçue"
+          }
+
+          {
+            type: "bar"
+            label: "Qualité produite"
+          }
+        ]
+      
+      value: "value"
+      legend: 'minimal'
+  }
+  {
+    #TO DO
+    #Créer les éléments de contextes suivant :
+    #- titre
+    #- commentaire
+    #- recommendation
+    #- source
+#--> Drop moi dans l'interface et check le résultat!
+#--> Ok next!
+    level: 3
+    parent_id: 101
+    id: 10004
+
+    title:"Je n'ai pas de contexte"
+
+    chartOptions:
+      
+      data:
+        query:
+          domain: "barchart"
+          bottom_filter:'metric1'
+        date:
+          selector:'my_date'
+          format:'%Y-%m-%d %X'
+        precision:
+          "my_value": "my_precision"
+      
+      chartType: "barchart"
+      
+      filters:
+        "upper-middle":
+          on: "middle_filter"
+          type: "buttons"
+
+      value: "my_value"
+      label: "my_date"
+      groups: "my_serie"
+
+      legend:
+        type: 'identity-card'
+        filter: 'upper-middle'
+      units:
+        "my_value": "unite"
+  }
+  {
+    #TO DO :
+    #chercher les règles de précision dans la documentation :)
+
+    #- Changer l'unité de la valeur des barres pour afficher des grammes
+    #- Changer la précision de la variation : afficher un pourcentage avec 2 chiffres après la virgule
+    #- Hum, est-ce que le '%' ne serait pas en double sur la variation --> une modification de l'unité s'impose :)
+    #- Changer la précision de l'effectif --> pas de chiffre après la virgule nécessaire!
+
+#--> Drop moi dans l'interface et check le résultat!
+#--> Ok next!
+
+    level: 3
+    parent_id: 101
+    id: 10005
+    
+    title: "Donner du contexte à la donnée"
+    commentary:'Utiliser <strong>précision</strong> et <strong>unité</strong> pour donner du contexte à la donnée'
+
+    chartOptions:
+      data:
+        query:
+          domain: "horizontal_barchart_sparklines"
+        precision:
+          my_value:',2f'
+          my_variation:',1f'
+
+      chartType: "horizontalBarchart"
+      
+      value: "my_value"
+      variation: "my_variation"
+      
+      label: "Evenements"
+      sparklines:
+        prefix:'sparkline'
+        legend: ''
+      showAverage: true
+      
+      sort: "desc"
+      
+      units:
+        my_value: " kilos"
+        my_variation: " %"
+      
+      variationLegend: "Écart<br>année passée"
+      
+      meta: "Effectif"
+  }
+  {
+    #TO DO :
+    #Changer le type de filtre : 'buttons' --> 'dropdown'
+    #Inverser les filtres en inversant le 'on' entre les deux filtres
+    #Modifier la localisation du filtre : 'upper-middle' --> 'upper-right'
+    #Attention : le 'bottom-right' doit être renseigné en dehors de chartOptions (cf focus chartOptions à venir)
+
+#--> Drop moi dans l'interface et check le résultat!
+#--> Ok next!
+    
+    level: 3
+    parent_id: 101
+    id: 10006
+    
+    title: "Filters time!"
+    
+    filters:
+      "bottom-right":
+        on: "type"
+        type: "buttons"
+
+    chartOptions:
+      
+      filters:
+        "upper-middle":
+          on: "time"
+          type: "buttons"
+
+      data:
+        query:
+          domain: "centered_avg_data"
+      
+      chartType: "leaderboardCenteredAverage"
+      value: "value"
+      label: "entity"
+      variation: "evolution"
+      packs: "pack"
+      
+      average:
+        data:
+          query:
+            domain: "centered_avg_avg"
+        joins: ["type", "time"]
+        value: "average_value"
+        unit:
+          'average_value': "%"
+        precision:
+          'average_value': ".0f"
+      
+      units:
+        value: "%"
+        evolution: "%"
+      legend: false
+  }
+  {
+    #TO DO :
+    #- Lire les commentaires en gris et précédés de '#' pour comprendre le rôle des différents éléments de configuration.
+    #- Poser des questions!
+    #- Mais pas trop :) tous ces éléments vont être revus en détail par la suite
+
+#--> Drop moi dans l'interface et check le résultat!
+#--> Ok next!
+
+    level: 3
+    parent_id: 101
+    id: 10007
+    
+    title: "Introduction au corps du chart"
+
+    #ok voci le bloc qui nous intéresse : tout ce qui est "dans" (indenté plus à droite) chartOptions
+    chartOptions:
+      
+      #bloc data --> comment trouver la donnée qui vient alimenter l'écran?
+      data:
+        #requête à effectuer pour trouver les données
+        query:
+          #requête simple : aller chercher les données qui s'appellent "horizontal_barchart_sparklines"
+          #nous verrons plus loin comment réaliser des requêtes plus complexes
+          domain: "horizontal_barchart_sparklines"
+        #précision à afficher pour les différents champs de valeur dans les données qui remontent de la requête
+        #--> nous avons déjà vu cet élément!  
+        precision:
+          my_value:',2f'
+          my_variation:',1f'
+
+      #le type de chart : est-ce que je souhaite utiliser une ligne? une carte? ou comme ici un diagramme à barre horizontal   
+      chartType: "horizontalBarchart"
+      
+      #les champs requis par le chart doivent lui être indiqués
+      #quel champ utiliser pour représenter les barres principales? --> le champ 'my_value'
+      value: "my_value"
+      #quel champ utiliser pour représenter les variations? --> le champ 'my_variation'
+      variation: "my_variation"
+      #quel est le champ contenant le nom rattaché aux valeurs et aux variations que je cherche à représenter?
+      label:'Evenements'
+
+      # showAverage: true
+      # sort: "desc"
+      #quels sont les unités de mes champs de valeur (valeur et variation)?
+      #-->nous avons déjà regarder ce point!      
+      units:
+        my_value: " kilos"
+        my_variation: " %"
+      
+      # variationLegend: "Écart<br>année passée"
+      
+      # meta: "Effectif"
+  }
+  {
+    #TO DO : Comprendre le paramétrage ci-dessous, le relier aux différentes fonctionnalités observables sur l'écran
+    #Ce paramétrage peut servir de base pour toute configuration de barchart (y compris au sein de maître esclave)
+    #Les variantes sont présentées sur le graphique suivant
+    #--> Ok next!
+    
+    #Informations de base
+    level: 3
+    parent_id: 201
+ #comme parent_id l'id du parent souhaité
+    id: 20101
+    title: "Barchart de référence"
+
+    #Eléments de contexte
+    commentary:'Ce texte est du html, je peux <strong>mettre en gras</strong> ou en <em>italique</em> ou <br>passer à la ligne'
+    recommendation:
+      advert:'Info'
+      content:'Je suis aussi du html'
+    #nouveauté : la source peut être dynamique, il faut alors fournir une requête permettant d'aller le texte à afficher, nous allonrs ici
+    #afficher une date qui peut correspondre à la dernière mise à jour par exemple
+    source:
+      data:
+        query:[
+          $match:
+            domain:'barchart_full_features'
+        ,
+          $limit:1#ne prendre qu'un élément (nous ne voulons afficher qu'une date de mise à jour, dans notre exemple tous les éléments ont la même date)
+        ]
+      value:"Je suis une source dynamique, dernière mise à jour : <%= update %>"#noter la syntaxe : la colonne contenant la date doit être entourée de '<%=' et '%>'
+
+    #Le filtre 'bottom-right' doit être placé au même niveau que chartOptions et pas à l'intérieur comme les autres filtres
+    filters:
+      "bottom-right":#seule localisation possible
+        on: "bottom_filter"#choix de la colonne sur laquelle appliquer le filtre
+        type: "buttons"#autre option disponible : 'slider'
+    
+    chartOptions:
+      
+      data:#où trouver les données à afficher dans mon graph?
+        query:
+          domain: "barchart_full_features"
+        date:#à n'utiliser que si l'axe contient des dates
+          selector:'my_date'#sélectionner la colonne contenant les dates
+          format:'%Y-%m-%d %X'#sélectionner le format de date
+        precision:
+          "my_value": "my_precision"#indiquer la colonne qui contient les valeurs 'my_value', et celle qui contient le format de données à appliquer
+      
+      chartType: "barchart"
+      
+      filters:
+        "upper-middle":#autre option disponible : 'upper-right'
+          on: "middle_filter"#choix de la colonne sur laquelle appliquer le filtre
+          type: "buttons"#autre option disponible : 'dropdown'
+
+      #Paramètres du graph : 
+      value: "my_value"#quelle valeur utiliser pour afficher les barres de mon histogramme?     
+      label: "my_date"#Quel champ contient leur nom?
+      groups: "my_serie"#Quel champ indque les groupes que je souhaite afficher?
+
+      legend:#est-ce que je souhaite afficher une légende?
+        type: 'identity-card'#Quel type?
+        filter: 'upper-middle'#Correspondant à quel filtre?
+      
+      units:
+        "my_value": "unite"#quelle est l'unité des valeurs que j'affiche? Et oui elle peut être différente en fonction des valeurs :)
+  }
+  {
+    #TO DO : 
+      # - je souhaite maintenant regrouper les éléments par type A et B et au sein de chaque type afficher toutes les années disponibles (indice : label et groups vont devoir changer!)
+      # - je souhaite filtrer en 'bottom-right' sur les années et utiliser la colonne bottom-filter en label. Le filtre de type 'slider' serait plus adapté non?
+    #--> Ok next!
+    
+    #Informations de base
+    level: 3
+    parent_id: 201
+ #comme parent_id l'id du parent souhaité
+    id: 20102
+    title: "Barchart d'exo"
+
+    #Eléments de contexte
+    commentary:'Ce texte est du html, je peux <strong>mettre en gras</strong> ou en <em>italique</em> ou <br>passer à la ligne'
+    recommendation:
+      advert:'Info'
+      content:'Je suis aussi du html'
+    #nouveauté : la source peut être dynamique, il faut alors fournir une requête permettant d'aller le texte à afficher, nous allonrs ici
+    #afficher une date qui peut correspondre à la dernière mise à jour par exemple
+    source:
+      data:
+        query:[
+          $match:
+            domain:'barchart_full_features'
+        ,
+          $limit:1#ne prendre qu'un élément (nous ne voulons afficher qu'une date de mise à jour, dans notre exemple tous les éléments ont la même date)
+        ]
+      value:"Je suis une source dynamique, dernière mise à jour : <%= update %>"#noter la syntaxe : la colonne contenant la date doit être entourée de '<%=' et '%>'
+
+    #Le filtre 'bottom-right' doit être placé au même niveau que chartOptions et pas à l'intérieur comme les autres filtres
+    filters:
+      "bottom-right":#seule localisation possible
+        on: "bottom_filter"#choix de la colonne sur laquelle appliquer le filtre
+        type: "buttons"#autre option disponible : 'slider'
+    
+    chartOptions:
+      
+      data:#où trouver les données à afficher dans mon graph?
+        query:
+          domain: "barchart_full_features"
+        date:#à n'utiliser que si l'axe contient des dates
+          selector:'my_date'#sélectionner la colonne contenant les dates
+          format:'%Y-%m-%d %X'#sélectionner le format de date
+        precision:
+          "my_value": "my_precision"#indiquer la colonne qui contient les valeurs 'my_value', et celle qui contient le format de données à appliquer
+      
+      chartType: "barchart"
+      
+      filters:
+        "upper-middle":#autre option disponible : 'upper-right'
+          on: "middle_filter"#choix de la colonne sur laquelle appliquer le filtre
+          type: "buttons"#autre option disponible : 'dropdown'
+
+      #Paramètres du graph : 
+      value: "my_value"#quelle valeur utiliser pour afficher les barres de mon histogramme?     
+      label: "my_date"#Quel champ contient leur nom?
+      groups: "my_serie"#Quel champ indque les groupes que je souhaite afficher?
+
+      legend:#est-ce que je souhaite afficher une légende?
+        type: 'identity-card'#Quel type?
+        filter: 'upper-middle'#Correspondant à quel filtre?
+      
+      units:
+        "my_value": "unite"#quelle est l'unité des valeurs que j'affiche? Et oui elle peut être différente en fonction des valeurs :)
+  }
+  {
+    #TO DO : Le seule changement réalisé sur ce graphique est que le paramètre 'label' a été remplacé par 'date' dans chartOption
+    #Pour en être sûr remplacer le chartType par barchart et le paramètre 'date' par 'label' -> tu dois retrouver le même barchart que ci-dessus
+    #--> Ok next!
+    
+    #Informations de base
+    level: 3
+    parent_id: 202
+ #comme parent_id l'id du parent souhaité
+    id: 20201
+    title: "Linechart de référence"
+
+    #Eléments de contexte
+    commentary:'Ce texte est du html, je peux <strong>mettre en gras</strong> ou en <em>italique</em> ou <br>passer à la ligne'
+    recommendation:
+      advert:'Info'
+      content:'Je suis aussi du html'
+    #nouveauté : la source peut être dynamique, il faut alors fournir une requête permettant d'aller le texte à afficher, nous allonrs ici
+    #afficher une date qui peut correspondre à la dernière mise à jour par exemple
+    source:
+      data:
+        query:[
+          $match:
+            domain:'barchart_full_features'
+        ,
+          $limit:1#ne prendre qu'un élément (nous ne voulons afficher qu'une date de mise à jour, dans notre exemple tous les éléments ont la même date)
+        ]
+      value:"Je suis une source dynamique, dernière mise à jour : <%= update %>"#noter la syntaxe : la colonne contenant la date doit être entourée de '<%=' et '%>'
+
+    #Le filtre 'bottom-right' doit être placé au même niveau que chartOptions et pas à l'intérieur comme les autres filtres
+    filters:
+      "bottom-right":#seule localisation possible
+        on: "bottom_filter"#choix de la colonne sur laquelle appliquer le filtre
+        type: "buttons"#autre option disponible : 'slider'
+    
+    chartOptions:
+      
+      data:#où trouver les données à afficher dans mon graph?
+        query:
+          domain: "barchart_full_features"
+        date:#à n'utiliser que si l'axe contient des dates
+          selector:'my_date'#sélectionner la colonne contenant les dates
+          format:'%Y-%m-%d %X'#sélectionner le format de date
+        precision:
+          "my_value": "my_precision"#indiquer la colonne qui contient les valeurs 'my_value', et celle qui contient le format de données à appliquer
+      
+      chartType: "linechart"
+      
+      filters:
+        "upper-middle":#autre option disponible : 'upper-right'
+          on: "middle_filter"#choix de la colonne sur laquelle appliquer le filtre
+          type: "buttons"#autre option disponible : 'dropdown'
+
+      #Paramètres du graph : 
+      value: "my_value"#quelle valeur utiliser pour afficher les barres de mon histogramme?     
+      date: "my_date"#Quel champ contient leur nom
+      groups: "my_serie"#Quel champ indque les groupes que je souhaite afficher?
+
+      legend:#est-ce que je souhaite afficher une légende?
+        type: 'identity-card'#Quel type?
+        filter: 'upper-middle'#Correspondant à quel filtre?
+      
+      units:
+        "my_value": "unite"#quelle est l'unité des valeurs que j'affiche? Et oui elle peut être différente en fonction des valeurs :)
+  }
+  {
+    #Informations de base
+    level: 3
+    parent_id: 203
+    id: 20301
+    title: "horizontalBarchart de référence"
+
+    #Pas de filtre sur cet écran --> a toi d'en ajouter!
+    #N'oublie pas de faire évoluer également les données sources
+
+    #Eléments de contexte
+    commentary:'Ce texte est du html, je peux <strong>mettre en gras</strong> ou en <em>italique</em> ou <br>passer à la ligne'
+    recommendation:
+      advert:'Info'
+      content:'Je suis aussi du html'
+    #nouveauté : la source peut être dynamique, il faut alors fournir une requête permettant d'aller le texte à afficher, nous allonrs ici
+    #afficher une date qui peut correspondre à la dernière mise à jour par exemple
+    source:
+      data:
+        query:[
+          $match:
+            domain:'horizontal_barchart'
+        ,
+          $sort:my_date:-1
+        ,
+          $limit:1#ne prendre qu'un élément (nous ne voulons afficher qu'une date de mise à jour, dans notre exemple tous les éléments ont la même date)
+        ]
+      value:"Je suis une source dynamique, dernière mise à jour : <%= my_date %>"#noter la syntaxe : la colonne contenant la date doit être entourée de '<%=' et '%>'
+
+    chartOptions:
+      data:
+        query:
+          domain: "horizontal_barchart"
+        precision:
+          Pourcentage: "my_value_precision"
+          evolution: "my_evolution_precision"  
+      
+      chartType: "horizontalBarchart"
+      value: "Pourcentage"
+      variation: "evolution"
+      variationLegend: "Écart<br>année passée"
+      label: "Evenements"
+      sort: "desc"
+      #showAverage: true --> not available for the moment!
+      meta: "Effectif"
+      
+      units:
+        Pourcentage: "my_value_unit"
+        evolution: "my_evolution_unit"
+
+      #Ajout de sparklines
+      #Les données correspondantes doivent être identifiées via une nouvelle requête
+      sparklines:
+        data:
+          query:
+            domain: "horizontal_barchart_sparklines"
+      # Puis liées aux données principales via un ou plusieurs champs, ici un seul : 'Evenements'
+        joins: ["Evenements"]
+        legend: "Évolution<br>sur 8 mois"#<br> est utilisé pour forcer la mise à la ligne dans la légende des sparklines
+        value: "my_value"
+        date: "my_date"
+        unit: "my_unit"
+        orderDates: true
+  }
+  {
+    #Informations de base
+    level: 3
+    title: "leaderboardCenteredAverage de référence"
+    parent_id: 204
+    id: 20401
+    
+    filters:
+      "bottom-right":
+        on: "my_date"
+        type: "slider"
+    
+    #Eléments de contexte
+    commentary:'Ce texte est du html, je peux <strong>mettre en gras</strong> ou en <em>italique</em> ou <br>passer à la ligne'
+    recommendation:
+      advert:'Info'
+      content:'Je suis aussi du html'
+    #afficher une date qui peut correspondre à la dernière mise à jour par exemple
+    source:
+      data:
+        query:[
+          $match:
+            domain:'leaderboard_centered_avg'
+        ,
+          $sort:my_date:-1
+        ,
+          $limit:1#ne prendre qu'un élément (nous ne voulons afficher qu'une date de mise à jour, dans notre exemple tous les éléments ont la même date)
+        ]
+      value:"Je suis une source dynamique, dernière mise à jour : <%= my_date %>"#noter la syntaxe : la colonne contenant la date doit être entourée de '<%=' et '%>'
+
+    
+    chartOptions:
+      data:
+        query:
+          domain: "leaderboard_centered_avg"
+        precision:
+          my_value:'my_precision'
+    
+      chartType: "leaderboardCenteredAverage"
+      value: "my_value"
+      label: "my_label"
+      variation: "my_variation"
+      variationLegend: "Écart vs budget"
+      #Permet de regrouper les éléments par nature!
+      #La colonne my_packs doit contenir pour chaque observation le groupe auquel elle appartient
+      packs: "my_packs"
+    
+      units:
+        my_value: "my_value_unit"
+        my_variation: "my_variation_unit"
+
+      average:
+        data:
+          query:
+            domain: "leaderboard_centered_avg_avg"
+          precision:
+            my_value:'my_precision'
+
+        value: "my_value"
+        joins: [
+          "my_date"
+        ]
+  }
+  {
+    level: 3
+    id: 20501
+    parent_id: 205
+    title: "heatmap de référence"
+
+    #Eléments de contexte
+    commentary:'Ce texte est du html, je peux <strong>mettre en gras</strong> ou en <em>italique</em> ou <br>passer à la ligne'
+    recommendation:
+      advert:'Info'
+      content:'Je suis aussi du html'
+    #afficher une date qui peut correspondre à la dernière mise à jour par exemple
+    source:
+      data:
+        query:[
+          $match:
+            domain:'heatmap'
+        ,
+          $sort:my_date:-1
+        ,
+          $limit:1#ne prendre qu'un élément (nous ne voulons afficher qu'une date de mise à jour, dans notre exemple tous les éléments ont la même date)
+        ]
+      value:"Je suis une source dynamique, dernière mise à jour : <%= my_date %>"#noter la syntaxe : la colonne contenant la date doit être entourée de '<%=' et '%>'
+
+    filters:
+      "bottom-right":
+        on: "my_breakdown"
+        type: "buttons"
+
+    chartOptions:
+      data:
+        query:
+          domain: "heatmap"
+
+      chartType: "heatmap"
+
+      #champ utilisé pour choisir les colonnes de ma heatmap
+      x: "x"
+      #champ utilisé pour regrouper mes colonnes en différents groupes
+      xpack: "xpack"
+      #champ utilisé pour choisir les lignes de ma heatmap
+      y: "y"
+      #champ utilisé pour regrouper mes lignes en différents groupes
+      ypack: "ypack"
+
+      #valeur principale de ma heatmap
+      value: "my_value"
+      #valeur secondaire
+      variation: "my_variation"
+      #valeur affichée en légende et qui peut être utilisé pour déterminer le 'sentiment' de chaque brique de ma heatmap
+      target: "my_target"
+
+      legend: true
+      sentiment:
+        my_value:
+          domain: ['0.9*my_target','my_target']
+          range: ['negative','neutral','positive']
+      meta: []
+
+      units:
+        my_value: ' %'
+        my_variation: ' pt'
+  }
+  {
+    level: 3
+    parent_id: 206
+    id: 20601
+    title: "bubblechart de référence"
+
+    #Eléments de contexte
+    commentary:'Ce texte est du html, je peux <strong>mettre en gras</strong> ou en <em>italique</em> ou <br>passer à la ligne'
+    recommendation:
+      advert:'Info'
+      content:'Je suis aussi du html'
+    #afficher une date qui peut correspondre à la dernière mise à jour par exemple
+    source:
+      data:
+        query:[
+          $match:
+            domain:'bubble'
+        ,
+          $sort:my_date:-1
+        ,
+          $limit:1#ne prendre qu'un élément (nous ne voulons afficher qu'une date de mise à jour, dans notre exemple tous les éléments ont la même date)
+        ]
+      value:"Je suis une source dynamique, dernière mise à jour : <%= my_date %>"#noter la syntaxe : la colonne contenant la date doit être entourée de '<%=' et '%>'
+
+    chartOptions:
+      data:
+        query:
+          domain: "bubble"
+
+      chartType: "bubblechart"
+
+      cx: "frequence"
+      cy: "gravite"
+      r: "effectif"
+      label: "my_label"
+      # color: "evolution"
+      drill:
+        group: "my_date"
+        level: "drill_level"
+        levelsOrder: ['main','sub']
+      fixedScale:false
+      withBenchmark:false
+      legend: true
+
+      quadrants:
+        x: 2
+        y: 1
+        labels: ['Attention au tx de gravité','Non performance',"Trajectoire d'excellence",'Attention au taux de fréquence']
+        sentiments: ['warning','negative','positive','warning']
+      
+      units:
+        cx: "frequence_unit"
+        cy: "gravite_unit"
+        r: "effectif_unit"
+  }
+  {
+    level: 3
+    parent_id: 207
+    id: 20701
+    title: "stackedBarchart de référence"
+
+    #Eléments de contexte
+    commentary:'Ce texte est du html, je peux <strong>mettre en gras</strong> ou en <em>italique</em> ou <br>passer à la ligne'
+    recommendation:
+      advert:'Info'
+      content:'Je suis aussi du html'
+    #afficher une date qui peut correspondre à la dernière mise à jour par exemple
+    source:
+      data:
+        query:[
+          $match:
+            domain:'stacked_barchart'
+        ,
+          $sort:my_date:-1
+        ,
+          $limit:1#ne prendre qu'un élément (nous ne voulons afficher qu'une date de mise à jour, dans notre exemple tous les éléments ont la même date)
+        ]
+      value:"Je suis une source dynamique, dernière mise à jour : <%= my_date %>"#noter la syntaxe : la colonne contenant la date doit être entourée de '<%=' et '%>'
+    
+    filters:
+      "bottom-right":
+        type: "buttons"
+        on: "breakdown"
+
+    chartOptions:
+      data:
+        query:
+          domain: "stacked_barchart"
+      
+      chartType: "stackedBarchart"
+      #colonne contenant les noms des regroupement de bars
+      label: "catégorie"
+      labelsOrder:['moins de 18 ans']#entrer l'ordre souhaité des groupes, ici l'ordre est l'ordre numérique = ordre par défaut à part pour ce label[
+      #colonne contenant les éléments à grouper au sein de chaque 'label'
+      groups: "fréquence"
+      groupsOrder:[
+        "au moins 1 fois/mois"
+        "plusieurs fois/an"
+        "1 fois/an"
+        "moins souvent"
+        "jamais"
+      ]
+      #colonne indiquant la valeur des éléments contenus dans 'groups' et que nous regroupons
+      value: "part"
+      #afficher/cacher le total de chaque ligne, il s'agit de % --> le total est tout le temps 100% dans notre cas --> nous décidons le cacher
+      hideTotal: true
+      #permettre ou non à l'utilisateur de transformer les stackedBarchart en groupe de barchart
+      #laisser true et cliquer sur un barchart pour voir la transformation!
+      unstackable: true
+      legend: true
+      #lorsque l'utilisateur sélectionne une barre, celle-ci est encadrée. Peut-être désactivé
+      visualSelection: true
+
+      #permet de mettre en évidence certains groupes
+      #il s'agit d'une liste d'élemnts [
+      # {élément 1}
+      # {élément 2}
+      #]
+      #le groupe a mettre en évidence est défini par la valeur de son label et de son group (cf ci-dessus)
+      outliers: [
+        {
+          label: "18-24 ans 2011"
+          group: "moins souvent"
+        }
+        {
+          label: "36-45 ans"
+          group: "moins souvent"
+        }
+        {
+          label: "56-65 ans"
+          group: "jamais"
+        }
+        {
+          label: "Agglo 1 2014"
+          group: "plusieurs fois/an"
+        }
+        {
+          label: "Agglo 3"
+          group: "plusieurs fois/an"
+        }
+        {
+          label: "Grande Ville 2"
+          group: "1 fois/an"
+        }
+        {
+          label: "Ville moyenne 4"
+          group: "Au moins 1 fois/an"
+        }
+      ]
+      meta: ["clients"]
+      
+      units:
+        clients: "répondants"
+        part: "%"
+
+
+
+      filters:
+        'upper-right':
+          on:'pays'
+          type:'dropdown'
+
+    id: 30206
+  }
+]
