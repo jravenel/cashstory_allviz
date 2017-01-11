@@ -1,0 +1,15 @@
+entityName: "{{ csm }}"
+id: "{{ index }}"
+report: "{{ report_id }}"
+default: "{{default | bool}}"
+
+categories: [
+  name: "anita"
+  kpis: [
+    name: "Metric"
+    type: 'value'
+    value: "{{customers}}"
+    unit: "clients"
+    slide: 32204
+  ]
+]

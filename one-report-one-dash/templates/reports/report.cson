@@ -1,0 +1,16 @@
+name: "Sales Report"
+entityName: "{{ report }}"
+id: "{{ index }}"
+date:
+  id: "date"
+  type: "buttons"
+  query:
+    domain: 'widget_value_test'
+  fields: ['daytype']
+background:
+  id: 1
+  overlay: false
+
+dashboards:{}
+
+slideInfos:{}

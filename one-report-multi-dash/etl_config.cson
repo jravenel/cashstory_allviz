@@ -1,0 +1,60 @@
+etl_config:
+    DATA_SOURCES: [
+        domain: "myapp"
+        type: "excel"
+        file: "myapp.xls"
+        sheetname: "Data"
+    ]
+    DATA_PROVIDERS: [
+    ]
+    REPORTS: [
+      query:[
+        $match:
+          domain: "myapp"
+      ,
+        $group:
+          _id: '$report'
+      ]
+      template: "report"
+    ]
+    DASHBOARDS: [
+      query:
+        domain: "myapp"
+        dashboard: "vaness"
+      report: "report"
+      template: "dashboard-vaness"
+    ,
+      query:
+        domain: "myapp"
+        dashboard: "samsara"
+      report: "report"
+      template: "dashboard-samsara"
+    ,
+      query:
+        domain: "myapp"
+        dashboard: "anita"
+      report: "report"
+      template: "dashboard-anita"
+    ]
+    PERMISSIONS_DATA:
+      query:
+        domain: "dashboards"
+        default: 1.0
+    MAX_DASHBOARDS: 500
+    MONGO_INDEXES: [
+      "domain"
+      "version"
+      [
+        "domain"
+        "subdomain"
+      ]
+      [
+        "domain"
+        "version"
+      ]
+      [
+        "domain"
+        "subdomain"
+        "version"
+      ]
+    ]

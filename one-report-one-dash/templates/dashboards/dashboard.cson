@@ -1,0 +1,23 @@
+entityName: "{{ dashboard }}"
+id: "{{ index }}"
+report: "{{ report_id }}"
+default: true
+
+categories: [
+  name: "Performance"
+  kpis: [
+    name: "Metric"
+    type: 'value-dynamic'
+    value: "value"
+    unit: "M€"
+    data:
+      value:
+        query:
+          domain: "widget_value_test"
+          company: "{{ dashboard }}"
+          daytype: "<%= requestersManager.date %>"
+        field: "value"
+    source: "2015, source Smart Toucan"
+    id: 0
+  ]
+]

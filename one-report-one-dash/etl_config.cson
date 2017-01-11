@@ -1,0 +1,42 @@
+etl_config:
+    DATA_SOURCES: [
+        domain: "myapp"
+        type: "excel"
+        file: "myapp.xls"
+        sheetname: "Data"
+    ,
+        domain: "widget_value_test"
+        type: "csv"
+        file: "widget_value.csv"
+    ]
+    DATA_PROVIDERS: [
+    ]
+    REPORTS: [
+      query:
+        domain: "myapp"
+      template: "report"
+    ]
+    DASHBOARDS: [
+      query:
+        domain: "myapp"
+      report: "report"
+      template: "dashboard"
+    ]
+    MAX_DASHBOARDS: 500
+    MONGO_INDEXES: [
+      "domain"
+      "version"
+      [
+        "domain"
+        "subdomain"
+      ]
+      [
+        "domain"
+        "version"
+      ]
+      [
+        "domain"
+        "subdomain"
+        "version"
+      ]
+    ]
