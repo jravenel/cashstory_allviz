@@ -1,32 +1,5 @@
 etl_config:
     DATA_SOURCES: [
-        domain: "market-breakdown"
-        type: "excel"
-        file: "data-market-breakdown.xls"
-        sheetname: "Data"
-    ,
-        domain: "dashboards"
-        type: "excel"
-        file: "dashboards.xls"
-        sheetname: "Data"
-    ,
-        domain: "gsheets"
-        type: "google_spreadsheet"
-        spreadsheet_id: '1O5yDtjOZCCvtRCxnw_MwQQ2aT3TW9J3i_WvOu0zXVXk'
-        sheetname: "Sheet1"
-    ,
-        domain: "ranks"
-        type: "csv"
-        file: "test.csv"
-    ,
-        domain: "lines2"
-        type: "csv"
-        file: "lines_2.csv"
-    ,
-        domain: "lines2"
-        type: "csv"
-        file: "lines_2.csv"
-    ,
         domain: "one_report_multi_dash"
         type: "csv"
         file: "one_report_multi_dash.csv"
@@ -34,27 +7,11 @@ etl_config:
         domain: "one_report_multi_dash_data"
         type: "csv"
         file: "one_report_multi_dash_data.csv"
-#    ,
-        # domain: 'db_test'
-        # type: 'external_database'
-        # name: 'Some MySQL provider'
-        # table: 'City'
     ]
+
     DATA_PROVIDERS: [
-      # name: "Some cube"
-      # type: "SSAS"
-      # options:
-      #   server_url: "http://some_server_url/OLAP/msmdpump.dll"
-    # ,
-      name: 'Some MySQL provider'
-      type: 'MySQL'
-      options:
-        host: 'localhost'  # REQUIRED
-        db: 'circle_test'  # REQUIRED
-        user: 'ubuntu'  # REQUIRED
-        password: ''  # OPTIONAL
-        port: 3306  # OPTIONAL
     ]
+    
     REPORTS: [
       query: [
         $match:
@@ -64,6 +21,7 @@ etl_config:
       ]
       template: "report"
     ]
+    
     DASHBOARDS: [
       query:
         domain: "one_report_multi_dash"
@@ -87,7 +45,6 @@ etl_config:
       query:
         domain: "dashboards"
         default: 1.0
-    MAX_DASHBOARDS: 500
     MONGO_INDEXES: [
       "domain"
       "version"
