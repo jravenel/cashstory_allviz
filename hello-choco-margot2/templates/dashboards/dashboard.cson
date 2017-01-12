@@ -1,0 +1,189 @@
+#Bienvenu sur la home!
+#On met de côté les éléments ci-dessous, sur lesquels nous reviendrons par la suite!
+entityName: "{{ zone }}"
+id: "{{ index }}"
+report: "{{ report_id }}"
+default: "{{ default }}"
+
+# Voici le corps de la home, à l'intérieur de 'categories'
+
+# On retrouve la structure que nous avions sur les écrans de la front_config:
+# categories:[
+#   name:'le titre du premier chapitre de ma home'
+#   kpis:[paramètres des kpis que je souhaite afficher dans ce chapitre]
+# ,
+#   name:'titre du deuxième chapitre de ma home'
+#   kpis:[paramètres des kpis que je souhaite afficher dans ce chapitre]
+# ]
+
+categories: [
+  name: "Performance"
+  kpis: [
+    # TO DO
+    # Ok, si ton GO a fait le boulot sur la front_config tu devrais être capable de :
+      # - inverser la position de la brique metric et de la brique Classement
+      # - changer le nom de la brique metric --> métrique
+      # - supprimer la brique d'image
+      # - modifier la source de l'écran métrique 2015 --> 2016
+      # - remplacer le lien vers un écran qui existe dans notre application, vérifier en cliquant dessus que l'on y est bien conduit! 
+
+    # Information générales sur la brique
+    name: "Metric"#titre à afficher
+    type: 'value-dynamic'#type de brique
+    source: "2015, source Smart Toucan"#source à afficher?
+    slide: 32204#id de l'écran vers lequel on souhaite créer un lien
+    
+    #la requête de donnée, similaire à ce que nous avons regardé sur les écrans
+    data:
+      value:
+        query:
+          domain: "ranks"
+          "pays": "France"
+          breakdown: "<%= requestersManager.date %>"
+        field: "pib"
+      comparison:
+        query:
+          domain: "dashboards"
+          country: "France"
+          default: 1
+        field: "target"
+    precision:
+      value: '.1f'
+    compute:
+      badge: 'value - comparison'
+    
+    #les paramètres du type de graph que j'ai choisi en 'type'
+    value: "value"
+    badge: 'badge'
+    unit: "%"
+    sentiment:
+      value:
+        domain: ['comparison']
+        range: ['negative','positive']
+  ,
+    #la brique d'image, simple non? Sais-tu comment modifier l'image via l'interface de l'application?
+    type: "media-img"
+    src: "toucan.jpg"
+  ,
+    # ok, sur cette brique regardond de plus près la partie chartOptions
+    
+    # data
+    # on voit que le domaine s'appelle 'ranks', pour connaitre le nom du fichier source j'ouvre le fichier etl_config.cson et j'utilise ctr + f
+    # je vois les informations ci-dessous :
+      # domain: "ranks"
+      # type: "csv"
+      # file: "test.csv" --> l'info que je cherche!
+    # je peux maintenant aller chercher sur l'interface de l'application le fichier test.csv et le télécharger (flèche en haut à droite, choisir staging,
+    # si la différence entre staging et production n'est pas clair --> demander au GO!)
+    # ok, le fichier excel devrait ressembler à ça :
+    # Retailer name | pib  | population
+    # France        | 15.3 | 222
+    # voyons comment ces informations sont transmises à l'application :
+
+    # rien de nouveau
+    name: "Classement"
+    source: "2015, source Smart Toucan"
+    slide: 100
+    
+    # pour cet exemple nous choisissons une répresentation de type 'leaderboard', nous verrons plus tard l'ensemble des représentations disponibles
+    type: "leaderboard"
+
+    chartOptions:
+    # nous y voilà!
+      data:
+        query:
+          # dans la 'requête' nous retrouvons le nom donné en etl_config au fichier 'test.xls' : 'ranks'
+          domain: 'ranks'
+          # nous ajoutons ici un filtre : sur le champ 'breakdown' nous ne laissons que les lignes ayant pour valeur 'Day'
+          breakdown:'Day'
+      value: "pib"#quel est le champ de valeur? Il y en a deux dans le fichier excel --> prenons par exemple la colonne 'pib'
+      label: "pays"#où se trouve le nom correspondant à chaque valeur?
+
+      units:
+        # nous utiliserons plus tard des unités automatiques, pour l'instant j'indique que pour la colonne de valeur que j'ai choisi 'pib' (ou 'population' si tu l'as choisi)
+        # l'unité correspondant est ' €' (ou ' hab.'). Noter l'espace avant l'unité pour ne pas coller l'unité choisi au chiffre
+        value: " €"
+  ]
+,
+# TO DO
+# - créer un nouveau chapitre "L'autre évolution" contenant la brique 'Traffic' du chapiter 'Evolution'
+# - ouvrir le fichier excel correspondant au domaine 'lines1' via l'interface
+# - changer le nom des colonnes et ajuster les paramètres pour que la brique Traffic continue de s'afficher normalement
+  name: "Evolution"
+  kpis: [
+    name: "Traffic"
+    source: "2015, source Smart Toucan"
+
+    type: "line"
+    
+    chartOptions:
+      data:
+        query:
+          domain: 'lines1'
+          breakdown: "<%= requestersManager.date %>"
+    
+      value: "value"
+      date: "month"
+    
+    unit: " p/h"
+  ]
+,
+  name: "Contenu"
+  kpis: [
+    # TO DO : changer l'image qui s'affiche via l'interface!
+    type: "media-img"
+    src: "crea-home.jpg"
+  ,
+  # TO DO : afficher une vidéo youtube :)
+  # provider --> 'youtube'
+  # id : cherher une vidéo youtube et regarder dans l'url https://www.youtube.com/watch?v=64tbmnI8lt0  64tbmnI8lt0 est l'id recherchée (après 'v='')
+    type: "media-video"
+    provider: 'vimeo'
+    id: "50352359"
+  ,
+  # TO DO : rechercher le fichier source qui alimente ce texte, le modifier et l'uploader à nouveau --> vérifier l'affichage de la dernière version du texte
+    name: "Long free text"
+    type: "text-dynamic"
+    data: 
+      query:
+       domain: "mon_texte"
+    content: "mon_contenu"
+    source: "2015, source Smart Toucan"
+  ]
+,
+  name: "Score cards"
+  kpis: [
+    # TO DO
+       # - changer la requête pour n'afficher que les éléments de type 'Nature' dans la colonne 'my_group'
+       # - corriger l'unité des stocks : pts --> pièces
+       # - modifier le sentiment : une évolution négative est connotée positivement
+       # - modifier le sentiment : entre 0 et -1 nous sommes dans une zone neutre ('warning')
+    name: "Cosmetics"
+    slide: 100
+    
+    type: 'score-card'
+    
+    chartOptions:
+      data:
+        query:
+          domain: "my_scorecard"
+        precision: 
+          my_value:',.0f'
+          my_evolution:',.0f'
+   
+      sentiment:
+        my_evolution:
+          domain:[0]
+          range:['negative','positive']
+    
+      value: "my_value"
+      variation: "my_evolution"
+      label: "my_label"
+      # target: "target"
+      limit: 6
+    
+      units:
+        my_value: 'my_unit'
+        my_evolution: 'my_unit'
+  ]
+]
