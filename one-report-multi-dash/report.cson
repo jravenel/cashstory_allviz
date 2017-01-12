@@ -1,0 +1,10 @@
+name: "Report lieu"
+entityName: "{{ report_entity_name }}"
+id: "{{ index }}"
+date: 'Janvier 2016'
+background:
+  id: 1
+  overlay: false
+
+dashboards:
+  search: "Recherchez par zone"

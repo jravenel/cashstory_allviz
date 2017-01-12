@@ -1,0 +1,16 @@
+entityName: "{{ dashboard }}"
+id: "{{ index }}"
+report: "{{ report_id }}"
+default: "{{ default | bool }}"
+
+categories: [
+  name: "Categorie B"
+  kpis: [
+    name: "Awesome metric"
+    type: 'value'
+    value: "{{ value }}"
+    unit: ""
+    source: "2016, Cecile inspired"
+    id: 0
+  ]
+]

@@ -1,40 +1,87 @@
 etl_config:
     DATA_SOURCES: [
-        domain: "myapp"
+        domain: "market-breakdown"
         type: "excel"
-        file: "myapp.xls"
+        file: "data-market-breakdown.xls"
         sheetname: "Data"
+    ,
+        domain: "dashboards"
+        type: "excel"
+        file: "dashboards.xls"
+        sheetname: "Data"
+    ,
+        domain: "gsheets"
+        type: "google_spreadsheet"
+        spreadsheet_id: '1O5yDtjOZCCvtRCxnw_MwQQ2aT3TW9J3i_WvOu0zXVXk'
+        sheetname: "Sheet1"
+    ,
+        domain: "ranks"
+        type: "csv"
+        file: "test.csv"
+    ,
+        domain: "lines2"
+        type: "csv"
+        file: "lines_2.csv"
+    ,
+        domain: "lines2"
+        type: "csv"
+        file: "lines_2.csv"
+    ,
+        domain: "one_report_multi_dash"
+        type: "csv"
+        file: "one_report_multi_dash.csv"
+    ,
+        domain: "one_report_multi_dash_data"
+        type: "csv"
+        file: "one_report_multi_dash_data.csv"
+#    ,
+        # domain: 'db_test'
+        # type: 'external_database'
+        # name: 'Some MySQL provider'
+        # table: 'City'
     ]
     DATA_PROVIDERS: [
+      # name: "Some cube"
+      # type: "SSAS"
+      # options:
+      #   server_url: "http://some_server_url/OLAP/msmdpump.dll"
+    # ,
+      name: 'Some MySQL provider'
+      type: 'MySQL'
+      options:
+        host: 'localhost'  # REQUIRED
+        db: 'circle_test'  # REQUIRED
+        user: 'ubuntu'  # REQUIRED
+        password: ''  # OPTIONAL
+        port: 3306  # OPTIONAL
     ]
     REPORTS: [
-      query:[
+      query: [
         $match:
-          domain: "myapp"
+          domain: "one_report_multi_dash"
       ,
-        $group:
-          _id: '$report'
+        $limit: 1
       ]
       template: "report"
     ]
     DASHBOARDS: [
       query:
-        domain: "myapp"
-        dashboard: "vaness"
-      report: "report"
-      template: "dashboard-vaness"
+        domain: "one_report_multi_dash"
+        template_type: "Grande ville"
+      report: "report_entity_name"
+      template: "dashboard_grande_ville"
     ,
       query:
-        domain: "myapp"
-        dashboard: "samsara"
-      report: "report"
-      template: "dashboard-samsara"
+        domain: "one_report_multi_dash"
+        template_type: "Village"
+      report: "report_entity_name"
+      template: "dashboard_village"
     ,
       query:
-        domain: "myapp"
-        dashboard: "anita"
-      report: "report"
-      template: "dashboard-anita"
+        domain: "one_report_multi_dash"
+        template_type: "Taudis"
+      report: "report_entity_name"
+      template: "dashboard_taudis"
     ]
     PERMISSIONS_DATA:
       query:

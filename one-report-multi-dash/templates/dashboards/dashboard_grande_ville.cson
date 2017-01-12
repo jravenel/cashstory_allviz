@@ -1,0 +1,30 @@
+entityName: "{{ dashboard_entity_name }}"
+id: "{{ index }}"
+report: "{{ report_id }}"
+default: "{{default}}"
+
+categories: [
+  name: "Grande ville"
+  kpis: [
+    name: "Indice de joie"
+    type: 'value-dynamic'
+    value: "value"
+    unit: ""
+    badge: 'bullet'
+    sentiment:
+      value:
+        domain: [6]
+        range: ['negative','positive']
+    precision:
+      value: '.0f'
+    data:
+      value:
+        query:
+          domain: "one_report_multi_dash_data"
+          type_lieu: "Grande ville"
+          type_metric: "happiness"
+        field: "metric"
+    source: "2015, source Smart Toucan"
+    id: 0
+  ]
+]

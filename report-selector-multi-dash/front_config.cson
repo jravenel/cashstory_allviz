@@ -32,7 +32,12 @@ dataProviders:
   "google-sheets": {}
 
 home:
-  skipToReport: "0"
+  search:
+    text: 'Dashboard of'
+    helper: 'Please enter the first 3 letters of your report '
+    placeholder: 'A Bird Species'
+  widget:
+    type: "list" # Can also be 'list'
 
 slides: [
   {

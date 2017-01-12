@@ -1,0 +1,33 @@
+etl_config:
+    DATA_SOURCES: [
+        domain: "sample_reports"
+        type: "csv"
+        file: "reports.csv"
+    ,
+        domain: "sample_dashboards"
+        type: "csv"
+        file: "dashboards.csv"
+    ]
+    DATA_PROVIDERS: []
+    REPORTS: [
+      query:
+        domain: "sample_reports"
+      template: "report"
+    ]
+    DASHBOARDS: [
+      query:
+        domain: "sample_dashboards"
+        type: 1
+      report: "report"
+      template: "dashboard1"
+    ,
+      query:
+        domain: "sample_dashboards"
+        type: 2
+      report: "report"
+      template: "dashboard2"
+    ]
+    MAX_DASHBOARDS: 500
+    MONGO_INDEXES: [
+      "domain"
+    ]

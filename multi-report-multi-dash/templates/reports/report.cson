@@ -1,0 +1,16 @@
+name: "Toucan Toco's report"
+entityName: "{{ name }}"
+id: "{{ index }}"
+date: "Avril 2016"
+background:
+  id: 1
+  overlay: true
+execsumTitle: "This is the report {{ roman_number }}, bitch!"
+execsumNote: "* Crafted with <strong><3</strong> by Pauline, Cécile & David"
+
+search:
+  default: '{{ default | bool }}'
+  'placeholder': 'Choose your report, bitch!'
+
+dashboards:
+  search: "Search among dashboards..."
