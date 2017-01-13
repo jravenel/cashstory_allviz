@@ -1,0 +1,6 @@
+type_lieu,metric,type_metric
+Grande ville,5,happiness
+Village,7,happiness
+Taudis,1,happiness
+Taudis,12000,densite_population
+Village,99,age_moyen

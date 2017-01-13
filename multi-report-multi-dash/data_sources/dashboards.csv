@@ -1,0 +1,6 @@
+report,dashboard,value,type,default
+Report 1,Dashboard 0,10,1,1
+Report 1,Dashboard 1,20,1,0
+Report 2,Dashboard 2,30,2,0
+Report 2,Dashboard 3,40,1,0
+Report 2,Dashboard 4,50,2,0
