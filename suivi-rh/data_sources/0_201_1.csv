@@ -1,0 +1,31 @@
+date,label,value
+2010,Maladie,4.2
+2010,Accident Travail,1.2
+2010,Invalidité,1.3
+2010,Maternité,0.6
+2010,Accident Trajet,0.00001
+2011,Maladie,4.4
+2011,Accident Travail,1.4
+2011,Invalidité,1.4
+2011,Maternité,0.4
+2011,Accident Trajet,0.00001
+2012,Maladie,4.5
+2012,Accident Travail,1.3
+2012,Invalidité,1.4
+2012,Maternité,0.6
+2012,Accident Trajet,0.00001
+2013,Maladie,5
+2013,Accident Travail,1.2
+2013,Invalidité,1.3
+2013,Maternité,0.5
+2013,Accident Trajet,0.00001
+2014,Maladie,4.9
+2014,Accident Travail,1.1
+2014,Invalidité,1.3
+2014,Maternité,0.5
+2014,Accident Trajet,0.00001
+2015,Maladie,5
+2015,Accident Travail,1
+2015,Invalidité,1.1
+2015,Maternité,0.4
+2015,Accident Trajet,0.00001
