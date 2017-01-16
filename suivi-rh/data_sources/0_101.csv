@@ -1,27 +1,11 @@
 label,label_sublevel,value
-Zero,Zero,0
-BU1,BU1,56
+Total 2015.12,Total 2015.12,485
 BU1,Direction générale,18
-BU1,Audit Interne,6
-BU1,DUI,7
-BU1,Communication,17
-BU1,Autres directions,8
+BU1,Audit Interne,23
 BU2,Ventes locales,285
-BU2,Ventes Nationales,50
+BU2,Ventes Nationales,-50
 BU2,Autres directions,79
-BU3,Patrimoine,91
-BU3,DOO,182
-BU3,Coord. Ao & Marketing Offre,7
-BU3,DRH,50
-BU3,Autres directions,49
-BU4,DSI,125
-BU4,Finance Corps.,29
-BU4,Direction Juridique,22
-BU4,Autres directions,23
-BU5,DPE,1326
-BU5,DTI,272
-BU5,DAC,161
-BU5,Direction Etudes,120
-BU5,Autres directions,270
-BU6,BU6,44
-Effectif Total,Effectif Total,3241
+BU3,DOO,-182
+BU3,Marketing,37
+BU3,DRH,-50
+Total 2016.12,Total 2016.12,736

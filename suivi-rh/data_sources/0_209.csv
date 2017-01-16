@@ -1,10 +1,14 @@
 benchmark,label,color,Fréquence,Gravité,effectif,breakdown
 ,Femme,Femme,38,11,72725,sexe
 ,Homme,Homme,27,10,136999,sexe
-,moins de 30 ans,age,28,7,63366,age
-,30 - 39 ans,age,35,9,69501,age
-,40 - 49 ans,age,31,12,45797,age
-,plus de 50 ans,age,30,19,31060,age
+,moins de 25 ans,age,28,7,63366,age
+,25 - 29 ans,age,20,11,6336,age
+,30 - 34 ans,age,35,12.5,69501,age
+,35 - 39 ans,age,25,12.25,69501,age
+,40 - 44 ans,age,21,14,45797,age
+,45 - 49 ans,age,31,13,4797,age
+,50 - 59 ans,age,11,12,45797,age
+,plus de 60 ans,age,30,17,31060,age
 ,Ouvrier,csp,34,17,8653,csp
 ,Employé,csp,34,10,56816,csp
 ,Agent de maîtrise,csp,35,12,17386,csp

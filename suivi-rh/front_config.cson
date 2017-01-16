@@ -41,13 +41,13 @@ slides: [
   {
     level: 3
     parent_id: 10
-    title: "Compositions des effectifs"
+    title: "Evolution des effectifs"
     commentary: "Cliquez pour observer ce que contient chaque BU"
 
     chartOptions:
       data:
-        file:
-          name: "<%= report.id %>_101"
+        query:
+          domain: "0_101"
       chartType: "waterfall"
       value: "value"
       label: "label"
@@ -256,8 +256,8 @@ slides: [
     parent_id: 20
     chartOptions:
       data:
-        file:
-          name: "<%= report.id %>_209"
+        query:
+          domain: "0_209"
       chartType: "bubblechart"
       label: "label"
       legend:
