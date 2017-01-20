@@ -1,4 +1,4 @@
-**/data_sources
+#**/data_sources
 # Python bytecode
 *.pyc
 

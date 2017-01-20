@@ -25,6 +25,14 @@ etl_config:
         domain: "0_14"
         type: "csv"
         file: "0_14.csv"
+    ,
+        domain: "0_209"
+        type: "csv"
+        file: "0_209.csv"
+    ,
+        domain: "0_101"
+        type: "csv"
+        file: "0_101.csv"
     ]
     REPORTS: [
       query:

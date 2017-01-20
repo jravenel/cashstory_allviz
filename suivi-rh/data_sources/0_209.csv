@@ -1,0 +1,36 @@
+benchmark,label,color,Fréquence,Gravité,effectif,breakdown
+,Femme,Femme,38,11,72725,sexe
+,Homme,Homme,27,10,136999,sexe
+,moins de 25 ans,age,28,7,63366,age
+,25 - 29 ans,age,20,11,6336,age
+,30 - 34 ans,age,35,12.5,69501,age
+,35 - 39 ans,age,25,12.25,69501,age
+,40 - 44 ans,age,21,14,45797,age
+,45 - 49 ans,age,31,13,4797,age
+,50 - 59 ans,age,11,12,45797,age
+,plus de 60 ans,age,30,17,31060,age
+,Ouvrier,csp,34,17,8653,csp
+,Employé,csp,34,10,56816,csp
+,Agent de maîtrise,csp,35,12,17386,csp
+,Cadre,csp,29,10,123901,csp
+,Ouvrier F ,Femme,18,16,2665,sexe+csp
+,Employée F,Femme,39,11,29540,sexe+csp
+,Agent de maîtrise  F,Femme,39,12,6665,sexe+csp
+,Cadre F,Femme,39,10,32697,sexe+csp
+,Ouvrier H,Homme,41,18,5988,sexe+csp
+,Employé H,Homme,29,10,27276,sexe+csp
+,Agent de maîtrise H,Homme,32,12,10721,sexe+csp
+,Cadre H,Homme,26,9,91204,sexe+csp
+,moins de 30 ans F ,Femme,33,8,24649,age+sexe
+,30 - 39 ans F,Femme,46,10,23288,age+sexe
+,40 - 49 ans F ,Femme,37,12,15388,age+sexe
+,plus de 50 ans F ,Femme,36,17,9400,age+sexe
+,moins de 30 ans H,Homme,24,6,38717,age+sexe
+,30 - 39 ans H,Homme,30,8,46213,age+sexe
+,40 - 49 ans H,Homme,27,12,30409,age+sexe
+,plus de 50 ans H,Homme,27,20,21660,age+sexe
+GROUPE 1,GROUPE 1,GROUPE 1,31,10,209724,age+sexe
+GROUPE 1,GROUPE 1,GROUPE 1,31,10,209724,age
+GROUPE 1,GROUPE 1,GROUPE 1,31,10,209724,sexe
+GROUPE 1,GROUPE 1,GROUPE 1,31,10,209724,csp
+GROUPE 1,GROUPE 1,GROUPE 1,31,10,209724,sexe+csp
