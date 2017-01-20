@@ -15,7 +15,7 @@ categories: [
     id: 0
   ,
     type: "media-img"
-    src: "{{images}}"
+    src: "fondation.jpeg"
   ,
     name: "Growth"
     value: "{{ kpi2 }}"
@@ -40,7 +40,7 @@ categories: [
     unit: "M€"
     badge: "bullet"
     comment: "In 2013, {{ Compkpi9}} M€"
-         
+
   ]
 # ,
 #   name: "Business Group"
