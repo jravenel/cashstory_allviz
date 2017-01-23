@@ -34,7 +34,37 @@ DATA_SOURCES: [
     domain: "funnelchart"
     type: "csv"
     file: "funnelchart.csv"
-# ,
+,
+# 01/2017 - added by Margot when doing the full-toucan review
+    domain: "heatmap"
+    type: "csv"
+    file: "heatmap.csv"
+,
+    domain: "0_35201"
+    type: "csv"
+    file: "0_35201.csv"
+,
+    domain: "slave_heatmap"
+    type: "csv"
+    file: "slave_heatmap.csv"
+,
+    domain: "0_36200"
+    type: "csv"
+    file: "0_36200.csv"
+,
+    domain: "0_36202"
+    type: "csv"
+    file: "0_36202.csv"
+,
+    domain: "0_37100"
+    type: "csv"
+    file: "0_37100.csv"
+,
+    domain: "0_37101"
+    type: "csv"
+    file: "0_37101.csv"
+,
+#,
 #     domain: "ga_example"
 #     type: "google_analytics"
 #     name: "SomeGoogleAnalyticsProvider"

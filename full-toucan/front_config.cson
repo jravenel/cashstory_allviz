@@ -146,7 +146,15 @@ slides: [
       ]
       showAverage: true
       source: "SI Ramphastos - Enquêtes terrain"
-
+    linkTo: [
+      type: 'slide'
+      id: 30202
+      legend: 'Vue performace'
+    ,
+      type: 'dashboard'
+      id: 0
+      legend: 'Vers dashboard'
+    ]
     id: 30201
   }
   {
@@ -260,7 +268,6 @@ slides: [
 
         crossfilter:
           on: "date"
-          datasets: [1]
         groups: "Centre"
         date: "date"
         value: "value"
@@ -284,8 +291,7 @@ slides: [
           Effectif: " répondants"
 
         meta: "Effectif"
-        average: 
-          values: [77]
+        average: 77
         packs: "group"
         packsOrder: ["Caraibes", "Autres"]
         size: 0.75
@@ -434,6 +440,18 @@ slides: [
   {
     level: 3
     title: "Detrending"
+    commentary: [
+      value: "This shows a comment depending on the comparison setting - Entity A"
+      where:
+        comparison: "Entity A"
+      ,
+        value: "This is a comment specific for the Trend filter and Entity B"
+        where:
+          selected: "Trend"
+          comparison: "Entity B"
+      ,
+        value: "This is the default comment"
+    ]
     parent_id: 202
     filters:
       "bottom-right":
@@ -554,12 +572,6 @@ slides: [
   {
     level: 3
     title: "Découpage<br>Par Catégorie"
-
-    kpi:
-      unit: "k €"
-      badge:
-        comment: "CA Jaude"
-
     parent_id: 200
 
     filters:
@@ -707,7 +719,6 @@ slides: [
     level: 3
     title: "SQL Server Analysis Services"
 
-    kpi: {}
     parent_id: 30
     chartOptions:
       data:
@@ -732,7 +743,6 @@ slides: [
     level: 3
     title: "Google Sheets"
 
-    kpi: {}
     parent_id: 30
     chartOptions:
       data:
@@ -753,7 +763,6 @@ slides: [
     level: 3
     title: "MySQL"
 
-    kpi: {}
     parent_id: 30
     chartOptions:
       data:
@@ -777,7 +786,6 @@ slides: [
     level: 3
     title: "Google Analytics"
 
-    kpi: {}
     parent_id: 30
     chartOptions:
       data:
@@ -807,7 +815,6 @@ slides: [
     level: 3
     title: "Google Big Query"
 
-    kpi: {}
     parent_id: 30
     chartOptions:
       data:
@@ -872,10 +879,10 @@ slides: [
     level: 3
     title: "Musées<br>visités"
 
-    kpi:
-      unit: ""
-      badge:
-        comment: " en moyenne"
+    # kpi:
+    #   unit: ""
+    #   badge:
+    #     comment: " en moyenne"
 
     parent_id: 200
     chartOptions:
@@ -893,12 +900,12 @@ slides: [
   }
   {
     level: 3
-    title: "Ventes par<br>departements"
+    title: "Clients par<br>departements"
 
-    kpi:
-      unit: "M€"
-      badge:
-        comment: "Cantal"
+    # kpi:
+    #   unit: "M€"
+    #   badge:
+    #     comment: "Cantal"
 
     filters:
       "bottom-right":
@@ -933,102 +940,30 @@ slides: [
 
     id: 34201
   }
-  {
-    level: 3
-    title: "Origine des<br>visiteurs"
-
-    parent_id: 204
-    chartOptions:
-      data:
-        file:
-          name: "<%= report.id %>_34202"
-      chartType: "map"
-      join: "IRIS"
-      joinMap: "DCOMIRIS"
-      label: "IRIS"
-      peers: "city"
-      compLabel: "Total visites"
-      filters: [
-        on: "poi_id"
-        type: "dropdown"
-      ,
-        on: "category"
-        type: "buttons"
-      ]
-      value: "value"
-      time: "month_part"
-      meta: ["population", "mean_income"]
-      cartoFile: "IRIS_Basse_Normandie"
-      units:
-        value: "%"
-        total: ""
-        population: " habitants"
-        mean_income: " € revenu/hab"
-        home: " % visites du centre"
-        work: " % visites du centre"
-        value_comp: " "
-
-      markers:
-        coteNacre:
-          lat: 49.209109
-          lng: -0.364416
-          title: "Côte de Nacre"
-          focus: true
-          draggable: false
-        mondeville2:
-          lat: 49.16449
-          lng: -0.296978
-          title: "Mondeville 2"
-          focus: true
-          draggable: false
-        rivesOrne:
-          lat: 49.176541
-          lng: -0.351599
-          title: "Les Rives de l'Orne"
-          focus: true
-          draggable: false
-        valStClair:
-          lat: 49.205794
-          lng: -0.324685
-          title: "Val Saint Clair"
-          focus: true
-          draggable: false
-
-      kpiSelector: "kpi"
-      legend: true
-      center:
-        lat: 49.16864
-        lng: -0.35928
-        zoom: 12
-        peer: "CAEN"
-
-    id: 34202
-  }
-
-  {
-    level: 3
-    title: "Données communes"
-    parent_id: 204
-    chartOptions:
-      data:
-        file:
-          name: "popu_insee"
-      chartType: "carto"
-      join: "CODGEO"
-      label: "LIBGEO"
-      value: "P12_POP"
-      peers: " "
-      levels: 4
-      projection: "departement"
-      dropdownWithoutPeers: true
-      removeEmptyShape: true
-      cartoFiles:
-        " ": "commune_topojson.json"
-
-      units:
-        "P12_POP": "hab"
-    id: 342011
-  }
+  # {
+  #   level: 3
+  #   title: "Données communes"
+  #   parent_id: 204
+  #   chartOptions:
+  #     data:
+  #       file:
+  #         name: "popu_insee"
+  #     chartType: "carto"
+  #     join: "CODGEO"
+  #     label: "LIBGEO"
+  #     value: "P12_POP"
+  #     peers: " "
+  #     levels: 4
+  #     projection: "departement"
+  #     dropdownWithoutPeers: true
+  #     removeEmptyShape: true
+  #     cartoFiles:
+  #       " ": "commune_topojson.json"
+  #
+  #     units:
+  #       "P12_POP": "hab"
+  #   id: 342011
+  # }
   {
     level: 3
     title: "World Map"
@@ -1044,7 +979,7 @@ slides: [
       peers: " "
       levels: 4
       projection: "world"
-      kpi: "kpi"
+      # kpi: "kpi"
       cartoFiles:
         " ": "world-topojson.json"
 
@@ -1068,7 +1003,7 @@ slides: [
         peers: " "
         levels: 4
         projection: "world"
-        kpi: "kpi"
+        # kpi: "kpi"
         cartoFiles:
           " ": "world-topojson.json"
         crossfilter:
@@ -1100,10 +1035,10 @@ slides: [
     level: 3
     title: "Trafic<br>geolocalisé"
 
-    kpi:
-      unit: "k visits"
-      badge:
-        comment: "1er étage"
+    # kpi:
+    #   unit: "k visits"
+    #   badge:
+    #     comment: "1er étage"
 
     filters:
       "bottom-right":
@@ -1181,7 +1116,15 @@ slides: [
   {
     level: 3
     title: "Heatmap"
-    commentary: "The heatmap helps you to see what's going on instantly"
+    commentary: [
+      value: "The heatmap helps you to see what's going on instantly - Amount filter"
+      where:
+        selected: "Amount"
+      ,
+        value: "This is a comment specific for the volume filter"
+        where:
+          selected: "Volume"
+      ]
     filters:
       "bottom-right":
         on: "breakdown"
@@ -1190,8 +1133,8 @@ slides: [
     parent_id: 206
     chartOptions:
       data:
-        file:
-          name: "heatmap"
+        query:
+          domain: "heatmap"
       chartType: "heatmap"
       legend: true
       x: "voiture"
@@ -1216,8 +1159,8 @@ slides: [
     level: 3
     title: "Contribution<br>à la satisfaction"
 
-    kpi:
-      unit: " %"
+    # kpi:
+    #   unit: " %"
 
     filters:
       "bottom-right":
@@ -1227,8 +1170,8 @@ slides: [
     parent_id: 206
     chartOptions:
       data:
-        file:
-          name: "<%= report.id %>_35201"
+        query:
+          domain: "0_35201"
       chartType: "bubblechart"
       legend: true
       label: "label"
@@ -1250,12 +1193,63 @@ slides: [
   }
   {
     level: 3
+    title: "Crossfiltered Heatmap"
+    parent_id: 206
+    charts: [
+      {
+        data:
+          query:
+            domain: "heatmap"
+        chartType: "heatmap"
+        legend: true
+        x: "voiture"
+        xpack: "segment"
+        y: "pays"
+        ypack: "zone"
+        value: "value"
+        target: "target"
+        variation: "variation"
+        reverse: true
+        crossfilter:
+          on: "concat"
+          datasets: [1]
+        sentiment:
+          value:
+            domain: ['0.8*target','target']
+            range: ['negative','neutral','positive']
+        meta: []
+        units:
+          value: '%'
+          variation: 'pt'
+        size: 0.5
+        style: "secondary"
+        id: 0
+      }
+      {
+        data:
+          query:
+            domain: 'slave_heatmap'
+        chartType: "leaderboardCenteredAverage"
+        value: "variation"
+        label: "breakdown"
+        hideAverageBox: true
+        units:
+          variation: " %"
+        average: 0
+        size: 0.5
+        id: 1
+      }
+    ]
+    id: 35223
+  }
+  {
+    level: 3
     title: "Taux de <br>Pénétration"
 
-    kpi:
-      unit: "%"
-      badge:
-        comment: "tous segments"
+    # kpi:
+    #   unit: "%"
+    #   badge:
+    #     comment: "tous segments"
 
     filters:
       "bottom-right":
@@ -1265,8 +1259,8 @@ slides: [
 
     chartOptions:
       data:
-        file:
-          name: "<%= report.id %>_36200"
+        query:
+          domain: "0_36200"
       chartType: "bubblechart"
       label: "label"
       legend:
@@ -1298,8 +1292,8 @@ slides: [
 
     chartOptions:
       data:
-        file:
-          name: "<%= report.id %>_36202"
+        query:
+          domain: "0_36202"
       chartType: "forceDirectedChart"
       label: "comportement"
       value: "pourcentage"
@@ -1360,16 +1354,16 @@ slides: [
     level: 3
     title: "Free cash flow"
 
-    kpi:
-      unit: " M€"
-      badge:
-        comment: "Juin 2014"
+    # kpi:
+    #   unit: " M€"
+    #   badge:
+    #     comment: "Juin 2014"
 
     parent_id: 207
     chartOptions:
       data:
-        file:
-          name: "<%= report.id %>_37100"
+        query:
+          domain: "0_37100"
       chartType: "waterfall"
       value: "2013"
       label: "label"
@@ -1404,7 +1398,7 @@ slides: [
 
 
         precision:
-          value: ",.1%"
+          value: ",.0f"
         date:
           selector:"day"
           format:"%m/%d"
@@ -1420,7 +1414,7 @@ slides: [
             type: "bar"
             label: "<%= requestersManager.metric_bar %>"
           }
-        ]
+      ]
       units:
         value: " "
       requesters:
@@ -1458,10 +1452,10 @@ slides: [
     level: 3
     title: "Resultat Op.<br>et marge"
 
-    kpi:
-      unit: "%"
-      badge:
-        comment: "Marge opé."
+    # kpi:
+    #   unit: "%"
+    #   badge:
+    #     comment: "Marge opé."
 
     parent_id: 207
     filters:
@@ -1471,8 +1465,18 @@ slides: [
 
     chartOptions:
       data:
-        file:
-          name: "<%= report.id %>_37101"
+        query:
+          domain: "0_37101"
+        precision:
+          value:[
+            precision: ",.0f"
+            where:
+              breakdown: "CA"
+          ,
+            precision: ".2f"
+            where:
+              breakdown: "Marge"
+          ]
       chartType: "barlinechart"
       units:
         CA: " M€"
