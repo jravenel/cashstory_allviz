@@ -159,6 +159,10 @@ slides: [
     title: "Cash Forecast"
     parent_id:10
     id: 10300
+    recommendation:
+        advert: "Warning"
+        content: """Cash flow in its narrow sense is a payment (in a currency), especially from one central bank account to another; the term 'cash flow' is mostly used to describe payments that are expected to happen in the future, are thus uncertain and therefore need to be forecasted with cash flows
+        """
     chartOptions:
       data:
         query:
