@@ -12,6 +12,11 @@ etl_config:
     domain: "0_101"
     type: "csv"
     file: "0_101.csv"
+  ,
+    domain: "cash_forecast"
+    type: 'google_spreadsheet'
+    spreadsheet_id: "1ABOo6jm45Wkaqi9mT9Vr9YzMSHi732YGBSBK0el8b5Y"
+    sheetname: "cash_forecast"
   ]
   REPORTS: []
   DASHBOARDS: [
@@ -33,7 +38,7 @@ etl_config:
       domain: "reports"
       filters: "Region"
   ]
-  MAX_DASHBOARDS: 500
+
   MONGO_INDEXES: [
     "domain"
     [

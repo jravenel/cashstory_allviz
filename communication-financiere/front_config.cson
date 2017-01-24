@@ -156,6 +156,28 @@ slides: [
   }
   {
     level: 3
+    title: "Cash Forecast"
+    parent_id:10
+    id: 10300
+    chartOptions:
+      data:
+        query:
+          domain: "cash_forecast"
+        date:
+          selector: 'date'
+          format: '%m/%Y'
+      chartType: "linechart"
+      units:
+        value: " k€"
+        date: " "
+
+      value: "value"
+      groups: "type"
+      date: "date"
+      legend: true
+  }
+  {
+    level: 3
     title: "Revenue & Profit"
     recommendation:
        advert: "Brands"
