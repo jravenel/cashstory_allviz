@@ -4,7 +4,12 @@
 entityName: "LVMH"
 slug: "test 1"
 id: "0"
-date: "Snapshot 2014"
+date:
+  id: "date"
+  type: "buttons"
+  query:
+    domain: 'date'
+  fields: ['type']
 background:
   assetName: 'bg-1'
   overlay: false

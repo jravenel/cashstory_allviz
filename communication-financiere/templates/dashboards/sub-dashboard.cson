@@ -1,30 +1,30 @@
 entityName: "{{ dashboards }}"
-entityGroup: "Business Group"
+entityGroup: "Subsidiaries"
 id: "{{ id }}"
 report: "{{ report_id }}"
 default: false
 
 categories: [
-  name: "Business Group Total"
+  name: "Subsidiary Total"
   kpis: [
     name: "Revenue"
     value: "{{ kpi1 }}"
     unit: "M€"
-    # slide: 10001
     source: "Bilan 2014"
     id: 0
   ,
     type: "media-img"
     src: "{{ images }}"
+    chartOptions:
+      bgSize:'contain'
   ,
     name: "Growth"
     value: "{{ kpi2 }}"
     unit: "%"
     source: "Bilan 2014"
+    
     id: 1
-  # ,
-  #   type: "media-video"
-  #   id: "50352359"
+
   ]
 ,
   name: "Performance"
@@ -42,27 +42,5 @@ categories: [
     comment: "In 2013, {{ Compkpi9}} M€"
 
   ]
-# ,
-#   name: "Business Group"
-#   kpis: [
-#     name: "Wines & Spirits"
-#     value: "{{ kpi1 }}"
-#     unit: "M€"
-#   ,
-#     name: "Fashion & Leather Goods"
-#     value: "{{ kpi1}}"
-#     unit: "M€"
-#   ,
-#     name: "Perfumes & Cosmetics"
-#     value: "{{ kpi1}}"
-#     unit: "M€"
-#   ,
-#     name: "Selective Retailing"
-#     value: "{{ kpi1}}"
-#     unit: "M€"
-#   ,
-#     name: "Watches & jewelry"
-#     value: "{{ kpi1}}"
-#     unit: "M€"
-#   ]
+
 ]

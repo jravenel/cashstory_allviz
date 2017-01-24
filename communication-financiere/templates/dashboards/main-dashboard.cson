@@ -26,7 +26,18 @@ categories: [
     source: "Bilan 2014"
     id: 1
     badge: "evolution_down"
-    comment: "Growt of 8% in 2013"
+    comment: "Compared as 8% growth in 2013"
+    badgeSentiment: "worse"
+  ,
+    name: "Financial Communication"
+    type: "pdf"
+    data:
+      query:
+        domain: "pdf_home"
+    url: "name"
+    linkType: "asset"
+
+
   # ,
   #   type: "media-img"
   #   src: "images/crea-home.jpg"
