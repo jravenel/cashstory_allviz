@@ -264,7 +264,7 @@ slides: [
       sparklines:
         prefix: "sparkline"
         legend: "Evolution<br>sur 12 mois"
-        unit: ""
+        unit: " "
       units:
         Value: [
           unit: " k€"

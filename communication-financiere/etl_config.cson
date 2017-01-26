@@ -12,6 +12,46 @@ etl_config:
     domain: "0_101"
     type: "csv"
     file: "0_101.csv"
+  ,
+    domain: "cash_forecast"
+    type: 'google_spreadsheet'
+    spreadsheet_id: "1ABOo6jm45Wkaqi9mT9Vr9YzMSHi732YGBSBK0el8b5Y"
+    sheetname: "cash_forecast"
+  ,
+    domain: "revenue"
+    type: 'google_spreadsheet'
+    spreadsheet_id: "1ABOo6jm45Wkaqi9mT9Vr9YzMSHi732YGBSBK0el8b5Y"
+    sheetname: "revenue"
+  ,
+    domain: "map"
+    type: 'google_spreadsheet'
+    spreadsheet_id: "1ABOo6jm45Wkaqi9mT9Vr9YzMSHi732YGBSBK0el8b5Y"
+    sheetname: "map"
+  ,
+    domain: "france_regions"
+    type: 'google_spreadsheet'
+    spreadsheet_id: "1ABOo6jm45Wkaqi9mT9Vr9YzMSHi732YGBSBK0el8b5Y"
+    sheetname: "france_regions"
+  ,
+    domain: "region_28"
+    type: 'google_spreadsheet'
+    spreadsheet_id: "1ABOo6jm45Wkaqi9mT9Vr9YzMSHi732YGBSBK0el8b5Y"
+    sheetname: "region_28"
+  ,
+    domain: "waterfall"
+    type: 'google_spreadsheet'
+    spreadsheet_id: "1ABOo6jm45Wkaqi9mT9Vr9YzMSHi732YGBSBK0el8b5Y"
+    sheetname: "waterfall"
+  ,
+    domain: "pdf_home"
+    type: 'google_spreadsheet'
+    spreadsheet_id: "1ABOo6jm45Wkaqi9mT9Vr9YzMSHi732YGBSBK0el8b5Y"
+    sheetname: "pdf_home"
+  ,
+    domain: "date"
+    type: 'google_spreadsheet'
+    spreadsheet_id: "1ABOo6jm45Wkaqi9mT9Vr9YzMSHi732YGBSBK0el8b5Y"
+    sheetname: "date"
   ]
   REPORTS: []
   DASHBOARDS: [
@@ -28,12 +68,18 @@ etl_config:
       filters: "Business Group"
   ,
     report: "report"
+    template: "sub-dashboard"
+    query:
+      domain: "reports"
+      filters: "Subsidiaries"
+  ,
+    report: "report"
     template: "region-dashboard"
     query:
       domain: "reports"
       filters: "Region"
   ]
-  MAX_DASHBOARDS: 500
+
   MONGO_INDEXES: [
     "domain"
     [
