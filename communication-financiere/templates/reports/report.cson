@@ -13,11 +13,11 @@ date:
 background:
   assetName: 'bg-1'
   overlay: false
-execsumTitle: "Group's financial results"
+execsumTitle: "%%execsumTitle%%"
 # execsumNote: "* And you should start to <strong>customize</strong> it"
 
 dashboards:
   default: 0
-  search: "Recherchez dans les dashboards..."
+  search: "%%dashboardsSearch%%"
 
 slideInfos: {}
