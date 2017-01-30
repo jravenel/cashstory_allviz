@@ -99,7 +99,7 @@ slides: [
       filters:
         'arrow-selector':
             on:'floor'
-    source: 'Average Basket: Bank Data - Sales/m²: Mercury R12M'
+    source: 'Average Basket: Bank Data - Sales/m²: fakedata R12M'
     id: 20000
   }
   {
@@ -141,7 +141,7 @@ slides: [
       filters:
         'arrow-selector':
             on:'floor'
-    source: 'OCR: Mercury R12M - MGR/m²: Mercury R12M - ERV/m²: Mercury'
+    source: 'OCR: fakedata R12M - MGR/m²: fakedata R12M - ERV/m²: fakedata'
     id: 20001
   }
   {
@@ -231,7 +231,7 @@ slides: [
         "Lease end"
       ]
 
-    source: 'Sales R12M: Mercury - Sales/m²: Mercury R12M - Sales/NSH : Mercury & Wifi, monthly avg R12M'
+    source: 'Sales R12M: fakedata - Sales/m²: fakedata R12M - Sales/NSH : fakedata & Wifi, monthly avg R12M'
     id: 20100
   }
   {
@@ -276,7 +276,7 @@ slides: [
         "GLA"
         "Lease end"
       ]
-    source: 'OCR: Mercury R12M - MGR/m²: Mercury R12M - ERV/m²: Mercury - Rev. Pot: Mercury'
+    source: 'OCR: fakedata R12M - MGR/m²: fakedata R12M - ERV/m²: fakedata - Rev. Pot: fakedata'
     id: 20101
   }
   {
@@ -486,7 +486,7 @@ slides: [
           domain: 'monthly_sales'
         date:
           selector: 'date'
-          format: '%m-%y'
+          format: '%d/%m/%y'
       chartType: "linechart"
       units:
         value: "M€"
@@ -498,7 +498,7 @@ slides: [
       ticks:
         xTicksLimit: 8
         hideXTickLimits: true
-    source: 'Mercury'
+    source: 'fakedata'
     id: 20203
   }
   {
@@ -522,7 +522,7 @@ slides: [
       groups: "center"
       date: "date"
       legend: true
-    source: 'Mercury'
+    source: 'fakedata'
     id: 20204
   }
   {
@@ -555,7 +555,7 @@ slides: [
             "Purchase conversion rate": "%"
 
       sort: "desc"
-    source: 'Sales/m²: Mercury R12M - Sales/NSH : Mercury & Wifi, monthly avg R12M '
+    source: 'Sales/m²: fakedata R12M - Sales/NSH : fakedata & Wifi, monthly avg R12M '
     id: 20300
   }
   {
@@ -614,7 +614,7 @@ slides: [
             "OCR": "%"
       sort: "desc"
 
-    source: 'Dwell time: Wifi, monthly avg R12M - OCR: Mercury'
+    source: 'Dwell time: Wifi, monthly avg R12M - OCR: fakedata'
     id: 20302
   }
 ]

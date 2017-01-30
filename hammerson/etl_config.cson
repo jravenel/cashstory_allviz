@@ -34,36 +34,57 @@ DATA_SOURCES: [
     'cache': true
     'file': 'Jointures_QT.xlsx'
   },
-  {
     domain: 'dwell_time'
-    type: 'google_spreadsheet'
-    spreadsheet_id: '1TiAmnlcSk6oSie0C1h1AvvhnVPrA0a-y3EBLdoiRkYQ'
-    sheetname: 'dwell_time'
-  },
-  {
+    type: "csv"
+    file: "dwell_time.csv"
+  ,
     domain: 'visited_tenants'
-    type: 'google_spreadsheet'
-    spreadsheet_id: '1TiAmnlcSk6oSie0C1h1AvvhnVPrA0a-y3EBLdoiRkYQ'
-    sheetname: 'visited_tenants'
-  },
-  {
+    type: "csv"
+    file: "visited_tenants.csv"
+  ,
     domain: 'visited_floors'
-    type: 'google_spreadsheet'
-    spreadsheet_id: '1TiAmnlcSk6oSie0C1h1AvvhnVPrA0a-y3EBLdoiRkYQ'
-    sheetname: 'visited_floors'
-  },
-  {
+    type: "csv"
+    file: "visited_floors.csv"
+  ,
     domain: 'monthly_sales'
-    type: 'google_spreadsheet'
-    spreadsheet_id: '1TiAmnlcSk6oSie0C1h1AvvhnVPrA0a-y3EBLdoiRkYQ'
-    sheetname: 'monthly_sales'
-  },
-  {
+    type: "csv"
+    file: "monthly_sales.csv"
+  ,
     domain: 'monthly_footfall'
-    type: 'google_spreadsheet'
-    spreadsheet_id: '1TiAmnlcSk6oSie0C1h1AvvhnVPrA0a-y3EBLdoiRkYQ'
-    sheetname: 'monthly_footfall'
-  },
+    type: "csv"
+    file: "monthly_footfall.csv"
+  ,
+
+  # {
+  #   domain: 'dwell_time'
+  #   type: 'google_spreadsheet'
+  #   spreadsheet_id: '1TiAmnlcSk6oSie0C1h1AvvhnVPrA0a-y3EBLdoiRkYQ'
+  #   sheetname: 'dwell_time'
+  # },
+  # {
+  #   domain: 'visited_tenants'
+  #   type: 'google_spreadsheet'
+  #   spreadsheet_id: '1WhMPKP3N-jkNGXYM5zq27HsAN11xMNDlp89B2RJwIBA'
+  #   sheetname: 'visited_tenants'
+  # },
+  # {
+  #   domain: 'visited_floors'
+  #   type: 'google_spreadsheet'
+  #   spreadsheet_id: '1WhMPKP3N-jkNGXYM5zq27HsAN11xMNDlp89B2RJwIBA'
+  #   sheetname: 'visited_floors'
+  # },
+  # {
+  #   domain: 'monthly_sales'
+  #   type: 'google_spreadsheet'
+  #   spreadsheet_id: '1WhMPKP3N-jkNGXYM5zq27HsAN11xMNDlp89B2RJwIBA'
+  #   sheetname: 'monthly_sales'
+  # },
+  # {
+  #   domain: 'monthly_footfall'
+  #   type: 'google_spreadsheet'
+  #   spreadsheet_id: '1WhMPKP3N-jkNGXYM5zq27HsAN11xMNDlp89B2RJwIBA'
+  #   sheetname: 'monthly_footfall'
+  # },
 ]
 DATA_PROVIDERS: [ ]
 REPORTS: [

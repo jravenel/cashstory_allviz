@@ -182,7 +182,7 @@ def augment(dfs):
       dfs['center_kpis'] = DataFrame(center_kpis).transpose()
 
     #processCenter('CS',0)
-    processCenter('QT',1, 'Quatre Temps')
+    processCenter('QT',1, 'Les 3 Fontaines')
     dfs['tenants_kpis'] = pd.concat(dfs['tenants_kpis'])
 
     del dfs['full_CS']
