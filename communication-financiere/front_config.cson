@@ -2,7 +2,7 @@ settings:
   comparison:
     description: "%%For all comparison screens, compare with:%%"
     values: [
-      "%%By default%%"
+      "By default"
       "Entity A"
       "Entity B"
       "Entity C"
@@ -15,7 +15,7 @@ glossary:
     meaning: "%%Net activity for the entire group over the past year%%"
   ,
     term: "%%Business Groups%%"
-    meaning: "The 5 Entities of the LVMH group:<br> Wines & Spirits, <br>Fashion & Leather Goods, <br>Perfumes & Cosmetics, <br>Watches & Jewelry, <br>Selective Retailing."
+    meaning: "%%GLOSSARY_2_MEANING%%"
   ]
 sharingOptions: true
 embedCharts: true
@@ -35,7 +35,7 @@ slides: [
   }
   {
     level: 1
-    title: "%By Region%"
+    title: "%%By Region%%"
     id: 10
   }
   {
@@ -97,8 +97,8 @@ slides: [
       units:
         value:
           "filter":
-            "%% Revenue in €%%": "M€"
-            "%% % of Revenue%%": "%"
+            "%%Revenue in €%%": "M€"
+            "%%Pct of Revenue%%": "%"
 
       source: "Tucana Sample Data"
       sparklines:
@@ -121,7 +121,7 @@ slides: [
       label: "label"
       sublabel: "label_sublevel"
       units:
-        "%%value%%": " k€"
+        "value": " k€"
     id: 10200
   }
   {
@@ -139,8 +139,8 @@ slides: [
       units:
         value:
           breakdown:
-            "% Nb of Stores%": " Stores"
-            "%% % of Revenue%%": "%"
+            "Nb of Stores": " Stores"
+            " % of Revenue": "%"
       packs: "groups"
 
     filters:
@@ -216,12 +216,12 @@ slides: [
   }
   {
     level: 3
-    title: "Cash Forecast"
+    title: "%%Cash Forecast%%"
     parent_id:10
     id: 10300
     recommendation:
-        advert: "Warning"
-        content: """Cash flow in its narrow sense is a payment (in a currency), especially from one central bank account to another; the term 'cash flow' is mostly used to describe payments that are expected to happen in the future, are thus uncertain and therefore need to be forecasted with cash flows
+        advert: "%%Warning%%"
+        content: """%%WARNING_CONTENT%%
         """
     chartOptions:
       data:
@@ -242,10 +242,10 @@ slides: [
   }
   {
     level: 3
-    title: "Revenue & Profit"
+    title: "%%Revenue & Profit%%"
     recommendation:
-       advert: "Brands"
-       content: "Business group's Brands <br><br> <img src='images/WS-brands.png'></img>"
+       advert: "%%Brands%%"
+       content: "%%BRANDS_DETAILS%%"
 
     charts: [
           {
@@ -281,7 +281,7 @@ slides: [
             # variation: "evolution"
             # variationLegend: "Écart // 2011"
             units:
-              "revenue": " M€"
+              "%%Revenue%%": " M€"
 
             size: 0.6
             id: 1
@@ -295,7 +295,7 @@ slides: [
   }
   {
     level: 3
-    title: "Sales in Volume"
+    title: "%%Sales in Volume%%"
 
     parent_id: 200
     chartOptions:
@@ -309,7 +309,7 @@ slides: [
       evolution: "evolution"
       value: "value"
       units:
-        value: "M of bottles"
+        value: "%%M of bottles%%"
         evolution: "%"
       legend: true
 
@@ -317,7 +317,7 @@ slides: [
   }
   {
     level: 3
-    title: "Brand Communication"
+    title: "%%Brand Communication%%"
     chartOptions:
       data:
         file:

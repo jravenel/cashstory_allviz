@@ -7,7 +7,7 @@ default: false
 categories: [
   name: "%%Group Total%%"
   kpis: [
-    name: "Revenue"
+    name: "%%Revenue%%"
     value: "{{ kpi1 }}"
     unit: "%%Billion €%%"
     slide: 10001
