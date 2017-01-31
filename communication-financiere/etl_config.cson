@@ -13,6 +13,14 @@ etl_config:
     type: "csv"
     file: "0_101.csv"
   ,
+    domain: "0_10002"
+    type: "csv"
+    file: "0_10002.csv"
+  ,
+    domain: "0_20001_0"
+    type: "csv"
+    file: "0_20001_0.csv"
+  ,
     domain: "cash_forecast"
     type: 'google_spreadsheet'
     spreadsheet_id: "1ABOo6jm45Wkaqi9mT9Vr9YzMSHi732YGBSBK0el8b5Y"

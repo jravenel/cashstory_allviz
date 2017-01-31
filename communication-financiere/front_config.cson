@@ -181,15 +181,15 @@ slides: [
 
     chartOptions:
       data:
-        file:
-          name: "<%= report.id %>_10002"
+        query:
+          domain: "0_10002"
         postprocess:[
           rename:
             values:
-              ' Stores':
+              'Nb of Stores':
                 'en': 'Nb of stores'
                 'fr': 'Nbr de points de vente'
-              '%':
+              '% of Revenue':
                 'en': '% of Revenue'
                 'fr': '% du CA'
       ]
@@ -288,6 +288,7 @@ slides: [
       data:
         query:
           domain: "cash_forecast"
+
         date:
           selector: 'date'
           format: '%m/%Y'
@@ -311,11 +312,14 @@ slides: [
     charts: [
           {
             data:
-              file:
-                name: "<%= report.id %>_20001_0"
+              query:
+                domain: "0_20001_0"
               postprocess:[
                 rename:
                   values:
+                    'Revenue':
+                      'en': 'Revenue'
+                      'fr': 'CA'
                     'Profit':
                       'en': 'Profit'
                       'fr': 'Bénéfice'
