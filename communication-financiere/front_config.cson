@@ -86,6 +86,16 @@ slides: [
       data:
         query:
           domain: "revenue"
+        postprocess:[
+          rename:
+            values:
+              'Revenue in €':
+                'en': 'Revenue in €'
+                'fr': 'CA en €'
+              '% of Revenue':
+                'en': '% of Revenue'
+                'fr': '% du CA'
+      ]
         precision:
           evo:'.0%'
       chartType: "horizontalBarchart"
@@ -116,6 +126,47 @@ slides: [
       data:
         query:
           domain: "waterfall"
+        postprocess:[
+         rename:
+           values:
+             'Net Profit 2015':
+               'en': 'Net Profit 2015'
+               'fr': 'Résultat Net 2015'
+             'Operating expenses':
+               'en': 'Operating expenses'
+               'fr': "Dépenses d'exploitation"
+             'Purchase':
+               'en': 'Purchase'
+               'fr': "Achats"
+             'Ext. Costs':
+               'en': 'Ext. Costs'
+               'fr': "Coûts ext."
+             'Taxes':
+               'en': 'Taxes'
+               'fr': "Impôts"
+             'Admin. expenses':
+                'en': 'Admin. expenses'
+                'fr': "Dépenses admin."
+             'Amortization':
+                'en': 'Amortization'
+                'fr': "Amortissement"
+             'Financial income':
+                'en': 'Financial income'
+                'fr': "Revenus financiers"
+             'Financial expenses':
+                'en': 'Financial expenses'
+                'fr': "Dépenses financières"
+             'Extraordinary result':
+                'en': 'Extraordinary result'
+                'fr': "Résultat exceptionel"
+             'Other taxes':
+                'en': 'Other taxes'
+                'fr': "Autre impôt"
+             'Net Profit 2016':
+                'en': 'Net Profit 2016'
+                'fr': 'Résultat Net 2016'
+
+   ]
       chartType: "waterfall"
       value: "value"
       label: "label"
@@ -132,6 +183,16 @@ slides: [
       data:
         file:
           name: "<%= report.id %>_10002"
+        postprocess:[
+          rename:
+            values:
+              ' Stores':
+                'en': 'Nb of stores'
+                'fr': 'Nbr de points de vente'
+              '%':
+                'en': '% of Revenue'
+                'fr': '% du CA'
+      ]
       chartType: "horizontalBarchart"
       label: "label"
       value: "value"
@@ -245,13 +306,20 @@ slides: [
     title: "%%Revenue & Profit%%"
     recommendation:
        advert: "%%Brands%%"
-       content: "%%BRANDS_DETAILS%%"
+       content: "%%BRAND_DETAILS%%"
 
     charts: [
           {
             data:
               file:
                 name: "<%= report.id %>_20001_0"
+              postprocess:[
+                rename:
+                  values:
+                    'Profit':
+                      'en': 'Profit'
+                      'fr': 'Bénéfice'
+            ]
             chartType: "linechart"
             units:
               value: " M€"
