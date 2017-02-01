@@ -391,13 +391,10 @@ slides: [
     level: 3
     title: "%%Brand Communication%%"
     chartOptions:
-      data:
-        file:
-          name: "<%= report.id %>_20003"
-          extension: 'md'
       chartType: "text"
-      label: "label"
-      value: "value"
+      data: 'file':
+        name: 'brand_com'
+        extension: 'md'
     parent_id: 200
     id: 20003
   }
