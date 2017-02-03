@@ -288,10 +288,9 @@ slides: [
       data:
         query:
           domain: "cash_forecast"
-
         date:
           selector: 'date'
-          format: '%m/%Y'
+          format: '%d.%m.%Y'
       chartType: "linechart"
       units:
         value: " k€"
@@ -392,9 +391,7 @@ slides: [
     title: "%%Brand Communication%%"
     chartOptions:
       chartType: "text"
-      data: 'file':
-        name: 'brand_com'
-        extension: 'md'
+      src: "brand_co"
     parent_id: 200
     id: 20003
   }
