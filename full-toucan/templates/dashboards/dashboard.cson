@@ -6,7 +6,7 @@ default: "{{ default }}"
 categories: [
   name: "Performance"
   kpis: [
-    name: "Metric"
+    name: "☭ Courage"
     type: 'value-dynamic'
     value: "value"
     unit: "%"
@@ -36,7 +36,7 @@ categories: [
     source: "2015, source Smart Toucan"
     id: 0
   ,
-    name: "Classement traffic"
+    name: "★★ ⛷ 😍 Classement traffic"
     type: "leaderboard"
     chartOptions:
       value: "value"
