@@ -1,18 +1,16 @@
-name: 'Activity Report'
-entityName: "{{center}}"
+name: 'Établissements de santé en France'
+entityName: "{{report_id}}"
 attributes: [ "226 tenants", "139 400 m²" ]
 id: "{{ index }}"
-date: "September 2016"
+date: "2016"
 background:
   assetName: "bg-1"
   overlay: false
+execsumTitle: "Établissements de santé en France2"
 
-cartoFiles:
-  "Floor 0": "MAP_QT_0_topojson.json"
-  "Floor 1": "MAP_QT_1_topojson.json"
-  "Floor 2": "MAP_QT_2_topojson.json"
-  "Floor 3": "MAP_QT_3_topojson.json"
+search: # Search among reports (*)
+  showSearchBar: true #(1)
+  searchRemoteCall: true #(2)
 
-slideInfos: {}
 dashboards:
-  search: "Search a tenant"
+  search: "Recherchez un etablissement"

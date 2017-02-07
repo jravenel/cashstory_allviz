@@ -88,10 +88,8 @@ DATA_SOURCES: [
 ]
 DATA_PROVIDERS: [ ]
 REPORTS: [
-  query:[
-    $match:
-      domain: "center_kpis"
-  ]
+  query:
+    domain: "reports"
   template: "report"
 ]
 DASHBOARDS: [
