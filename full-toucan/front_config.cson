@@ -1653,6 +1653,69 @@ slides: [
   }
   {
     level: 2
+    title: "Linechart"
+    parent_id: 40
+    id: 410
+  }
+  {
+    level: 3
+    title: "Simple linechart"
+    parent_id: 410
+    id: 41010
+
+    chartOptions:
+      chartType: "linechart"
+      data:
+        query:
+          domain: "0_32106"
+          breakdown: "Detrended"
+        date:
+          selector: 'index'
+          format: '%Y-%m-%d'
+      units:
+        "value": ""
+      value: "value"
+      date: "index"
+      legend: true
+
+  }
+  {
+    level: 3
+    title: "Linechart with sentimentZone"
+    parent_id: 410
+    id: 41011
+
+    chartOptions:
+      sentimentZones: [
+        {
+          domain: [
+            -200
+            200
+          ]
+          sentiment: 'positive'
+          label:
+            text: 'Sentiment Zone description here'
+            position: 'top'
+        }
+      ]
+      chartType: "linechart"
+      data:
+        query:
+          domain: "0_32106"
+          breakdown: "Detrended"
+        date:
+          selector: 'index'
+          format: '%Y-%m-%d'
+
+      units:
+        "value": ""
+      value: "value"
+      date: "index"
+      legend: true
+
+  }
+  {
+    level: 2
     title: "Horizontal barchart"
     parent_id: 40
     id: 403
