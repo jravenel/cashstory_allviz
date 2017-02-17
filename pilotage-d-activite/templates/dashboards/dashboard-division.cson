@@ -1,0 +1,323 @@
+
+entityName: "{{ Name }}"
+'entityGroup': '{{ Group }}'
+id: "{{ index }}"
+report: "{{ report_id }}"
+# default: "{{ default }}"
+# default: 1
+
+
+'categories': [
+
+  {
+    name: "Chiffre d'affaires"
+    'kpis': [
+      {
+        name: "Chiffre d'affaires cumulé"
+        type: 'value-dynamic'
+        value: "value"
+        comment: "<%=\' \' + evolution + \' vs 2016\'%>"
+        unit: " M€"
+        slide: ''
+        badge: 'evolution'
+        sentiment:
+          evolution:
+            domain: [0]
+            range: ['negative','positive']
+        precision:
+          value: ',.1f'
+          evolution: "+,.2%"
+        data:
+          value:
+            query:[
+              $match:
+                domain: "dashboard_data"
+                Region: "<%= dashboard.entityName %>"
+            ]
+            field: "Chiffre d'affaires cumulé"
+          comparison:
+            query:[
+              $match:
+                domain: "dashboard_data"
+                Region: "<%= dashboard.entityName %>"
+            ]
+            field: "target_CA"
+        compute:
+          evolution: '(value - comparison)/comparison'
+        # source: "2016, source Smart Toucan"
+        id: 0
+      }
+      {
+        name: "Chiffre d'affaires du mois"
+        type: 'value-dynamic'
+        value: "value"
+        comment: "<%=\' \' + evolution + \' vs 2016\'%>"
+        unit: " M€"
+        slide: ''
+        badge: 'evolution'
+        sentiment:
+          evolution:
+            domain: [0]
+            range: ['negative','positive']
+        precision:
+          value: ',.1f'
+          evolution: "+,.2%"
+        data:
+          value:
+            query:[
+              $match:
+                domain: "dashboard_data"
+                Region: "<%= dashboard.entityName %>"
+            ]
+            field: "Chiffre d'affaires du mois"
+          comparison:
+            query:[
+              $match:
+                domain: "dashboard_data"
+                Region: "<%= dashboard.entityName %>"
+            ]
+            field: "target_CA_mois"
+        compute:
+          evolution: '(value - comparison)/comparison'
+        # source: "2016, source Smart Toucan"
+        id: 1
+      }
+
+    ]
+
+  }
+  {
+    name: "Indicateurs macros"
+    'kpis': [
+      {
+        name: "Clients"
+        slide: ''
+        type: "line"
+        chartOptions:
+          value: "value"
+          date: "date"
+          data:
+            query:
+              domain: 'dashboard_line'
+              type: "client"
+              Region: "Total France"
+            precision:
+              value: ",.1f"
+          units:
+            value: " M"
+      }
+      {
+        name: "Articles"
+        slide: ''
+        type: "line"
+        chartOptions:
+          value: "value"
+          date: "date"
+          data:
+            query:
+              domain: 'dashboard_line'
+              type: "articles"
+              Region: "Total France"
+            precision:
+              value: ",.1f"
+          units:
+            value: " M"
+      }
+    ]
+  }
+  {
+    name: "Indicateurs d'exploitation"
+    'kpis': [
+      # {
+      #   name: "Marge nette"
+      #   type: 'value-dynamic'
+      #   value: "value"
+      #   comment: "+1,2 M€ vs mois précédent"
+      #   unit: " M€"
+      #   slide: ''
+      #   badge: 'bullet'
+      #   sentiment: "better"
+      #     # evolution:
+      #     #   domain: [0]
+      #     #   range: ['negative','positive']
+      #   precision:
+      #     value: ',.1f'
+      #     evolution: "+,.2%"
+      #   data:
+      #     value:
+      #       query:[
+      #         $match:
+      #           domain: "dashboard_data"
+      #           Region: "<%= dashboard.entityName %>"
+      #       ]
+      #       field: "Marge nette"
+      #   #   comparison:
+      #   #     query:[
+      #   #       $match:
+      #   #         domain: "dashboard_data"
+      #   #         Region: "<%= dashboard.entityName %>"
+      #   #     ]
+      #   #     field: "target_CA"
+      #   # compute:
+      #   #   evolution: '(value - comparison)/comparison'
+      #   # source: "2016, source Smart Toucan"
+      #   id: 5
+      # }
+      # {
+      #   name: "Frais décaissés"
+      #   type: 'value-dynamic'
+      #   value: "value"
+      #   comment: "+0.3 k€ vs mois précédent"
+      #   unit: " k€"
+      #   slide: ''
+      #   badge: 'bullet'
+      #   sentiment: "worse"
+      #     # evolution:
+      #     #   domain: [0]
+      #     #   range: ['negative','positive']
+      #   precision:
+      #     value: ',.1f'
+      #     evolution: "+,.2%"
+      #   data:
+      #     value:
+      #       query:[
+      #         $match:
+      #           domain: "dashboard_data"
+      #           Region: "<%= dashboard.entityName %>"
+      #       ]
+      #       field: "Frais décaissés"
+      #   #   comparison:
+      #   #     query:[
+      #   #       $match:
+      #   #         domain: "dashboard_data"
+      #   #         Region: "<%= dashboard.entityName %>"
+      #   #     ]
+      #   #     field: "target_CA"
+      #   # compute:
+      #   #   evolution: '(value - comparison)/comparison'
+      #   # source: "2016, source Smart Toucan"
+      #   id: 5
+      # }
+      # {
+      #   type: 'separator'
+      # }
+      # {
+      #   name: "Cashflow brut"
+      #   type: 'value-dynamic'
+      #   value: "value"
+      #   comment: "+0.87 M€ vs mois précédent"
+      #   unit: " M€"
+      #   slide: ''
+      #   badge: 'bullet'
+      #   sentiment: "better"
+      #     # evolution:
+      #     #   domain: [0]
+      #     #   range: ['negative','positive']
+      #   precision:
+      #     value: ',.1f'
+      #     evolution: "+,.2%"
+      #   data:
+      #     value:
+      #       query:[
+      #         $match:
+      #           domain: "dashboard_data"
+      #           Region: "<%= dashboard.entityName %>"
+      #       ]
+      #       field: "Cashflow brut"
+      #   #   comparison:
+      #   #     query:[
+      #   #       $match:
+      #   #         domain: "dashboard_data"
+      #   #         Region: "<%= dashboard.entityName %>"
+      #   #     ]
+      #   #     field: "target_CA"
+      #   # compute:
+      #   #   evolution: '(value - comparison)/comparison'
+      #   # source: "2016, source Smart Toucan"
+      #   id: 5
+      # }
+      # {
+      #   name: "Cashflow net"
+      #   type: 'value-dynamic'
+      #   value: "value"
+      #   comment: "-1,2 k€ vs mois précédent"
+      #   unit: " k€"
+      #   slide: ''
+      #   badge: 'bullet'
+      #   sentiment: "worse"
+      #     # evolution:
+      #     #   domain: [0]
+      #     #   range: ['negative','positive']
+      #   precision:
+      #     value: ',.1f'
+      #     evolution: "+,.2%"
+      #   data:
+      #     value:
+      #       query:[
+      #         $match:
+      #           domain: "dashboard_data"
+      #           Region: "<%= dashboard.entityName %>"
+      #       ]
+      #       field: "Cashflow net"
+      #   #   comparison:
+      #   #     query:[
+      #   #       $match:
+      #   #         domain: "dashboard_data"
+      #   #         Region: "<%= dashboard.entityName %>"
+      #   #     ]
+      #   #     field: "target_CA"
+      #   # compute:
+      #   #   evolution: '(value - comparison)/comparison'
+      #   # source: "2016, source Smart Toucan"
+      #   id: 5
+      # }
+      {
+        name: "Evolution des indicateurs"
+        type: 'score-card'
+        slide: ''
+        chartOptions:
+          value: "value"
+          variation: "evol"
+          label: "Region"
+          # target: "target"
+          limit: 6
+          sentiment:
+            evol:
+              domain:[0]
+              range:['negative','positive']
+          reverse: false
+          units:
+            value:[
+              unit: " m€"
+              where: "Region": "Marge Nette"
+            ,
+              unit: " m€"
+              where: "Region": "Cashflow Brut"
+            ,
+              unit: " k€"
+              where: "Region": "Frais décaissés"
+            ,
+              unit: " k€"
+              where: "Region": "Cashflow Net"
+            ]
+            evol: '%'
+          data:
+            query:
+              domain: "dashboard_line"
+              type: "scorecard"
+            precision:
+              value: ",.1f"
+              evol: ",.1f"
+      }
+      {
+        type: 'separator'
+      }
+      {
+        'src': 'images/simply.jpg'
+        'type': 'media-img'
+      }
+
+    ]
+
+  }
+]

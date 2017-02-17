@@ -1,13 +1,9 @@
-id: "0"
-name: "Company"
-slug: "test"
-date: "Données au 31/10/12"
-entityName: "Retail France"
-background:
-  assetName: 'bg-1'
-  overlay: false
-
-dashboards:
-  search: "Recherchez par Division"
-
-slideInfos: {}
+name: "Retail France"
+entityName: "{{ Report }}"
+id: "{{ index }}"
+date: 'Février 2017'
+'dashboards': 'search': 'Recherchez par Division / Boutique'
+'id': '0'
+'background':
+  'assetName': 'bg-1'
+  'overlay': false
