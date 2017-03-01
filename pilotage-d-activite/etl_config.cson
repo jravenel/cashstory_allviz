@@ -1,151 +1,6 @@
 
 'DATA_SOURCES': [
   {
-    'sheetname': 'ARTICLES Client VALEUR ET PROG'
-    'domain': 'customer_article_progress'
-    'type': 'excel'
-    'file': 'indicateurs-formule-de-vente-articles-par-client-082015.xls'
-  }
-  {
-    'sheetname': 'ARTICLES NOMBRE ET PROG'
-    'domain': 'article_progress'
-    'type': 'excel'
-    'file': 'indicateurs-formule-de-vente-articles-082015.xls'
-  }
-  {
-    'sheetname': 'CA OBJ  REEL PROG N-1'
-    'domain': 'turnover_progress'
-    'type': 'excel'
-    'file': 'indicateurs-formule-de-vente-chiffre-d-affaires-082015.xls'
-  }
-  {
-    'sheetname': 'CHIFFRE d\'AFFAIRES'
-    'domain': 'turnover'
-    'type': 'excel'
-    'file': 'chiffre-d-affaires.xls'
-  }
-  {
-    'sheetname': 'CLIENTS NOMBRE ET PROG'
-    'domain': 'customer_progress'
-    'type': 'excel'
-    'file': 'indicateurs-formule-de-vente-clients-082015.xls'
-  }
-  {
-    'sheetname': 'PVM articles VALEUR ET PROG'
-    'domain': 'average_price_progress'
-    'type': 'excel'
-    'file': 'indicateurs-formule-de-vente-prix-de-vente-moyen-082015.xls'
-  }
-  {
-    'sheetname': 'PANIER MOYEN VALEUR ET PROG'
-    'domain': 'average_basket_progress'
-    'type': 'excel'
-    'file': 'indicateurs-formule-de-vente-panier-moyen-082015.xls'
-  }
-  {
-    'sheetname': 'Total des frais de personnel'
-    'domain': 'staff_fees'
-    'type': 'excel'
-    'file': 'total-frais-de-personnel.xls'
-  }
-  {
-    'sheetname': 'demarques connues'
-    'domain': 'known_demarques'
-    'type': 'excel'
-    'file': 'demarques-connues-092015.xls'
-  }
-  {
-    'sheetname': 'demarques inconnues'
-    'domain': 'unknown_demarques'
-    'type': 'excel'
-    'file': 'demarques-inconnues-092015.xls'
-  }
-  {
-    'sheetname': 'MARGE GLOBALE'
-    'domain': 'global_margins'
-    'type': 'excel'
-    'file': 'marge-globale-092015.xls'
-  }
-  {
-    'sheetname': 'Taux de transport'
-    'domain': 'taux_transport'
-    'type': 'excel'
-    'file': 'taux-de-transport.xls'
-  }
-  {
-    'sheetname': 'MARGE NETTE'
-    'domain': 'net_margins'
-    'type': 'excel'
-    'file': 'marge-nette-092015.xls'
-  }
-  {
-    'sheetname': 'Total des demarques'
-    'domain': 'markdown'
-    'type': 'excel'
-    'file': 'markdown.xls'
-  }
-
-  {
-    'sheetname': 'Total des frais decaisses'
-    'domain': 'disbursed_fees'
-    'type': 'excel'
-    'file': 'total-frais-decaisses.xls'
-  }
-  {
-    'sheetname': 'Total des frais non influ'
-    'domain': 'immutable_fees'
-    'type': 'excel'
-    'file': 'total-des-frais-non-influencables.xls'
-  }
-  {
-    'sheetname': 'Total des frais influ hors FP'
-    'domain': 'mutable_fees'
-    'type': 'excel'
-    'file': 'total-des-frais-influencable.xls'
-  }
-  {
-    'sheetname': 'Frais Siege et Cotisations'
-    'domain': 'subscription_fees'
-    'type': 'excel'
-    'file': 'frais-siege-et-cotisations.xls'
-  }
-  {
-    'sheetname': 'AMORTISSEMENTS INFLU'
-    'domain': 'mutable_amortization'
-    'type': 'excel'
-    'file': 'amortissements-influencables-082015.xls'
-  }
-  {
-    'sheetname': 'AMORTISSEMENTS NON INFLU'
-    'domain': 'immutable_amortization'
-    'type': 'excel'
-    'file': 'amortissements-non-influencables-082015.xls'
-  }
-  {
-    'sheetname': 'Cash Flow Brut'
-    'domain': 'raw_cash_flow'
-    'type': 'excel'
-    'file': 'raw-cash-flow.xls'
-  }
-  {
-    'sheetname': 'Participation'
-    'domain': 'net_cash_flow'
-    'type': 'excel'
-    'file': 'net-cash-flow.xls'
-  }
-  {
-    'sheetname': 'Impots'
-    'domain': 'impots'
-    'type': 'excel'
-    'file': 'impots.xls'
-  }
-  {
-    'sheetname': 'Participation'
-    'domain': 'participation'
-    'type': 'excel'
-    'file': 'participation.xls'
-  }
-  {
     'spreadsheet_id': '1wN6d8iWn5AXWznxhBnJgt3qwcmxbiF34vAbH92WsdRI'
     'sheetname': 'iris_data_Caen'
     'domain': 'iris_data_Caen'
@@ -209,6 +64,24 @@
     'spreadsheet_id': '1fX0iwx9ilDS8UDTLxnWdhcJZMywk9kLdGvPTxzjfz1A'
     'sheetname': 'target_metrics'
     'domain': 'target_metrics'
+    'type': 'google_spreadsheet'
+  }
+  {
+    'spreadsheet_id': '1fX0iwx9ilDS8UDTLxnWdhcJZMywk9kLdGvPTxzjfz1A'
+    'sheetname': 'waterfall'
+    'domain': 'waterfall'
+    'type': 'google_spreadsheet'
+  }
+  {
+    'spreadsheet_id': '1fX0iwx9ilDS8UDTLxnWdhcJZMywk9kLdGvPTxzjfz1A'
+    'sheetname': 'carto'
+    'domain': 'carto'
+    'type': 'google_spreadsheet'
+  }
+  {
+    'spreadsheet_id': '1fX0iwx9ilDS8UDTLxnWdhcJZMywk9kLdGvPTxzjfz1A'
+    'sheetname': 'carto2'
+    'domain': 'carto2'
     'type': 'google_spreadsheet'
   }
 ]

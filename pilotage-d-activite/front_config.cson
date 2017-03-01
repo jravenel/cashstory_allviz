@@ -144,7 +144,7 @@ locale: 'fr'
     'title': 'Evolution mensuelle des indicateurs'
     'level': 3
     'parent_id': 101
-    'source': 'Source Société Atac, les données du mois, en non comparable'
+    'source': 'Source: données fictives'
     'id': 10101
     'chartOptions':
       'value': 'Value'
@@ -158,9 +158,24 @@ locale: 'fr'
         'date':
           'format': '%d.%m.%Y'
           'selector': 'Date'
-        'query': 'domain': 'linechart-ventes'
+        'query':
+          'domain': 'linechart-ventes'
+        postprocess:[
+          rename:
+            values:
+              'Articles':
+                'en': 'CA Août 2014'
+                'fr': 'CA Août 2014'
+      ]
         'precision': 'Value': '.2f'
       'legend': true
+      "events": [
+       {
+         "date": "01.05.2015",
+         "name": "Ouverture centre Paris Nord",
+         "label": "Clients"
+       }
+     ]
   }
   {
     "title": "Trajectoire boutiques",
@@ -232,7 +247,7 @@ locale: 'fr'
     'title': 'Progressions'
     'level': 3
     'parent_id': 102
-    'source': 'Source Société Atac, données non comparables, A fin août 2015'
+    'source': 'Source: données fictives'
     'filters': 'bottom-right':
       'on': 'Breakdown'
       'type': 'buttons'
@@ -245,7 +260,7 @@ locale: 'fr'
       'packNames': false
       'units': 'Value': '%'
       'chartType': 'leaderboardCenteredAverage'
-      'averageText': '0'
+      'averageText': ''
       'data':
         'query': 'domain': 'growths'
         'order':
@@ -277,7 +292,7 @@ locale: 'fr'
     'title': 'Podiums'
     'level': 3
     'parent_id': 102
-    'source': 'Source Société Atac, données non comparables, août 2015'
+    'source': 'Source: données fictives'
     'filters': 'bottom-right':
       'on': 'Breakdown'
       'type': 'buttons'
@@ -342,13 +357,17 @@ locale: 'fr'
       'label': 'Label'
       'packNames': true
       'meta': [ 'progression' ]
-      'colorTargets': true
       'units':
         'Août 2015': ' K€'
         'progression': '% par rapport à l\'objectif'
         'Objectifs Août 2015': ' K€'
       'chartType': 'bulletChart'
-      'alignTargets': true
+      colorTargets: true
+      sentiment:
+        'Août 2015':
+          domain: ['Objectifs Août 2015'] # green if above my_value is above my_target
+          range: ['negative','positive']
+      # 'alignTargets': true
       'data':
         'query': 'domain': 'target_metrics'
         'precision':
@@ -385,30 +404,38 @@ locale: 'fr'
     'chartOptions':
       'value': 'value'
       'label': 'label'
-      'sublabel': 'label_sublevel'
+
+      # "type": 'drill-level'
       'zeroBaseline': 0
       'units':
         'evolution': '%'
         'value': ' k€'
-      'chartType': 'waterfall'
-      'data': 'file': 'name': '<%= report.id %>_20205'
+      'chartType': 'waterfallchart'
+      'data':
+        'query':
+          'domain': 'waterfall'
+          'ecran': "synthese"
   }
   {
     'title': 'Marge Nette'
     'level': 3
     'parent_id': 20
-    'source': 'Source Société Atac, données non comparables, cumul 08/2015'
+    'source': 'Source: données fictives'
     'id': 20201
     'chartOptions':
       'value': 'value'
       'label': 'label'
-      'sublabel': 'label_sublevel'
-      'zeroBaseline': 50000
+      'groups': 'drill-group'
+      # "type": 'drill-level'
+      'zeroBaseline': 0
       'units':
         'evolution': '%'
         'value': ' k€'
-      'chartType': 'waterfall'
-      'data': 'file': 'name': '<%= report.id %>_20201'
+      'chartType': 'waterfallchart'
+      'data':
+        'query':
+          'domain': 'waterfall'
+          'ecran': "margenette"
   }
   {
     'title': 'Cash-flow net courant'
@@ -419,49 +446,51 @@ locale: 'fr'
     'chartOptions':
       'value': 'value'
       'label': 'label'
-      'sublabel': 'label_sublevel'
-      'zeroBaseline': 3000
+      'groups': 'drill-group'
+      # "type": 'drill-level'
+      'zeroBaseline': 2000
       'units':
         'evolution': '%'
-        'value': ' K€'
-      'chartType': 'waterfall'
-      'data': 'file': 'name': '<%= report.id %>_20203'
+        'value': ' k€'
+      'chartType': 'waterfallchart'
+      'data':
+        'query':
+          'domain': 'waterfall'
+          'ecran': "cashflow"
   }
   {
-    'title': 'Plan de magasin'
-    'level': 3
-    'parent_id': 25
-    'filters': 'bottom-right':
-      'on': 'breakdown'
-      'type': 'buttons'
-    'kpi':
-      'badge': 'comment': '1er étage'
-      'unit': 'k visits'
-    'id': 251
-    'chartOptions':
-      'peers': 'Branch level 2'
-      'join': 'EntityHand'
-      'projection': 'plan'
-      'value': 'value'
-      'label': 'Retailer name'
-      'levels': 4
-      'meta': [
-        'GLA'
-        'Lease end'
-      ]
-      'filters': 'arrow-selector': 'on': 'floor'
-      'units':
-        'GLA': 'm²'
-        'CA': ' €'
-        'Visits': ' visits'
-        ' Margin': '%'
-        'Shop Front Conversion': '%'
-      'chartType': 'carto'
-      'data': 'file': 'name': '<%= report.id %>_251'
-      'cartoFiles':
-        'Floor 1': 'MAP_CS_1_topojson.json'
-        'Floor 0': 'MAP_CS_0_topojson.json'
+    "title": "Répartition géographique",
+    "level": 3,
+    "parent_id": 25,
+    "commentary": "Où suis-je présent? Combien de salariés sont employés par région?<br><i>Cliquez sur la carte pour plus de détail</i>",
+    "id": 252,
+    "filters": {
+      "bottom-right": {
+        "on": "breakdown",
+        "type": "buttons",
+        datasets: ["carto"]
+
+      }
+    },
+    datasets:
+      carto:
+        query:
+          domain: "carto"
+    "chartOptions":
+      chartType: "mapchart"
+      zones:
+        dataset: 'carto'
+        shapes: "depts-details-topojson.json"
+        join:
+          shapes: "CODE_DEPT"
+          data: "CODE_DEPT"
+        color: "value"
+        label: "NOM_DEPT"
+      legend: true
+
+
   }
+
   {
     'datasets':
       'iris_data': 'query': 'domain': 'iris_data_Caen'
@@ -511,6 +540,39 @@ locale: 'fr'
       'chartType': 'mapchart'
       'legend': true
   }
+  {
+    'title': 'Plan de magasin'
+    'level': 3
+    'parent_id': 25
+    'filters': 'bottom-right':
+      'on': 'breakdown'
+      'type': 'buttons'
+    'id': 251
+    'chartOptions':
+      'peers': 'Branch level 2'
+      'join': 'EntityHand'
+      'projection': 'plan'
+      'value': 'value'
+      'label': 'Retailer name'
+      'levels': 4
+      'meta': [
+        'GLA'
+        'Lease end'
+      ]
+      'filters': 'arrow-selector': 'on': 'floor'
+      'units':
+        'GLA': 'm²'
+        'CA': ' €'
+        'Visits': ' visits'
+        ' Margin': '%'
+        'Shop Front Conversion': '%'
+      'chartType': 'carto'
+      'data': 'query': 'domain': 'carto2'
+      'cartoFiles':
+        'Floor 1': 'MAP_CS_1_topojson.json'
+        'Floor 0': 'MAP_CS_0_topojson.json'
+  }
+
 ]
 'locale': 'fr'
 'sharingOptions': true
