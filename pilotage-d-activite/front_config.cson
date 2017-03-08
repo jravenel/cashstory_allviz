@@ -1,251 +1,400 @@
-settings:
-  comparison:
-    description: "Sur tous les écrans de comparaison, comparer avec :"
-    values: [
-      "Par défaut"
-      "Entity A"
-      "Entity B"
-      "Entity C"
-    ]
-    default: "Par défaut"
-
-sharingOptions: true
-comments: true
-
-
-glossary:
-  title: 'Glossaire'
-  terms: [
-    term: "Informations générales"
-    meaning: "Les données sont en non comparable sur l'activité hypermarché de France"
-  ,
-    slides: [10101,10201,10202,10203,10204,10205]
-    term: "Chiffre d'affaires"
-    meaning: " Le chiffre d’affaires ici repris est le chiffre d’affaires réalisé sur la surface de vente (SDV), hors essence et à surfaces non comparables, c’est-à-dire le chiffre d’affaires réel, tenant compte des ouvertures et des cessions de magasins"
-  ,
-    slides: [10101,10201,10202,10203,10204,10205]
-    term: "Article"
-    meaning: "Un article correspond à un produit passé en caisse"
-  ,
-    slides: [10101,10201,10202,10203,10204,10205]
-    term: "Articles par client"
-    meaning: "C’est en moyenne le nombre d’articles enregistrés par ticket de caisse"
-  ,
-    slides: [10101,10201,10202,10203,10204,10205]
-    term: "Client"
-    meaning: "Il s’agit en réalité du nombre de débits, c’est-à-dire de passages en caisse (un même client peut revenir plusieurs fois pendant la période !)"
-  ,
-    slides: [10101,10201,10202,10203,10204,10205]
-    term: "Prix de vente moyen"
-    meaning: "C’est le chiffre d’affaires divisé par le nombre d’articles"
-  ,
-    slides: [10101,10201,10202,10203,10204,10205]
-    term: "Panier moyen"
-    meaning: "C’est le montant moyen d’achat par passage en caisse, obtenu en divisant le chiffre d’affaires par le nombre de débits"
-  ,
-    slides: [10101,10201,10202,10203,10204,10205]
-    term: "Formule de vente"
-    meaning: "Nombre de clients multiplié par le nombre d’articles multiptlié par le prix moyen de l’article. La formule de vente produit le chiffre d’affaires. Il est possible d’agir sur les trois leviers de la formule de vente pour faire progresser le chiffre d’affaires. "
-  ,
-    slides: [20101, 20202,20203,20205,20101,20102,20103]
-    term: "Marge globale"
-    meaning: "C’est le chiffre d’affaires moins le coût des marchandises, remises comprises"
-  ,
-    slides: [20101, 20202,20203,20205,20101,20102,20103]
-    term: "Marge Nette"
-    meaning: "La marge nette correspond à la différence entre le prix de vente et le prix d’achat, moins les démarques et les frais logistiques"
-  ,
-    slides: [20101, 20202,20203,20205,20101,20102,20103]
-    term: "Frais décaissés"
-    meaning: "Ensemble des frais hors frais financiers et amortissements"
-  ,
-    slides: [20101, 20202,20203,20205,20101,20102,20103]
-    term: "Cash-flow brut"
-    meaning: "c’est la marge nette moins les frais décaissés"
-  ,
-    slides: [20101, 20202,20203,20205,20101,20102,20103]
-    term: "Cash-flow net courant"
-    meaning: "c’est le cash-flow brut plus les résultats financiers moins la participation t l’impôt"
-  ,
-    slides: [20101, 20202,20203,20205,20101,20102,20103]
-    term: "TPL – taux de prestations logistique "
-    meaning: "ensemble des coûts logistiques, de stockage, préparation et transport"
-  ,
-    slides:[20101, 20202,20203,20205,20101,20102,20103]
-    term: "Démarque connue"
-    meaning: "C’est la démarque immédiatement identifiée et enregistrée"
-  ,
-    slides:[20101, 20202,20203,20205,20101,20102,20103]
-    term: "Démarque inconnue"
-    meaning: "Elle est issue du vol, de la casse, de produits périmés, d’erreurs de livraison non constatées. Elle est identifiée lors des inventaires. "
-  ,
-    slides:[20101, 20202,20203,20205,20101,20102,20103]
-    term: "Frais de personnel"
-    meaning: "Salaires et charges des collaborateurs et coûts des prestataires externes"
-  ,
-    slides:[20101, 20202,20203,20205,20101,20102,20103]
-    term:"Frais influençables"
-    meaning: "Ce sont tous les frais de fonctionnement des établissements sur lesquels il est possible d’agir (énergie, entretien, publicité…). Ils sont évolutifs car liés à l’activité."
-  ,
-    slides:[20101, 20202,20203,20205,20101,20102,20103]
-    term: "Frais non influençables"
-    meaning: "Ils sont fixes, indépendamment de l’activité. Quelques exemples : loyers, taxes, assurances…"
-  ,
-    slides:[20101, 20202,20203,20205,20101,20102,20103]
-    term: "Frais de siège et cotisations"
-    meaning: "Ce sont les frais de fonctionnement des services d’appui (régionaux et nationaux), les cotisations Auchan et la prime de progrès."
-  ,
-    slides:[20101, 20202,20203,20205,20101,20102,20103]
-    term: "Participation"
-    meaning: "Part du résultat de l’entreprise revenant aux collaborateurs, issue de l’accord dérogatoire plus favorable."
-  ,
-    slides:[20101, 20202,20203,20205,20101,20102,20103]
-    term:"Produits et frais financiers"
-    meaning: "Emprunts, placements..."
+﻿
+'settings': 'comparison':
+  'default': 'Par défaut'
+  'values': [
+    'Par défaut'
+    'Entity A'
+    'Entity B'
+    'Entity C'
   ]
-
-home:
-  skipToReport: 0
-
-locale: 'fr'
+  'description': 'Sur tous les écrans de comparaison, comparer avec :'
+'glossary':
+  'terms': [
+    {
+      'term': 'Informations générales'
+      'meaning': 'Les données sont en non comparable sur l\'activité hypermarché de France'
+    }
+    {
+      'slides': [
+        10101
+        10201
+        10202
+        10203
+        10204
+        10205
+      ]
+      'term': 'Chiffre d\'affaires'
+      'meaning': ' Le chiffre d’affaires ici repris est le chiffre d’affaires réalisé sur la surface de vente (SDV), hors essence et à surfaces non comparables, c’est-à-dire le chiffre d’affaires réel, tenant compte des ouvertures et des cessions de magasins'
+    }
+    {
+      'slides': [
+        10101
+        10201
+        10202
+        10203
+        10204
+        10205
+      ]
+      'term': 'Article'
+      'meaning': 'Un article correspond à un produit passé en caisse'
+    }
+    {
+      'slides': [
+        10101
+        10201
+        10202
+        10203
+        10204
+        10205
+      ]
+      'term': 'Articles par client'
+      'meaning': 'C’est en moyenne le nombre d’articles enregistrés par ticket de caisse'
+    }
+    {
+      'slides': [
+        10101
+        10201
+        10202
+        10203
+        10204
+        10205
+      ]
+      'term': 'Client'
+      'meaning': 'Il s’agit en réalité du nombre de débits, c’est-à-dire de passages en caisse (un même client peut revenir plusieurs fois pendant la période !)'
+    }
+    {
+      'slides': [
+        10101
+        10201
+        10202
+        10203
+        10204
+        10205
+      ]
+      'term': 'Prix de vente moyen'
+      'meaning': 'C’est le chiffre d’affaires divisé par le nombre d’articles'
+    }
+    {
+      'slides': [
+        10101
+        10201
+        10202
+        10203
+        10204
+        10205
+      ]
+      'term': 'Panier moyen'
+      'meaning': 'C’est le montant moyen d’achat par passage en caisse, obtenu en divisant le chiffre d’affaires par le nombre de débits'
+    }
+    {
+      'slides': [
+        10101
+        10201
+        10202
+        10203
+        10204
+        10205
+      ]
+      'term': 'Formule de vente'
+      'meaning': 'Nombre de clients multiplié par le nombre d’articles multiptlié par le prix moyen de l’article. La formule de vente produit le chiffre d’affaires. Il est possible d’agir sur les trois leviers de la formule de vente pour faire progresser le chiffre d’affaires. '
+    }
+    {
+      'slides': [
+        20101
+        20202
+        20203
+        20205
+        20101
+        20102
+        20103
+      ]
+      'term': 'Marge globale'
+      'meaning': 'C’est le chiffre d’affaires moins le coût des marchandises, remises comprises'
+    }
+    {
+      'slides': [
+        20101
+        20202
+        20203
+        20205
+        20101
+        20102
+        20103
+      ]
+      'term': 'Marge Nette'
+      'meaning': 'La marge nette correspond à la différence entre le prix de vente et le prix d’achat, moins les démarques et les frais logistiques'
+    }
+    {
+      'slides': [
+        20101
+        20202
+        20203
+        20205
+        20101
+        20102
+        20103
+      ]
+      'term': 'Frais décaissés'
+      'meaning': 'Ensemble des frais hors frais financiers et amortissements'
+    }
+    {
+      'slides': [
+        20101
+        20202
+        20203
+        20205
+        20101
+        20102
+        20103
+      ]
+      'term': 'Cash-flow brut'
+      'meaning': 'c’est la marge nette moins les frais décaissés'
+    }
+    {
+      'slides': [
+        20101
+        20202
+        20203
+        20205
+        20101
+        20102
+        20103
+      ]
+      'term': 'Cash-flow net courant'
+      'meaning': 'c’est le cash-flow brut plus les résultats financiers moins la participation t l’impôt'
+    }
+    {
+      'slides': [
+        20101
+        20202
+        20203
+        20205
+        20101
+        20102
+        20103
+      ]
+      'term': 'TPL – taux de prestations logistique '
+      'meaning': 'ensemble des coûts logistiques, de stockage, préparation et transport'
+    }
+    {
+      'slides': [
+        20101
+        20202
+        20203
+        20205
+        20101
+        20102
+        20103
+      ]
+      'term': 'Démarque connue'
+      'meaning': 'C’est la démarque immédiatement identifiée et enregistrée'
+    }
+    {
+      'slides': [
+        20101
+        20202
+        20203
+        20205
+        20101
+        20102
+        20103
+      ]
+      'term': 'Démarque inconnue'
+      'meaning': 'Elle est issue du vol, de la casse, de produits périmés, d’erreurs de livraison non constatées. Elle est identifiée lors des inventaires. '
+    }
+    {
+      'slides': [
+        20101
+        20202
+        20203
+        20205
+        20101
+        20102
+        20103
+      ]
+      'term': 'Frais de personnel'
+      'meaning': 'Salaires et charges des collaborateurs et coûts des prestataires externes'
+    }
+    {
+      'slides': [
+        20101
+        20202
+        20203
+        20205
+        20101
+        20102
+        20103
+      ]
+      'term': 'Frais influençables'
+      'meaning': 'Ce sont tous les frais de fonctionnement des établissements sur lesquels il est possible d’agir (énergie, entretien, publicité…). Ils sont évolutifs car liés à l’activité.'
+    }
+    {
+      'slides': [
+        20101
+        20202
+        20203
+        20205
+        20101
+        20102
+        20103
+      ]
+      'term': 'Frais non influençables'
+      'meaning': 'Ils sont fixes, indépendamment de l’activité. Quelques exemples : loyers, taxes, assurances…'
+    }
+    {
+      'slides': [
+        20101
+        20202
+        20203
+        20205
+        20101
+        20102
+        20103
+      ]
+      'term': 'Frais de siège et cotisations'
+      'meaning': 'Ce sont les frais de fonctionnement des services d’appui (régionaux et nationaux), les cotisations Auchan et la prime de progrès.'
+    }
+    {
+      'slides': [
+        20101
+        20202
+        20203
+        20205
+        20101
+        20102
+        20103
+      ]
+      'term': 'Participation'
+      'meaning': 'Part du résultat de l’entreprise revenant aux collaborateurs, issue de l’accord dérogatoire plus favorable.'
+    }
+    {
+      'slides': [
+        20101
+        20202
+        20203
+        20205
+        20101
+        20102
+        20103
+      ]
+      'term': 'Produits et frais financiers'
+      'meaning': 'Emprunts, placements...'
+    }
+  ]
+  'title': 'Glossaire'
+'dashboardPdfEnabled': true
 'slides': [
   {
     'id': 0
     'level': 0
   }
   {
-    'title': 'Activité'
+    'level': 1
     'id': 10
-    'level': 1
+    'title': 'Activité'
   }
   {
-    'title': 'Résultats'
+    'level': 1
     'id': 20
-    'level': 1
+    'title': 'Résultats'
   }
   {
-    'title': 'Cartographie'
+    'level': 1
     'id': 25
-    'level': 1
+    'title': 'Cartographie'
   }
   {
     'parent_id': 10
-    'title': 'Indicateurs de vente'
+    'level': 2
     'id': 101
-    'level': 2
+    'title': 'Indicateurs de vente'
   }
   {
     'parent_id': 10
-    'title': 'Entreprises & Territoires'
-    'id': 102
     'level': 2
+    'id': 102
+    'title': 'Entreprises & Territoires'
   }
   {
-    'title': 'Evolution mensuelle des indicateurs'
     'level': 3
+    'title': 'Evolution mensuelle des indicateurs'
     'parent_id': 101
     'source': 'Source: données fictives'
     'id': 10101
     'chartOptions':
       'value': 'Value'
+      'events': [ {
+        'date': '01.05.2015'
+        'name': 'Ouverture centre Paris Nord'
+        'label': 'Clients'
+      } ]
+      'date': 'Date'
+      'groups': 'Label'
       'units':
         'date': ' '
         'Value': ' %'
-      'groups': 'Label'
-      'date': 'Date'
       'chartType': 'linechart'
       'data':
         'date':
-          'format': '%d.%m.%Y'
           'selector': 'Date'
-        'query':
-          'domain': 'linechart-ventes'
-        postprocess:[
-          rename:
-            values:
-              'Articles':
-                'en': 'CA Août 2014'
-                'fr': 'CA Août 2014'
-      ]
+          'format': '%d.%m.%Y'
+        'query': 'domain': 'linechart-ventes'
         'precision': 'Value': '.2f'
+        'postprocess': [ { 'rename': 'values': 'Articles':
+          'fr': 'CA Août 2014'
+          'en': 'CA Août 2014' } ]
       'legend': true
-      "events": [
-       {
-         "date": "01.05.2015",
-         "name": "Ouverture centre Paris Nord",
-         "label": "Clients"
-       }
-     ]
   }
   {
-    "title": "Trajectoire boutiques",
-    "level": 3,
-    "parent_id": 101,
-
-    "recommendation": {
-      "advert": "Note",
-      "content": "Attention particulière à porter à la diminution du taux d'annulation ce semestre"
-    },
-    "id": 10102,
-    "chartOptions":
-      "fixedScale": false,
-      "quadrants": {
-        "y": 0,
-        "x": 0,
-        "labels": [
-          "Perte de vitesse",
-          "Trajectoire d'excellence",
-          "Décrochage",
-          "En rattrapage"
-        ],
-        "sentiments": [
-          "warning",
-          "positive",
-          "negative",
-          "warning"
-        ]
-      },
-      "label": "usine_simple",
-      "cy": "realise_vs_engagement",
-      "cx": "realise_vs_previous_month",
-      # "filters": {
-      #   "upper-right": {
-      #     "on": "indicateur",
-      #     "type": "dropdown",
-      #     "datasets": [
-      #       "default"
-      #     ]
-      #   }
-      # },
-      "rZero": true,
-      "units": {
-        "cy": "my_evolution_unit",
-        "cx": "my_evolution_unit",
-        "r": "my_unit"
-      },
-      "chartType": "bubblechart",
-      "r": "realise",
-      "data": {
-        "query": {
-          "domain": "results-bubble",
-
-        },
-        "precision": {
-          "realise_vs_previous_month": "my_evolution_precision",
-          "realise_vs_engagement": "my_evolution_precision",
-          "realise": "my_precision"
-        }
-      },
-      "legend": {
-        "cy": "vs engagement",
-        "cx": "vs m-1",
-        "r": "realise"
-      },
-      "chartCtrl": {}
-  }
-  {
-    'title': 'Progressions'
     'level': 3
+    'title': 'Trajectoire boutiques'
+    'parent_id': 101
+    'recommendation':
+      'advert': 'Note'
+      'content': 'Attention particulière à porter à la diminution du taux d\'annulation ce semestre'
+    'id': 10102
+    'chartOptions':
+      'fixedScale': false
+      'cy': 'realise_vs_engagement'
+      'label': 'usine_simple'
+      'chartCtrl': {}
+      'cx': 'realise_vs_previous_month'
+      'chartType': 'bubblechart'
+      'units':
+        'cy': 'my_evolution_unit'
+        'cx': 'my_evolution_unit'
+        'r': 'my_unit'
+      'rZero': true
+      'r': 'realise'
+      'data':
+        'query': 'domain': 'results-bubble'
+        'precision':
+          'realise_vs_previous_month': 'my_evolution_precision'
+          'realise_vs_engagement': 'my_evolution_precision'
+          'realise': 'my_precision'
+      'legend':
+        'cy': 'vs engagement'
+        'cx': 'vs m-1'
+        'r': 'realise'
+      'quadrants':
+        'y': 0
+        'x': 0
+        'labels': [
+          'Perte de vitesse'
+          'Trajectoire d\'excellence'
+          'Décrochage'
+          'En rattrapage'
+        ]
+        'sentiments': [
+          'warning'
+          'positive'
+          'negative'
+          'warning'
+        ]
+  }
+  {
+    'level': 3
+    'title': 'Progressions'
     'parent_id': 102
     'source': 'Source: données fictives'
     'filters': 'bottom-right':
@@ -289,8 +438,8 @@ locale: 'fr'
         'id': 'bottom_right'
   }
   {
-    'title': 'Podiums'
     'level': 3
+    'title': 'Podiums'
     'parent_id': 102
     'source': 'Source: données fictives'
     'filters': 'bottom-right':
@@ -345,29 +494,30 @@ locale: 'fr'
           'Value': ',.1f'
   }
   {
-    'title': 'Ecart sur objectif'
     'level': 3
+    'title': 'Ecart sur objectif'
     'parent_id': 102
     'source': 'Source Société Atac, source société atac, CA du mois / objectif, non comparable'
     'id': 10205
     'chartOptions':
       'target': 'Objectifs Août 2015'
+      'sentiment': 'Août 2015':
+        'domain': [ 'Objectifs Août 2015' ]
+        'range': [
+          'negative'
+          'positive'
+        ]
       'packs': 'Pack'
       'value': 'Août 2015'
       'label': 'Label'
       'packNames': true
       'meta': [ 'progression' ]
+      'colorTargets': true
       'units':
         'Août 2015': ' K€'
         'progression': '% par rapport à l\'objectif'
         'Objectifs Août 2015': ' K€'
       'chartType': 'bulletChart'
-      colorTargets: true
-      sentiment:
-        'Août 2015':
-          domain: ['Objectifs Août 2015'] # green if above my_value is above my_target
-          range: ['negative','positive']
-      # 'alignTargets': true
       'data':
         'query': 'domain': 'target_metrics'
         'precision':
@@ -396,107 +546,90 @@ locale: 'fr'
           ]
   }
   {
-    'title': 'Synthèse'
     'level': 3
+    'title': 'Synthèse'
     'parent_id': 20
     'source': 'Source Société Atac, données non comparables, cumul 08/2015'
     'id': 20205
     'chartOptions':
       'value': 'value'
       'label': 'label'
-
-      # "type": 'drill-level'
       'zeroBaseline': 0
       'units':
         'evolution': '%'
         'value': ' k€'
       'chartType': 'waterfallchart'
-      'data':
-        'query':
-          'domain': 'waterfall'
-          'ecran': "synthese"
+      'data': 'query':
+        'domain': 'waterfall'
+        'ecran': 'synthese'
   }
   {
-    'title': 'Marge Nette'
     'level': 3
+    'title': 'Marge Nette'
     'parent_id': 20
     'source': 'Source: données fictives'
     'id': 20201
     'chartOptions':
       'value': 'value'
       'label': 'label'
-      'groups': 'drill-group'
-      # "type": 'drill-level'
       'zeroBaseline': 0
+      'groups': 'drill-group'
       'units':
         'evolution': '%'
         'value': ' k€'
       'chartType': 'waterfallchart'
-      'data':
-        'query':
-          'domain': 'waterfall'
-          'ecran': "margenette"
+      'data': 'query':
+        'domain': 'waterfall'
+        'ecran': 'margenette'
   }
   {
-    'title': 'Cash-flow net courant'
     'level': 3
+    'title': 'Cash-flow net courant'
     'parent_id': 20
     'source': 'Source Société Atac, données non comparables, cumul 08/2015'
     'id': 20203
     'chartOptions':
       'value': 'value'
       'label': 'label'
-      'groups': 'drill-group'
-      # "type": 'drill-level'
       'zeroBaseline': 2000
+      'groups': 'drill-group'
       'units':
         'evolution': '%'
         'value': ' k€'
       'chartType': 'waterfallchart'
-      'data':
-        'query':
-          'domain': 'waterfall'
-          'ecran': "cashflow"
+      'data': 'query':
+        'domain': 'waterfall'
+        'ecran': 'cashflow'
   }
   {
-    "title": "Répartition géographique",
-    "level": 3,
-    "parent_id": 25,
-    "commentary": "Où suis-je présent? Combien de salariés sont employés par région?<br><i>Cliquez sur la carte pour plus de détail</i>",
-    "id": 252,
-    "filters": {
-      "bottom-right": {
-        "on": "breakdown",
-        "type": "buttons",
-        datasets: ["carto"]
-
-      }
-    },
-    datasets:
-      carto:
-        query:
-          domain: "carto"
-    "chartOptions":
-      chartType: "mapchart"
-      zones:
-        dataset: 'carto'
-        shapes: "depts-details-topojson.json"
-        join:
-          shapes: "CODE_DEPT"
-          data: "CODE_DEPT"
-        color: "value"
-        label: "NOM_DEPT"
-      legend: true
-
-
+    'datasets': 'carto': 'query': 'domain': 'carto'
+    'level': 3
+    'title': 'Répartition géographique'
+    'parent_id': 25
+    'filters': 'bottom-right':
+      'on': 'breakdown'
+      'datasets': [ 'carto' ]
+      'type': 'buttons'
+    'commentary': 'Où suis-je présent? Combien de salariés sont employés par région?<br><i>Cliquez sur la carte pour plus de détail</i>'
+    'id': 252
+    'chartOptions':
+      'zones':
+        'shapes': 'depts-details-topojson.json'
+        'color': 'value'
+        'label': 'NOM_DEPT'
+        'join':
+          'shapes': 'CODE_DEPT'
+          'data': 'CODE_DEPT'
+        'dataset': 'carto'
+      'chartType': 'mapchart'
+      'legend': true
   }
-
   {
     'datasets':
       'iris_data': 'query': 'domain': 'iris_data_Caen'
       'malls_loc': 'query': 'domain': 'malls_loc_Caen'
-    'title': 'Origine des<br>visiteurs'
     'level': 3
+    'title': 'Origine des<br>visiteurs'
     'parent_id': 25
     'filters': 'bottom-right':
       'on': 'category'
@@ -514,14 +647,14 @@ locale: 'fr'
           'shapes': 'DCOMIRIS'
           'data': 'IRIS'
         'color': 'value'
-        'label': 'IRIS'
+        'dataset': 'iris_data'
         'shapes': 'IRIS_Basse_Normandie.topo.json'
         'meta': [
           'city'
           'population'
           'mean_income'
         ]
-        'dataset': 'iris_data'
+        'label': 'IRIS'
       'filters': 'upper-right':
         'on': 'poi_id'
         'datasets': [
@@ -533,16 +666,16 @@ locale: 'fr'
         'work': ' % visites du centre'
         'value': ' visites'
         'mean_income': ' € revenu/hab'
-        'value_comp': ' % du total'
         'home': ' % visites du centre'
+        'value_comp': ' % du total'
         'total': ''
         'population': ' habitants'
       'chartType': 'mapchart'
       'legend': true
   }
   {
-    'title': 'Plan de magasin'
     'level': 3
+    'title': 'Plan de magasin'
     'parent_id': 25
     'filters': 'bottom-right':
       'on': 'breakdown'
@@ -563,19 +696,18 @@ locale: 'fr'
       'units':
         'GLA': 'm²'
         'CA': ' €'
-        'Visits': ' visits'
-        ' Margin': '%'
         'Shop Front Conversion': '%'
+        ' Margin': '%'
+        'Visits': ' visits'
       'chartType': 'carto'
       'data': 'query': 'domain': 'carto2'
       'cartoFiles':
         'Floor 1': 'MAP_CS_1_topojson.json'
         'Floor 0': 'MAP_CS_0_topojson.json'
   }
-
 ]
 'locale': 'fr'
+'comments': true
 'sharingOptions': true
 'home': 'skipToReport': 0
 'slidePdfEnabled': true
-'dashboardPdfEnabled': true

@@ -1,4 +1,37 @@
-
+﻿
+'DATA_SOURCE_DIR': 'data_sources'
+'MONGO_INDEXES': [
+  'domain'
+  [
+    'domain'
+    'subdomain'
+  ]
+]
+'DASHBOARDS': [
+  {
+    'report': 'Report'
+    'query':
+      'domain': 'dashboards'
+      'Group': 'France'
+    'template': 'dashboard'
+  }
+  {
+    'report': 'Report'
+    'query':
+      'domain': 'dashboards'
+      'Group': '$in': [
+        'Région'
+        'Boutique'
+      ]
+    'template': 'dashboard-division'
+  }
+]
+'REPORTS': [ {
+  'query':
+    'default': 1
+    'domain': 'dashboards'
+  'template': 'report'
+} ]
 'DATA_SOURCES': [
   {
     'spreadsheet_id': '1wN6d8iWn5AXWznxhBnJgt3qwcmxbiF34vAbH92WsdRI'
@@ -85,34 +118,3 @@
     'type': 'google_spreadsheet'
   }
 ]
-'MONGO_INDEXES': [
-  'domain'
-  [
-    'domain'
-    'subdomain'
-  ]
-]
-'DASHBOARDS': [
-  {
-    'report': 'Report'
-    'query':
-      'domain': 'dashboards'
-      Group: "France"
-    'template': 'dashboard'
-  }
-  {
-    'report': 'Report'
-    'query':
-      'domain': 'dashboards'
-      Group: $in: ["Région", "Boutique"]
-    'template': 'dashboard-division'
-  }
-]
-'REPORTS': [ {
-  'query':
-    'domain': 'dashboards'
-    'default': 1
-  'template': 'report'
-} ]
-'DATA_SOURCE_DIR': 'data_sources'
-# 'MAX_SELECTABLE_DASHBOARDS': 500

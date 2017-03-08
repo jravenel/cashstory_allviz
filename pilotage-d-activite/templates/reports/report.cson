@@ -1,9 +1,11 @@
-name: "Retail France"
-entityName: "{{ Report }}"
-id: "{{ index }}"
-date: 'Février 2017'
-'dashboards': 'search': 'Recherchez par Division / Boutique'
+﻿
+'name': 'Company'
+'entityName': 'Retail France'
+'slideInfos': {}
+'dashboards': 'search': 'Recherchez par Division'
 'id': '0'
 'background':
   'assetName': 'bg-1'
   'overlay': false
+'date': 'Données au 31/10/12'
+'slug': 'test'
