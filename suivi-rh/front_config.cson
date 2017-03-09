@@ -61,26 +61,25 @@ slides: [
     level: 3
     title: "Effectifs par entreprise"
     parent_id: 10
+    source: "Source interne"
     commentary: "Findus France emploie le plus de salariés"
-
     filters:
       "bottom-right":
         on: "breakdown"
         type: "buttons"
-        order: 
+        order:
           custom: [
             "Total"
             "Cadres"
             "TAM"
             "Employés"
           ]
-    
     chartOptions:
       data:
-        file:
-          name: "<%= report.id %>_102"
-       
-          
+        query:
+          domain: "0_102"
+
+
       chartType: "horizontalBarchart"
       sparklines:
         prefix: "sparkline"
@@ -93,7 +92,7 @@ slides: [
 
 
       units:
-        value: 
+        value:
           breakdown:
             Total: " Salariés"
             Cadres: " Cadres"
@@ -101,7 +100,7 @@ slides: [
             Employés: " Employés"
         evolution: " %"
 
-      source: "Source interne"
+
 
     id: 102
   }
@@ -109,10 +108,8 @@ slides: [
     level: 3
     title: "Répartition des effectifs"
     parent_id: 10
-    commentary: {
-      "âge": "L'âge moyen est de 43 ans"
-      "Ancienneté": "L'ancienneté moyenne est de 14 ans"
-    }
+    commentary: "Age: L'âge moyen est de 43 ans<br>Ancienneté: L'ancienneté moyenne est de 14 ans"
+
     filters:
       "bottom-right":
         on: "breakdown"
@@ -122,13 +119,10 @@ slides: [
             "âge"
             "Ancienneté"
           ]
-    
     chartOptions:
       data:
-        file:
-          name: "<%= report.id %>_103"
-       
-          
+        query:
+          domain: "0_103"
       chartType: "horizontalBarchart"
       label: "label"
       value: "value"
@@ -151,8 +145,8 @@ slides: [
     parent_id: 10
     chartOptions:
       data:
-        file:
-          name: "<%= report.id %>_rep_geo"
+        query:
+          domain: "0_rep_geo"
       chartType: "carto"
       join: "CODE_DEPT"
       label: "NOM_DEPT"
@@ -176,8 +170,8 @@ slides: [
     charts: [
       {
         data:
-          file:
-            name: "<%= report.id %>_201_0"
+          query:
+            domain: "0_201_0"
           precision: 1
 
         chartType: "linechart"
@@ -198,8 +192,8 @@ slides: [
       }
       {
         data:
-          file:
-            name: "<%= report.id %>_201_1"
+          query:
+            domain: "0_201_1"
           precision: 1
 
         chartType: "horizontalBarchart"
@@ -208,12 +202,12 @@ slides: [
         label: "label"
         units:
           value: "%"
-          
+
         size: 0.75
         id: 1
       }
     ]
-    
+
     id: 201
   }
   {
@@ -224,7 +218,7 @@ slides: [
       "bottom-right":
         on: "breakdown"
         type: "buttons"
-        order: 
+        order:
           custom: [
             "Toutes CSP"
             "Cadres"
@@ -233,8 +227,8 @@ slides: [
           ]
     chartOptions:
       data:
-        file:
-          name: "<%= report.id %>_202"
+        query:
+          domain: "0_202"
         precision: 1
       chartType: "barchart"
       value: "value"
@@ -285,8 +279,8 @@ slides: [
 
     chartOptions:
       data:
-        file:
-          name: "<%= report.id %>_203"
+        query:
+          domain: "0_203"
       chartType: "leaderboardCenteredAverage"
       groups: "groups"
       value: "value"
@@ -301,12 +295,9 @@ slides: [
       units:
         value: " %"
         evolution: " pts"
-
       sort: 'desc'
       average: 6.1
       averageText: "Moyenne nationnale"
-
-
     id: 203
   }
   {
@@ -317,11 +308,11 @@ slides: [
       "bottom-right":
         on: "breakdown"
         type: "buttons"
-    
+
     chartOptions:
       data:
-        file:
-          name: "<%= report.id %>_204"
+        query:
+          domain: "0_204"
         precision: 1
         order:
           by: "label"

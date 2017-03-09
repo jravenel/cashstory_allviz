@@ -10,6 +10,7 @@ categories: [
     value: "{{effectifs}}"
     unit: " salariés"
     badge: "evolution_up"
+    badgeSentiment:'better'
     comment: "+1% vs 2014"
     slide: 101
     source: "2015, source interne"
@@ -57,6 +58,7 @@ categories: [
 
     name: "Répartition par CSP"
     source: "2015, source interne"
+    slide: 102
     type: "leaderboard"
 
     chartOptions:
