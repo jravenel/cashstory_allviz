@@ -65,6 +65,14 @@ etl_config:
         domain: "0_204"
         type: "csv"
         file: "0_204.csv"
+    ,
+        domain: "france_region"
+        type: "csv"
+        file: "france_region.csv"
+    ,
+        domain: "region_28"
+        type: "csv"
+        file: "region_28.csv"
     ]
     REPORTS: [
       query:
