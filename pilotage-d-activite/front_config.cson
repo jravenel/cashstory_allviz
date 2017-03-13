@@ -364,7 +364,6 @@
         'cy': 'my_evolution_unit'
         'cx': 'my_evolution_unit'
         'r': 'my_unit'
-      'rZero': true
       'r': 'realise'
       'data':
         'query': 'domain': 'results-bubble'
