@@ -13,11 +13,11 @@ categories: [
     badgeSentiment:'better'
     comment: "+1% vs 2014"
     slide: 101
-    source: "2015, source interne"
+    source: "2017, source interne"
     id: 0
   ,
     name: "Absentéisme"
-    source: "2015, internal source"
+    source: "2017, internal source"
     type: "line"
     slide: 201
     unit: " %"
@@ -42,7 +42,7 @@ categories: [
   name: "Socio Démo"
   kpis: [
     name: "Répartition par contrat"
-    source: "2015, source interne"
+    source: "2017, source interne"
     type: "leaderboard"
 
     chartOptions:
@@ -57,7 +57,7 @@ categories: [
   ,
 
     name: "Répartition par CSP"
-    source: "2015, source interne"
+    source: "2017, source interne"
     slide: 102
     type: "leaderboard"
 
@@ -73,7 +73,7 @@ categories: [
   ,
 
     name: "Répartition par sexe"
-    source: "2015, source interne"
+    source: "2017, source interne"
     type: "leaderboard"
 
     chartOptions:
@@ -88,7 +88,7 @@ categories: [
   ,
 
     name: "Temps partiel / temps plein "
-    source: "2015, source interne"
+    source: "2017, source interne"
     type: "leaderboard"
 
     chartOptions:

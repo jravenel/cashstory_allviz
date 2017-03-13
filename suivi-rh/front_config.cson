@@ -18,10 +18,7 @@ glossary:
 
 sharingOptions: true
 comments: true
-
-
-home:
-  skipToReport:0
+slidePdfEnabled: true
 
 slides: [
   {
