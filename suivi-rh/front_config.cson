@@ -310,18 +310,18 @@ slides: [
       variation: "evolution"
       variationLegend: "variation sur 1 an"
       reverse: true
-      sparklines:
-        orderDates: true
-        value: "value"
-        legend: "Variation depuis 2012"
-        joins: [
-          "label"
-        ]
-        date: "year"
-        unit: '%'
-        data:
-          query:
-            domain: "0_203"
+      # sparklines:
+      #   orderDates: true
+      #   value: "value"
+      #   legend: "Variation depuis 2012"
+      #   joins: [
+      #     "label"
+      #   ]
+      #   date: "year"
+      #   unit: '%'
+      #   data:
+      #     query:
+      #       domain: "0_203"
       units:
         value: " %"
         evolution: " pts"
