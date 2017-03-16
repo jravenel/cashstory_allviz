@@ -1,6 +1,61 @@
-DATA_SOURCES: []
-REPORTS: []
-DASHBOARDS: []
-MONGO_INDEXES: [
-	"domain"
+﻿
+'MONGO_INDEXES': [ 'domain' ]
+'DASHBOARDS': [
+  {
+    'report': 'report'
+    'query':
+      'default': 1
+      'domain': 'dashboards'
+      'group': 'All'
+    'template': 'dashboard'
+  }
+  {
+    'report': 'report'
+    'query':
+      'domain': 'dashboards'
+      'group': 'Talent'
+    'template': 'dashboard-talent'
+  }
+]
+'REPORTS': [ {
+  'query': 'domain': 'dashboards'
+  'template': 'report'
+} ]
+'DATA_SOURCES': [
+  {
+    'sheetname': 'Data'
+    'domain': 'dashboards'
+    'type': 'excel'
+    'file': 'dashboards.xls'
+  }
+  {
+    'spreadsheet_id': '1BSRZXaI_XHQpSG3LktUggT4MpY8KM_etnDysK2wHGNY'
+    'sheetname': 'pool-selector'
+    'domain': 'pool-selector'
+    'type': 'google_spreadsheet'
+  }
+  {
+    'spreadsheet_id': '1BSRZXaI_XHQpSG3LktUggT4MpY8KM_etnDysK2wHGNY'
+    'sheetname': 'talent'
+    'domain': 'talent'
+    'type': 'google_spreadsheet'
+  }
+  {
+    'spreadsheet_id': '1BSRZXaI_XHQpSG3LktUggT4MpY8KM_etnDysK2wHGNY'
+    'sheetname': 'classement'
+    'domain': 'classement'
+    'type': 'google_spreadsheet'
+  }
+  {
+    'spreadsheet_id': '1BSRZXaI_XHQpSG3LktUggT4MpY8KM_etnDysK2wHGNY'
+    'sheetname': 'carto'
+    'domain': 'carto'
+    'type': 'google_spreadsheet'
+  }
+  {
+    'spreadsheet_id': '1BSRZXaI_XHQpSG3LktUggT4MpY8KM_etnDysK2wHGNY'
+    'sheetname': 'slave'
+    'domain': 'slave'
+    'type': 'google_spreadsheet'
+  }
 ]
