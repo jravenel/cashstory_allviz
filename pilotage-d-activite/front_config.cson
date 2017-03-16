@@ -624,6 +624,47 @@
       'legend': true
   }
   {
+    level: 3
+    title: "CA par région"
+    id: 253
+    parent_id: 25
+    commentary: 'Quelles sont mes zones de forte activité ?<br><i>Cliquez sur la carte de la Normandie pour plus de détail sur cette région</i>'
+
+    # filters:
+    #   "bottom-right":
+    #     on: "level_0"
+    #     type: "buttons"
+    drill:
+      template:
+        id: '<%= id %>'
+        level: '<%= level %>'
+        topojson: '<%= level %>_<%= id %>.topojson.json'
+        data_file: "<%= level %>_<%= id %>"
+        label: "<%= ZONE_NAME %>"
+      default:
+        id: 'france'
+        topojson: "france_regions.topojson.json"
+        level: 'france'
+        label: "France"
+        data_file: "france_regions"
+    datasets:
+      zone_data:
+        query:
+          domain: "<%= drill.data_file %>"
+    chartOptions:
+      chartType: "mapchart"
+      zones:
+        drill: true
+        label: "ZONE_NAME"
+        dataset: 'zone_data'
+        shapes: "<%= drill.topojson %>"
+        join:
+          shapes: "id"
+          data: "id"
+        color: "value"
+      legend:true
+  }
+  {
     'datasets':
       'iris_data': 'query': 'domain': 'iris_data_Caen'
       'malls_loc': 'query': 'domain': 'malls_loc_Caen'

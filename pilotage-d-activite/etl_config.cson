@@ -117,4 +117,15 @@
     'domain': 'carto2'
     'type': 'google_spreadsheet'
   }
+    domain: "france_regions"
+    type: "csv"
+    file: "france_regions.csv"
+  ,
+    domain: "region_28"
+    type: "csv"
+    file: "region_28.csv"
+  ,
+    domain: "dpt_14"
+    type: "csv"
+    file: "dpt_14.csv"
 ]
