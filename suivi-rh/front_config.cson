@@ -249,6 +249,7 @@ slides: [
       data:
         query:
           domain: "0_202"
+
         precision: 1
       chartType: "barchart"
       value: "value"
@@ -295,12 +296,13 @@ slides: [
     level: 3
     title: "Absentéisme par DG"
     parent_id: 20
-    commentary: "Seule la DGRPO a un taux d'absentéisme supérieur à la moyenne nationale"
+    commentary: "Les BU 5 et 2 ont un taux d'absentéisme supérieur à la moyenne nationale"
 
     chartOptions:
       data:
         query:
           domain: "0_203"
+          year: 2015
       chartType: "leaderboardCenteredAverage"
       groups: "groups"
       value: "value"
@@ -308,15 +310,26 @@ slides: [
       variation: "evolution"
       variationLegend: "variation sur 1 an"
       reverse: true
-      sparklines:
-        prefix: "sparkline"
-        legend: "Évolution<br>depuis 2012"
-        unit: "%"
+      # sparklines:
+      #   orderDates: true
+      #   value: "value"
+      #   legend: "Variation depuis 2012"
+      #   joins: [
+      #     "label"
+      #   ]
+      #   date: "year"
+      #   unit: '%'
+      #   data:
+      #     query:
+      #       domain: "0_203"
       units:
         value: " %"
         evolution: " pts"
       sort: 'desc'
-      average: 6.1
+      average:
+        values: [
+            value: 4
+          ]
       averageText: "Moyenne nationnale"
     id: 203
   }
