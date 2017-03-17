@@ -11,10 +11,10 @@ categories: [
     value: "{{ kpi1 }}"
     unit: "%%Billion €%%"
     slide: 10001
-    source: "Bilan 2014"
+    source: "Bilan 2017"
     badge: "evolution_up"
     badgeSentiment: "better"
-    comment: "%%Revenue of 29 Billions in 2013%%"
+    comment: "%%Revenue of 29 Billions in 2016%%"
     id: 0
   ,
     type: "media-img"
@@ -23,10 +23,10 @@ categories: [
     name: "%%Growth%%"
     value: "{{ kpi2 }}"
     unit: "%"
-    source: "Bilan 2014"
+    source: "Bilan 2017"
     id: 1
     badge: "evolution_down"
-    comment: "%%Compared to 8% growth in 2013%%"
+    comment: "%%Compared to 8% growth in 2016%%"
     badgeSentiment: "worse"
   ,
     name: "%%Financial Communication%%"
@@ -78,7 +78,7 @@ categories: [
     badge: "evolution_down"
     badgeSentiment: "worse"
     slide: 20001
-    comment: "%%Revenue of 4173 M€ in 2013%%"
+    comment: "%%Revenue of 4173 M€ in 2016%%"
   ,
     type: "media-img"
     src: "images/fondation.jpeg"
@@ -90,7 +90,7 @@ categories: [
     slide: 20101
     badge: "evolution_up"
     badgeSentiment: "better"
-    comment: "%%Revenue of 9883 M€ in 2013%%"
+    comment: "%%Revenue of 9883 M€ in 2016%%"
   ,
     name: "%%Perfumes & Cosmetics%%"
     value: "{{ kpi5 }}"
@@ -98,7 +98,7 @@ categories: [
     slide: 20201
     badge: "evolution_up"
     badgeSentiment: "better"
-    comment: "%%Revenue of 3717 M€ in 2013%%"
+    comment: "%%Revenue of 3717 M€ in 2016%%"
   ,
     name: "%%Selective Retailing%%"
     value: "{{ kpi6 }}"
@@ -106,7 +106,7 @@ categories: [
     slide: 20301
     badge: "evolution_up"
     badgeSentiment: "better"
-    comment: "%%Revenue of 8903 M€ in 2013%%"
+    comment: "%%Revenue of 8903 M€ in 2016%%"
   ,
     name: "%%Watches & jewelry%%"
     value: "{{ kpi7 }}"
@@ -114,6 +114,6 @@ categories: [
     slide: 20401
     badge: "evolution_up"
     badgeSentiment: "better"
-    comment: "%%Revenue of 2697 M€ in 2013%%"
+    comment: "%%Revenue of 2697 M€ in 2016%%"
   ]
 ]

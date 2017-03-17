@@ -382,5 +382,14 @@ slides: [
 
     id: 20002
   }
+  {
+    level: 3
+    title: "%%Brand Communication%%"
+    chartOptions:
+      chartType: "text"
+      src: "brand_co_text"
+    parent_id: 200
+    id: 20003
+  }
 
 ]
