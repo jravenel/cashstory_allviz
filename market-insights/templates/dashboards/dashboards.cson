@@ -1,0 +1,266 @@
+﻿entityName: "{{ zone }}"
+id: "{{ index }}"
+report: "{{ report_id }}"
+default: "{{ default }}"
+
+
+categories: [
+
+  name: "Sales"
+  kpis: [
+    name: "Total"
+    type: 'value-dynamic'
+    value: "value"
+    comment: "<%=\' \' + evolution + \' vs last year\'%>"
+    unit: " M€"
+    slide: 101
+    badge: 'evolution'
+    sentiment:
+      evolution:
+        domain: [0]
+        range: ['negative','positive']
+    precision:
+      value: ',.0f'
+      evolution: "+,.0%"
+    data:
+      value:
+        query:[
+          $match:
+            domain: "average"
+
+            type: "market-global"
+        ]
+        field: "value"
+      comparison:
+        query:[
+          $match:
+            domain: "average"
+
+            type: "market-global"
+        ]
+        field: "budget"
+    compute:
+      evolution: '(value - comparison)/comparison'
+    # source: "2016, source Smart Toucan"
+    id: 0
+  ,
+    name: 'Top 3 division'
+    type: 'leaderboard'
+    chartOptions:
+      'units': 'value': ' M€'
+      'data':
+        'query':
+          'domain': 'top-network'
+          type: "division"
+      'value': 'value'
+      'label': 'label'
+    source: '2016, internal source'
+    slide: 201
+  ,
+    name: "Luxury Brand"
+    type: 'value-dynamic'
+    value: "value"
+    comment: "<%=\' \' + evolution + \' vs last year\'%>"
+    unit: " M€"
+    slide: 101
+    badge: 'evolution'
+    sentiment:
+      evolution:
+        domain: [0]
+        range: ['negative','positive']
+    precision:
+      value: ',.0f'
+      evolution: "+,.0%"
+    data:
+      value:
+        query:[
+          $match:
+            domain: "average"
+            type: "luxury"
+        ]
+        field: "value"
+      comparison:
+        query:[
+          $match:
+            domain: "average"
+            type: "luxury"
+        ]
+        field: "budget"
+    compute:
+      evolution: '(value - comparison)/comparison'
+    # source: "2016, source Smart Toucan"
+    id: 0
+
+
+  ]
+
+,
+  name: "Market & competitors"
+  kpis: [
+    name: "Value share"
+    type: "line"
+    chartOptions:
+      value: "value"
+      date: "budget"
+      data:
+        query:
+          domain: 'average'
+          type: "value-share"
+        units: value: " %"
+      slide: 10101
+    # type: 'value-dynamic'
+    # value: "value"
+    # comment: "<%=\' \' + evolution + \' vs previous month\'%>"
+    # unit: " %"
+    # slide: 30000
+    # badge: 'evolution'
+    # sentiment:
+    #   evolution:
+    #     domain: [0]
+    #     range: ['negative','positive']
+    # precision:
+    #   value: ',.0f'
+    #   evolution: "+,.0%"
+    # data:
+    #   value:
+    #     query:[
+    #       $match:
+    #         domain: "average"
+    #         type: "value-share"
+    #     ]
+    #     field: "value"
+    #   comparison:
+    #     query:[
+    #       $match:
+    #         domain: "average"
+    #
+    #         type: "value-share"
+    #     ]
+    #     field: "budget"
+    # compute:
+    #   evolution: '(value - comparison)/comparison'
+    # # source: "2016, source Smart Toucan"
+    # id: 0
+  ,
+    type: "media-video"
+    provider: 'youtube'
+    id: "acVSYg4JH4U"
+  ,
+    name: "Market share (%)"
+    type: "line"
+    chartOptions:
+      value: "value"
+      date: "date"
+      data:
+        query:
+          domain: 'budget-evolution'
+          type: "value-share"
+    unit: " %"
+    slide: 10101
+  ,
+    type: "separator"
+  ,
+    name: "Leader gap"
+    type: 'value-dynamic'
+    value: "value"
+    comment: "<%=\' \' + evolution + \' vs previous month\'%>"
+    unit: " %"
+    slide: 301
+    badge: 'evolution'
+    sentiment:
+      evolution:
+        domain: [0]
+        range: ['negative','positive']
+    precision:
+      value: ',.0f'
+      evolution: "+,.0%"
+    data:
+      value:
+        query:[
+          $match:
+            domain: "average"
+            type: "leader-gap"
+        ]
+        field: "value"
+      comparison:
+        query:[
+          $match:
+            domain: "average"
+
+            type: "leader-gap"
+        ]
+        field: "budget"
+    compute:
+      evolution: '(value - comparison)/comparison'
+    # source: "2016, source Smart Toucan"
+    id: 0
+  ,
+    name: "Market average gap"
+    type: 'value-dynamic'
+    value: "value"
+    comment: "<%=\' \' + evolution + \' vs previous month\'%>"
+    unit: " %"
+    slide: 301
+    badge: 'evolution'
+    sentiment:
+      evolution:
+        domain: [0]
+        range: ['positive','negative']
+    precision:
+      value: ',.0f'
+      evolution: "+,.0%"
+    data:
+      value:
+        query:[
+          $match:
+            domain: "average"
+            type: "market-gap"
+        ]
+        field: "value"
+      comparison:
+        query:[
+          $match:
+            domain: "average"
+
+            type: "market-gap"
+        ]
+        field: "budget"
+    compute:
+      evolution: '(value - comparison)/comparison'
+    # source: "2016, source Smart Toucan"
+    id: 0
+
+  ]
+,
+  name: "Synthesis"
+  kpis: [
+    name: "Brands Overview"
+    type: 'heatmap'
+    source: "2016, source Smart Toucan"
+    slide: 20600
+    chartOptions:
+      value: "value"
+      y: "pays"
+      x: "voiture"
+      yOrder: ['China']
+      xOrder: ['Scenic']
+      sentiment:
+        value:
+          domain: ['0.7*target']
+          range: ['negative','positive']
+      data:
+        query:
+          domain: "heatmap"
+          pays: $in: ["France", "Allemagne", "Italie"]
+          Filtre1: "All categories"
+    id: 100
+  ,
+    name:"Manager's commentary"
+    type:"text-dynamic"
+    data:
+      query:
+        domain:"commentary"
+    content:'commentary'
+  ]
+
+]
