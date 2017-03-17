@@ -1,12 +1,14 @@
-name: "Products insights"
-entityName: "{{ continent }}"
+﻿
+'entityName': '{{ country }}'
 id: "{{ index }}"
-date: "October 2015"
-background:
-  assetName: 'bg-1'
+'execsumNote': '* you should start to <strong>customize</strong> it'
+'slideInfos': {}
+'dashboards':
+  # 'default': 0
+  'search': 'Search by division'
+# 'slug': 'entity'
+'background':
+  assetName: "bg-1"
   overlay: false
-execsumTitle: "Easy market research"
-
-dashboards:
-  search: "Search by country"
-
+'date': 'September 2016'
+'execsumTitle': 'Market insights'
