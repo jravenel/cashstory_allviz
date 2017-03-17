@@ -1,0 +1,42 @@
+﻿
+'default': true
+'entityName': '{{ name }}'
+'id': '{{ index }}'
+'report': '{{ report_id }}'
+'entityGroup': '{{ group }}'
+'categories': [ {
+  'kpis': [
+    {
+      'comment': 'Talents represent 16% of managers'
+      'slide': ''
+      'unit': ' talents'
+      'name': 'Talent pool'
+      'value': '367'
+    }
+    {
+      'slide': 10001
+      'type': 'leaderboard'
+      'name': 'Top 3 functions'
+      'chartOptions':
+        'units': 'value': ''
+        'data': 'query':
+          'domain': 'classement'
+          'type': 'function'
+        'value': 'value'
+        'label': 'label'
+    }
+    {
+      'slide': 10001
+      'type': 'leaderboard'
+      'name': 'Top 3 countries'
+      'chartOptions':
+        'units': 'value': ''
+        'data': 'query':
+          'domain': 'classement'
+          'type': 'country'
+        'value': 'value'
+        'label': 'label'
+    }
+  ]
+  'name': 'Global Talent Pool'
+} ]

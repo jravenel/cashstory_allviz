@@ -21,10 +21,6 @@ sharingOptions: true
 embedCharts: true
 slidePdfEnabled: true
 
-
-home:
-  skipToReport: 0
-
 sharingOptions: true
 comments: true
 

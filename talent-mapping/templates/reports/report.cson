@@ -1,0 +1,9 @@
+﻿
+'name': 'Talent mapping'
+'entityName': '{{ report }}'
+'dashboards': 'search': 'Search by Talent Name'
+'entityGroup': '{{ group }}'
+'background':
+  'id': 1
+  'overlay': false
+'id': '{{ index }}'

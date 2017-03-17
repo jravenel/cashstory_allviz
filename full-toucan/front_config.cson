@@ -887,8 +887,8 @@ slides: [
     parent_id: 200
     chartOptions:
       data:
-        file:
-          name: "<%= report.id %>_32101"
+        quert:
+          domain: "<%= report.id %>_32101"
       chartType: "barchart"
       value: "NB visit"
       label: "NB store"
@@ -2561,8 +2561,8 @@ slides: [
     parent_id: 407
     chartOptions:
       data:
-        file:
-          name: "<%= report.id %>_32101"
+        query:
+          domain: "<%= report.id %>_32101"
       chartType: "barchart"
       value: "NB visit"
       label: "NB store"
@@ -2579,8 +2579,8 @@ slides: [
     parent_id: 407
     chartOptions:
       data:
-        file:
-          name: "<%= report.id %>_32101"
+        query:
+          domain: "<%= report.id %>_32101"
       chartType: "barchart"
       value: "NB visit"
       label: "NB store"
@@ -2598,8 +2598,8 @@ slides: [
     parent_id: 407
     chartOptions:
       data:
-        file:
-          name: "<%= report.id %>_32101"
+        query:
+          domain: "<%= report.id %>_32101"
       chartType: "barchart"
       value: "NB visit"
       label: "NB store"
@@ -2666,5 +2666,61 @@ slides: [
       legend: true
 
     id: 40901
+  }
+  {
+    level: 1
+    title: "Extras"
+    id: 50
+  }
+  {
+    level: 3
+    title: "Highlighted KPIs"
+    parent_id: 50
+    id: 50001
+
+    chartOptions:
+      data:
+        query:
+          domain: "0_32101"
+      chartType: "barchart"
+      value: "NB visit"
+      label: "NB store"
+      groups: "center"
+      units:
+        "NB visit": "% of visitors"
+
+    highlightedKpis: [
+      name: " Average evolution"
+      value: "avgValue"
+      badge: 'avgValue'
+      comment: "vs 2016"
+      sentiment:
+        avgValue:
+          domain: [0]
+          range: ['negative','positive']
+      precision:
+        avgValue: ',.1%'
+      data:
+        avgValue:
+          query: [
+              $match:
+                domain: "0_32101"
+            ,
+              $group:
+                _id: null
+                value:
+                  $avg: "$Increase"
+            ,
+              $project:
+                _id: 0
+                value: 1
+          ]
+          field: 'value'
+
+
+
+
+
+    ]
   }
 ]

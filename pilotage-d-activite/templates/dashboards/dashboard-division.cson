@@ -1,38 +1,8 @@
 ﻿
-'default': 1
-'entityName': '{{ Name }}'
-'id': '{{ index }}'
 'report': '{{ report_id }}'
+'entityName': '{{ Name }}'
 'entityGroup': '{{ Group }}'
 'categories': [
-  {
-    'kpis': [ {
-      'name': 'Overview'
-      'source': '2015, source Smart Toucan'
-      'slide': 10101
-      'type': 'heatmap'
-      'id': 100
-      'chartOptions':
-        'y': 'pays'
-        'x': 'voiture'
-        'data': 'query':
-          'pays': '$in': [
-            'Nord-Est'
-            'Sud'
-            'Paris Nord'
-            'Grand-Ouest'
-          ]
-          'domain': 'heatmap_home'
-        'sentiment': 'value':
-          'domain': [ 'target' ]
-          'range': [
-            'negative'
-            'positive'
-          ]
-        'value': 'value'
-    } ]
-    'name': 'Synthèse indicateurs'
-  }
   {
     'kpis': [
       {
@@ -65,10 +35,6 @@
             'field': 'Chiffre d\'affaires cumulé'
         'id': 0
         'unit': ' M€'
-      }
-      {
-        'src': 'images/simply.jpg'
-        'type': 'media-img'
       }
       {
         'comment': '<%=\' \' + evolution + \' vs 2016\'%>'
@@ -142,86 +108,56 @@
   {
     'kpis': [
       {
-        'comment': '+1,2 M€ vs mois précédent'
-        'name': 'Marge nette'
-        'sentiment': 'better'
-        'type': 'value-dynamic'
-        'precision':
-          'evolution': '+,.2%'
-          'value': ',.1f'
-        'value': 'value'
-        'slide': 20201
-        'badge': 'bullet'
-        'data': 'value':
-          'query': [ { '$match':
-            'domain': 'dashboard_data'
-            'Region': '<%= dashboard.entityName %>' } ]
-          'field': 'Marge nette'
-        'id': 5
-        'unit': ' M€'
-      }
-      {
-        'comment': '+0.3 k€ vs mois précédent'
-        'name': 'Frais décaissés'
-        'sentiment': 'worse'
-        'type': 'value-dynamic'
-        'precision':
-          'evolution': '+,.2%'
-          'value': ',.1f'
-        'value': 'value'
         'slide': 20205
-        'badge': 'bullet'
-        'data': 'value':
-          'query': [ { '$match':
-            'domain': 'dashboard_data'
-            'Region': '<%= dashboard.entityName %>' } ]
-          'field': 'Frais décaissés'
-        'id': 5
-        'unit': ' k€'
+        'type': 'score-card'
+        'name': 'Evolution des indicateurs'
+        'chartOptions':
+          'reverse': false
+          'sentiment': 'evol':
+            'domain': [ 0 ]
+            'range': [
+              'negative'
+              'positive'
+            ]
+          'variation': 'evol'
+          'label': 'Region'
+          'limit': 6
+          'value': 'value'
+          'units':
+            'evol': '%'
+            'value': [
+              {
+                'where': 'Region': 'Marge Nette'
+                'unit': ' m€'
+              }
+              {
+                'where': 'Region': 'Cashflow Brut'
+                'unit': ' m€'
+              }
+              {
+                'where': 'Region': 'Frais décaissés'
+                'unit': ' k€'
+              }
+              {
+                'where': 'Region': 'Cashflow Net'
+                'unit': ' k€'
+              }
+            ]
+          'data':
+            'query':
+              'domain': 'dashboard_line'
+              'type': 'scorecard'
+            'precision':
+              'evol': ',.1f'
+              'value': ',.1f'
       }
+      { 'type': 'separator' }
       {
-        'comment': '+0.87 M€ vs mois précédent'
-        'name': 'Cashflow brut'
-        'sentiment': 'better'
-        'type': 'value-dynamic'
-        'precision':
-          'evolution': '+,.2%'
-          'value': ',.1f'
-        'value': 'value'
-        'slide': 20203
-        'badge': 'bullet'
-        'data': 'value':
-          'query': [ { '$match':
-            'domain': 'dashboard_data'
-            'Region': '<%= dashboard.entityName %>' } ]
-          'field': 'Cashflow brut'
-        'id': 5
-        'unit': ' M€'
-      }
-      {
-        'comment': '-1,2 k€ vs mois précédent'
-        'name': 'Cashflow net'
-        'sentiment': 'worse'
-        'type': 'value-dynamic'
-        'precision':
-          'evolution': '+,.2%'
-          'value': ',.1f'
-        'value': 'value'
-        'slide': 20203
-        'badge': 'bullet'
-        'data': 'value':
-          'query': [ { '$match':
-            'domain': 'dashboard_data'
-            'Region': '<%= dashboard.entityName %>' } ]
-          'field': 'Cashflow net'
-        'id': 5
-        'unit': ' k€'
-      }
-      {
-        'src': 'images/simply2.jpg'
+        'src': 'images/simply.jpg'
         'type': 'media-img'
       }
     ]
     'name': 'Indicateurs d\'exploitation'
   }
 ]
+'id': '{{ index }}'

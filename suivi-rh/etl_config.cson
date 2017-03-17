@@ -33,6 +33,46 @@ etl_config:
         domain: "0_101"
         type: "csv"
         file: "0_101.csv"
+    ,
+        domain: "0_102"
+        type: "csv"
+        file: "0_102.csv"
+    ,
+        domain: "0_103"
+        type: "csv"
+        file: "0_103.csv"
+    ,
+        domain: "0_rep_geo"
+        type: "csv"
+        file: "0_rep_geo.csv"
+    ,
+        domain: "0_201_0"
+        type: "csv"
+        file: "0_201_0.csv"
+    ,
+        domain: "0_201_1"
+        type: "csv"
+        file: "0_201_1.csv"
+    ,
+        domain: "0_202"
+        type: "csv"
+        file: "0_202.csv"
+    ,
+        domain: "0_203"
+        type: "csv"
+        file: "0_203.csv"
+    ,
+        domain: "0_204"
+        type: "csv"
+        file: "0_204.csv"
+    ,
+        domain: "france_region"
+        type: "csv"
+        file: "france_region.csv"
+    ,
+        domain: "region_28"
+        type: "csv"
+        file: "region_28.csv"
     ]
     REPORTS: [
       query:
