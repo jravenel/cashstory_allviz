@@ -1,545 +1,752 @@
-settings:
-  comparison:
-    description: "Sur tous les écrans de comparaison, comparer avec :"
-    values: [
-      "Par défaut"
-      "Entity A"
-      "Entity B"
-      "Entity C"
-    ]
-    default: "Par défaut"
-
-sharingOptions: true
-comments: true
-
-
-glossary:
-  title: 'Glossaire'
-  terms: [
-    term: "Informations générales"
-    meaning: "Les données sont en non comparable sur l'activité hypermarché de France"
-  ,
-    slides: [10101,10201,10202,10203,10204,10205]
-    term: "Chiffre d'affaires"
-    meaning: " Le chiffre d’affaires ici repris est le chiffre d’affaires réalisé sur la surface de vente (SDV), hors essence et à surfaces non comparables, c’est-à-dire le chiffre d’affaires réel, tenant compte des ouvertures et des cessions de magasins"
-  ,
-    slides: [10101,10201,10202,10203,10204,10205]
-    term: "Article"
-    meaning: "Un article correspond à un produit passé en caisse"
-  ,
-    slides: [10101,10201,10202,10203,10204,10205]
-    term: "Articles par client"
-    meaning: "C’est en moyenne le nombre d’articles enregistrés par ticket de caisse"
-  ,
-    slides: [10101,10201,10202,10203,10204,10205]
-    term: "Client"
-    meaning: "Il s’agit en réalité du nombre de débits, c’est-à-dire de passages en caisse (un même client peut revenir plusieurs fois pendant la période !)"
-  ,
-    slides: [10101,10201,10202,10203,10204,10205]
-    term: "Prix de vente moyen"
-    meaning: "C’est le chiffre d’affaires divisé par le nombre d’articles"
-  ,
-    slides: [10101,10201,10202,10203,10204,10205]
-    term: "Panier moyen"
-    meaning: "C’est le montant moyen d’achat par passage en caisse, obtenu en divisant le chiffre d’affaires par le nombre de débits"
-  ,
-    slides: [10101,10201,10202,10203,10204,10205]
-    term: "Formule de vente"
-    meaning: "Nombre de clients multiplié par le nombre d’articles multiptlié par le prix moyen de l’article. La formule de vente produit le chiffre d’affaires. Il est possible d’agir sur les trois leviers de la formule de vente pour faire progresser le chiffre d’affaires. "
-  ,
-    slides: [20101, 20202,20203,20205,20101,20102,20103]
-    term: "Marge globale"
-    meaning: "C’est le chiffre d’affaires moins le coût des marchandises, remises comprises"
-  ,
-    slides: [20101, 20202,20203,20205,20101,20102,20103]
-    term: "Marge Nette"
-    meaning: "La marge nette correspond à la différence entre le prix de vente et le prix d’achat, moins les démarques et les frais logistiques"
-  ,
-    slides: [20101, 20202,20203,20205,20101,20102,20103]
-    term: "Frais décaissés"
-    meaning: "Ensemble des frais hors frais financiers et amortissements"
-  ,
-    slides: [20101, 20202,20203,20205,20101,20102,20103]
-    term: "Cash-flow brut"
-    meaning: "c’est la marge nette moins les frais décaissés"
-  ,
-    slides: [20101, 20202,20203,20205,20101,20102,20103]
-    term: "Cash-flow net courant"
-    meaning: "c’est le cash-flow brut plus les résultats financiers moins la participation t l’impôt"
-  ,
-    slides: [20101, 20202,20203,20205,20101,20102,20103]
-    term: "TPL – taux de prestations logistique "
-    meaning: "ensemble des coûts logistiques, de stockage, préparation et transport"
-  ,
-    slides:[20101, 20202,20203,20205,20101,20102,20103]
-    term: "Démarque connue"
-    meaning: "C’est la démarque immédiatement identifiée et enregistrée"
-  ,
-    slides:[20101, 20202,20203,20205,20101,20102,20103]
-    term: "Démarque inconnue"
-    meaning: "Elle est issue du vol, de la casse, de produits périmés, d’erreurs de livraison non constatées. Elle est identifiée lors des inventaires. "
-  ,
-    slides:[20101, 20202,20203,20205,20101,20102,20103]
-    term: "Frais de personnel"
-    meaning: "Salaires et charges des collaborateurs et coûts des prestataires externes"
-  ,
-    slides:[20101, 20202,20203,20205,20101,20102,20103]
-    term:"Frais influençables"
-    meaning: "Ce sont tous les frais de fonctionnement des établissements sur lesquels il est possible d’agir (énergie, entretien, publicité…). Ils sont évolutifs car liés à l’activité."
-  ,
-    slides:[20101, 20202,20203,20205,20101,20102,20103]
-    term: "Frais non influençables"
-    meaning: "Ils sont fixes, indépendamment de l’activité. Quelques exemples : loyers, taxes, assurances…"
-  ,
-    slides:[20101, 20202,20203,20205,20101,20102,20103]
-    term: "Frais de siège et cotisations"
-    meaning: "Ce sont les frais de fonctionnement des services d’appui (régionaux et nationaux), les cotisations Auchan et la prime de progrès."
-  ,
-    slides:[20101, 20202,20203,20205,20101,20102,20103]
-    term: "Participation"
-    meaning: "Part du résultat de l’entreprise revenant aux collaborateurs, issue de l’accord dérogatoire plus favorable."
-  ,
-    slides:[20101, 20202,20203,20205,20101,20102,20103]
-    term:"Produits et frais financiers"
-    meaning: "Emprunts, placements..."
+﻿
+'settings': 'comparison':
+  'default': 'Par défaut'
+  'values': [
+    'Par défaut'
+    'Entity A'
+    'Entity B'
+    'Entity C'
   ]
-
-home:
-  skipToReport: 0
-
-locale: 'fr'
-slides: [
-  {
-    level: 0
-    id: 0
-  }
-  {
-    level: 1
-    title: "Activité"
-    id: 10
-  }
-  {
-    level: 1
-    title: "Résultats"
-    id: 20
-  }
-  {
-    level: 1
-    title: 'Cartographie'
-    id: 25
-  }
-  {
-    level: 2
-    title: "Indicateurs de vente"
-    parent_id: 10
-    id: 101
-  }
-  {
-    level: 2
-    title: "Entreprises & Territoires"
-    parent_id: 10
-    id: 102
-  }
-  {
-    level: 3
-    title: "Evolution mensuelle des indicateurs"
-    parent_id: 101
-    id: 10101
-    source: "Source Société Atac, les données du mois, en non comparable"
-    # commentary: '''
-    #   La tendance sur 12 mois glissants ...
-
-    #   '''
-   # recommendation:
-   #    advert: "Detail"
-   #    content: "La formule de vente en images <br><br> <img src='images/formule de vente.png'></img>"
-    chartOptions:
-      chartType: "linechart"
-      data:
-        precision:
-          Value: ".2f"
-        date:
-          selector: "Date"
-          format: "%m/%Y"
-        query:
-          domain: "progress_metrics"
-
-      date: "Date"
-      groups: "Label"
-      legend: true
-      units:
-        "Value": " %"
-        date: " "
-      value: "Value"
-  }
-  {
-
-    level: 3
-    title: "Progressions"
-    parent_id: 102
-    id: 10202
-    source: "Source Société Atac, données non comparables, A fin août 2015"
-    # commentary:
-    #   "Articles": "A fin août 2015 ..."
-    #   "Articles par client": "A fin août 2015 ..."
-    #   "Chiffre d'affaires": "A fin août 2015 ..."
-    #   "Clients": "A fin août 2015 ..."
-    #   "Panier moyen": " A fin août 2015 ..."
-    #   "Prix de vente moyen": "A fin août 2015 ..."
-    chartOptions:
-      chartType: "leaderboardCenteredAverage"
-      data:
-        order:
-          by: "Label"
-          custom: [
-            "Nord-Est",
-            "Ouest",
-            "Sud",
-            "Alsace",
-            "Lorraine",
-            "Nord Picardie",
-            "Normandie",
-            "Aquitaine",
-            "Auvergne",
-            "Méditerranée",
-            "Rhône Alpes",
-            "Grand Ouest",
-            "IDF Sud",
-            "Paris",
-            "Paris Nord"
-          ]
-        precision:
-          Value: ".0f"
-        query:
-          domain: "growths"
-      packs: "Pack"
-      packNames: false
-      value: "Value"
-      label: "Label"
-      units:
-        Value: "%"
-      tutorial:
-        id: "bottom_right"
-        content: "Cliquez sur les boutons en bas à droite pour faire varier les axes d'analyse"
-
-      average: " "
-      averageText: '0'
-      legend: false
-
-    filters:
-      'bottom-right':
-        on: "Breakdown"
-        type: "buttons"
-  }
-  {
-    level: 3
-    title: "Podiums"
-    parent_id: 102
-    id: 10204
-    source: "Source Société Atac, données non comparables, août 2015"
-    # commentary: {
-    #   "Articles": "A fin août 2015 ..."
-    #   "Articles par client": "A fin août 2015 ..."
-    #   "Chiffre d'affaires": "A fin août 2015 ..."
-    #   "Clients": "A fin août 2015 ..."
-    #   "Panier moyen": " A fin août 2015 ..."
-    #   "Prix de vente moyen": "A fin août 2015 ..."
-    # }
-
-    chartOptions:
-      chartType: "horizontalBarchart"
-      packs: "Pack"
-      packNames: true
-      data:
-        query:
-          domain: "ranking"
-        precision:
-          Value:',.1f'
-          Growth:'.2f'
-      label: "Label"
-      value: "Value"
-      sort: "desc"
-      variation: "Growth"
-      variationLegend: "Evolution<br>sur n-1"
-      sparklines:
-        prefix: "sparkline"
-        legend: "Evolution<br>sur 12 mois"
-        unit: " "
-      units:
-        Value: [
-          unit: " k€"
-          where:
-            Breakdown: "Chiffre d'affaires"
-        ,
-          unit: " k"
-          where:
-            Breakdown: "Clients"
-        ,
-          unit: " "
-          where:
-            Breakdown: "Articles par client"
-        ,
-          unit: " €"
-          where:
-            Breakdown: "Panier moyen"
-        ,
-          unit: " €"
-          where:
-            Breakdown: "Prix de vente moyen"
-
-        ,
-          unit: " M"
-          where:
-            Breakdown: "Articles"
-        ]
-        Growth: " %"
-    filters:
-      'bottom-right':
-        on: "Breakdown"
-        type: "buttons"
-  }
-  {
-    level: 3
-    title: "Ecart sur objectif"
-    parent_id: 102
-    id: 10205
-    source: "Source Société Atac, source société atac, CA du mois / objectif, non comparable"
-    # commentary: "A fin août 2015 ..."
-    chartOptions:
-      chartType: "bulletChart"
-      label: "Label"
-      packs: "Pack"
-      packNames: true
-      data:
-        precision:
-          "Août 2015": ".0f"
-          "Objectifs Août 2015": ".0f"
-          "progression": ".0f"
-        query:
-          domain: "target_metrics"
-        order:
-          by: "Label"
-          custom: [
-            "France",
-            "Nord-Est",
-            "Ouest",
-            "Sud",
-            "Alsace",
-            "Lorraine",
-            "Nord Picardie",
-            "Normandie",
-            "Aquitaine",
-            "Auvergne",
-            "Méditerranée",
-            "Rhône Alpes",
-            "Grand Ouest",
-            "IDF Sud",
-            "Paris",
-            "Paris Nord"
-          ]
-      value: "Août 2015"
-      target: "Objectifs Août 2015"
-      meta: ["progression"]
-      alignTargets: true
-      colorTargets: true
-      units:
-        "progression": "% par rapport à l'objectif"
-        "Août 2015": " K€"
-        "Objectifs Août 2015": " K€"
-
-  }
-  {
-
-    level: 3
-    title: "Synthèse"
-    parent_id: 20
-    id: 20205
-    source: "Source Société Atac, données non comparables, cumul 08/2015"
-    chartOptions:
-      data:
-        file:
-          name: "<%= report.id %>_20205"
-      chartType: "waterfall"
-      value: "value"
-      zeroBaseline: 0
-      label: "label",
-      sublabel: "label_sublevel"
-      units:
-        value: " k€"
-        evolution: "%"
-  }
-  {
-
-    level: 3
-    title: "Marge Nette"
-    parent_id: 20
-    id: 20201
-    source: "Source Société Atac, données non comparables, cumul 08/2015"
-    chartOptions:
-      data:
-        file:
-          name: "<%= report.id %>_20201"
-      chartType: "waterfall"
-      value: "value"
-      zeroBaseline: 50000
-      label: "label",
-      sublabel: "label_sublevel"
-      units:
-        value: " k€"
-        evolution: "%"
-  }
-  {
-
-    level: 3
-    title: "Cash-flow net courant"
-    parent_id: 20
-    id: 20203
-    source: "Source Société Atac, données non comparables, cumul 08/2015"
-
-    # commentary: "Depuis le début d'année ... ..."
-    chartOptions:
-      chartType: "waterfall"
-      value: "value"
-      zeroBaseline: 3000
-      data:
-        file:
-          name: "<%= report.id %>_20203"
-      label: "label",
-      sublabel: "label_sublevel"
-      units:
-        value: " K€"
-        evolution: "%"
-  }
-  {
-    level: 3
-    title: "Plan de magasin"
-
-    kpi:
-      unit: "k visits"
-      badge:
-        comment: "1er étage"
-
-    filters:
-      "bottom-right":
-        on: "breakdown"
-        type: "buttons"
-    parent_id: 25
-    chartOptions:
-      data:
-        file:
-          name: "<%= report.id %>_251"
-      chartType: "carto"
-      levels: 4
-      join: "EntityHand"
-      value: "value"
-      label: "Retailer name"
-      peers: "Branch level 2"
-      projection: "plan"
-
-      meta: [
-        "GLA"
-        "Lease end"
+  'description': 'Sur tous les écrans de comparaison, comparer avec :'
+'glossary':
+  'terms': [
+    {
+      'term': 'Informations générales'
+      'meaning': 'Les données sont en non comparable sur l\'activité hypermarché de France'
+    }
+    {
+      'slides': [
+        10101
+        10201
+        10202
+        10203
+        10204
+        10205
       ]
-
-      cartoFiles:
-        "Floor 0": "MAP_CS_0_topojson.json"
-        "Floor 1": "MAP_CS_1_topojson.json"
-
-      units:
-        " Margin": "%"
-        "CA": " €"
-        "Shop Front Conversion": "%"
-        Visits: " visits"
-        GLA: "m²"
-
-      filters:
-        'arrow-selector':
-          on: 'floor'
-
-    id: 251
+      'term': 'Chiffre d\'affaires'
+      'meaning': ' Le chiffre d’affaires ici repris est le chiffre d’affaires réalisé sur la surface de vente (SDV), hors essence et à surfaces non comparables, c’est-à-dire le chiffre d’affaires réel, tenant compte des ouvertures et des cessions de magasins'
+    }
+    {
+      'slides': [
+        10101
+        10201
+        10202
+        10203
+        10204
+        10205
+      ]
+      'term': 'Article'
+      'meaning': 'Un article correspond à un produit passé en caisse'
+    }
+    {
+      'slides': [
+        10101
+        10201
+        10202
+        10203
+        10204
+        10205
+      ]
+      'term': 'Articles par client'
+      'meaning': 'C’est en moyenne le nombre d’articles enregistrés par ticket de caisse'
+    }
+    {
+      'slides': [
+        10101
+        10201
+        10202
+        10203
+        10204
+        10205
+      ]
+      'term': 'Client'
+      'meaning': 'Il s’agit en réalité du nombre de débits, c’est-à-dire de passages en caisse (un même client peut revenir plusieurs fois pendant la période !)'
+    }
+    {
+      'slides': [
+        10101
+        10201
+        10202
+        10203
+        10204
+        10205
+      ]
+      'term': 'Prix de vente moyen'
+      'meaning': 'C’est le chiffre d’affaires divisé par le nombre d’articles'
+    }
+    {
+      'slides': [
+        10101
+        10201
+        10202
+        10203
+        10204
+        10205
+      ]
+      'term': 'Panier moyen'
+      'meaning': 'C’est le montant moyen d’achat par passage en caisse, obtenu en divisant le chiffre d’affaires par le nombre de débits'
+    }
+    {
+      'slides': [
+        10101
+        10201
+        10202
+        10203
+        10204
+        10205
+      ]
+      'term': 'Formule de vente'
+      'meaning': 'Nombre de clients multiplié par le nombre d’articles multiptlié par le prix moyen de l’article. La formule de vente produit le chiffre d’affaires. Il est possible d’agir sur les trois leviers de la formule de vente pour faire progresser le chiffre d’affaires. '
+    }
+    {
+      'slides': [
+        20101
+        20202
+        20203
+        20205
+        20101
+        20102
+        20103
+      ]
+      'term': 'Marge globale'
+      'meaning': 'C’est le chiffre d’affaires moins le coût des marchandises, remises comprises'
+    }
+    {
+      'slides': [
+        20101
+        20202
+        20203
+        20205
+        20101
+        20102
+        20103
+      ]
+      'term': 'Marge Nette'
+      'meaning': 'La marge nette correspond à la différence entre le prix de vente et le prix d’achat, moins les démarques et les frais logistiques'
+    }
+    {
+      'slides': [
+        20101
+        20202
+        20203
+        20205
+        20101
+        20102
+        20103
+      ]
+      'term': 'Frais décaissés'
+      'meaning': 'Ensemble des frais hors frais financiers et amortissements'
+    }
+    {
+      'slides': [
+        20101
+        20202
+        20203
+        20205
+        20101
+        20102
+        20103
+      ]
+      'term': 'Cash-flow brut'
+      'meaning': 'c’est la marge nette moins les frais décaissés'
+    }
+    {
+      'slides': [
+        20101
+        20202
+        20203
+        20205
+        20101
+        20102
+        20103
+      ]
+      'term': 'Cash-flow net courant'
+      'meaning': 'c’est le cash-flow brut plus les résultats financiers moins la participation t l’impôt'
+    }
+    {
+      'slides': [
+        20101
+        20202
+        20203
+        20205
+        20101
+        20102
+        20103
+      ]
+      'term': 'TPL – taux de prestations logistique '
+      'meaning': 'ensemble des coûts logistiques, de stockage, préparation et transport'
+    }
+    {
+      'slides': [
+        20101
+        20202
+        20203
+        20205
+        20101
+        20102
+        20103
+      ]
+      'term': 'Démarque connue'
+      'meaning': 'C’est la démarque immédiatement identifiée et enregistrée'
+    }
+    {
+      'slides': [
+        20101
+        20202
+        20203
+        20205
+        20101
+        20102
+        20103
+      ]
+      'term': 'Démarque inconnue'
+      'meaning': 'Elle est issue du vol, de la casse, de produits périmés, d’erreurs de livraison non constatées. Elle est identifiée lors des inventaires. '
+    }
+    {
+      'slides': [
+        20101
+        20202
+        20203
+        20205
+        20101
+        20102
+        20103
+      ]
+      'term': 'Frais de personnel'
+      'meaning': 'Salaires et charges des collaborateurs et coûts des prestataires externes'
+    }
+    {
+      'slides': [
+        20101
+        20202
+        20203
+        20205
+        20101
+        20102
+        20103
+      ]
+      'term': 'Frais influençables'
+      'meaning': 'Ce sont tous les frais de fonctionnement des établissements sur lesquels il est possible d’agir (énergie, entretien, publicité…). Ils sont évolutifs car liés à l’activité.'
+    }
+    {
+      'slides': [
+        20101
+        20202
+        20203
+        20205
+        20101
+        20102
+        20103
+      ]
+      'term': 'Frais non influençables'
+      'meaning': 'Ils sont fixes, indépendamment de l’activité. Quelques exemples : loyers, taxes, assurances…'
+    }
+    {
+      'slides': [
+        20101
+        20202
+        20203
+        20205
+        20101
+        20102
+        20103
+      ]
+      'term': 'Frais de siège et cotisations'
+      'meaning': 'Ce sont les frais de fonctionnement des services d’appui (régionaux et nationaux), les cotisations Auchan et la prime de progrès.'
+    }
+    {
+      'slides': [
+        20101
+        20202
+        20203
+        20205
+        20101
+        20102
+        20103
+      ]
+      'term': 'Participation'
+      'meaning': 'Part du résultat de l’entreprise revenant aux collaborateurs, issue de l’accord dérogatoire plus favorable.'
+    }
+    {
+      'slides': [
+        20101
+        20202
+        20203
+        20205
+        20101
+        20102
+        20103
+      ]
+      'term': 'Produits et frais financiers'
+      'meaning': 'Emprunts, placements...'
+    }
+  ]
+  'title': 'Glossaire'
+'dashboardPdfEnabled': true
+'slides': [
+  {
+    'id': 0
+    'level': 0
   }
-   {
+  {
+    'level': 1
+    'id': 10
+    'title': 'Activité'
+  }
+  {
+    'level': 1
+    'id': 20
+    'title': 'Résultats'
+  }
+  {
+    'level': 1
+    'id': 25
+    'title': 'Cartographie'
+  }
+  {
+    'parent_id': 10
+    'level': 2
+    'id': 101
+    'title': 'Indicateurs de vente'
+  }
+  {
+    'parent_id': 10
+    'level': 2
+    'id': 102
+    'title': 'Entreprises & Territoires'
+  }
+  {
+    'level': 3
+    'title': 'Evolution mensuelle des indicateurs'
+    'parent_id': 101
+    'source': 'Source: données fictives'
+    'id': 10101
+    'chartOptions':
+      'value': 'Value'
+      'events': [ {
+        'date': '01.05.2015'
+        'name': 'Ouverture centre Paris Nord'
+        'label': 'Clients'
+      } ]
+      'date': 'Date'
+      'groups': 'Label'
+      'units':
+        'date': ' '
+        'Value': ' %'
+      'chartType': 'linechart'
+      'data':
+        'date':
+          'selector': 'Date'
+          'format': '%d.%m.%Y'
+        'query': 'domain': 'linechart-ventes'
+        'precision': 'Value': '.2f'
+        'postprocess': [ { 'rename': 'values': 'Articles':
+          'fr': 'CA Août 2014'
+          'en': 'CA Août 2014' } ]
+      'legend': true
+  }
+  {
+    'level': 3
+    'title': 'Trajectoire boutiques'
+    'parent_id': 101
+    'recommendation':
+      'advert': 'Note'
+      'content': 'Attention particulière à porter à la diminution du taux d\'annulation ce semestre'
+    'id': 10102
+    'chartOptions':
+      'fixedScale': false
+      'cy': 'realise_vs_engagement'
+      'label': 'usine_simple'
+      'chartCtrl': {}
+      'cx': 'realise_vs_previous_month'
+      'chartType': 'bubblechart'
+      'units':
+        'cy': 'my_evolution_unit'
+        'cx': 'my_evolution_unit'
+        'r': 'my_unit'
+      'r': 'realise'
+      'data':
+        'query': 'domain': 'results-bubble'
+        'precision':
+          'realise_vs_previous_month': 'my_evolution_precision'
+          'realise_vs_engagement': 'my_evolution_precision'
+          'realise': 'my_precision'
+      'legend':
+        'cy': 'vs engagement'
+        'cx': 'vs m-1'
+        'r': 'realise'
+      'quadrants':
+        'y': 0
+        'x': 0
+        'labels': [
+          'Perte de vitesse'
+          'Trajectoire d\'excellence'
+          'Décrochage'
+          'En rattrapage'
+        ]
+        'sentiments': [
+          'warning'
+          'positive'
+          'negative'
+          'warning'
+        ]
+  }
+  {
+    'level': 3
+    'title': 'Progressions'
+    'parent_id': 102
+    'source': 'Source: données fictives'
+    'filters': 'bottom-right':
+      'on': 'Breakdown'
+      'type': 'buttons'
+    'id': 10202
+    'chartOptions':
+      'packs': 'Pack'
+      'average': ' '
+      'value': 'Value'
+      'label': 'Label'
+      'packNames': false
+      'units': 'Value': '%'
+      'chartType': 'leaderboardCenteredAverage'
+      'averageText': ''
+      'data':
+        'query': 'domain': 'growths'
+        'order':
+          'by': 'Label'
+          'custom': [
+            'Nord-Est'
+            'Ouest'
+            'Sud'
+            'Alsace'
+            'Lorraine'
+            'Nord Picardie'
+            'Normandie'
+            'Aquitaine'
+            'Auvergne'
+            'Méditerranée'
+            'Rhône Alpes'
+            'Grand Ouest'
+            'IDF Sud'
+            'Paris'
+            'Paris Nord'
+          ]
+        'precision': 'Value': '.0f'
+      'legend': false
+      'tutorial':
+        'content': 'Cliquez sur les boutons en bas à droite pour faire varier les axes d\'analyse'
+        'id': 'bottom_right'
+  }
+  {
+    'level': 3
+    'title': 'Podiums'
+    'parent_id': 102
+    'source': 'Source: données fictives'
+    'filters': 'bottom-right':
+      'on': 'Breakdown'
+      'type': 'buttons'
+    'id': 10204
+    'chartOptions':
+      'sort': 'desc'
+      'packs': 'Pack'
+      'value': 'Value'
+      'label': 'Label'
+      'packNames': true
+      'variationLegend': 'Evolution<br>sur n-1'
+      'variation': 'Growth'
+      'sparklines':
+        'prefix': 'sparkline'
+        'legend': 'Evolution<br>sur 12 mois'
+        'unit': ' '
+      'units':
+        'Growth': ' %'
+        'Value': [
+          {
+            'where': 'Breakdown': 'Chiffre d\'affaires'
+            'unit': ' k€'
+          }
+          {
+            'where': 'Breakdown': 'Clients'
+            'unit': ' k'
+          }
+          {
+            'where': 'Breakdown': 'Articles par client'
+            'unit': ' '
+          }
+          {
+            'where': 'Breakdown': 'Panier moyen'
+            'unit': ' €'
+          }
+          {
+            'where': 'Breakdown': 'Prix de vente moyen'
+            'unit': ' €'
+          }
+          {
+            'where': 'Breakdown': 'Articles'
+            'unit': ' M'
+          }
+        ]
+      'chartType': 'horizontalBarchart'
+      'data':
+        'query': 'domain': 'ranking'
+        'precision':
+          'Growth': '.2f'
+          'Value': ',.1f'
+  }
+  {
+    'level': 3
+    'title': 'Ecart sur objectif'
+    'parent_id': 102
+    'source': 'Source Société Atac, source société atac, CA du mois / objectif, non comparable'
+    'id': 10205
+    'chartOptions':
+      'target': 'Objectifs Août 2015'
+      'sentiment': 'Août 2015':
+        'domain': [ 'Objectifs Août 2015' ]
+        'range': [
+          'negative'
+          'positive'
+        ]
+      'packs': 'Pack'
+      'value': 'Août 2015'
+      'label': 'Label'
+      'packNames': true
+      'meta': [ 'progression' ]
+      'colorTargets': true
+      'units':
+        'Août 2015': ' K€'
+        'progression': '% par rapport à l\'objectif'
+        'Objectifs Août 2015': ' K€'
+      'chartType': 'bulletChart'
+      'data':
+        'query': 'domain': 'target_metrics'
+        'precision':
+          'Août 2015': '.0f'
+          'progression': '.0f'
+          'Objectifs Août 2015': '.0f'
+        'order':
+          'by': 'Label'
+          'custom': [
+            'France'
+            'Nord-Est'
+            'Ouest'
+            'Sud'
+            'Alsace'
+            'Lorraine'
+            'Nord Picardie'
+            'Normandie'
+            'Aquitaine'
+            'Auvergne'
+            'Méditerranée'
+            'Rhône Alpes'
+            'Grand Ouest'
+            'IDF Sud'
+            'Paris'
+            'Paris Nord'
+          ]
+  }
+  {
+    'level': 3
+    'title': 'Synthèse'
+    'parent_id': 20
+    'source': 'Source Société Atac, données non comparables, cumul 08/2015'
+    'id': 20205
+    'chartOptions':
+      'value': 'value'
+      'label': 'label'
+      'zeroBaseline': 0
+      'units':
+        'evolution': '%'
+        'value': ' k€'
+      'chartType': 'waterfallchart'
+      'data': 'query':
+        'domain': 'waterfall'
+        'ecran': 'synthese'
+  }
+  {
+    'level': 3
+    'title': 'Marge Nette'
+    'parent_id': 20
+    'source': 'Source: données fictives'
+    'id': 20201
+    'chartOptions':
+      'value': 'value'
+      'label': 'label'
+      'zeroBaseline': 0
+      'groups': 'drill-group'
+      'units':
+        'evolution': '%'
+        'value': ' k€'
+      'chartType': 'waterfallchart'
+      'data': 'query':
+        'domain': 'waterfall'
+        'ecran': 'margenette'
+  }
+  {
+    'level': 3
+    'title': 'Cash-flow net courant'
+    'parent_id': 20
+    'source': 'Source Société Atac, données non comparables, cumul 08/2015'
+    'id': 20203
+    'chartOptions':
+      'value': 'value'
+      'label': 'label'
+      'zeroBaseline': 2000
+      'groups': 'drill-group'
+      'units':
+        'evolution': '%'
+        'value': ' k€'
+      'chartType': 'waterfallchart'
+      'data': 'query':
+        'domain': 'waterfall'
+        'ecran': 'cashflow'
+  }
+  {
+    'datasets': 'carto': 'query': 'domain': 'carto'
+    'level': 3
+    'title': 'Répartition géographique'
+    'parent_id': 25
+    'filters': 'bottom-right':
+      'on': 'breakdown'
+      'datasets': [ 'carto' ]
+      'type': 'buttons'
+    'commentary': 'Où suis-je présent? Combien de salariés sont employés par région?<br><i>Cliquez sur la carte pour plus de détail</i>'
+    'id': 252
+    'chartOptions':
+      'zones':
+        'shapes': 'depts-details-topojson.json'
+        'color': 'value'
+        'label': 'NOM_DEPT'
+        'join':
+          'shapes': 'CODE_DEPT'
+          'data': 'CODE_DEPT'
+        'dataset': 'carto'
+      'chartType': 'mapchart'
+      'legend': true
+  }
+  {
     level: 3
-    title: "Origine des<br>visiteurs"
-
+    title: "CA par région"
+    id: 253
     parent_id: 25
+    commentary: 'Quelles sont mes zones de forte activité ?<br><i>Cliquez sur la carte de la Normandie pour plus de détail sur cette région</i>'
 
+    # filters:
+    #   "bottom-right":
+    #     on: "level_0"
+    #     type: "buttons"
+    drill:
+      template:
+        id: '<%= id %>'
+        level: '<%= level %>'
+        topojson: '<%= level %>_<%= id %>.topojson.json'
+        data_file: "<%= level %>_<%= id %>"
+        label: "<%= ZONE_NAME %>"
+      default:
+        id: 'france'
+        topojson: "france_regions.topojson.json"
+        level: 'france'
+        label: "France"
+        data_file: "france_regions"
     datasets:
-      iris_data: query: domain: "iris_data_Caen"
-      malls_loc: query: domain: "malls_loc_Caen"
-
-    filters:
-      "bottom-right":
-        on: "category"
-        type: "buttons"
-        datasets: ['iris_data']
-
+      zone_data:
+        query:
+          domain: "<%= drill.data_file %>"
     chartOptions:
       chartType: "mapchart"
       zones:
-        dataset: "iris_data"
-        shapes: "IRIS_Basse_Normandie.topo.json"
+        drill: true
+        label: "ZONE_NAME"
+        dataset: 'zone_data'
+        shapes: "<%= drill.topojson %>"
         join:
-          shapes: "DCOMIRIS"
-          data: "IRIS"
-        label: "IRIS"
+          shapes: "id"
+          data: "id"
         color: "value"
-        meta: ["city", "population", "mean_income"]
-      # peers: "city"
-      # compLabel: "Total visites"
-      # value: "value"
-      # time: "month_part"
-
-      markers:
-        dataset: "malls_loc"
-        latitude: 'lat'
-        longitude: 'lng'
-
-      tiles: {}
-      units:
-        value: " visites"
-        total: ""
-        population: " habitants"
-        mean_income: " € revenu/hab"
-        home: " % visites du centre"
-        work: " % visites du centre"
-        value_comp: " % du total"
-
-      filters:
-        "upper-right":
-          on: "poi_id"
-          type: "dropdown"
-          datasets: ["iris_data", "malls_loc"]
-
-      # markers:
-      #   coteNacre:
-      #     lat: 49.209109
-      #     lng: -0.364416
-      #     title: "Côte de Nacre"
-      #     focus: true
-      #     draggable: false
-      #   mondeville2:
-      #     lat: 49.16449
-      #     lng: -0.296978
-      #     title: "Mondeville 2"
-      #     focus: true
-      #     draggable: false
-      #   rivesOrne:
-      #     lat: 49.176541
-      #     lng: -0.351599
-      #     title: "Les Rives de l'Orne"
-      #     focus: true
-      #     draggable: false
-      #   valStClair:
-      #     lat: 49.205794
-      #     lng: -0.324685
-      #     title: "Val Saint Clair"
-      #     focus: true
-      #     draggable: false
-
-      # kpiSelector: "kpi"
-      legend: true
-
-    id: 250
+      legend:true
+  }
+  {
+    'datasets':
+      'iris_data': 'query': 'domain': 'iris_data_Caen'
+      'malls_loc': 'query': 'domain': 'malls_loc_Caen'
+    'level': 3
+    'title': 'Origine des<br>visiteurs'
+    'parent_id': 25
+    'filters': 'bottom-right':
+      'on': 'category'
+      'datasets': [ 'iris_data' ]
+      'type': 'buttons'
+    'id': 250
+    'chartOptions':
+      'tiles': {}
+      'markers':
+        'latitude': 'lat'
+        'longitude': 'lng'
+        'dataset': 'malls_loc'
+      'zones':
+        'join':
+          'shapes': 'DCOMIRIS'
+          'data': 'IRIS'
+        'color': 'value'
+        'dataset': 'iris_data'
+        'shapes': 'IRIS_Basse_Normandie.topo.json'
+        'meta': [
+          'city'
+          'population'
+          'mean_income'
+        ]
+        'label': 'IRIS'
+      'filters': 'upper-right':
+        'on': 'poi_id'
+        'datasets': [
+          'iris_data'
+          'malls_loc'
+        ]
+        'type': 'dropdown'
+      'units':
+        'work': ' % visites du centre'
+        'value': ' visites'
+        'mean_income': ' € revenu/hab'
+        'home': ' % visites du centre'
+        'value_comp': ' % du total'
+        'total': ''
+        'population': ' habitants'
+      'chartType': 'mapchart'
+      'legend': true
+  }
+  {
+    'level': 3
+    'title': 'Plan de magasin'
+    'parent_id': 25
+    'filters': 'bottom-right':
+      'on': 'breakdown'
+      'type': 'buttons'
+    'id': 251
+    'chartOptions':
+      'peers': 'Branch level 2'
+      'join': 'EntityHand'
+      'projection': 'plan'
+      'value': 'value'
+      'label': 'Retailer name'
+      'levels': 4
+      'meta': [
+        'GLA'
+        'Lease end'
+      ]
+      'filters': 'arrow-selector': 'on': 'floor'
+      'units':
+        'GLA': 'm²'
+        'CA': ' €'
+        'Shop Front Conversion': '%'
+        ' Margin': '%'
+        'Visits': ' visits'
+      'chartType': 'carto'
+      'data': 'query': 'domain': 'carto2'
+      'cartoFiles':
+        'Floor 1': 'MAP_CS_1_topojson.json'
+        'Floor 0': 'MAP_CS_0_topojson.json'
   }
 ]
+'locale': 'fr'
+'comments': true
+'sharingOptions': true
+'slidePdfEnabled': true

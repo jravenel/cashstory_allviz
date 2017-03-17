@@ -67,6 +67,10 @@ DATA_SOURCES: [
     domain: "0_32106"
     type: "csv"
     file: "0_32106.csv"
+,
+    domain: "0_32101"
+    type: "csv"
+    file: "0_32101.csv"
 #,
 #     domain: "ga_example"
 #     type: "google_analytics"

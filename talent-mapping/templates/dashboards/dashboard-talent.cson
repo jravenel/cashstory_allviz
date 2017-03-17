@@ -1,0 +1,73 @@
+﻿
+'report': '{{ report_id }}'
+'entityName': '{{ name }}'
+'entityGroup': '{{ group }}'
+'categories': [
+  {
+    'kpis': [
+      {
+        'src': 'success-baby.png'
+        'type': 'media-img'
+        'chartOptions': 'bgSize': 'contain'
+      }
+      {
+        'content': 'label'
+        'data': 'query':
+          'domain': 'talent'
+          'type': 'synthese'
+        'type': 'text-dynamic'
+        'name': 'Synthesis'
+      }
+      { 'type': 'separator' }
+      {
+        'content': 'label'
+        'data': 'query':
+          'domain': 'talent'
+          'type': 'languages'
+        'type': 'text-dynamic'
+        'name': 'Languages'
+      }
+      {
+        'content': 'label'
+        'data': 'query':
+          'domain': 'talent'
+          'type': 'mobility'
+        'type': 'text-dynamic'
+        'name': 'International mobility'
+      }
+      {
+        'linkType': 'asset'
+        'style': 'width': '700px'
+        'name': 'Download Full CV'
+        'url': 'label'
+        'type': 'pdf'
+        'data': 'query':
+          'domain': 'talent'
+          'type': 'pdf'
+      }
+    ]
+    'name': 'Presentation'
+  }
+  {
+    'kpis': [
+      {
+        'content': 'label'
+        'data': 'query':
+          'domain': 'talent'
+          'type': 'manager comment'
+        'type': 'text-dynamic'
+        'name': 'Manager\'s comment'
+      }
+      {
+        'content': 'label'
+        'data': 'query':
+          'domain': 'talent'
+          'type': 'employee comment'
+        'type': 'text-dynamic'
+        'name': 'Employee\'s comment'
+      }
+    ]
+    'name': 'Comments from the last Annual Appraisal Review'
+  }
+]
+'id': '{{ index }}'
