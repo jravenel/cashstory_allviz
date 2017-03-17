@@ -76,7 +76,7 @@
       'sort': 'desc'
       'value': 'my_count'
       'label': 'my_label'
-      'source': 'source interne Axa Talent'
+      'source': 'source interne Talent'
       'meta': [
         'International_mobility'
         'Age'
