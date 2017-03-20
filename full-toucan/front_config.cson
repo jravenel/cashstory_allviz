@@ -107,8 +107,8 @@ slides: [
         type: "buttons"
     chartOptions:
       data:
-        file:
-          name: "<%= report.id %>_30201"
+        query:
+          domain: "<%= report.id %>_30201"
       chartType: "horizontalBarchart"
       groups: "group"
       label: "Retailer name"
@@ -164,8 +164,8 @@ slides: [
         type: "buttons"
     chartOptions:
       data:
-        file:
-          name: "<%= report.id %>_30202"
+        query:
+          domain: "<%= report.id %>_30202"
       chartType: "horizontalBarchart"
       groups: "group"
       label: "Retailer name"
@@ -209,8 +209,8 @@ slides: [
 
     chartOptions:
       data:
-        file:
-          name: "<%= report.id %>_30203"
+        query:
+          domain: "<%= report.id %>_30203"
       chartType: "leaderboardCenteredAverage"
       groups: "group"
       value: "value"
@@ -240,8 +240,8 @@ slides: [
     charts: [
       {
         data:
-          file:
-            name: "<%= report.id %>_32205_0"
+          query:
+            domain: "<%= report.id %>_32205_0"
         chartType: "linechart"
         units:
           value: " %"
@@ -259,8 +259,8 @@ slides: [
       }
       {
         data:
-          file:
-            name: "<%= report.id %>_32205_1"
+          query:
+            domain: "<%= report.id %>_32205_1"
         chartType: "leaderboardCenteredAverage"
         value: "value"
         label: "Centre"
@@ -295,8 +295,8 @@ slides: [
     charts: [
       {
         data:
-          file:
-            name: "<%= report.id %>_32206_0"
+          query:
+            domain: "<%= report.id %>_32206_0"
         chartType: "linechart"
         units:
           nb: " visites"
@@ -305,7 +305,7 @@ slides: [
           {
             date: "2014-08"
             label: "cote.nacre"
-            name: "Ouverture de Leroy Merlin"
+            domain: "Ouverture de Leroy Merlin"
           }
         ]
         legend: true
@@ -325,8 +325,8 @@ slides: [
       }
       {
         data:
-          file:
-            name: "<%= report.id %>_32206_1"
+          query:
+            domain: "<%= report.id %>_32206_1"
         chartType: "stackedBarchart"
         groups: "group"
         label: "poi_id"
@@ -354,8 +354,8 @@ slides: [
     parent_id: 202
     chartOptions:
       data:
-        file:
-          name: "<%= report.id %>_32104"
+        query:
+          domain: "<%= report.id %>_32104"
         date:
           selector: 'date'
           format: '%m-%y'
@@ -399,8 +399,8 @@ slides: [
     chartOptions:
       chartType: "linechart"
       data:
-        file:
-          name: "<%= report.id %>_32105"
+        query:
+          domain: "<%= report.id %>_32105"
         date:
           selector: 'level_1'
           format: '%Y-%m-%d'
@@ -442,8 +442,8 @@ slides: [
     chartOptions:
       chartType: "linechart"
       data:
-        file:
-          name: "<%= report.id %>_32106"
+        query:
+          domain: "<%= report.id %>_32106"
         date:
           selector: 'index'
           format: '%Y-%m-%d'
@@ -464,8 +464,8 @@ slides: [
     chartOptions:
       chartType: "linechart"
       data:
-        file:
-          name: "<%= report.id %>_32107"
+        query:
+          domain: "<%= report.id %>_32107"
         date:
           selector: 'date'
           format: '%m-%y'
@@ -515,8 +515,8 @@ slides: [
 
     chartOptions:
       data:
-        file:
-          name: "<%= report.id %>_30204"
+        query:
+          domain: "<%= report.id %>_30204"
       chartType: "bulletChart"
       packs: "group"
       meta: [""]
@@ -627,8 +627,8 @@ slides: [
           on: "breakdown"
           type: "buttons"
       data:
-        file:
-          name: "<%= report.id %>_32100"
+        query:
+          domain: "<%= report.id %>_32100"
         order:
           by: "label"
           custom: [
@@ -666,8 +666,8 @@ slides: [
     parent_id: 200
     chartOptions:
       data:
-        file:
-          name: "<%= report.id %>_32102"
+        query:
+          domain: "<%= report.id %>_32102"
       chartType: "horizontalBarchart"
       value: "Pourcentage"
       packs: "pack"
@@ -848,7 +848,7 @@ slides: [
     parent_id: 200
     chartOptions:
       data:
-        quert:
+        query:
           domain: "<%= report.id %>_32101"
       chartType: "barchart"
       value: "NB visit"
@@ -870,8 +870,8 @@ slides: [
     parent_id: 204
     chartOptions:
       data:
-        file:
-          name: "<%= report.id %>_34201"
+        query:
+          domain: "<%= report.id %>_34201"
       chartType: "carto"
       join: "CODE_DEPT"
       label: "NOM_DEPT"
@@ -902,8 +902,8 @@ slides: [
     parent_id: 204
     chartOptions:
       data:
-        file:
-          name: "<%= report.id %>_34204"
+        query:
+          domain: "<%= report.id %>_34204"
       chartType: "carto"
       join: "Country Code"
       label: "Country Name"
@@ -925,8 +925,8 @@ slides: [
     charts: [
       {
         data:
-          file:
-            name: "<%= report.id %>_34204"
+          query:
+            domain: "<%= report.id %>_34204"
         chartType: "carto"
         join: "Country Code"
         label: "Country Name"
@@ -948,8 +948,8 @@ slides: [
       }
       {
         data:
-          file:
-            name: "<%= report.id %>_34204"
+          query:
+            domain: "<%= report.id %>_34204"
         chartType: "horizontalBarchart"
         value: "Value"
         label: "Country Name"
@@ -972,8 +972,8 @@ slides: [
     parent_id: 204
     chartOptions:
       data:
-        file:
-          name: "<%= report.id %>_34200"
+        query:
+          domain: "<%= report.id %>_34200"
       chartType: "carto"
       levels: 4
       join: "EntityHand"
@@ -1016,8 +1016,8 @@ slides: [
     parent_id: 206
     chartOptions:
       data:
-        file:
-          name: "treemap"
+        query:
+          domain: "treemap"
         precision:
           pop: ',.1f'
       chartType: "treemap"
@@ -1295,8 +1295,8 @@ slides: [
         on: "variable"
         datasets:[1]
         type: "buttons"
-    chartOptions:
-      data:
+    datasets:
+      bars_data:
         query:[
           $match:
             domain: "dynamic_barlinechart"
@@ -1304,18 +1304,30 @@ slides: [
         postprocess: [
           melt:
             id: ['Vehicle','year','day']
-            value: ['<%= requestersManager.metric_bar %>',"<%= requestersManager.metric_line %>"]
+            value: ['<%= requestersManager.metric_bar %>']
         ]
-
-
-
         precision:
           value: ",.0f"
         date:
           selector:"day"
           format:"%m/%d"
-
-      chartType: "barlinechart"
+      lines_data:
+        query:[
+          $match:
+            domain: "dynamic_barlinechart"
+        ]
+        postprocess: [
+          melt:
+            id: ['Vehicle','year','day']
+            value: ["<%= requestersManager.metric_line %>"]
+        ]
+        precision:
+          value: ",.0f"
+        date:
+          selector:"day"
+          format:"%m/%d"
+    chartOptions:
+      chartType: "new-barlinechart"
       units:
         value: " "
       requesters:
@@ -1345,8 +1357,17 @@ slides: [
               value: ['VehicleSessions','Media spent','FinalizedConfigurations','Total leads','Retail Commercial Offers','Total orders']
           ]
           fields: ['variable']
+
+      bars: dataset: 'bars_data'
+
+      label: "day"
       value: "value"
-      date:"day"
+      groups: "variable"
+      lines:
+        dataset: "lines_data"
+        x: 'day'
+        y: 'value'
+        serie: "variable"
       legend: 'minimal'
   }
   {
@@ -1358,22 +1379,37 @@ slides: [
       "bottom-right":
         on: "Activité"
         type: "buttons"
-
-    chartOptions:
-      data:
+    datasets:
+      bars_data:
         query:
           domain: "0_37101"
+          kpi: 'Marge'
         precision:
           value:[
             precision: ",.0f"
             where:
-              breakdown: "CA"
+              kpi: "CA"
           ,
             precision: ".2f"
             where:
-              breakdown: "Marge"
+              kpi: "Marge"
           ]
-      chartType: "barlinechart"
+      lines_data:
+        query:
+          domain: "0_37101"
+          kpi: 'CA'
+        precision:
+          value:[
+            precision: ",.0f"
+            where:
+              kpi: "CA"
+          ,
+            precision: ".2f"
+            where:
+              kpi: "Marge"
+          ]
+    chartOptions:
+      chartType: "new-barlinechart"
       units:
         CA: " M€"
         Marge: "%"
@@ -1381,10 +1417,20 @@ slides: [
         "Var CA"
         "Var Marge"
       ]
-      date: "date"
+      bars:
+        dataset: 'bars_data'
+        domain: [0,5.5]
+      label: "date"
+      value: 'value'
+      groups: 'Activité'
+      lines:
+        dataset: 'lines_data'
+        x: 'date'
+        y: 'value'
+        serie: 'Activité'
+        domain: [0,1980]
 
-      value: "value"
-      label: "label"
+      zeroBaseline: 0
       legend: 'minimal'
 
     id: 37101
@@ -1401,8 +1447,8 @@ slides: [
     parent_id: 207
     chartOptions:
       data:
-        file:
-          name: "<%= report.id %>_37102"
+        query:
+          domain: "<%= report.id %>_37102"
       chartType: "slopegraph"
       label: "Activite"
       meta: ["proportion"]
@@ -1426,8 +1472,8 @@ slides: [
         type: "dropdown"
     chartOptions:
       data:
-        file:
-          name: "<%= report.id %>_30205"
+        query:
+          domain: "<%= report.id %>_30205"
       chartType: "verbatim"
       categories: [
         "Theme"
@@ -1445,8 +1491,8 @@ slides: [
 
     chartOptions:
       data:
-        file:
-          name: "<%= report.id %>_40206"
+        query:
+          domain: "<%= report.id %>_40206"
       chartType: "score-card"
       variation: "evolution"
       variationLegend: "Compared with last year"
@@ -1498,8 +1544,8 @@ slides: [
         date:
           selector: "start_date"
           format: "%Y-%m-%d"
-        file:
-          name: "timeline"
+        query:
+          domain: "timeline"
       startDate: "start_date"
       endDate: "end_date"
       headline: "headline"
@@ -1603,8 +1649,8 @@ slides: [
     chartOptions:
 
       data:
-        file:
-          name: "horizontal_barchart_groups"
+        query:
+          domain: "horizontal_barchart_groups"
         order:
           by: "label"
 
@@ -1635,8 +1681,8 @@ slides: [
     parent_id: 403
     chartOptions:
       data:
-        file:
-          name: "horizontal_barchart_evolution"
+        query:
+          domain: "horizontal_barchart_evolution"
 
       chartType: "horizontalBarchart"
       value: "Pourcentage"
@@ -1650,8 +1696,8 @@ slides: [
       sort: "desc"
       sparklines:
         data:
-          file:
-            name: "horizontal_barchart_sparklines"
+          query:
+            domain: "horizontal_barchart_sparklines"
         joins: ["Evenements"]
         legend: "Évolution<br>sur 8 mois"
         value: "Value"
@@ -1670,8 +1716,8 @@ slides: [
     parent_id: 403
     chartOptions:
       data:
-        file:
-          name: "horizontal_barchart_evolution"
+        query:
+          domain: "horizontal_barchart_evolution"
       chartType: "horizontalBarchart"
       value: "Pourcentage"
       variation: "evolution"
@@ -1684,8 +1730,8 @@ slides: [
       sort: "desc"
       sparklines:
         data:
-          file:
-            name: "horizontal_barchart_sparklines"
+          query:
+            domain: "horizontal_barchart_sparklines"
           date:
             selector: "Date"
             format: "%m"
@@ -1707,8 +1753,8 @@ slides: [
     parent_id: 403
     chartOptions:
       data:
-        file:
-          name: "horizontal_barchart_legacy_sparklines"
+        query:
+          domain: "horizontal_barchart_legacy_sparklines"
 
       chartType: "horizontalBarchart"
       value: "Pourcentage"
@@ -1737,8 +1783,8 @@ slides: [
     chartOptions:
 
       data:
-        file:
-          name: "horizontal_barchart_simple"
+        query:
+          domain: "horizontal_barchart_simple"
 
       chartType: "horizontalBarchart"
       groups: "cat"
@@ -1769,15 +1815,15 @@ slides: [
 
     chartOptions:
       data:
-        file:
-          name: "horizontal_barchart_groups"
+        query:
+          domain: "horizontal_barchart_groups"
 
       chartType: "horizontalBarchart"
       value: "value"
       label: "label"
 
       average:
-        data: file: name: "horizontal_barchart_groups_avg"
+        data: query: domain: "horizontal_barchart_groups_avg"
         joins: [
           "cat"
           "type"
@@ -1808,8 +1854,8 @@ slides: [
     parent_id: 402
     chartOptions:
       data:
-        file:
-          name: "<%= report.id %>_201_1"
+        query:
+          domain: "<%= report.id %>_201_1"
       chartType: "leaderboardCenteredAverage"
       value: "value"
       label: "label"
@@ -1840,8 +1886,8 @@ slides: [
         type: "slider"
     chartOptions:
       data:
-        file:
-          name: "<%= report.id %>_201_1"
+        query:
+          domain: "<%= report.id %>_201_1"
       chartType: "leaderboardCenteredAverage"
       value: "value"
       label: "label"
@@ -1890,8 +1936,8 @@ slides: [
         type: "slider"
     chartOptions:
       data:
-        file:
-          name: "<%= report.id %>_201_1"
+        query:
+          domain: "<%= report.id %>_201_1"
       chartType: "leaderboardCenteredAverage"
       value: "value"
       label: "label"
@@ -1905,7 +1951,7 @@ slides: [
       meta: "Effectif"
       average:
         data:
-          file: name: "<%= report.id %>_201_1_avg"
+          query: domain: "<%= report.id %>_201_1_avg"
         value: "value"
         joins: [
           "toto"
@@ -1930,8 +1976,8 @@ slides: [
 
     chartOptions:
       data:
-        file:
-          name: "<%= report.id %>_30204"
+        query:
+          domain: "<%= report.id %>_30204"
       chartType: "bulletChart"
       packs: "group"
       meta: ["Objectif siège"]
@@ -1956,8 +2002,8 @@ slides: [
 
     chartOptions:
       data:
-        file:
-          name: "<%= report.id %>_30204"
+        query:
+          domain: "<%= report.id %>_30204"
       chartType: "bulletChart"
       packs: "group"
       meta: [""]
@@ -1982,8 +2028,8 @@ slides: [
 
     chartOptions:
       data:
-        file:
-          name: "<%= report.id %>_30204"
+        query:
+          domain: "<%= report.id %>_30204"
       chartType: "bulletChart"
       packs: "group"
       meta: [""]
@@ -1999,8 +2045,8 @@ slides: [
           date:
             selector: "date"
             format: "%Y-%m"
-          file:
-            name: "bullet_chart_sparklines"
+          query:
+            domain: "bullet_chart_sparklines"
         value: "value"
         date: "date"
         joins: [
@@ -2037,8 +2083,8 @@ slides: [
       data:
         # order:
         #   by: 'index'
-        file:
-          name: "waterfall_new"
+        query:
+          domain: "waterfall_new"
       # sublabel: 'label_sublevel'
       # meta: 'Actuel'
       units:
@@ -2063,8 +2109,8 @@ slides: [
       label: 'label'
 
       data:
-        file:
-          name: "waterfall_new_categorized"
+        query:
+          domain: "waterfall_new_categorized"
       # sublabel: 'label_sublevel'
       # meta: 'Actuel'
       units:
@@ -2220,8 +2266,8 @@ slides: [
 
     datasets:
       dept_data:
-        file:
-          name: "<%= report.id %>_34201"
+        query:
+          domain: "<%= report.id %>_34201"
 
     chartOptions:
       chartType: "mapchart"
@@ -2254,8 +2300,8 @@ slides: [
 
     datasets:
       dept_data:
-        file:
-          name: "<%= report.id %>_34201"
+        query:
+          domain: "<%= report.id %>_34201"
 
     chartOptions:
       chartType: "mapchart"
@@ -2278,8 +2324,8 @@ slides: [
 
     datasets:
       cities_data:
-        file:
-          name: "cities_data"
+        query:
+          domain: "cities_data"
 
     chartOptions:
       chartType: "mapchart"
@@ -2306,8 +2352,8 @@ slides: [
 
     datasets:
       cities_data:
-        file:
-          name: "cities_data"
+        query:
+          domain: "cities_data"
 
     chartOptions:
       chartType: "mapchart"
@@ -2334,8 +2380,8 @@ slides: [
 
     datasets:
       dept_data:
-        file:
-          name: "<%= report.id %>_34201"
+        query:
+          domain: "<%= report.id %>_34201"
 
     chartOptions:
       chartType: "mapchart"
@@ -2364,8 +2410,8 @@ slides: [
 
     datasets:
       dept_data:
-        file:
-          name: "<%= report.id %>_34201"
+        query:
+          domain: "<%= report.id %>_34201"
 
     chartOptions:
       chartType: "mapchart"
@@ -2393,13 +2439,13 @@ slides: [
 
     datasets:
       dept_data:
-        file:
-          name: "<%= report.id %>_34201"
+        query:
+          domain: "<%= report.id %>_34201"
         precision:
           value: ".1f"
       cities_data:
-        file:
-          name: "cities_data"
+        query:
+          domain: "cities_data"
 
     chartOptions:
       chartType: "mapchart"
@@ -2520,8 +2566,8 @@ slides: [
     parent_id: 409
 
     datasets:
-      bars_data: file: name: 'barlines_bars'
-      lines_data: file: name: 'barlines_lines'
+      bars_data: query: domain: 'barlines_bars'
+      lines_data: query: domain: 'barlines_lines'
 
     chartOptions:
       chartType: 'new-barlinechart'
