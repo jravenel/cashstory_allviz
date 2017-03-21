@@ -24,6 +24,7 @@ glossary:
 
 slidePdfEnabled: true
 dashboardPdfEnabled: false
+captureChartEnabled: true
 sharingOptions: true
 comments: true
 embedCharts: true
