@@ -628,7 +628,7 @@
     title: "CA par région"
     id: 253
     parent_id: 25
-    commentary: 'Quelles sont mes zones de forte activité ?<br><i>Cliquez sur la carte de la Normandie pour plus de détail sur cette région</i>'
+    commentary: 'Quelles sont mes zones de forte activité ?<br><i>Double cliquez sur la carte de la Normandie pour plus de détail sur cette région</i>'
 
     # filters:
     #   "bottom-right":
