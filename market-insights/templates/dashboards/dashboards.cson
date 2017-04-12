@@ -8,6 +8,48 @@ categories: [
 
   name: "Sales"
   kpis: [
+  name: "Brand vs Market"
+  kpis: [
+    name: "Brand's monthly growth"
+    value: "8.5"
+    unit: "%"
+    badge: "bullet"
+    badgeSentiment: "better"
+    comment: " + 0.5 pts compared to the market"
+    slide: 101
+    __data__:
+      value:
+        query:
+          domain: "overall_growth"
+          country: "{{ country }}"
+        field: "value"
+    source: "July 2017, panelists"
+    id: 1
+  ,
+    name: "Brand's growth on Premium Category"
+    value: "6.5"
+    unit: "%"
+    badge: "bullet"
+    badgeSentiment: "better"
+    comment: " + 0.3 pts compared to the market"
+    slide: 101
+    source: "Year to date, internal source"
+    id: 33
+    source: "July 2017, panelists"
+  ,
+    name: "Brand's growth on Basics Category"
+    value: "1"
+    unit: "%"
+    badge: "bullet"
+    badgeSentiment: "worse"
+    comment: " - 2 pts compared to the market"
+    slide: 101
+    source: "July 2015, internal source"
+    id: 34
+    source: "July 2017, panelists"
+
+  ]
+,
     name: "Total"
     type: 'value-dynamic'
     value: "value"

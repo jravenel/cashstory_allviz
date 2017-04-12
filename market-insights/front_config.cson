@@ -1,4 +1,16 @@
-﻿
+﻿glossary:
+  title:'Glossary'
+  terms:[
+    term:'Market Share'
+    meaning:'Market share is the percentage of a market (defined in terms of either units or revenue) accounted for by a specific entity.'
+  ,
+    term:'Brand'
+    meaning:'A brand (or marque for car model) is a name, term, design, symbol, or other feature that distinguishes one seller’s product from those of others'
+  ,
+    term:'Market'
+    meaning:'A market is one of the many varieties of systems, institutions, procedures, social relations and infrastructures whereby parties engage in exchange'
+  ]
+
 'slides': [
   {
     'id': 0
@@ -24,6 +36,15 @@
     'title': 'Sales Realized vs Target'
     'level': 3
     'parent_id': 10
+    source:'Source: panelists'
+    # recommendation:
+    #   advert: "Creation"
+    #   content: """
+    #     <div style="text-align:center">
+    #     <iframe src="https://www.youtube.com/watch?v=AD8-jMx9PL4" width="240" height="135" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    #     </div>
+    #   """
+
     'filters': 'bottom-right':
       'on': 'breakdown'
       'type': 'buttons'
@@ -58,6 +79,7 @@
   {
     'title': 'Trends'
     'level': 3
+    source:'Source: panelists'
     'charts': [
       {
         'style': 'secondary'
@@ -125,6 +147,7 @@
     'title': 'Value share growth'
     'level': 3
     'parent_id': 10
+    source:'Source: panelists'
     'commentary': 'This chart allows you to understand wether your value share <br> by products is increasing or decreasing'
     'id': 102
     'chartOptions':
@@ -256,7 +279,7 @@
       quadrants:
         x: 20
         y: 80
-        labels: ['Perte de vitesse','Trajectoire d\'excellence','Décrochage','Zone d\'ascencion']
+        labels: ['Sluggish','Excellence','Disengagement','Ramping up']
         sentiments: ['warning','positive','negative','warning']
       'r': 'Revenues'
       'data': 'query': 'domain': 'leadership'

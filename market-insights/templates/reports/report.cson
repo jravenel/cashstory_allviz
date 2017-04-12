@@ -1,7 +1,7 @@
 ﻿
 'entityName': '{{ country }}'
 id: "{{ index }}"
-'execsumNote': '* you should start to <strong>customize</strong> it'
+'execsumNote': 'made with<strong><3</strong>by Toucan Toco team'
 'dashboards':
   # 'default': 0
   'search': 'Search by division'

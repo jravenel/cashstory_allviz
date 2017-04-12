@@ -16,8 +16,15 @@ DASHBOARDS: [
 ,
   query:
     domain: "dashboards"
+    type:'division'
   report: "country"
   template: "dashboards-division"
+,
+  query:
+    domain: "dashboards"
+    type:'country'
+  report: "country"
+  template: "dashboards-country"
 ]
 'REPORTS': [
   query:
@@ -27,10 +34,10 @@ DASHBOARDS: [
 ]
 'DATA_SOURCES': [
   {
+    'spreadsheet_id': '1LknlywNja_YVogys_YgbfulaKp7d1xcAtAKsgIgmkL8'
+    'sheetname': "dashboards"
     domain: "dashboards"
-    type: "excel"
-    file: "dashboards.xls"
-    sheetname: "Data"
+    'type': 'google_spreadsheet'
   }
 
   {
