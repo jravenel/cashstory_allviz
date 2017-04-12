@@ -1,11 +1,13 @@
-﻿
-'entityName': '{{ country }}'
+﻿'entityName': '{{ zone }}'
+'entityGroup': '{{ group }}'
+
 id: "{{ index }}"
 'execsumNote': 'made with<strong><3</strong>by Toucan Toco team'
-'dashboards':
-  # 'default': 0
-  'search': 'Search by division'
-# 'slug': 'entity'
+# 'dashboards':
+#   'search': 'Search by division'
+search:
+  'placeholder':'Search by division or country'
+
 'background':
   assetName: "bg-1"
   overlay: false

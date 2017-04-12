@@ -10,31 +10,55 @@
 DASHBOARDS: [
   query:
     domain: "dashboards"
-    default: 1.0
-  report: "country"
+    type: "synthesis"
+  report: "zone"
   template: "dashboards"
 ,
   query:
     domain: "dashboards"
     type:'division'
-  report: "country"
+  report: "zone"
   template: "dashboards-division"
 ,
   query:
     domain: "dashboards"
     type:'country'
-  report: "country"
+  report: "zone"
   template: "dashboards-country"
 ]
 'REPORTS': [
   query:
     domain: "dashboards"
-    default: 1.0
   template: "report"
 ]
+# DASHBOARDS: [
+#   query:
+#     domain: "dashboards"
+#     type: "synthesis"
+#   report: "country"
+#   template: "dashboards"
+# ,
+#   query:
+#     domain: "dashboards"
+#     type:'division'
+#   report: "country"
+#   template: "dashboards-division"
+# ,
+#   query:
+#     domain: "dashboards"
+#     type:'country'
+#   report: "country"
+#   template: "dashboards-country"
+# ]
+# 'REPORTS': [
+#   query:
+#     domain: "dashboards"
+#     type: "synthesis"
+#   template: "report"
+# ]
 'DATA_SOURCES': [
   {
-    'spreadsheet_id': '1LknlywNja_YVogys_YgbfulaKp7d1xcAtAKsgIgmkL8'
+    'spreadsheet_id': '1ahKMNCGrRmPuBylM0lKyYzQ5Kcr4JouJ1oUOoudiYTM'
     'sheetname': "dashboards"
     domain: "dashboards"
     'type': 'google_spreadsheet'

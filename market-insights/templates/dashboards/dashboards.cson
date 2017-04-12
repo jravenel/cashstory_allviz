@@ -1,16 +1,14 @@
 ﻿entityName: "{{ zone }}"
 id: "{{ index }}"
 report: "{{ report_id }}"
-default: "{{ default }}"
+default: true
 
 
 categories: [
 
-  name: "Sales"
+  name: "Brand vs Market (monthly data)"
   kpis: [
-  name: "Brand vs Market"
-  kpis: [
-    name: "Brand's monthly growth"
+    name: "Brand's growth"
     value: "8.5"
     unit: "%"
     badge: "bullet"
@@ -26,7 +24,7 @@ categories: [
     source: "July 2017, panelists"
     id: 1
   ,
-    name: "Brand's growth on Premium Category"
+    name: "Premium Category growth"
     value: "6.5"
     unit: "%"
     badge: "bullet"
@@ -37,7 +35,7 @@ categories: [
     id: 33
     source: "July 2017, panelists"
   ,
-    name: "Brand's growth on Basics Category"
+    name: "Basics Category growth"
     value: "1"
     unit: "%"
     badge: "bullet"
@@ -50,6 +48,8 @@ categories: [
 
   ]
 ,
+  name: "Sales"
+  kpis: [
     name: "Total"
     type: 'value-dynamic'
     value: "value"
@@ -132,8 +132,6 @@ categories: [
       evolution: '(value - comparison)/comparison'
     # source: "2016, source Smart Toucan"
     id: 0
-
-
   ]
 
 ,
@@ -304,5 +302,4 @@ categories: [
         domain:"commentary"
     content:'commentary'
   ]
-
 ]

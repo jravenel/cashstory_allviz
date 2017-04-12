@@ -144,7 +144,7 @@
   }
 
   {
-    'title': 'Value share growth'
+    'title': 'Portfolio Market Share'
     'level': 3
     'parent_id': 10
     source:'Source: panelists'
@@ -154,7 +154,7 @@
       'value': 'value'
       'label': 'label'
       'groups': "groups"
-      'units': 'value': ' %'
+      'units': 'value': ' pts'
       'chartType': 'waterfallchart'
       'data':
         'query':
@@ -181,7 +181,7 @@
       sparklines:
         orderDates: true
         value: "value"
-        units: value: "M€"
+        units:value:' '
         legend: "12 months variation"
         joins: [
           "label"
@@ -194,7 +194,24 @@
         'on': 'upper'
         'type': 'buttons'
       'units':
-        'evolution': ' points'
+        'evolution': [
+          {
+            'where': 'breakdown': 'Value'
+            'unit': ' %'
+          }
+          {
+            'where': 'breakdown': 'Value Share'
+            'unit': ' pts'
+          }
+          {
+            'where': 'breakdown': 'Units'
+            'unit': ' %'
+          }
+          {
+            'where': 'breakdown': 'Unit Share'
+            'unit': ' pts'
+          }
+        ]
         'value': [
           {
             'where': 'breakdown': 'Value'
@@ -202,6 +219,14 @@
           }
           {
             'where': 'breakdown': 'Value Share'
+            'unit': ' %'
+          }
+          {
+            'where': 'breakdown': 'Units'
+            'unit': ' kUnits'
+          }
+          {
+            'where': 'breakdown': 'Unit Share'
             'unit': ' %'
           }
         ]
@@ -271,6 +296,7 @@
         ]
         'group': 'drillGroup'
         'level': 'drillLevel'
+        levelsOrder:['main','sub']
       'units':
         'cy': 'M€'
         'cx': 'M€'
@@ -294,7 +320,7 @@
       'type': 'buttons'
     'recommendation':
       'advert': 'Info'
-      'content': 'On Fragrances and Makeup a new competitor appeared that will challenge the incumbent'
+      'content': 'On th e premium market a new competitor appeared that will challenge the incumbent'
     'commentary': 'Key products\' value share compared to competition'
     'id': 301
     'chartOptions':
@@ -314,7 +340,16 @@
           'Men'
         ]
       'units':
-        'evolution': ' points'
+        'evolution': [
+          {
+            'where': 'breakdown': 'value'
+            'unit': ' %'
+          }
+          {
+            'where': 'breakdown': 'value share'
+            'unit': ' pts'
+          }
+        ]
         'value share': [
           {
             'where': 'breakdown': 'value'
@@ -328,7 +363,17 @@
       'chartType': 'horizontalBarchart'
       'data':
         'query': 'domain': 'versus'
-        'precision': evolution: ",.2f"
+        'precision':
+          'evolution': [
+            {
+              'where': 'breakdown': 'value'
+              'precision': ' ,.1%'
+            }
+            {
+              'where': 'breakdown': 'value share'
+              'precision': ' ,2f'
+            }
+          ]
   }
 ]
 'sharingOptions': true
