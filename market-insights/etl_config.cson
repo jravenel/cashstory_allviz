@@ -112,6 +112,12 @@ DASHBOARDS: [
     'type': 'google_spreadsheet'
   }
   {
+    'spreadsheet_id': '1ahKMNCGrRmPuBylM0lKyYzQ5Kcr4JouJ1oUOoudiYTM'
+    'sheetname': 'my_dates_data'
+    'domain': 'my_dates_data'
+    'type': 'google_spreadsheet'
+  }
+  {
     'domain': 'commentary'
     'type': 'csv'
     file:'commentary.csv'

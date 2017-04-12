@@ -10,5 +10,13 @@ id: "{{ index }}"
 'background':
   assetName: "bg-1"
   overlay: false
-'date': 'September 2016'
+
+date:
+  id: "my_date_selector"
+  type: "buttons"
+  query:
+    domain: 'my_dates_data'
+  fields: ['my_periods']
+  default:'July-2017'
+
 'execsumTitle': 'Market insights'
