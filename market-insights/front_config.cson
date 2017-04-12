@@ -310,6 +310,7 @@
 ]
 'sharingOptions': true
 'slidePdfEnabled': true
+captureChartEnabled: true
 'offline': 'all'
 'home': 'skipToReport': 0
 'comments': true

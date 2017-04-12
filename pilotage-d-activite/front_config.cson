@@ -8,6 +8,7 @@
     'Entity C'
   ]
   'description': 'Sur tous les écrans de comparaison, comparer avec :'
+captureChartEnabled: true
 'glossary':
   'terms': [
     {
@@ -400,6 +401,9 @@
       'on': 'Breakdown'
       'type': 'buttons'
     'id': 10202
+    'tutorial':
+      'content': 'Cliquez sur les boutons en bas à droite pour faire varier les axes d\'analyse'
+      'id': 'bottom_right'
     'chartOptions':
       'packs': 'Pack'
       'average': ' '
@@ -432,9 +436,6 @@
           ]
         'precision': 'Value': '.0f'
       'legend': false
-      'tutorial':
-        'content': 'Cliquez sur les boutons en bas à droite pour faire varier les axes d\'analyse'
-        'id': 'bottom_right'
   }
   {
     'level': 3
@@ -628,7 +629,7 @@
     title: "CA par région"
     id: 253
     parent_id: 25
-    commentary: 'Quelles sont mes zones de forte activité ?<br><i>Cliquez sur la carte de la Normandie pour plus de détail sur cette région</i>'
+    commentary: 'Quelles sont mes zones de forte activité ?<br><i>Double cliquez sur la carte de la Normandie pour plus de détail sur cette région</i>'
 
     # filters:
     #   "bottom-right":

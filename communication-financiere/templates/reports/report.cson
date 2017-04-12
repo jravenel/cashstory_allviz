@@ -20,4 +20,3 @@ dashboards:
   default: 0
   search: "%%dashboardsSearch%%"
 
-slideInfos: {}

@@ -2,7 +2,6 @@
 'entityName': '{{ country }}'
 id: "{{ index }}"
 'execsumNote': '* you should start to <strong>customize</strong> it'
-'slideInfos': {}
 'dashboards':
   # 'default': 0
   'search': 'Search by division'

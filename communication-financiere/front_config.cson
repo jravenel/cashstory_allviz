@@ -20,7 +20,7 @@ glossary:
 sharingOptions: true
 embedCharts: true
 slidePdfEnabled: true
-
+captureChartEnabled: true
 sharingOptions: true
 comments: true
 
@@ -381,6 +381,15 @@ slides: [
       legend: true
 
     id: 20002
+  }
+  {
+    level: 3
+    title: "%%Brand Communication%%"
+    chartOptions:
+      chartType: "text"
+      src: "brand_co_text"
+    parent_id: 200
+    id: 20003
   }
 
 ]

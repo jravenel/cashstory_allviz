@@ -11,7 +11,7 @@ categories: [
     value: "{{ kpi1 }}"
     unit: "M€"
     # slide: 10001
-    source: "Bilan 2014"
+    source: "Bilan 2017"
     id: 0
   ,
     type: "media-img"
@@ -20,7 +20,7 @@ categories: [
     name: "%%Growth%%"
     value: "{{ kpi2 }}"
     unit: "%"
-    source: "Bilan 2014"
+    source: "Bilan 2017"
     id: 1
   # ,
   #   type: "media-video"
@@ -33,13 +33,13 @@ categories: [
     value: "{{ kpi8 }}"
     unit: "M€"
     badge: "bullet"
-    comment: "In 2013, {{ Compkpi8}} M€"
+    comment: "In 2016, {{ Compkpi8}} M€"
   ,
     name: "%%Operating Investments%%"
     value: "{{ kpi9 }}"
     unit: "M€"
     badge: "bullet"
-    comment: "In 2013, {{ Compkpi9}} M€"
+    comment: "In 2016, {{ Compkpi9}} M€"
 
   ]
 # ,

@@ -19,6 +19,7 @@ glossary:
 sharingOptions: true
 comments: true
 slidePdfEnabled: true
+captureChartEnabled: true
 
 slides: [
   {
