@@ -20,7 +20,7 @@ glossary:
 sharingOptions: true
 embedCharts: true
 slidePdfEnabled: true
-
+captureChartEnabled: true
 sharingOptions: true
 comments: true
 
