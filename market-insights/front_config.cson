@@ -282,6 +282,8 @@
     'filters': 'bottom-right':
       'on': 'type'
       'type': 'buttons'
+      order:['Total','Premium','Basics']
+      defaultSelected:'Total'
     'kpi': 'unit': ' %'
     'id': 35201
     'chartOptions':
@@ -343,7 +345,7 @@
         'evolution': [
           {
             'where': 'breakdown': 'value'
-            'unit': ' %'
+            'unit': ''
           }
           {
             'where': 'breakdown': 'value share'

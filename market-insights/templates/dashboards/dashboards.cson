@@ -13,7 +13,7 @@ categories: [
     unit: "%"
     badge: "bullet"
     badgeSentiment: "better"
-    comment: " + 0.5 pts compared to the market"
+    comment: " + 0.3 pts compared to the market"
     slide: 101
     __data__:
       value:
@@ -29,7 +29,7 @@ categories: [
     unit: "%"
     badge: "bullet"
     badgeSentiment: "better"
-    comment: " + 0.3 pts compared to the market"
+    comment: " + 0.5 pts compared to the market"
     slide: 101
     source: "Year to date, internal source"
     id: 33
@@ -203,7 +203,7 @@ categories: [
     name: "Leader gap"
     type: 'value-dynamic'
     value: "value"
-    comment: "<%=\' \' + evolution + \' vs previous month\'%>"
+    comment: "<%=\' \' + evolution + \' pts vs previous month\'%>"
     unit: " %"
     slide: 301
     badge: 'evolution'
@@ -213,7 +213,7 @@ categories: [
         range: ['negative','positive']
     precision:
       value: ',.0f'
-      evolution: "+,.0%"
+      evolution: "+,.2f"
     data:
       value:
         query:[
@@ -238,7 +238,7 @@ categories: [
     name: "Market average gap"
     type: 'value-dynamic'
     value: "value"
-    comment: "<%=\' \' + evolution + \' vs previous month\'%>"
+    comment: "<%=\' \' + evolution + \' pts vs previous month\'%>"
     unit: " %"
     slide: 301
     badge: 'evolution'
@@ -248,7 +248,7 @@ categories: [
         range: ['positive','negative']
     precision:
       value: ',.0f'
-      evolution: "+,.0%"
+      evolution: "+,.2f"
     data:
       value:
         query:[

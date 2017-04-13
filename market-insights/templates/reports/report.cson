@@ -14,7 +14,7 @@ search:
 
 date:
   id: "my_date_selector"
-  type: "buttons"
+  type: "dropdown"
   query:
     domain: 'my_dates_data'
   fields: ['my_periods']
