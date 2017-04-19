@@ -144,7 +144,7 @@
   }
 
   {
-    'title': 'Portfolio Market Share'
+    'title': 'Portfolio Management'
     'level': 3
     'parent_id': 10
     source:'Source: panelists'
@@ -170,6 +170,8 @@
     'filters': 'bottom-right':
       'on': 'breakdown'
       'type': 'buttons'
+      order:
+        custom:['Unit Share','Units','Value Share','Value']
     'commentary': 'Ranking of division by value and value share'
     'id': 201
     'chartOptions':
@@ -305,12 +307,16 @@
         'r': 'M€'
       'chartType': 'bubblechart'
       quadrants:
-        x: 20
-        y: 80
+        x: .20
+        y: .80
         labels: ['Sluggish','Excellence','Disengagement','Ramping up']
         sentiments: ['warning','positive','negative','warning']
       'r': 'Revenues'
-      'data': 'query': 'domain': 'leadership'
+      'data':
+        'query': 'domain': 'leadership'
+        precision:
+          'R&D':',.0%'
+          'Marketing':',.0%'
       'legend': true
   }
   {

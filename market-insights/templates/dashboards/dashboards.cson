@@ -96,7 +96,6 @@ categories: [
           type: "division"
       'value': 'value'
       'label': 'label'
-    source: '2016, internal source'
     slide: 201
   ,
     name: "Luxury Brand"
@@ -295,7 +294,7 @@ categories: [
           Filtre1: "All categories"
     id: 100
   ,
-    name:"Manager's commentary"
+    name:"Marketing Product Manager Editorial"
     type:"text-dynamic"
     data:
       query:
