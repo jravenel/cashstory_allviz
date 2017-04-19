@@ -1,0 +1,225 @@
+group,poi_id,nb,breakdown,date
+-17 ans,cora.nord,12243,age,2014-12
+-17 ans,cote.nacre,20581,age,2014-12
+-17 ans,mondeville2,19326,age,2014-12
+18-24 ans,cora.nord,125293,age,2014-12
+18-24 ans,cote.nacre,254340,age,2014-12
+18-24 ans,mondeville2,176834,age,2014-12
+25-39 ans,cora.nord,311093,age,2014-12
+25-39 ans,cote.nacre,434379,age,2014-12
+25-39 ans,mondeville2,510784,age,2014-12
+40-64 ans,cora.nord,300374,age,2014-12
+40-64 ans,cote.nacre,474693,age,2014-12
+40-64 ans,mondeville2,469965,age,2014-12
+64 ans et +,cora.nord,21139,age,2014-12
+64 ans et +,cote.nacre,30690,age,2014-12
+64 ans et +,mondeville2,25211,age,2014-12
+-17 ans,cora.nord,151915,age,2014-11
+-17 ans,cote.nacre,202147,age,2014-11
+-17 ans,mondeville2,224279,age,2014-11
+18-24 ans,cora.nord,250716,age,2014-11
+18-24 ans,cote.nacre,325779,age,2014-11
+18-24 ans,mondeville2,379672,age,2014-11
+25-39 ans,cora.nord,501417,age,2014-11
+25-39 ans,cote.nacre,548875,age,2014-11
+25-39 ans,mondeville2,514322,age,2014-11
+40-64 ans,cora.nord,507971,age,2014-11
+40-64 ans,cote.nacre,485017,age,2014-11
+40-64 ans,mondeville2,656311,age,2014-11
+64 ans et +,cora.nord,34891,age,2014-11
+64 ans et +,cote.nacre,188910,age,2014-11
+64 ans et +,mondeville2,119775,age,2014-11
+-17 ans,cora.nord,172854,age,2014-10
+-17 ans,cote.nacre,128392,age,2014-10
+-17 ans,mondeville2,152318,age,2014-10
+18-24 ans,cora.nord,138588,age,2014-10
+18-24 ans,cote.nacre,463573,age,2014-10
+18-24 ans,mondeville2,289060,age,2014-10
+25-39 ans,cora.nord,511756,age,2014-10
+25-39 ans,cote.nacre,624736,age,2014-10
+25-39 ans,mondeville2,607218,age,2014-10
+40-64 ans,cora.nord,332764,age,2014-10
+40-64 ans,cote.nacre,589824,age,2014-10
+40-64 ans,mondeville2,667091,age,2014-10
+64 ans et +,cora.nord,84866,age,2014-10
+64 ans et +,cote.nacre,152632,age,2014-10
+64 ans et +,mondeville2,135571,age,2014-10
+-17 ans,cora.nord,102444,age,2014-09
+-17 ans,cote.nacre,187709,age,2014-09
+-17 ans,mondeville2,131538,age,2014-09
+18-24 ans,cora.nord,274717,age,2014-09
+18-24 ans,cote.nacre,339054,age,2014-09
+18-24 ans,mondeville2,327075,age,2014-09
+25-39 ans,cora.nord,441217,age,2014-09
+25-39 ans,cote.nacre,621367,age,2014-09
+25-39 ans,mondeville2,699638,age,2014-09
+40-64 ans,cora.nord,420273,age,2014-09
+40-64 ans,cote.nacre,534351,age,2014-09
+40-64 ans,mondeville2,564745,age,2014-09
+64 ans et +,cora.nord,98991,age,2014-09
+64 ans et +,cote.nacre,223409,age,2014-09
+64 ans et +,mondeville2,59139,age,2014-09
+-17 ans,cora.nord,203604,age,2014-08
+-17 ans,cote.nacre,193800,age,2014-08
+-17 ans,mondeville2,68744,age,2014-08
+18-24 ans,cora.nord,223145,age,2014-08
+18-24 ans,cote.nacre,255598,age,2014-08
+18-24 ans,mondeville2,352232,age,2014-08
+25-39 ans,cora.nord,360015,age,2014-08
+25-39 ans,cote.nacre,466641,age,2014-08
+25-39 ans,mondeville2,706891,age,2014-08
+40-64 ans,cora.nord,434185,age,2014-08
+40-64 ans,cote.nacre,546192,age,2014-08
+40-64 ans,mondeville2,581684,age,2014-08
+64 ans et +,cora.nord,125821,age,2014-08
+64 ans et +,cote.nacre,75828,age,2014-08
+64 ans et +,mondeville2,222489,age,2014-08
+-17 ans,cora.nord,30027,age,2014-07
+-17 ans,cote.nacre,160118,age,2014-07
+-17 ans,mondeville2,55876,age,2014-07
+18-24 ans,cora.nord,312776,age,2014-07
+18-24 ans,cote.nacre,274300,age,2014-07
+18-24 ans,mondeville2,194453,age,2014-07
+25-39 ans,cora.nord,350862,age,2014-07
+25-39 ans,cote.nacre,449472,age,2014-07
+25-39 ans,mondeville2,667530,age,2014-07
+40-64 ans,cora.nord,477356,age,2014-07
+40-64 ans,cote.nacre,627077,age,2014-07
+40-64 ans,mondeville2,470647,age,2014-07
+64 ans et +,cora.nord,214133,age,2014-07
+64 ans et +,cote.nacre,106536,age,2014-07
+64 ans et +,mondeville2,194682,age,2014-07
+-17 ans,cora.nord,76660,age,2014-06
+-17 ans,cote.nacre,226513,age,2014-06
+-17 ans,mondeville2,113919,age,2014-06
+18-24 ans,cora.nord,140091,age,2014-06
+18-24 ans,cote.nacre,294184,age,2014-06
+18-24 ans,mondeville2,304761,age,2014-06
+25-39 ans,cora.nord,315645,age,2014-06
+25-39 ans,cote.nacre,565474,age,2014-06
+25-39 ans,mondeville2,682148,age,2014-06
+40-64 ans,cora.nord,360944,age,2014-06
+40-64 ans,cote.nacre,611929,age,2014-06
+40-64 ans,mondeville2,498401,age,2014-06
+64 ans et +,cora.nord,140838,age,2014-06
+64 ans et +,cote.nacre,126110,age,2014-06
+64 ans et +,mondeville2,49154,age,2014-06
+femme,cora.nord,380071,sexe,2014-12
+femme,cote.nacre,645924,sexe,2014-12
+femme,mondeville2,601068,sexe,2014-12
+homme,cora.nord,435088,sexe,2014-12
+homme,cote.nacre,631071,sexe,2014-12
+homme,mondeville2,664453,sexe,2014-12
+femme,cora.nord,852956,sexe,2014-11
+femme,cote.nacre,971879,sexe,2014-11
+femme,mondeville2,1116831,sexe,2014-11
+homme,cora.nord,527991,sexe,2014-11
+homme,cote.nacre,1028826,sexe,2014-11
+homme,mondeville2,1153257,sexe,2014-11
+femme,cora.nord,701894,sexe,2014-10
+femme,cote.nacre,776025,sexe,2014-10
+femme,mondeville2,1159679,sexe,2014-10
+homme,cora.nord,850926,sexe,2014-10
+homme,cote.nacre,859779,sexe,2014-10
+homme,mondeville2,1089797,sexe,2014-10
+femme,cora.nord,430668,sexe,2014-09
+femme,cote.nacre,1123521,sexe,2014-09
+femme,mondeville2,646771,sexe,2014-09
+homme,cora.nord,570170,sexe,2014-09
+homme,cote.nacre,655740,sexe,2014-09
+homme,mondeville2,1095264,sexe,2014-09
+femme,cora.nord,772459,sexe,2014-08
+femme,cote.nacre,951830,sexe,2014-08
+femme,mondeville2,750352,sexe,2014-08
+homme,cora.nord,737934,sexe,2014-08
+homme,cote.nacre,961935,sexe,2014-08
+homme,mondeville2,1017393,sexe,2014-08
+femme,cora.nord,465742,sexe,2014-07
+femme,cote.nacre,950241,sexe,2014-07
+femme,mondeville2,1080807,sexe,2014-07
+homme,cora.nord,619487,sexe,2014-07
+homme,cote.nacre,886850,sexe,2014-07
+homme,mondeville2,898094,sexe,2014-07
+femme,cora.nord,770444,sexe,2014-06
+femme,cote.nacre,724115,sexe,2014-06
+femme,mondeville2,815389,sexe,2014-06
+homme,cora.nord,637846,sexe,2014-06
+homme,cote.nacre,1110814,sexe,2014-06
+homme,mondeville2,971682,sexe,2014-06
+- de 15k€,cora.nord,155624,revenus,2014-12
+- de 15k€,cote.nacre,339925,revenus,2014-12
+- de 15k€,mondeville2,286610,revenus,2014-12
+15-30k€,cora.nord,968882,revenus,2014-12
+15-30k€,cote.nacre,1348643,revenus,2014-12
+15-30k€,mondeville2,1405626,revenus,2014-12
+30-45k€,cora.nord,3313,revenus,2014-12
+30-45k€,cote.nacre,13701,revenus,2014-12
+30-45k€,mondeville2,4839,revenus,2014-12
+45+k€,cote.nacre,27,revenus,2014-12
+45+k€,mondeville2,50,revenus,2014-12
+- de 15k€,cora.nord,306500,revenus,2014-11
+- de 15k€,cote.nacre,430628,revenus,2014-11
+- de 15k€,mondeville2,336385,revenus,2014-11
+15-30k€,cora.nord,1134589,revenus,2014-11
+15-30k€,cote.nacre,1571086,revenus,2014-11
+15-30k€,mondeville2,1564951,revenus,2014-11
+30-45k€,cora.nord,33101,revenus,2014-11
+30-45k€,cote.nacre,18529,revenus,2014-11
+30-45k€,mondeville2,172779,revenus,2014-11
+45+k€,cote.nacre,130978,revenus,2014-11
+45+k€,mondeville2,174689,revenus,2014-11
+- de 15k€,cora.nord,424948,revenus,2014-10
+- de 15k€,cote.nacre,581337,revenus,2014-10
+- de 15k€,mondeville2,640628,revenus,2014-10
+15-30k€,cora.nord,1272697,revenus,2014-10
+15-30k€,cote.nacre,1534151,revenus,2014-10
+15-30k€,mondeville2,1673524,revenus,2014-10
+30-45k€,cora.nord,216707,revenus,2014-10
+30-45k€,cote.nacre,101904,revenus,2014-10
+30-45k€,mondeville2,98447,revenus,2014-10
+45+k€,cote.nacre,113844,revenus,2014-10
+45+k€,mondeville2,330008,revenus,2014-10
+- de 15k€,cora.nord,295613,revenus,2014-09
+- de 15k€,cote.nacre,511878,revenus,2014-09
+- de 15k€,mondeville2,499654,revenus,2014-09
+15-30k€,cora.nord,1304848,revenus,2014-09
+15-30k€,cote.nacre,1520434,revenus,2014-09
+15-30k€,mondeville2,1725667,revenus,2014-09
+30-45k€,cora.nord,357942,revenus,2014-09
+30-45k€,cote.nacre,194696,revenus,2014-09
+30-45k€,mondeville2,31816,revenus,2014-09
+45+k€,cote.nacre,363635,revenus,2014-09
+45+k€,mondeville2,399523,revenus,2014-09
+- de 15k€,cora.nord,356603,revenus,2014-08
+- de 15k€,cote.nacre,424454,revenus,2014-08
+- de 15k€,mondeville2,344122,revenus,2014-08
+15-30k€,cora.nord,1319112,revenus,2014-08
+15-30k€,cote.nacre,1556235,revenus,2014-08
+15-30k€,mondeville2,1511334,revenus,2014-08
+30-45k€,cora.nord,47565,revenus,2014-08
+30-45k€,cote.nacre,58937,revenus,2014-08
+30-45k€,mondeville2,80411,revenus,2014-08
+45+k€,cote.nacre,105470,revenus,2014-08
+45+k€,mondeville2,43550,revenus,2014-08
+- de 15k€,cora.nord,485998,revenus,2014-07
+- de 15k€,cote.nacre,459578,revenus,2014-07
+- de 15k€,mondeville2,375825,revenus,2014-07
+15-30k€,cora.nord,1366234,revenus,2014-07
+15-30k€,cote.nacre,1560472,revenus,2014-07
+15-30k€,mondeville2,1726523,revenus,2014-07
+30-45k€,cora.nord,192112,revenus,2014-07
+30-45k€,cote.nacre,264019,revenus,2014-07
+30-45k€,mondeville2,349808,revenus,2014-07
+45+k€,cote.nacre,287856,revenus,2014-07
+45+k€,mondeville2,198411,revenus,2014-07
+- de 15k€,cora.nord,484143,revenus,2014-06
+- de 15k€,cote.nacre,679979,revenus,2014-06
+- de 15k€,mondeville2,457931,revenus,2014-06
+15-30k€,cora.nord,1166434,revenus,2014-06
+15-30k€,cote.nacre,1357152,revenus,2014-06
+15-30k€,mondeville2,1799910,revenus,2014-06
+30-45k€,cora.nord,327856,revenus,2014-06
+30-45k€,cote.nacre,70318,revenus,2014-06
+30-45k€,mondeville2,37504,revenus,2014-06
+45+k€,cote.nacre,404320,revenus,2014-06
+45+k€,mondeville2,73377,revenus,2014-06

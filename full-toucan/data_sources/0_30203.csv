@@ -1,0 +1,37 @@
+label,Breakdown,value,ecart2011,Effectif,group
+Homme,Sexe,8,-0.3,462,group
+Femme,Sexe,8.4,0.4,602,group
+24 ans et moins *,Age,8.2,-0.3,52,group
+25 - 34,Age,7.8,0.4,99,group
+35 - 44,Age,7.5,3,142,group
+45 - 54,Age,8.3,5,195,group
+55 - 64,Age,8.5,-3,276,group
+65 ans et plus,Age,8.8,-5,204,group
+Moins de 2 ans,Ancienneté,8.7,-2,84,group
+2 à moins de 6 ans,Ancienneté,7.9,12,108,group
+6 à moins de 11 ans,Ancienneté,8,9,83,group
+11 à moins de 21 ans,Ancienneté,8.1,4,215,group
+21 à moins de 31 ans,Ancienneté,8.2,-5,250,group
+31 ans et +,Ancienneté,8.5,-3,351,group
+"Artis., com., chef d'entr. *",CSP,7.3,-0.8,66,group
+Profession libérale **,CSP,8.3,-0.3,35,group
+Cadre supérieur **,CSP,8.2,0.4,39,group
+Cadre moyen,CSP,7.5,3,93,group
+Employé,CSP,8.2,,293,group
+Ouvrier *,CSP,8.5,,60,group
+Retraité,CSP,8.6,-0.3,363,group
+"Inactif, chômeur **",CSP,8.2,,32,group
+Femme au foyer **,CSP,8.7,-0.3,25,group
+Etudiant **,CSP,8.1,0.4,26,group
+GP JEUNE **,Segment,8.3,3,48,group
+GP vus 1 an,Segment,8.3,,289,group
+GP non vus 1 an,Segment,7.9,-0.8,79,group
+CI,Segment,8.2,5,292,group
+CI PLUS,Segment,8.3,-3,275,group
+HDG,Segment,8.3,-5,118,group
+Moins de 750 €,Revenus,8.2,-2,47,group
+750 € à moins de 1 500 €,Revenus,8.4,12,245,group
+1 500 € à moins de 2 300 €,Revenus,8.4,9,247,group
+2 300 € à moins de 3 000 €,Revenus,8.3,4,196,group
+3 000 € à moins de 5 000 €,Revenus,8,-5,230,group
+5 000 € et plus,Revenus,7.7,-3,78,group

@@ -1,0 +1,21 @@
+Activite,annee,metric,value,proportion,evolution
+Construction,S1 2013,CA,1696,31,4.4
+Travaux publics,S1 2013,CA,1806,35,-1.1
+Energie,S1 2013,CA,1550,24,-8.5
+Metal,S1 2013,CA,401,10,5
+Total,S1 2013,CA,5453,100,-3.4
+Construction,S1 2014,CA,1770,33,4.4
+Travaux publics,S1 2014,CA,1787,34,-1.1
+Energie,S1 2014,CA,1418,22,-8.5
+Metal,S1 2014,CA,421,11,5
+Total,S1 2014,CA,5396,100,-3.4
+Construction,S1 2013,marge,2.3,32,0.1
+Travaux publics,S1 2013,marge,3.2,41,0.9
+Energie,S1 2013,marge,1.5,25,0.4
+Metal,S1 2013,marge,6.5,40,-2.9
+Total,S1 2013,marge,2.4,100,0.5
+Construction,S1 2014,marge,2.5,31,0.1
+Travaux publics,S1 2014,marge,4.1,32,0.9
+Energie,S1 2014,marge,1.9,41,0.4
+Metal,S1 2014,marge,3.6,51,-2.9
+Total,S1 2014,marge,2.9,100,0.5

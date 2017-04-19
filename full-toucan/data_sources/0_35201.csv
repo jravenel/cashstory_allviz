@@ -1,0 +1,14 @@
+label,type,Satisfaction,Contribution,effectif,drillGroup,drillLevel
+Accueil,particulier,70,15,600,Accueil,main
+Politesse,particulier,65,12,600,Accueil,sub
+Courtoisie,particulier,74,18,600,Accueil,sub
+Gentillesse,particulier,71,20,600,Accueil,sub
+Interventions Techniques,particulier,85,12,700,Interventions Techniques,main
+Prix,particulier,77,28,500,Prix,main
+Conseils,particulier,88,32,600,Conseils,main
+Maitrise de l'énergie,particulier,83,29,700,Maitrise de l'énergie,main
+Accueil,professionels,73,14,450,Accueil,main
+Interventions Techniques,professionels,88,25,550,Interventions Techniques,main
+Prix,professionels,78,28,350,Prix,main
+Conseils,professionels,88,32,450,Conseils,main
+Maitrise de l'énergie,professionels,83,29,550,Maitrise de l'énergie,main

@@ -1,0 +1,6 @@
+start_date,headline,text,content,media_type,media_source,caption,type
+2016-02-09,Event 0,This is an event with no media,Content 0 Lorem ipsum dolor sit amet consectetur adipiscing elit Mauris nisi sem ornare et mi vitae consequat convallis justo In volutpat,,,,Type 1
+2014-10-12,Event 1,text for event 1,Content 1 Lorem ipsum dolor sit amet consectetur adipiscing elit Mauris nisi sem ornare et mi vitae consequat convallis justo In volutpat,picture,logo-brand-small@2x,,Type 1
+2015-01-03,Event 2,text for event 2,Content 2 Lorem ipsum dolor sit amet consectetur adipiscing elit Mauris nisi sem ornare et mi vitae consequat convallis justo In volutpat,twitter,https://twitter.com/Toucan_Toco/status/696998813383442433,,Type 1
+2016-08-28,Event 3,text for event 3,Content 3 Lorem ipsum dolor sit amet consectetur adipiscing elit Mauris nisi sem ornare et mi vitae consequat convallis justo In volutpat,youtube,https://www.youtube.com/watch?v=cRrGOyO1ric,,Type 2
+2015-08-28,Event 4,text for event 4,Content 4 Lorem ipsum dolor sit amet consectetur adipiscing elit Mauris nisi sem ornare et mi vitae consequat convallis justo In volutpat,wikipedia,https://en.wikipedia.org/wiki/Toco_toucan,,Type 2

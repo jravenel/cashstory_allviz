@@ -1,0 +1,21 @@
+date,value,kpi,Activité,Var CA,Var Marge
+S1 2010,1778,CA,Energie,+1.3%,+0.1pt
+S1 2011,1872,CA,Energie,+3.1%,+0 pt
+S1 2012,1840,CA,Energie,-0.4%,+0 pt
+S1 2013,1696,CA,Energie,-10%,-0.1pt
+S1 2014,1770,CA,Energie,+3.4%,-0.2pt
+S1 2010,4.3,Marge,Energie,+1.3%,+0.1pt
+S1 2011,4.3,Marge,Energie,+3.1%,+0 pt
+S1 2012,4.3,Marge,Energie,-0.4%,+0 pt
+S1 2013,4.2,Marge,Energie,-10%,-0.1pt
+S1 2014,4,Marge,Energie,+3.4%,-0.2pt
+S1 2010,1578,CA,Travaux Publics,+1.3%,+0.1pt
+S1 2011,1972,CA,Travaux Publics,+3.1%,+0 pt
+S1 2012,1740,CA,Travaux Publics,-0.4%,+0 pt
+S1 2013,1636,CA,Travaux Publics,-12%,-3.1pt
+S1 2014,1720,CA,Travaux Publics,+4.4%,-1.2pt
+S1 2010,3.7,Marge,Travaux Publics,+1.3%,-0.1pt
+S1 2011,4.3,Marge,Travaux Publics,+3.1%,+0 pt
+S1 2012,4.2,Marge,Travaux Publics,-1.4%,+0.2 pt
+S1 2013,4.0,Marge,Travaux Publics,-1%,-3.1pt
+S1 2014,4.3,Marge,Travaux Publics,+1.4%,-1.2pt

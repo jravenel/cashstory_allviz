@@ -1,0 +1,27 @@
+breakdown,label,value,center
+daytime,Lundi,52,Magasin 1
+daytime,Mardi,40,Magasin 1
+daytime,Mercredi,73,Magasin 1
+daytime,Jeudi,31,Magasin 1
+daytime,Vendredi,72,Magasin 1
+daytime,Samedi,85,Magasin 1
+daytime,Dimanche,99,Magasin 1
+weekday,6h-10h,22,Magasin 1
+weekday,10h-12h,42,Magasin 1
+weekday,12h-14h,73,Magasin 1
+weekday,14h-18h,83,Magasin 1
+weekday,18h-20h,66,Magasin 1
+weekday,20-22h,41,Magasin 1
+daytime,Lundi,50,Magasin 2
+daytime,Mardi,48,Magasin 2
+daytime,Mercredi,59,Magasin 2
+daytime,Jeudi,32,Magasin 2
+daytime,Vendredi,61,Magasin 2
+daytime,Samedi,56,Magasin 2
+daytime,Dimanche,72,Magasin 2
+weekday,6h-10h,97,Magasin 2
+weekday,10h-12h,48,Magasin 2
+weekday,12h-14h,16,Magasin 2
+weekday,14h-18h,34,Magasin 2
+weekday,18h-20h,43,Magasin 2
+weekday,20-22h,75,Magasin 2

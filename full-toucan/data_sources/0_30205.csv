@@ -1,0 +1,38 @@
+Segment,Age,Sexe,Anciennete,Agence,Verbatims,Theme,breakdown
+CI PLUS,< 24,Homme,11 à  moins de 21 ans,Magasin 1,Site internet trop fastidieux sur Smartphone.,ACCÈS À INTERNET,Agence
+HDG,< 24,Homme,11 à  moins de 21 ans,Magasin 1,Pas d'appli sur Smartphone.,ACCÈS À INTERNET,Agence
+GP JEUNE **,< 24,Femme,11 à  moins de 21 ans,Service 1,Pas de 4G.,ACCÈS À INTERNET,Agence
+HDG,< 24,Homme,11 à  moins de 21 ans,Magasin 1,Smartphone trop grand pour ma poche. ,ACCÈS À INTERNET,Agence
+GP JEUNE **,< 24,Femme,11 à  moins de 21 ans,Service 2,Pas de tablette personnelle. ,ATTENTION AUX JEUNES CLIENTS,Agence
+GP JEUNE **,< 24,Femme,21 à  moins de 31 ans,Service 1,La souris est mal adaptée à la navigation. ,ATTENTION AUX JEUNES CLIENTS,Agence
+GP JEUNE **,< 24,Femme,1 à  moins de 2 ans *,Service 1,Site internet trop fastidieux sur Smartphone.,ATTENTION AUX JEUNES CLIENTS,Agence
+GP JEUNE **,< 24,Homme,11 à  moins de 21 ans,Service 3,Pas d'appli sur Smartphone.,HARDWARE DE PRÉDILECTION,Agence
+GP JEUNE **,< 24,Homme,2 à  moins de 6 ans,Magasin 2,Pas de 4G.,HARDWARE DE PRÉDILECTION,Agence
+GP JEUNE **,< 24,Homme,11 à  moins de 21 ans,Service 3,Smartphone trop grand pour ma poche. ,HARDWARE DE PRÉDILECTION,Agence
+CI,< 24,Homme,6 à  moins de 11 ans,Service 1,Pas de tablette personnelle. ,HARDWARE DE PRÉDILECTION,Agence
+GP JEUNE **,< 24,Femme,2 à  moins de 6 ans,Service 3,La souris est mal adaptée à la navigation. ,HARDWARE DE PRÉDILECTION,Agence
+GP JEUNE **,< 24,Femme,2 à  moins de 6 ans,Service 2,Site internet trop fastidieux sur Smartphone.,HARDWARE DE PRÉDILECTION,Agence
+CI,< 24,Femme,Moins de 1 an *,Service 1,Pas d'appli sur Smartphone.,HARDWARE DE PRÉDILECTION,Agence
+CI PLUS,< 24,Homme,2 à  moins de 6 ans,Magasin 2,Pas de 4G.,HARDWARE DE PRÉDILECTION,Agence
+GP JEUNE **,< 24,Homme,2 à  moins de 6 ans,Magasin 3,Smartphone trop grand pour ma poche. ,HARDWARE DE PRÉDILECTION,Agence
+GP JEUNE **,< 24,Femme,2 à  moins de 6 ans,Service 3,Pas de tablette personnelle. ,HARDWARE DE PRÉDILECTION,Agence
+GP JEUNE **,< 24,Homme,1 à  moins de 2 ans *,Magasin 1,La souris est mal adaptée à la navigation. ,HARDWARE DE PRÉDILECTION,Agence
+GP JEUNE **,< 24,Femme,11 à  moins de 21 ans,Service 1,Site internet trop fastidieux sur Smartphone.,OFFRES PROMOTIONNELLES,Agence
+CI,< 24,Homme,6 à  moins de 11 ans,Service 1,Pas d'appli sur Smartphone.,OFFRES PROMOTIONNELLES,Agence
+GP JEUNE **,< 24,Homme,11 à  moins de 21 ans,Service 3,Pas de 4G.,OFFRES PROMOTIONNELLES,Agence
+GP JEUNE **,< 24,Homme,2 à  moins de 6 ans,Magasin 2,Smartphone trop grand pour ma poche. ,OFFRES PROMOTIONNELLES,Agence
+GP JEUNE **,< 24,Femme,2 à  moins de 6 ans,Service 1,Pas de tablette personnelle. ,OFFRES PROMOTIONNELLES,Agence
+GP vus 1 an,25 - 34,Homme,21 à  moins de 31 ans,Service 1,La souris est mal adaptée à la navigation. ,OFFRES PROMOTIONNELLES,Agence
+GP vus 1 an,25 - 34,Homme,11 à  moins de 21 ans,Service 2,Site internet trop fastidieux sur Smartphone.,OFFRES PROMOTIONNELLES,Agence
+CI,25 - 34,Femme,6 à  moins de 11 ans,Magasin 2,Pas d'appli sur Smartphone.,OFFRES PROMOTIONNELLES,Agence
+CI,25 - 34,Homme,21 à  moins de 31 ans,Magasin 1,Pas de 4G.,OFFRES PROMOTIONNELLES,Agence
+CI PLUS,25 - 34,Femme,11 à  moins de 21 ans,Magasin 1,Smartphone trop grand pour ma poche. ,UTILISATION DU MATÉRIEL,Agence
+GP vus 1 an,25 - 34,Femme,21 à  moins de 31 ans,Service 2,Pas de tablette personnelle. ,UTILISATION DU MATÉRIEL,Agence
+CI PLUS,25 - 34,Femme,11 à  moins de 21 ans,Magasin 1,La souris est mal adaptée à la navigation. ,UTILISATION DU MATÉRIEL,Agence
+CI,25 - 34,Femme,2 à  moins de 6 ans,Service 1,Site internet trop fastidieux sur Smartphone.,UTILISATION DU MATÉRIEL,Agence
+CI,25 - 34,Homme,Moins de 1 an *,Service 2,Pas d'appli sur Smartphone.,UTILISATION DU MATÉRIEL,Agence
+CI PLUS,25 - 34,Homme,21 à  moins de 31 ans,Service 2,Pas de 4G.,UTILISATION DU MATÉRIEL,Agence
+GP vus 1 an,25 - 34,Femme,11 à  moins de 21 ans,Magasin 3,Smartphone trop grand pour ma poche. ,UTILISATION DU MATÉRIEL,Agence
+GP vus 1 an,25 - 34,Femme,6 à  moins de 11 ans,Magasin 2,Pas de tablette personnelle. ,UTILISATION DU MATÉRIEL,Agence
+CI PLUS,25 - 34,Femme,6 à  moins de 11 ans,Service 2,La souris est mal adaptée à la navigation. ,UTILISATION DU MATÉRIEL,Agence
+GP non vus 1 an,25 - 34,Femme,11 à  moins de 21 ans,Service 1,Site internet trop fastidieux sur Smartphone.,UTILISATION DU MATÉRIEL,Agence

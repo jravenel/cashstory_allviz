@@ -1,0 +1,10 @@
+label,value,breakdown,variation
+basket,12,A,-3
+shipping,8,A,8
+payment,5,A,5
+transactions,2,A,-2
+basket,3,B,-9
+payment,5,B,6
+shipping,8,B,2
+transactions,2,B,1
+buy,8,B,-12
