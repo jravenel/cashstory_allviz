@@ -1,0 +1,209 @@
+Shape_ID,EntityHand,floor_nb,Retailer name,Branch level 2,value,value_comp,Shop Front Traffic_comp,Shop Front Traffic,GLA,Lease end,breakdown,floor
+0_6,81,0,Magasin 1,Fashion,4.3,4,139348,114682,67,31/08/22,Shop Front Traffic,Floor 0
+0_7,82,0,Magasin 2,Fashion,17.3,9.4,156529,162598,151,28/05/22,Shop Front Traffic,Floor 0
+0_15,93,0,Magasin 3,Fashion,6.5,7.8,216604,335471,149,31/07/21,Shop Front Traffic,Floor 0
+0_16,94,0,Magasin 4,Fashion,7.6,7.2,175715,123057,108,15/05/22,Shop Front Traffic,Floor 0
+0_17,95,0,Magasin 5,Fashion,7.6,10.2,191184,135571,149,31/07/19,Shop Front Traffic,Floor 0
+0_18,96,0,Magasin 6,Fashion,15.7,10.2,191184,119315,267,06/05/22,Shop Front Traffic,Floor 0
+0_19,97,0,Magasin 7,Fashion,12.9,7.7,148500,137511,85,16/05/22,Shop Front Traffic,Floor 0
+0_20,98,0,Magasin 8,General Alimentation,3,10.2,191184,249143,285,18/04/22,Shop Front Traffic,Floor 0
+0_22,9A,0,Magasin 9,General Alimentation,4.6,4.6,111731,111731,114,28/05/22,Shop Front Traffic,Floor 0
+0_24,9D,0,Magasin 10,General Alimentation,8.4,10.2,191184,154895,182,29/04/22,Shop Front Traffic,Floor 0
+0_25,9E,0,Magasin 11,General Alimentation,9.7,11.5,249213,238075,290,02/05/22,Shop Front Traffic,Floor 0
+0_28,A2,0,Magasin 12,General Alimentation,3,1.8,148134,135887,87,09/02/24,Shop Front Traffic,Floor 0
+0_29,A3,0,Magasin 13,General Alimentation,3.6,8.5,168894,143095,157,31/08/22,Shop Front Traffic,Floor 0
+0_30,A5,0,Magasin 14,General Alimentation,13.6,10.2,191184,138778,135,15/05/12,Shop Front Traffic,Floor 0
+0_32,A7,0,Magasin 15,General Alimentation,19.7,15.6,149305,184675,145,30/06/22,Shop Front Traffic,Floor 0
+0_34,A9,0,Magasin 16,General Alimentation,4.8,8.5,168894,174280,131,14/07/18,Shop Front Traffic,Floor 0
+0_37,AC,0,Magasin 17,Hairdressers,16.8,13.4,164597,197663,86,31/07/21,Shop Front Traffic,Floor 0
+0_40,AF,0,Magasin 18,Hairdressers,6.8,7.2,175715,228373,86,18/10/16,Shop Front Traffic,Floor 0
+0_42,B4,0,Magasin 19,Hairdressers,6.5,6.9,151638,191347,110,15/05/22,Shop Front Traffic,Floor 0
+0_43,B5,0,Boutique 1,Hairdressers,5.9,5.3,186962,223799,170,30/12/23,Shop Front Traffic,Floor 0
+0_44,B6,0,Boutique 2,Hairdressers,2.9,5.3,186962,242134,54,30/12/23,Shop Front Traffic,Floor 0
+0_45,B7,0,Boutique 3,Hairdressers,8.7,5.3,186962,132977,134,14/05/22,Shop Front Traffic,Floor 0
+0_47,B9,0,Boutique 4,Hairdressers,2.8,2.8,137392,137392,70,28/05/12,Shop Front Traffic,Floor 0
+0_48,BA,0,Boutique 5,Hairdressers,6,6,144903,192159,160,15/05/22,Shop Front Traffic,Floor 0
+0_49,BB,0,Boutique 6,Hairdressers,9.1,17.3,209407,254826,482,04/11/17,Shop Front Traffic,Floor 0
+0_50,BC,0,Boutique 7,Hairdressers,6.7,10.5,176999,211999,214,14/05/21,Shop Front Traffic,Floor 0
+0_53,BF,0,Boutique 8,Family Fashion,32.1,17.3,209407,322186,1509,31/12/18,Shop Front Traffic,Floor 0
+0_54,C2,0,Boutique 9,Technologie,24.9,24.9,286546,286546,650,29/04/12,Shop Front Traffic,Floor 0
+0_55,C3,0,Boutique 10,Technologie,3.9,5.3,186962,148936,100,02/09/19,Shop Front Traffic,Floor 0
+0_56,C4,0,Boutique 11,Technologie,33.2,33.2,394119,394119,13000,13/11/14,Shop Front Traffic,Floor 0
+0_57,C7,0,Boutique 12,Technologie,11.8,10.2,191184,274943,362,30/04/15,Shop Front Traffic,Floor 0
+0_58,C8,0,Boutique 13,Technologie,4.8,7.8,216604,263776,80,25/10/16,Shop Front Traffic,Floor 0
+0_61,CD,0,Boutique 14,Technologie,4.3,4,139348,201623,110,27/03/21,Shop Front Traffic,Floor 0
+0_62,CE,0,Boutique 15,Technologie,16.8,16,199043,209306,108,01/01/18,Shop Front Traffic,Floor 0
+0_64,D0,0,Boutique 16,Technologie,5.8,7.4,182398,191169,54,02/10/21,Shop Front Traffic,Floor 0
+0_65,D1,0,Boutique 17,Technologie,17.7,16,199043,183506,153,31/03/19,Shop Front Traffic,Floor 0
+0_66,D2,0,Boutique 18,Technologie,12.8,13.2,202920,318285,176,15/05/22,Shop Front Traffic,Floor 0
+0_67,D3,0,Agence 1,Technologie,18.4,10.2,191184,306167,213,01/10/16,Shop Front Traffic,Floor 0
+0_68,D4,0,Agence 2,Services,7.1,8.8,151911,137155,91,28/05/22,Shop Front Traffic,Floor 0
+0_70,D8,0,Agence 3,Services,9.1,9.1,201425,201425,224,30/11/21,Shop Front Traffic,Floor 0
+0_95,27A,0,Agence 4,Services,33.7,17.3,209407,312741,2390,30/09/22,Shop Front Traffic,Floor 0
+0_97,290,0,Agence 5,Services,14,10.2,191184,263380,864,20/09/19,Shop Front Traffic,Floor 0
+0_6,81,0,Magasin 1,Fashion,4910,5592,139348,114682,67,31/08/22,Visits,Floor 0
+0_7,82,0,Magasin 2,Fashion,28175,14885,156529,162598,151,28/05/22,Visits,Floor 0
+0_15,93,0,Magasin 3,Fashion,21938,16109,216604,335471,149,31/07/21,Visits,Floor 0
+0_16,94,0,Magasin 4,Fashion,9365,12474,175715,123057,108,15/05/22,Visits,Floor 0
+0_17,95,0,Magasin 5,Fashion,10237,20033,191184,135571,149,31/07/19,Visits,Floor 0
+0_18,96,0,Magasin 6,Fashion,18691,20033,191184,119315,267,06/05/22,Visits,Floor 0
+0_19,97,0,Magasin 7,Fashion,17780,10811,148500,137511,85,16/05/22,Visits,Floor 0
+0_20,98,0,Magasin 8,General Alimentation,7366,20033,191184,249143,285,18/04/22,Visits,Floor 0
+0_22,9A,0,Magasin 9,General Alimentation,5128,5128,111731,111731,114,28/05/22,Visits,Floor 0
+0_24,9D,0,Magasin 10,General Alimentation,13088,20033,191184,154895,182,29/04/22,Visits,Floor 0
+0_25,9E,0,Magasin 11,General Alimentation,23107,28809,249213,238075,290,02/05/22,Visits,Floor 0
+0_28,A2,0,Magasin 12,General Alimentation,4099,2475,148134,135887,87,09/02/24,Visits,Floor 0
+0_29,A3,0,Magasin 13,General Alimentation,5108,16280,168894,143095,157,31/08/22,Visits,Floor 0
+0_30,A5,0,Magasin 14,General Alimentation,18889,20033,191184,138778,135,15/05/12,Visits,Floor 0
+0_32,A7,0,Magasin 15,General Alimentation,36293,20902,149305,184675,145,30/06/22,Visits,Floor 0
+0_34,A9,0,Magasin 16,General Alimentation,8316,16280,168894,174280,131,14/07/18,Visits,Floor 0
+0_37,AC,0,Magasin 17,Hairdressers,33304,23235,164597,197663,86,31/07/21,Visits,Floor 0
+0_40,AF,0,Magasin 18,Hairdressers,15583,12474,175715,228373,86,18/10/16,Visits,Floor 0
+0_42,B4,0,Magasin 19,Hairdressers,12415,10246,151638,191347,110,15/05/22,Visits,Floor 0
+0_43,B5,0,Boutique 1,Hairdressers,13226,9385,186962,223799,170,30/12/23,Visits,Floor 0
+0_44,B6,0,Boutique 2,Hairdressers,6930,9385,186962,242134,54,30/12/23,Visits,Floor 0
+0_45,B7,0,Boutique 3,Hairdressers,11504,9385,186962,132977,134,14/05/22,Visits,Floor 0
+0_47,B9,0,Boutique 4,Hairdressers,3782,3782,137392,137392,70,28/05/12,Visits,Floor 0
+0_48,BA,0,Boutique 5,Hairdressers,11524,8672,144903,192159,160,15/05/22,Visits,Floor 0
+0_49,BB,0,Boutique 6,Hairdressers,23186,40946,209407,254826,482,04/11/17,Visits,Floor 0
+0_50,BC,0,Boutique 7,Hairdressers,14276,19312,176999,211999,214,14/05/21,Visits,Floor 0
+0_53,BF,0,Boutique 8,Family Fashion,103455,40946,209407,322186,1509,31/12/18,Visits,Floor 0
+0_54,C2,0,Boutique 9,Technologie,71260,71260,286546,286546,650,29/04/12,Visits,Floor 0
+0_55,C3,0,Boutique 10,Technologie,5881,9385,186962,148936,100,02/09/19,Visits,Floor 0
+0_56,C4,0,Boutique 11,Technologie,130838,130838,394119,394119,13000,13/11/14,Visits,Floor 0
+0_57,C7,0,Boutique 12,Technologie,32314,20033,191184,274943,362,30/04/15,Visits,Floor 0
+0_58,C8,0,Boutique 13,Technologie,12613,16109,216604,263776,80,25/10/16,Visits,Floor 0
+0_61,CD,0,Boutique 14,Technologie,8712,5592,139348,201623,110,27/03/21,Visits,Floor 0
+0_62,CE,0,Boutique 15,Technologie,35105,31786,199043,209306,108,01/01/18,Visits,Floor 0
+0_64,D0,0,Boutique 16,Technologie,11088,13345,182398,191169,54,02/10/21,Visits,Floor 0
+0_65,D1,0,Boutique 17,Technologie,32512,31786,199043,183506,153,31/03/19,Visits,Floor 0
+0_66,D2,0,Boutique 18,Technologie,40669,27334,202920,318285,176,15/05/22,Visits,Floor 0
+0_67,D3,0,Agence 1,Technologie,56232,20033,191184,306167,213,01/10/16,Visits,Floor 0
+0_68,D4,0,Agence 2,Services,9781,13474,151911,137155,91,28/05/22,Visits,Floor 0
+0_70,D8,0,Agence 3,Services,18275,18275,201425,201425,224,30/11/21,Visits,Floor 0
+0_95,27A,0,Agence 4,Services,105514,40946,209407,312741,2390,30/09/22,Visits,Floor 0
+0_97,290,0,Agence 5,Services,36887,20033,191184,263380,864,20/09/19,Visits,Floor 0
+1_7,6A,1,Tenant 1,Fashion,4.9,6,126383,144903,158,11/06/19,Shop Front Traffic,Floor 1
+1_11,88,1,Magasin 2,Fashion,8.2,17.3,234571,209407,918,08/05/21,Shop Front Traffic,Floor 1
+1_17,9C,1,Magasin 3,Fashion,4.7,8.5,157945,168894,151,31/07/21,Shop Front Traffic,Floor 1
+1_19,A2,1,Magasin 4,Fashion,7.7,10,111494,156783,152,31/07/21,Shop Front Traffic,Floor 1
+1_21,A7,1,Magasin 5,Fashion,17.1,13.2,215167,202920,143,16/05/20,Shop Front Traffic,Floor 1
+1_22,A8,1,Magasin 6,Fashion,7,9.4,238768,156529,350,11/07/21,Shop Front Traffic,Floor 1
+1_23,AD,1,Magasin 7,Fashion,5.5,9.1,245916,210622,700,15/07/22,Shop Front Traffic,Floor 1
+1_25,F9,1,Magasin 8,General Alimentation,43.4,43.4,57281,57281,282,10/04/12,Shop Front Traffic,Floor 1
+1_26,FB,1,Magasin 9,General Alimentation,13.3,11.5,260350,249213,575,13/05/22,Shop Front Traffic,Floor 1
+1_28,FD,1,Magasin 10,General Alimentation,13.6,16,204316,199043,87,30/06/22,Shop Front Traffic,Floor 1
+1_29,FE,1,Magasin 11,General Alimentation,4.3,10.2,211226,191184,140,31/08/22,Shop Front Traffic,Floor 1
+1_30,FF,1,Magasin 12,General Alimentation,10,13.4,131531,164597,105,13/05/22,Shop Front Traffic,Floor 1
+1_31,100,1,Magasin 13,General Alimentation,23,8.5,221027,168894,199,31/08/22,Shop Front Traffic,Floor 1
+1_32,101,1,Magasin 14,General Alimentation,18.1,18.1,211979,211979,110,12/05/22,Shop Front Traffic,Floor 1
+1_35,105,1,Magasin 15,General Alimentation,2.4,7.7,159489,148500,55,14/05/22,Shop Front Traffic,Floor 1
+1_36,107,1,Magasin 16,General Alimentation,9,9,173606,173606,75,30/06/21,Shop Front Traffic,Floor 1
+1_37,108,1,Magasin 17,Hairdressers,17.9,10.5,198693,176999,582,08/10/23,Shop Front Traffic,Floor 1
+1_38,109,1,Magasin 18,Hairdressers,8.6,7.8,141332,216604,75,30/09/21,Shop Front Traffic,Floor 1
+1_39,10A,1,Boutique 1,Hairdressers,1.9,1.9,136521,136521,62,31/08/21,Shop Front Traffic,Floor 1
+1_40,10B,1,Boutique 2,Hairdressers,18.6,13.2,140065,202920,320,14/05/22,Shop Front Traffic,Floor 1
+1_41,10C,1,Boutique 3,Hairdressers,11.3,10.2,135828,191184,185,15/05/15,Shop Front Traffic,Floor 1
+1_43,10E,1,Boutique 4,Hairdressers,14.1,14.1,176398,176398,1256,30/06/21,Shop Front Traffic,Floor 1
+1_47,114,1,Boutique 5,Hairdressers,25.8,15.6,94050,149305,213,1900/01/01,Shop Front Traffic,Floor 1
+1_48,115,1,Boutique 6,Hairdressers,1.3,15.6,169191,149305,268,20/05/12,Shop Front Traffic,Floor 1
+1_49,116,1,Boutique 7,Hairdressers,7.6,10,234234,156783,103,13/05/22,Shop Front Traffic,Floor 1
+1_50,117,1,Boutique 8,Hairdressers,2.5,2.5,273438,203212,62,13/05/22,Shop Front Traffic,Floor 1
+1_51,118,1,Boutique 9,Family Fashion,1.5,2.5,117909,203212,62,14/05/12,Shop Front Traffic,Floor 1
+1_52,11A,1,Boutique 10,Technologie,2.9,2.5,185882,203212,88,13/05/22,Shop Front Traffic,Floor 1
+1_53,11B,1,Boutique 11,Technologie,14.6,10,124621,156783,109,14/05/22,Shop Front Traffic,Floor 1
+1_56,11F,1,Boutique 12,Technologie,12,17.3,134501,209407,248,15/05/22,Shop Front Traffic,Floor 1
+1_57,120,1,Boutique 13,Technologie,11,17.3,129551,209407,184,14/05/22,Shop Front Traffic,Floor 1
+1_58,121,1,Boutique 14,Technologie,6.8,10.5,120305,176999,166,30/12/20,Shop Front Traffic,Floor 1
+1_59,122,1,Boutique 15,Technologie,1.4,4,117058,139348,45,01/07/18,Shop Front Traffic,Floor 1
+1_60,123,1,Boutique 16,Technologie,7.2,6.9,111929,151638,126,24/08/14,Shop Front Traffic,Floor 1
+1_61,124,1,Boutique 17,Technologie,10.8,8.8,139273,151911,180,31/03/15,Shop Front Traffic,Floor 1
+1_62,126,1,Boutique 18,Technologie,33.2,33.2,394119,394119,13000,13/11/14,Shop Front Traffic,Floor 1
+1_64,12B,1,Boutique 19,Technologie,6.3,10.2,126423,191184,150,31/03/21,Shop Front Traffic,Floor 1
+1_65,12C,1,Boutique 20,Technologie,9,7.4,173626,182398,116,31/03/16,Shop Front Traffic,Floor 1
+1_66,12D,1,Boutique 21,Services,14.3,17.3,156559,209407,245,30/11/21,Shop Front Traffic,Floor 1
+1_68,12F,1,Boutique 22,Services,0.5,1.8,160380,148134,117,30/09/22,Shop Front Traffic,Floor 1
+1_69,130,1,Boutique 23,Services,6.6,8.5,148124,168894,148,31/08/22,Shop Front Traffic,Floor 1
+1_70,131,1,Boutique 24,Services,6.9,9.4,103831,156529,108,30/03/19,Shop Front Traffic,Floor 1
+1_71,132,1,Boutique 25,Services,17.9,17.3,130324,209407,316,02/10/21,Shop Front Traffic,Floor 1
+1_72,133,1,Boutique 26,Services,2.3,4,141134,139348,75,30/06/23,Shop Front Traffic,Floor 1
+1_73,134,1,Boutique 27,Services,4.2,13.2,138164,202920,155,16/05/20,Shop Front Traffic,Floor 1
+1_74,135,1,Boutique 28,Services,7.8,4,122245,139348,137,22/05/22,Shop Front Traffic,Floor 1
+1_77,138,1,Boutique 29,Services,16.9,16.9,137353,137353,216,23/04/12,Shop Front Traffic,Floor 1
+1_93,161,1,Boutique 30,Services,7.1,6,116167,144903,136,14/06/19,Shop Front Traffic,Floor 1
+1_95,164,1,Boutique 31,Services,3.3,2.5,235620,203212,84,01/07/23,Shop Front Traffic,Floor 1
+1_97,16A,1,Boutique 32,Services,6.2,9.4,120919,156529,197,15/07/20,Shop Front Traffic,Floor 1
+1_101,195,1,Boutique 33,Services,10.1,10.1,232729,232729,229,28/02/23,Shop Front Traffic,Floor 1
+1_102,197,1,Boutique 34,Services,8,10.2,178537,191184,292,13/05/12,Shop Front Traffic,Floor 1
+1_103,198,1,Agence 1,Sports,11.8,7.8,194159,216604,74,31/10/23,Shop Front Traffic,Floor 1
+1_103,198,1,Agence 2,Sports,7.3,7.8,148282,216604,74,31/10/23,Shop Front Traffic,Floor 1
+1_104,19A,1,Agence 3,Sports,11.8,7.8,194159,216604,74,31/10/23,Shop Front Traffic,Floor 1
+1_104,19A,1,Agence 4,Sports,7.3,7.8,148282,216604,74,31/10/23,Shop Front Traffic,Floor 1
+1_105,19D,1,Agence 5,Sports,2.2,2.2,147074,147074,65,23/10/23,Shop Front Traffic,Floor 1
+1_108,1A6,1,Agence 6,Sports,12.6,9.1,175329,210622,3392,09/04/12,Shop Front Traffic,Floor 1
+1_109,1A9,1,Agence 7,Sports,13.4,13.4,158321,158321,351,19/06/22,Shop Front Traffic,Floor 1
+1_110,1B6,1,Agence 8,Sports,14,14,144184,144184,391,30/06/22,Shop Front Traffic,Floor 1
+1_111,1B7,1,Agence 9,Sports,7.1,8.8,150143,151911,215,14/05/22,Shop Front Traffic,Floor 1
+1_112,1B9,1,Agence 10,Sports,10.2,8.8,181071,151911,168,14/05/22,Shop Front Traffic,Floor 1
+1_7,6A,1,Magasin 1,Fashion,6217,8672,126383,144903,158,11/06/19,Visits,Floor 1
+1_11,88,1,Magasin 2,Fashion,19285,40946,234571,209407,918,08/05/21,Visits,Floor 1
+1_17,9C,1,Magasin 3,Fashion,7366,16280,157945,168894,151,31/07/21,Visits,Floor 1
+1_19,A2,1,Magasin 4,Fashion,8534,14876,111494,156783,152,31/07/21,Visits,Floor 1
+1_21,A7,1,Magasin 5,Fashion,36769,27334,215167,202920,143,16/05/20,Visits,Floor 1
+1_22,A8,1,Magasin 6,Fashion,16672,14885,238768,156529,350,11/07/21,Visits,Floor 1
+1_23,AD,1,Magasin 7,Fashion,13603,17879,245916,210622,700,15/07/22,Visits,Floor 1
+1_25,F9,1,Magasin 8,General Alimentation,24889,24889,57281,57281,282,10/04/12,Visits,Floor 1
+1_26,FB,1,Magasin 9,General Alimentation,34511,28809,260350,249213,575,13/05/22,Visits,Floor 1
+1_28,FD,1,Magasin 10,General Alimentation,27740,31786,204316,199043,87,30/06/22,Visits,Floor 1
+1_29,FE,1,Magasin 11,General Alimentation,9108,20033,211226,191184,140,31/08/22,Visits,Floor 1
+1_30,FF,1,Magasin 12,General Alimentation,13167,23235,131531,164597,105,13/05/22,Visits,Floor 1
+1_31,100,1,Magasin 13,General Alimentation,50886,16280,221027,168894,199,31/08/22,Visits,Floor 1
+1_32,101,1,Magasin 14,General Alimentation,38372,38372,211979,211979,110,12/05/22,Visits,Floor 1
+1_35,105,1,Magasin 15,General Alimentation,3841,10811,159489,148500,55,14/05/22,Visits,Floor 1
+1_36,107,1,Magasin 16,General Alimentation,15701,15701,173606,173606,75,30/06/21,Visits,Floor 1
+1_37,108,1,Magasin 17,Hairdressers,35521,19312,198693,176999,582,08/10/23,Visits,Floor 1
+1_38,109,1,Magasin 18,Hairdressers,12157,16109,141332,216604,75,30/09/21,Visits,Floor 1
+1_39,10A,1,Boutique 1,Hairdressers,2554,2554,136521,136521,62,31/08/21,Visits,Floor 1
+1_40,10B,1,Boutique 2,Hairdressers,26037,27334,140065,202920,320,14/05/22,Visits,Floor 1
+1_41,10C,1,Boutique 3,Hairdressers,15385,20033,135828,191184,185,15/05/15,Visits,Floor 1
+1_43,10E,1,Boutique 4,Hairdressers,24928,24928,176398,176398,1256,30/06/21,Visits,Floor 1
+1_47,114,1,Boutique 5,Hairdressers,24295,20902,94050,149305,213,1900/01/01,Visits,Floor 1
+1_48,115,1,Boutique 6,Hairdressers,2119,20902,169191,149305,268,20/05/12,Visits,Floor 1
+1_49,116,1,Boutique 7,Hairdressers,17899,14876,234234,156783,103,13/05/22,Visits,Floor 1
+1_50,117,1,Boutique 8,Hairdressers,6712,5381,273438,203212,62,13/05/22,Visits,Floor 1
+1_51,118,1,Boutique 9,Family Fashion,1802,5381,117909,203212,62,14/05/12,Visits,Floor 1
+1_52,11A,1,Boutique 10,Technologie,5346,5381,185882,203212,88,13/05/22,Visits,Floor 1
+1_53,11B,1,Boutique 11,Technologie,18196,14876,124621,156783,109,14/05/22,Visits,Floor 1
+1_56,11F,1,Boutique 12,Technologie,16117,40946,134501,209407,248,15/05/22,Visits,Floor 1
+1_57,120,1,Boutique 13,Technologie,14216,40946,129551,209407,184,14/05/22,Visits,Floor 1
+1_58,121,1,Boutique 14,Technologie,8138,19312,120305,176999,166,30/12/20,Visits,Floor 1
+1_59,122,1,Boutique 15,Technologie,1663,5592,117058,139348,45,01/07/18,Visits,Floor 1
+1_60,123,1,Boutique 16,Technologie,8078,10246,111929,151638,126,24/08/14,Visits,Floor 1
+1_61,124,1,Boutique 17,Technologie,14989,13474,139273,151911,180,31/03/15,Visits,Floor 1
+1_62,126,1,Boutique 18,Technologie,130838,130838,394119,394119,13000,13/11/14,Visits,Floor 1
+1_64,12B,1,Boutique 19,Technologie,7979,20033,126423,191184,150,31/03/21,Visits,Floor 1
+1_65,12C,1,Boutique 20,Technologie,15602,13345,173626,182398,116,31/03/16,Visits,Floor 1
+1_66,12D,1,Boutique 21,Services,22414,40946,156559,209407,245,30/11/21,Visits,Floor 1
+1_68,12F,1,Boutique 22,Services,851,2475,160380,148134,117,30/09/22,Visits,Floor 1
+1_69,130,1,Boutique 23,Services,9722,16280,148124,168894,148,31/08/22,Visits,Floor 1
+1_70,131,1,Boutique 24,Services,7168,14885,103831,156529,108,30/03/19,Visits,Floor 1
+1_71,132,1,Boutique 25,Services,23384,40946,130324,209407,316,02/10/21,Visits,Floor 1
+1_72,133,1,Boutique 26,Services,3188,5592,141134,139348,75,30/06/23,Visits,Floor 1
+1_73,134,1,Boutique 27,Services,5861,27334,138164,202920,155,16/05/20,Visits,Floor 1
+1_74,135,1,Boutique 28,Services,9484,5592,122245,139348,137,22/05/22,Visits,Floor 1
+1_77,138,1,Boutique 29,Services,23265,23265,137353,137353,216,23/04/12,Visits,Floor 1
+1_93,161,1,Boutique 30,Services,8276,8672,116167,144903,136,14/06/19,Visits,Floor 1
+1_95,164,1,Boutique 31,Services,7663,5381,235620,203212,84,01/07/23,Visits,Floor 1
+1_97,16A,1,Boutique 32,Services,7524,14885,120919,156529,197,15/07/20,Visits,Floor 1
+1_101,195,1,Boutique 33,Services,23423,23423,232729,232729,229,28/02/23,Visits,Floor 1
+1_102,197,1,Boutique 34,Services,14216,20033,178537,191184,292,13/05/12,Visits,Floor 1
+1_103,198,1,Agence 1,Sports,23008,16109,194159,216604,74,31/10/23,Visits,Floor 1
+1_103,198,1,Agence 2,Sports,10831,16109,148282,216604,74,31/10/23,Visits,Floor 1
+1_104,19A,1,Agence 3,Sports,23008,16109,194159,216604,74,31/10/23,Visits,Floor 1
+1_104,19A,1,Agence 4,Sports,10831,16109,148282,216604,74,31/10/23,Visits,Floor 1
+1_105,19D,1,Agence 5,Sports,3307,3307,147074,147074,65,23/10/23,Visits,Floor 1
+1_108,1A6,1,Agence 6,Sports,22156,17879,175329,210622,3392,09/04/12,Visits,Floor 1
+1_109,1A9,1,Agence 7,Sports,21245,21245,158321,158321,351,19/06/22,Visits,Floor 1
+1_110,1B6,1,Agence 8,Sports,20117,20117,144184,144184,391,30/06/22,Visits,Floor 1
+1_111,1B7,1,Agence 9,Sports,10712,13474,150143,151911,215,14/05/22,Visits,Floor 1
+1_112,1B9,1,Agence 10,Sports,18414,13474,181071,151911,168,14/05/22,Visits,Floor 1

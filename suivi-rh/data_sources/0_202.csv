@@ -1,0 +1,33 @@
+center,value,label,breakdown
+Maladie,4.5,2012,Toutes CSP
+Accident Travail,1.3,2012,Toutes CSP
+Maladie,5,2013,Toutes CSP
+Accident Travail,1.2,2013,Toutes CSP
+Maladie,4.9,2014,Toutes CSP
+Accident Travail,1.1,2014,Toutes CSP
+Maladie,5,06/2015,Toutes CSP
+Accident Travail,1,06/2015,Toutes CSP
+Maladie,2.2,2012,Cadre
+Accident Travail,0.000045,2012,Cadre
+Maladie,2.9,2013,Cadre
+Accident Travail,0.000045,2013,Cadre
+Maladie,2.2,2014,Cadre
+Accident Travail,0.000045,2014,Cadre
+Maladie,2,06/2015,Cadre
+Accident Travail,0.000045,06/2015,Cadre
+Maladie,3.3,2012,TAM
+Accident Travail,0.7,2012,TAM
+Maladie,4.1,2013,TAM
+Accident Travail,0.7,2013,TAM
+Maladie,3.8,2014,TAM
+Accident Travail,0.5,2014,TAM
+Maladie,4.3,06/2015,TAM
+Accident Travail,0.2,06/2015,TAM
+Maladie,6.2,2012,Employés
+Accident Travail,2.3,2012,Employés
+Maladie,6.6,2013,Employés
+Accident Travail,2,2013,Employés
+Maladie,7,2014,Employés
+Accident Travail,2,2014,Employés
+Maladie,7.1,06/2015,Employés
+Accident Travail,2,06/2015,Employés

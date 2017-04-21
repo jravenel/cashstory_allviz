@@ -1,26 +1,26 @@
 entityName: "{{ dashboards }}"
-entityGroup: "Business Group"
+entityGroup: "%%Business Group%%"
 id: "{{ id }}"
 report: "{{ report_id }}"
 default: false
 
 categories: [
-  name: "Business Group Total"
+  name: "%%Business Group Total%%"
   kpis: [
-    name: "Revenue"
+    name: "%%Revenue%%"
     value: "{{ kpi1 }}"
     unit: "M€"
     # slide: 10001
-    source: "Bilan 2014"
+    source: "Bilan 2017"
     id: 0
   ,
     type: "media-img"
-    src: "{{images}}"
+    src: "{{ images }}"
   ,
-    name: "Growth"
+    name: "%%Growth%%"
     value: "{{ kpi2 }}"
     unit: "%"
-    source: "Bilan 2014"
+    source: "Bilan 2017"
     id: 1
   # ,
   #   type: "media-video"
@@ -29,18 +29,18 @@ categories: [
 ,
   name: "Performance"
   kpis: [
-    name: "Profit from Recurring OP"
+    name: "%%Profit from Recurring OP%%"
     value: "{{ kpi8 }}"
     unit: "M€"
     badge: "bullet"
-    comment: "In 2013, {{ Compkpi8}} M€"
+    comment: "In 2016, {{ Compkpi8}} M€"
   ,
-    name: "Operating Investments"
+    name: "%%Operating Investments%%"
     value: "{{ kpi9 }}"
     unit: "M€"
     badge: "bullet"
-    comment: "In 2013, {{ Compkpi9}} M€"
-         
+    comment: "In 2016, {{ Compkpi9}} M€"
+
   ]
 # ,
 #   name: "Business Group"

@@ -1,0 +1,86 @@
+label,breakdown,categorie,metric1,clients
+Agglo 1 2014,Par Ville,Au moins 1 fois/mois,9,896
+Agglo 1 2014,Par Ville,plusieurs fois/an,45,896
+Agglo 1 2014,Par Ville,1 fois/an,35,896
+Agglo 1 2014,Par Ville,moins souvent,10,896
+Agglo 1 2014,Par Ville,jamais,1,896
+Agglo 1 2011,Par Ville,Au moins 1 fois/mois,11,1242
+Agglo 1 2011,Par Ville,plusieurs fois/an,50,1242
+Agglo 1 2011,Par Ville,1 fois/an,28,1242
+Agglo 1 2011,Par Ville,moins souvent,10,1242
+Agglo 1 2011,Par Ville,jamais,1,1242
+Agglo 2,Par Ville,Au moins 1 fois/mois,6,131
+Agglo 2,Par Ville,plusieurs fois/an,49,131
+Agglo 2,Par Ville,1 fois/an,32,131
+Agglo 2,Par Ville,moins souvent,12,131
+Agglo 2,Par Ville,jamais,1,131
+Agglo 3,Par Ville,Au moins 1 fois/mois,8,110
+Agglo 3,Par Ville,plusieurs fois/an,51,110
+Agglo 3,Par Ville,1 fois/an,28,110
+Agglo 3,Par Ville,moins souvent,11,110
+Agglo 3,Par Ville,jamais,2,110
+Ville moyenne 2,Par Ville,Au moins 1 fois/mois,12,160
+Ville moyenne 2,Par Ville,plusieurs fois/an,43,160
+Ville moyenne 2,Par Ville,1 fois/an,35,160
+Ville moyenne 2,Par Ville,moins souvent,9,160
+Ville moyenne 2,Par Ville,jamais,1,160
+Ville moyenne 3,Par Ville,Au moins 1 fois/mois,6,103
+Ville moyenne 3,Par Ville,plusieurs fois/an,37,103
+Ville moyenne 3,Par Ville,1 fois/an,45,103
+Ville moyenne 3,Par Ville,moins souvent,12,103
+Ville moyenne 3,Par Ville,jamais,0,103
+Grande Ville 1,Par Ville,Au moins 1 fois/mois,7,181
+Grande Ville 1,Par Ville,plusieurs fois/an,47,181
+Grande Ville 1,Par Ville,1 fois/an,35,181
+Grande Ville 1,Par Ville,moins souvent,9,181
+Grande Ville 1,Par Ville,jamais,2,181
+Ville moyenne 4,Par Ville,Au moins 1 fois/mois,12,153
+Ville moyenne 4,Par Ville,plusieurs fois/an,44,153
+Ville moyenne 4,Par Ville,1 fois/an,33,153
+Ville moyenne 4,Par Ville,moins souvent,11,153
+Ville moyenne 4,Par Ville,jamais,0,153
+Grande Ville 2 ,Par Ville,Au moins 1 fois/mois,19,47
+Grande Ville 2 ,Par Ville,plusieurs fois/an,39,47
+Grande Ville 2 ,Par Ville,1 fois/an,37,47
+Grande Ville 2 ,Par Ville,moins souvent,3,47
+Grande Ville 2 ,Par Ville,jamais,2,47
+18-24 ans 2014,Par Age,Au moins 1 fois/mois,9,896
+18-24 ans 2014,Par Age,plusieurs fois/an,45,896
+18-24 ans 2014,Par Age,1 fois/an,35,896
+18-24 ans 2014,Par Age,moins souvent,10,896
+18-24 ans 2014,Par Age,jamais,1,896
+18-24 ans 2011,Par Age,Au moins 1 fois/mois,11,1242
+18-24 ans 2011,Par Age,plusieurs fois/an,50,1242
+18-24 ans 2011,Par Age,1 fois/an,28,1242
+18-24 ans 2011,Par Age,moins souvent,10,1242
+18-24 ans 2011,Par Age,jamais,1,1242
+25-35 ans,Par Age,Au moins 1 fois/mois,8,37
+25-35 ans,Par Age,plusieurs fois/an,28,37
+25-35 ans,Par Age,1 fois/an,41,37
+25-35 ans,Par Age,moins souvent,23,37
+25-35 ans,Par Age,jamais,0,37
+36-45 ans,Par Age,Au moins 1 fois/mois,11,239
+36-45 ans,Par Age,plusieurs fois/an,41,239
+36-45 ans,Par Age,1 fois/an,39,239
+36-45 ans,Par Age,moins souvent,9,239
+36-45 ans,Par Age,jamais,0,239
+46-55 ans,Par Age,Au moins 1 fois/mois,4,44
+46-55 ans,Par Age,plusieurs fois/an,39,44
+46-55 ans,Par Age,1 fois/an,33,44
+46-55 ans,Par Age,moins souvent,20,44
+46-55 ans,Par Age,jamais,4,44
+56-65 ans,Par Age,Au moins 1 fois/mois,12,232
+56-65 ans,Par Age,plusieurs fois/an,46,232
+56-65 ans,Par Age,1 fois/an,32,232
+56-65 ans,Par Age,moins souvent,8,232
+56-65 ans,Par Age,jamais,2,232
+66 + ans,Par Age,Au moins 1 fois/mois,6,241
+66 + ans,Par Age,plusieurs fois/an,54,241
+66 + ans,Par Age,1 fois/an,32,241
+66 + ans,Par Age,moins souvent,8,241
+66 + ans,Par Age,jamais,0,241
+moins de 18 ans,Par Age,Au moins 1 fois/mois,8,103
+moins de 18 ans,Par Age,plusieurs fois/an,61,103
+moins de 18 ans,Par Age,1 fois/an,26,103
+moins de 18 ans,Par Age,moins souvent,5,103
+moins de 18 ans,Par Age,jamais,0,103

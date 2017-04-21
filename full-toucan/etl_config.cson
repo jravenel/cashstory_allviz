@@ -34,32 +34,179 @@ DATA_SOURCES: [
     domain: "funnelchart"
     type: "csv"
     file: "funnelchart.csv"
-# ,
-#     domain: "ga_example"
-#     type: "google_analytics"
-#     name: "SomeGoogleAnalyticsProvider"
-#     report_request: """{
-#                   "viewId": "ga:99476610",
-#                   "dateRanges": [
-#                       {"startDate": "2016-01-01", "endDate": "2016-02-01"}
-#                   ],
-#                   "metrics": [
-#                       {"expression": "ga:pageviews"}
-#                   ],
-#                   "dimensions": [
-#                       {"name": "ga:hostname"}
-#                   ]
-#               }"""
-#    ,
-    # domain: 'db_test'
-    # type: 'external_database'
-    # name: 'Some MySQL provider'
-    # table: 'City'
-#,
-#  domain: "gbq_ventes"
-#  type: "google_bigquery"
-#  name: "SomeGoogleBigQueryProvider"
-#  query: """SELECT * FROM test.ventes LIMIT 10;"""
+,
+# 01/2017 - added by Margot when doing the full-toucan review
+    domain: "heatmap"
+    type: "csv"
+    file: "heatmap.csv"
+,
+    domain: "0_35201"
+    type: "csv"
+    file: "0_35201.csv"
+,
+    domain: "slave_heatmap"
+    type: "csv"
+    file: "slave_heatmap.csv"
+,
+    domain: "0_36200"
+    type: "csv"
+    file: "0_36200.csv"
+,
+    domain: "0_36202"
+    type: "csv"
+    file: "0_36202.csv"
+,
+    domain: "0_37100"
+    type: "csv"
+    file: "0_37100.csv"
+,
+    domain: "0_37101"
+    type: "csv"
+    file: "0_37101.csv"
+,
+    domain: "0_32106"
+    type: "csv"
+    file: "0_32106.csv"
+,
+    domain: "0_32101"
+    type: "csv"
+    file: "0_32101.csv"
+,
+    domain: "0_30201"
+    type: "csv"
+    file: "0_30201.csv"
+,
+    domain: "0_30202"
+    type: "csv"
+    file: "0_30202.csv"
+,
+    domain: "0_30203"
+    type: "csv"
+    file: "0_30203.csv"
+,
+    domain: "0_32205_0"
+    type: "csv"
+    file: "0_32205_0.csv"
+,
+    domain: "0_32205_1"
+    type: "csv"
+    file: "0_32205_1.csv"
+,
+    domain: "0_32206_0"
+    type: "csv"
+    file: "0_32206_0.csv"
+,
+    domain: "0_32206_1"
+    type: "csv"
+    file: "0_32206_1.csv"
+,
+    domain: "0_32104"
+    type: "csv"
+    file: "0_32104.csv"
+,
+    domain: "0_32105"
+    type: "csv"
+    file: "0_32105.csv"
+,
+    domain: "0_32106"
+    type: "csv"
+    file: "0_32106.csv"
+,
+    domain: "0_32107"
+    type: "csv"
+    file: "0_32107.csv"
+,
+    domain: "0_30204"
+    type: "csv"
+    file: "0_30204.csv"
+,
+    domain: "0_32100"
+    type: "csv"
+    file: "0_32100.csv"
+,
+    domain: "0_32102"
+    type: "csv"
+    file: "0_32102.csv"
+,
+    domain: "0_34201"
+    type: "csv"
+    file: "0_34201.csv"
+,
+    domain: "0_34204"
+    type: "csv"
+    file: "0_34204.csv"
+,
+    domain: "0_34200"
+    type: "csv"
+    file: "0_34200.csv"
+,
+    domain: "treemap"
+    type: "csv"
+    file: "treemap.csv"
+,
+    domain: "0_37102"
+    type: "csv"
+    file: "0_37102.csv"
+,
+    domain: "0_30205"
+    type: "csv"
+    file: "0_30205.csv"
+,
+    domain: "0_40206"
+    type: "csv"
+    file: "0_40206.csv"
+,
+    domain: "timeline"
+    type: "csv"
+    file: "timeline.csv"
+,
+    domain: "horizontal_barchart_groups"
+    type: "csv"
+    file: "horizontal_barchart_groups.csv"
+,
+    domain: "horizontal_barchart_evolution"
+    type: "csv"
+    file: "horizontal_barchart_evolution.csv"
+,
+    domain: "horizontal_barchart_sparklines"
+    type: "csv"
+    file: "horizontal_barchart_sparklines.csv"
+,
+    domain: "horizontal_barchart_legacy_sparklines"
+    type: "csv"
+    file: "horizontal_barchart_legacy_sparklines.csv"
+,
+    domain: "horizontal_barchart_simple"
+    type: "csv"
+    file: "horizontal_barchart_simple.csv"
+,
+    domain: "0_201_1"
+    type: "csv"
+    file: "0_201_1.csv"
+,
+    domain: "0_201_1_avg"
+    type: "csv"
+    file: "0_201_1_avg.csv"
+,
+    domain: "waterfall_new"
+    type: "csv"
+    file: "waterfall_new.csv"
+,
+    domain: "waterfall_new_categorized"
+    type: "csv"
+    file: "waterfall_new_categorized.csv"
+,
+    domain: "cities_data"
+    type: "csv"
+    file: "cities_data.csv"
+,
+    domain: "barlines_bars"
+    type: "csv"
+    file: "barlines_bars.csv"
+,
+    domain: "barlines_lines"
+    type: "csv"
+    file: "barlines_lines.csv"
 ]
 DATA_PROVIDERS: [
   # name: "Some cube"

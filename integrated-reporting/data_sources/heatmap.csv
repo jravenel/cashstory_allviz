@@ -1,0 +1,61 @@
+zone,segment,BU,capital,value,target,variation,breakdown
+Europe,Berline,BU1,Financial,53,60,-1,Volume
+Europe,Berline,BU2,Financial,54,59,2,Volume
+Europe,Berline,BU3,Financial,55,58,-4,Volume
+US,Berline,BU4,Financial,57,56,-3,Volume
+Asia,Berline,BU5,Financial,58,55,-5,Volume
+Europe,Berline,BU1,Natural,60,47,5,Volume
+Europe,Berline,BU2,Natural,61,46,10,Volume
+Europe,Berline,BU3,Natural,62,45,-3,Volume
+US,Berline,BU4,Natural,64,43,3,Volume
+Asia,Berline,BU5,Natural,65,42,-5,Volume
+Europe,Citadine,BU1,Human,40,60,-3,Volume
+Europe,Citadine,BU2,Human,54,59,-5,Volume
+Europe,Citadine,BU3,Human,55,58,4,Volume
+US,Citadine,BU4,Human,57,56,3,Volume
+Asia,Citadine,BU5,Human,58,55,-5,Volume
+Europe,Monospace,BU1,Manufactured,60,46,-5,Volume
+Europe,Monospace,BU2,Manufactured,61,45,4,Volume
+Europe,Monospace,BU3,Manufactured,60,44,-4,Volume
+US,Monospace,BU4,Manufactured,62,56,4,Volume
+Asia,Monospace,BU5,Manufactured,63,55,-4,Volume
+Europe,Monospace,BU1,Soc & Relationship,65,53,4,Volume
+Europe,Monospace,BU2,Soc & Relationship,66,87,5,Volume
+Europe,Monospace,BU3,Soc & Relationship,40,86,-1,Volume
+US,Monospace,BU4,Soc & Relationship,57,46,-3,Volume
+Asia,Monospace,BU5,Soc & Relationship,58,45,-5,Volume
+Europe,Berline,BU1,Financial,40,60,-1,Amount
+Europe,Berline,BU2,Financial,39,40,2,Amount
+Europe,Berline,BU3,Financial,38,39,-4,Amount
+US,Berline,BU4,Financial,40,37,-3,Amount
+Asia,Berline,BU5,Financial,41,36,-5,Amount
+Europe,Berline,BU1,Natural,40,47,5,Amount
+Europe,Berline,BU2,Natural,41,46,10,Amount
+Europe,Berline,BU3,Natural,42,45,-3,Amount
+US,Berline,BU4,Natural,44,43,3,Amount
+Asia,Berline,BU5,Natural,45,42,-5,Amount
+Europe,Citadine,BU1,Human,40,60,-3,Amount
+Europe,Citadine,BU2,Human,41,59,-5,Amount
+Europe,Citadine,BU3,Human,42,58,4,Amount
+US,Citadine,BU4,Human,60,56,3,Amount
+Asia,Citadine,BU5,Human,59,55,-5,Amount
+Europe,Monospace,BU1,Manufactured,59,46,-5,Amount
+Europe,Monospace,BU2,Manufactured,58,45,4,Amount
+Europe,Monospace,BU3,Manufactured,60,44,-4,Amount
+US,Monospace,BU4,Manufactured,56,56,4,Amount
+Asia,Monospace,BU5,Manufactured,57,55,-4,Amount
+Europe,Monospace,BU1,Soc & Relationship,55,53,4,Amount
+Europe,Monospace,BU2,Soc & Relationship,54,87,5,Amount
+Europe,Monospace,BU3,Soc & Relationship,53,86,-1,Amount
+US,Monospace,BU4,Soc & Relationship,86,46,-3,Amount
+Asia,Monospace,BU5,Soc & Relationship,30,45,-5,Amount
+Europe,Monospace,BU1,Intellectual,40,60,-1,Volume
+Europe,Monospace,BU1,Intellectual,40,47,5,Amount
+Europe,Monospace,BU2,Intellectual,39,40,-1,Volume
+Europe,Monospace,BU2,Intellectual,40,47,5,Amount
+Europe,Monospace,BU3,Intellectual,40,86,-1,Volume
+Europe,Monospace,BU3,Intellectual,38,39,-4,Amount
+US,Monospace,BU4,Intellectual,57,46,-3,Volume
+US,Monospace,BU4,Intellectual,40,37,-3,Amount
+Asia,Monospace,BU5,Intellectual,58,45,-5,Volume
+Asia,Monospace,BU5,Intellectual,41,36,-5,Amount

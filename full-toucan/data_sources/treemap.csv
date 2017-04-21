@@ -1,0 +1,181 @@
+year,cat,type,pop,breakdown,target
+Europe,Monospaces,Other,116.2,volume,100
+Europe,Citadines,Twingo,37,volume,94
+Europe,Citadines,Zoe,391.3,volume,-3
+Europe,Citadines,Clio,98.5,volume,80
+Europe,Citadines,Other,13.7,volume,-34
+Europe,Citadines,Twizy,160.9,volume,49
+Europe,SUV,Kangoo,62.3,volume,4
+Europe,SUV,Koleos,19.4,volume,-5
+Europe,SUV,Avantime,49.1,volume,59
+Europe,Berlines,Laguna,1.4,volume,58
+Europe,Berlines,Clio,0.9,volume,3
+Europe,Berlines,Other,7.8,volume,58
+Europe,Berlines,Talisman,1.9,volume,502
+Asie,Monospaces,Other,145,volume,85
+Asie,Monospaces,Espace,14,volume,85
+Asie,Citadines,Twingo,38.3,volume,3
+Asie,Citadines,Zoe,401.9,volume,-5
+Asie,Citadines,Clio,106.6,volume,-5
+Asie,Citadines,Other,16.3,volume,-235
+Asie,Citadines,Twizy,133.3,volume,-3
+Asie,SUV,Captur,0.4,volume,234
+Asie,SUV,Kangoo,215.9,volume,-234
+Asie,SUV,Koleos,20.9,volume,-5
+Asie,SUV,Avantime,56.9,volume,3
+Asie,Berlines,Laguna,1.9,volume,5
+Asie,Berlines,Clio,2.2,volume,-6
+Asie,Berlines,Other,7.1,volume,58
+Asie,Berlines,Talisman,2.5,volume,502
+Noth America,Monospaces,Other,145.9,volume,85
+Noth America,Monospaces,Espace,33.5,volume,85
+Noth America,Citadines,Twingo,38.2,volume,3
+Noth America,Citadines,Zoe,474.4,volume,-5
+Noth America,Citadines,Clio,111.7,volume,-5
+Noth America,Citadines,Other,22.4,volume,-235
+Noth America,Citadines,Twizy,189.3,volume,-3
+Noth America,SUV,Captur,0.4,volume,234
+Noth America,SUV,Kangoo,240.5,volume,-234
+Noth America,SUV,Koleos,24.3,volume,-5
+Noth America,SUV,Avantime,78.9,volume,233
+Noth America,Berlines,Laguna,1.7,volume,9235
+Noth America,Berlines,Clio,2.5,volume,85
+Noth America,Berlines,Other,6.6,volume,-10
+Noth America,Berlines,Talisman,2.2,volume,-5
+South America,Monospaces,Other,183.7,volume,5
+South America,Monospaces,Espace,16.8,volume,95
+South America,Citadines,Twingo,41.8,volume,2
+South America,Citadines,Zoe,542,volume,95
+South America,Citadines,Clio,118.3,volume,935
+South America,Citadines,Other,44.6,volume,5
+South America,Citadines,Twizy,220.3,volume,-6
+South America,SUV,Captur,0.5,volume,58
+South America,SUV,Kangoo,303.1,volume,502
+South America,SUV,Koleos,27.2,volume,85
+South America,SUV,Avantime,104.3,volume,85
+South America,Berlines,Laguna,1.7,volume,3
+South America,Berlines,Clio,2.8,volume,-5
+South America,Berlines,Other,6.9,volume,-5
+South America,Berlines,Talisman,2.3,volume,-235
+Africa,Monospaces,Other,194.3,volume,-3
+Africa,Monospaces,Espace,18.3,volume,234
+Africa,Citadines,Twingo,45.1,volume,-234
+Africa,Citadines,Zoe,614.1,volume,-5
+Africa,Citadines,Clio,126,volume,233
+Africa,Citadines,Other,55.1,volume,9235
+Africa,Citadines,Twizy,234.4,volume,85
+Africa,SUV,Captur,0.6,volume,-10
+Africa,SUV,Twizy,0,volume,-5
+Africa,SUV,Kangoo,367.7,volume,5
+Africa,SUV,Koleos,17.1,volume,95
+Africa,SUV,Avantime,129.2,volume,2
+Africa,Berlines,Laguna,1.8,volume,95
+Africa,Berlines,Clio,3.3,volume,935
+Africa,Berlines,Other,6.8,volume,100
+Africa,Berlines,Talisman,2.3,volume,94
+Oceania,Monospaces,Other,207.9,volume,-3
+Oceania,Monospaces,Espace,20.9,volume,80
+Oceania,Citadines,Twingo,46.1,volume,-34
+Oceania,Citadines,Zoe,671,volume,49
+Oceania,Citadines,Clio,134.6,volume,4
+Oceania,Citadines,Other,77,volume,-5
+Oceania,Citadines,Twizy,247.9,volume,59
+Oceania,SUV,Captur,0.7,volume,58
+Oceania,SUV,Twizy,0.4,volume,3
+Oceania,SUV,Kangoo,403.4,volume,58
+Oceania,SUV,Koleos,36.6,volume,502
+Oceania,SUV,Avantime,151.3,volume,85
+Oceania,Berlines,Laguna,1.9,volume,85
+Oceania,Berlines,Clio,3.7,volume,3
+Oceania,Berlines,Other,6.7,volume,-5
+Oceania,Berlines,Talisman,2.6,volume,-5
+Europe,Monospaces,Other,379,valeur,94
+Europe,Citadines,Twingo,44.4,valeur,4
+Europe,Citadines,Zoe,239,valeur,-5
+Europe,Citadines,Clio,2.3,valeur,-4
+Europe,Citadines,Other,3.9,valeur,-5
+Europe,Citadines,Twizy,6.8,valeur,4
+Europe,SUV,Kangoo,2.9,valeur,6
+Europe,SUV,Koleos,268,valeur,-5
+Europe,SUV,Avantime,30.4,valeur,58
+Europe,Berlines,Laguna,51.1,valeur,3
+Europe,Berlines,Clio,798.8,valeur,58
+Europe,Berlines,Other,137.9,valeur,-5
+Europe,Berlines,Talisman,125.3,valeur,85
+Asie,Monospaces,Other,279,valeur,85
+Asie,Monospaces,Espace,1.6,valeur,3
+Asie,Citadines,Twingo,1.1,valeur,-5
+Asie,Citadines,Zoe,0.7,valeur,30
+Asie,Citadines,Clio,315.1,valeur,-235
+Asie,Citadines,Other,50.8,valeur,-3
+Asie,Citadines,Twizy,277.8,valeur,234
+Asie,SUV,Captur,2.4,valeur,-234
+Asie,SUV,Kangoo,4.3,valeur,-5
+Asie,SUV,Koleos,6.7,valeur,3
+Asie,SUV,Avantime,3.2,valeur,5
+Asie,Berlines,Laguna,301.4,valeur,70
+Asie,Berlines,Clio,36.2,valeur,58
+Asie,Berlines,Other,56.7,valeur,502
+Asie,Berlines,Talisman,865.3,valeur,-8
+Noth America,Monospaces,Other,1.8,valeur,85
+Noth America,Monospaces,Espace,3.3,valeur,3
+Noth America,Citadines,Twingo,6.8,valeur,-5
+Noth America,Citadines,Zoe,2.3,valeur,-5
+Noth America,Citadines,Clio,207.9,valeur,-235
+Noth America,Citadines,Other,20.9,valeur,-3
+Noth America,Citadines,Twizy,46.1,valeur,234
+Noth America,SUV,Captur,671,valeur,-234
+Noth America,SUV,Kangoo,134.6,valeur,-5
+Noth America,SUV,Koleos,77,valeur,233
+Noth America,SUV,Avantime,247.9,valeur,9235
+Noth America,Berlines,Laguna,0.7,valeur,85
+Noth America,Berlines,Clio,0.4,valeur,-10
+Noth America,Berlines,Other,403.4,valeur,-5
+Noth America,Berlines,Talisman,36.6,valeur,5
+South America,Monospaces,Other,151.3,valeur,95
+South America,Monospaces,Espace,1.9,valeur,2
+South America,Citadines,Twingo,3.7,valeur,95
+South America,Citadines,Zoe,6.7,valeur,935
+South America,Citadines,Clio,2.6,valeur,5
+South America,Citadines,Other,237.4,valeur,-6
+South America,Citadines,Twizy,22.9,valeur,-5
+South America,SUV,Captur,48.2,valeur,-4
+South America,SUV,Kangoo,748.3,valeur,-5
+South America,SUV,Koleos,137.2,valeur,4
+South America,SUV,Avantime,101.6,valeur,6
+South America,Berlines,Laguna,264.9,valeur,-5
+South America,Berlines,Clio,0,valeur,58
+South America,Berlines,Other,0.9,valeur,3
+South America,Berlines,Talisman,0.4,valeur,58
+Africa,Monospaces,Other,379,valeur,-5
+Africa,Monospaces,Espace,44.4,valeur,85
+Africa,Citadines,Twingo,239,valeur,85
+Africa,Citadines,Zoe,2.3,valeur,3
+Africa,Citadines,Clio,3.9,valeur,-5
+Africa,Citadines,Other,6.8,valeur,30
+Africa,Citadines,Twizy,2.9,valeur,-235
+Africa,SUV,Captur,268,valeur,-3
+Africa,SUV,Twizy,30.4,valeur,234
+Africa,SUV,Kangoo,51.1,valeur,-234
+Africa,SUV,Koleos,798.8,valeur,-5
+Africa,SUV,Avantime,137.9,valeur,3
+Africa,Berlines,Laguna,125.3,valeur,5
+Africa,Berlines,Clio,279,valeur,70
+Africa,Berlines,Other,1.6,valeur,58
+Africa,Berlines,Talisman,1.1,valeur,-3
+Oceania,Monospaces,Other,0.7,valeur,80
+Oceania,Monospaces,Espace,315.1,valeur,-34
+Oceania,Citadines,Twingo,50.8,valeur,49
+Oceania,Citadines,Zoe,277.8,valeur,4
+Oceania,Citadines,Clio,2.4,valeur,-5
+Oceania,Citadines,Other,4.3,valeur,59
+Oceania,Citadines,Twizy,6.7,valeur,58
+Oceania,SUV,Captur,3.2,valeur,3
+Oceania,SUV,Twizy,0.4,valeur,58
+Oceania,SUV,Kangoo,403.4,valeur,502
+Oceania,SUV,Koleos,36.6,valeur,85
+Oceania,SUV,Avantime,151.3,valeur,85
+Oceania,Berlines,Laguna,1.9,valeur,3
+Oceania,Berlines,Clio,3.7,valeur,-5
+Oceania,Berlines,Other,6.7,valeur,-5
+Oceania,Berlines,Talisman,2.6,valeur,-235

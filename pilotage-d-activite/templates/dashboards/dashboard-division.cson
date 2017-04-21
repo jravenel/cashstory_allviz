@@ -1,0 +1,163 @@
+﻿
+'report': '{{ report_id }}'
+'entityName': '{{ Name }}'
+'entityGroup': '{{ Group }}'
+'categories': [
+  {
+    'kpis': [
+      {
+        'comment': '<%=\' \' + evolution + \' vs 2016\'%>'
+        'compute': 'evolution': '(value - comparison)/comparison'
+        'name': 'Chiffre d\'affaires cumulé'
+        'sentiment': 'evolution':
+          'domain': [ 0 ]
+          'range': [
+            'negative'
+            'positive'
+          ]
+        'type': 'value-dynamic'
+        'precision':
+          'evolution': '+,.2%'
+          'value': ',.1f'
+        'value': 'value'
+        'slide': 10101
+        'badge': 'evolution'
+        'data':
+          'comparison':
+            'query': [ { '$match':
+              'domain': 'dashboard_data'
+              'Region': '<%= dashboard.entityName %>' } ]
+            'field': 'target_CA'
+          'value':
+            'query': [ { '$match':
+              'domain': 'dashboard_data'
+              'Region': '<%= dashboard.entityName %>' } ]
+            'field': 'Chiffre d\'affaires cumulé'
+        'id': 0
+        'unit': ' M€'
+      }
+      {
+        'comment': '<%=\' \' + evolution + \' vs 2016\'%>'
+        'compute': 'evolution': '(value - comparison)/comparison'
+        'name': 'Chiffre d\'affaires du mois'
+        'sentiment': 'evolution':
+          'domain': [ 0 ]
+          'range': [
+            'negative'
+            'positive'
+          ]
+        'type': 'value-dynamic'
+        'precision':
+          'evolution': '+,.2%'
+          'value': ',.1f'
+        'value': 'value'
+        'slide': 10101
+        'badge': 'evolution'
+        'data':
+          'comparison':
+            'query': [ { '$match':
+              'domain': 'dashboard_data'
+              'Region': '<%= dashboard.entityName %>' } ]
+            'field': 'target_CA_mois'
+          'value':
+            'query': [ { '$match':
+              'domain': 'dashboard_data'
+              'Region': '<%= dashboard.entityName %>' } ]
+            'field': 'Chiffre d\'affaires du mois'
+        'id': 1
+        'unit': ' M€'
+      }
+    ]
+    'name': 'Chiffre d\'affaires'
+  }
+  {
+    'kpis': [
+      {
+        'slide': 10101
+        'type': 'line'
+        'name': 'Clients'
+        'chartOptions':
+          'date': 'date'
+          'units': 'value': ' M'
+          'data':
+            'query':
+              'domain': 'dashboard_line'
+              'type': 'client'
+              'Region': 'Total France'
+            'precision': 'value': ',.1f'
+          'value': 'value'
+      }
+      {
+        'slide': 10101
+        'type': 'line'
+        'name': 'Articles'
+        'chartOptions':
+          'date': 'date'
+          'units': 'value': ' M'
+          'data':
+            'query':
+              'domain': 'dashboard_line'
+              'type': 'articles'
+              'Region': 'Total France'
+            'precision': 'value': ',.1f'
+          'value': 'value'
+      }
+    ]
+    'name': 'Indicateurs macros'
+  }
+  {
+    'kpis': [
+      {
+        'slide': 20205
+        'type': 'score-card'
+        'name': 'Evolution des indicateurs'
+        'chartOptions':
+          'reverse': false
+          'sentiment': 'evol':
+            'domain': [ 0 ]
+            'range': [
+              'negative'
+              'positive'
+            ]
+          'variation': 'evol'
+          'label': 'Region'
+          'limit': 6
+          'value': 'value'
+          'units':
+            'evol': '%'
+            'value': [
+              {
+                'where': 'Region': 'Marge Nette'
+                'unit': ' m€'
+              }
+              {
+                'where': 'Region': 'Cashflow Brut'
+                'unit': ' m€'
+              }
+              {
+                'where': 'Region': 'Frais décaissés'
+                'unit': ' k€'
+              }
+              {
+                'where': 'Region': 'Cashflow Net'
+                'unit': ' k€'
+              }
+            ]
+          'data':
+            'query':
+              'domain': 'dashboard_line'
+              'type': 'scorecard'
+            'precision':
+              'evol': ',.1f'
+              'value': ',.1f'
+      }
+      { 'type': 'separator' }
+      {
+        'src': 'images/simply.jpg'
+        'type': 'media-img'
+      }
+    ]
+    'name': 'Indicateurs d\'exploitation'
+  }
+]
+'id': '{{ index }}'

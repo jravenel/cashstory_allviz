@@ -1,12 +1,23 @@
-name: "Products insights"
-entityName: "{{ continent }}"
+﻿'entityName': '{{ zone }}'
+'entityGroup': '{{ group }}'
+
 id: "{{ index }}"
-date: "October 2015"
-background:
-  assetName: 'bg-1'
+'execsumNote': 'made with<strong><3</strong>by Toucan Toco team'
+# 'dashboards':
+#   'search': 'Search by division'
+search:
+  'placeholder':'Search by division or country'
+
+'background':
+  assetName: "bg-1"
   overlay: false
-execsumTitle: "Easy market research"
 
-dashboards:
-  search: "Search by country"
+date:
+  id: "my_date_selector"
+  type: "dropdown"
+  query:
+    domain: 'my_dates_data'
+  fields: ['my_periods']
+  default:'July-2017'
 
+'execsumTitle': 'Market insights'

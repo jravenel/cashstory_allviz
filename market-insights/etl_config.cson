@@ -1,53 +1,161 @@
-etl_config:
-    DATA_SOURCE_DIR: "data_sources"
-    DATA_SOURCES: [
-        domain: "market-breakdown"
-        type: "excel"
-        file: "data-market-breakdown.xls"
-        sheetname: "Data"
-    ,
-        domain: "dashboards"
-        type: "csv"
-        file: "dashboards.csv"
-        separator: ","
-    ,
-        domain: "reports"
-        type: "csv"
-        file: "reports.csv"
-        separator: ","
-    ,
-        domain: "overall_growth"
-        type: "excel"
-        file: "overall_growth.xls"
-        sheetname: "Data"
-    ,
-        domain: "top_div_country"
-        type: "csv"
-        file: "top_div_country.csv"
-        separator: ","
-    ,
-        domain: "versus"
-        type: "csv"
-        file: "versus.csv"
-        separator: ","
+﻿
+'DATA_SOURCE_DIR': 'data_sources'
+'MONGO_INDEXES': [
+  'domain'
+  [
+    'domain'
+    'subdomain'
+  ]
+]
+DASHBOARDS: [
+  query:
+    domain: "dashboards"
+    type: "synthesis"
+  report: "zone"
+  template: "dashboards"
+,
+  query:
+    domain: "dashboards"
+    type:'division'
+  report: "zone"
+  template: "dashboards-division"
+,
+  query:
+    domain: "dashboards"
+    type:'country'
+  report: "zone"
+  template: "dashboards-country"
+]
+'REPORTS': [
+  query:
+    domain: "dashboards"
+  template: "report"
+]
+# DASHBOARDS: [
+#   query:
+#     domain: "dashboards"
+#     type: "synthesis"
+#   report: "country"
+#   template: "dashboards"
+# ,
+#   query:
+#     domain: "dashboards"
+#     type:'division'
+#   report: "country"
+#   template: "dashboards-division"
+# ,
+#   query:
+#     domain: "dashboards"
+#     type:'country'
+#   report: "country"
+#   template: "dashboards-country"
+# ]
+# 'REPORTS': [
+#   query:
+#     domain: "dashboards"
+#     type: "synthesis"
+#   template: "report"
+# ]
+'DATA_SOURCES': [
+  {
+    'spreadsheet_id': '1ahKMNCGrRmPuBylM0lKyYzQ5Kcr4JouJ1oUOoudiYTM'
+    'sheetname': "dashboards"
+    domain: "dashboards"
+    'type': 'google_spreadsheet'
+  }
 
-    ]
-    REPORTS: [
-      query:
-        domain: "reports"
-      template: "report"
-    ]
-    DASHBOARDS: [
-      query:
-        domain: 'dashboards'
-      report: 'continent'
-      template: "dashboard"
-    ]
-
-    MONGO_INDEXES: [
-        "domain"
-        [
-            "domain"
-            "subdomain"
-        ]
-    ]
+  {
+    'spreadsheet_id': '1LknlywNja_YVogys_YgbfulaKp7d1xcAtAKsgIgmkL8'
+    'sheetname': 'growth'
+    'domain': 'growth'
+    'type': 'google_spreadsheet'
+  }
+  {
+    'spreadsheet_id': '1LknlywNja_YVogys_YgbfulaKp7d1xcAtAKsgIgmkL8'
+    'sheetname': 'growth-slave'
+    'domain': 'growth-slave'
+    'type': 'google_spreadsheet'
+  }
+  {
+    'spreadsheet_id': '1LknlywNja_YVogys_YgbfulaKp7d1xcAtAKsgIgmkL8'
+    'sheetname': 'top-10'
+    'domain': 'top-10'
+    'type': 'google_spreadsheet'
+  }
+  {
+    'spreadsheet_id': '1LknlywNja_YVogys_YgbfulaKp7d1xcAtAKsgIgmkL8'
+    'sheetname': 'division'
+    'domain': 'division'
+    'type': 'google_spreadsheet'
+  }
+  {
+    'spreadsheet_id': '1LknlywNja_YVogys_YgbfulaKp7d1xcAtAKsgIgmkL8'
+    'sheetname': 'category-summary'
+    'domain': 'category-summary'
+    'type': 'google_spreadsheet'
+  }
+  {
+    'spreadsheet_id': '1LknlywNja_YVogys_YgbfulaKp7d1xcAtAKsgIgmkL8'
+    'sheetname': 'heatmap'
+    'domain': 'heatmap'
+    'type': 'google_spreadsheet'
+  }
+  {
+    'spreadsheet_id': '1LknlywNja_YVogys_YgbfulaKp7d1xcAtAKsgIgmkL8'
+    'sheetname': 'leadership'
+    'domain': 'leadership'
+    'type': 'google_spreadsheet'
+  }
+  {
+    'spreadsheet_id': '1LknlywNja_YVogys_YgbfulaKp7d1xcAtAKsgIgmkL8'
+    'sheetname': 'versus'
+    'domain': 'versus'
+    'type': 'google_spreadsheet'
+  }
+  {
+    'spreadsheet_id': '1LknlywNja_YVogys_YgbfulaKp7d1xcAtAKsgIgmkL8'
+    'sheetname': 'share'
+    'domain': 'share'
+    'type': 'google_spreadsheet'
+  }
+  {
+    'spreadsheet_id': '1LknlywNja_YVogys_YgbfulaKp7d1xcAtAKsgIgmkL8'
+    'sheetname': 'sparklines'
+    'domain': 'sparklines'
+    'type': 'google_spreadsheet'
+  }
+  {
+    'spreadsheet_id': '1ahKMNCGrRmPuBylM0lKyYzQ5Kcr4JouJ1oUOoudiYTM'
+    'sheetname': 'average'
+    'domain': 'average'
+    'type': 'google_spreadsheet'
+  }
+  {
+    'spreadsheet_id': '1ahKMNCGrRmPuBylM0lKyYzQ5Kcr4JouJ1oUOoudiYTM'
+    'sheetname': 'budget-evolution'
+    'domain': 'budget-evolution'
+    'type': 'google_spreadsheet'
+  }
+  {
+    'spreadsheet_id': '1ahKMNCGrRmPuBylM0lKyYzQ5Kcr4JouJ1oUOoudiYTM'
+    'sheetname': 'top-network'
+    'domain': 'top-network'
+    'type': 'google_spreadsheet'
+  }
+  {
+    'spreadsheet_id': '1ahKMNCGrRmPuBylM0lKyYzQ5Kcr4JouJ1oUOoudiYTM'
+    'sheetname': 'my_dates_data'
+    'domain': 'my_dates_data'
+    'type': 'google_spreadsheet'
+  }
+  {
+    'domain': 'commentary'
+    'type': 'csv'
+    file:'commentary.csv'
+  }
+  {
+    'domain': 'my_sparklines'
+    'type': 'csv'
+    file:'sparklines.csv'
+  }
+]

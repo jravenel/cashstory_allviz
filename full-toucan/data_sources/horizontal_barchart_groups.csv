@@ -1,0 +1,145 @@
+label,type,cat,value
+BORDEAUX,3 mois glissants,Catégorie 1,65
+BORDEAUX,3 mois glissants,Catégorie 2,76
+BORDEAUX,3 mois glissants,Catégorie 3,78
+BORDEAUX,3 mois glissants,Catégorie 4,59
+BORDEAUX,3 mois glissants,Catégorie 5,66
+BORDEAUX,3 mois glissants,Catégorie 6,87
+Paris,3 mois glissants,Catégorie 1,80
+Paris,3 mois glissants,Catégorie 2,87
+Paris,3 mois glissants,Catégorie 3,86
+Paris,3 mois glissants,Catégorie 4,89
+Paris,3 mois glissants,Catégorie 5,88
+Paris,3 mois glissants,Catégorie 6,90
+LILLE,3 mois glissants,Catégorie 1,93
+LILLE,3 mois glissants,Catégorie 2,95
+LILLE,3 mois glissants,Catégorie 3,89
+LILLE,3 mois glissants,Catégorie 4,82
+LILLE,3 mois glissants,Catégorie 5,85
+LILLE,3 mois glissants,Catégorie 6,83
+LYON,3 mois glissants,Catégorie 1,81
+LYON,3 mois glissants,Catégorie 2,84
+LYON,3 mois glissants,Catégorie 3,86
+LYON,3 mois glissants,Catégorie 4,88
+LYON,3 mois glissants,Catégorie 5,96
+LYON,3 mois glissants,Catégorie 6,90
+MARSEILLE,3 mois glissants,Catégorie 1,97
+MARSEILLE,3 mois glissants,Catégorie 2,95
+MARSEILLE,3 mois glissants,Catégorie 3,83
+MARSEILLE,3 mois glissants,Catégorie 4,85
+MARSEILLE,3 mois glissants,Catégorie 5,88
+MARSEILLE,3 mois glissants,Catégorie 6,85
+NANCY,3 mois glissants,Catégorie 1,83
+NANCY,3 mois glissants,Catégorie 2,81
+NANCY,3 mois glissants,Catégorie 3,84
+NANCY,3 mois glissants,Catégorie 4,86
+NANCY,3 mois glissants,Catégorie 5,88
+NANCY,3 mois glissants,Catégorie 6,96
+RENNES,3 mois glissants,Catégorie 1,90
+RENNES,3 mois glissants,Catégorie 2,59
+RENNES,3 mois glissants,Catégorie 3,66
+RENNES,3 mois glissants,Catégorie 4,87
+RENNES,3 mois glissants,Catégorie 5,80
+RENNES,3 mois glissants,Catégorie 6,87
+ILE DE FRANCE,3 mois glissants,Catégorie 1,86
+ILE DE FRANCE,3 mois glissants,Catégorie 2,89
+ILE DE FRANCE,3 mois glissants,Catégorie 3,88
+ILE DE FRANCE,3 mois glissants,Catégorie 4,88
+ILE DE FRANCE,3 mois glissants,Catégorie 5,96
+ILE DE FRANCE,3 mois glissants,Catégorie 6,90
+LYON,Mois en cours,Catégorie 1,59
+LYON,Mois en cours,Catégorie 2,66
+LYON,Mois en cours,Catégorie 3,65
+LYON,Mois en cours,Catégorie 4,76
+LYON,Mois en cours,Catégorie 5,78
+LYON,Mois en cours,Catégorie 6,59
+NANCY,Mois en cours,Catégorie 1,66
+NANCY,Mois en cours,Catégorie 2,87
+NANCY,Mois en cours,Catégorie 3,80
+NANCY,Mois en cours,Catégorie 4,59
+NANCY,Mois en cours,Catégorie 5,66
+NANCY,Mois en cours,Catégorie 6,87
+PARIS,Mois en cours,Catégorie 1,80
+PARIS,Mois en cours,Catégorie 2,87
+PARIS,Mois en cours,Catégorie 3,86
+PARIS,Mois en cours,Catégorie 4,89
+PARIS,Mois en cours,Catégorie 5,88
+PARIS,Mois en cours,Catégorie 6,88
+ILE DE FRANCE,Mois en cours,Catégorie 1,96
+ILE DE FRANCE,Mois en cours,Catégorie 2,96
+ILE DE FRANCE,Mois en cours,Catégorie 3,90
+ILE DE FRANCE,Mois en cours,Catégorie 4,59
+ILE DE FRANCE,Mois en cours,Catégorie 5,66
+ILE DE FRANCE,Mois en cours,Catégorie 6,87
+BORDEAUX,Mois en cours,Catégorie 1,80
+BORDEAUX,Mois en cours,Catégorie 2,66
+BORDEAUX,Mois en cours,Catégorie 3,87
+BORDEAUX,Mois en cours,Catégorie 4,80
+BORDEAUX,Mois en cours,Catégorie 5,87
+BORDEAUX,Mois en cours,Catégorie 6,86
+RENNES,Mois en cours,Catégorie 1,89
+RENNES,Mois en cours,Catégorie 2,88
+RENNES,Mois en cours,Catégorie 3,88
+RENNES,Mois en cours,Catégorie 4,96
+RENNES,Mois en cours,Catégorie 5,96
+RENNES,Mois en cours,Catégorie 6,80
+LILLE,Mois en cours,Catégorie 1,87
+LILLE,Mois en cours,Catégorie 2,86
+LILLE,Mois en cours,Catégorie 3,89
+LILLE,Mois en cours,Catégorie 4,88
+LILLE,Mois en cours,Catégorie 5,90
+LILLE,Mois en cours,Catégorie 6,88
+MARSEILLE,Mois en cours,Catégorie 1,96
+MARSEILLE,Mois en cours,Catégorie 2,96
+MARSEILLE,Mois en cours,Catégorie 3,90
+MARSEILLE,Mois en cours,Catégorie 4,59
+MARSEILLE,Mois en cours,Catégorie 5,66
+MARSEILLE,Mois en cours,Catégorie 6,87
+BORDEAUX,12 mois glissants,Catégorie 1,80
+BORDEAUX,12 mois glissants,Catégorie 2,66
+BORDEAUX,12 mois glissants,Catégorie 3,87
+BORDEAUX,12 mois glissants,Catégorie 4,80
+BORDEAUX,12 mois glissants,Catégorie 5,87
+BORDEAUX,12 mois glissants,Catégorie 6,86
+Paris,12 mois glissants,Catégorie 1,89
+Paris,12 mois glissants,Catégorie 2,88
+Paris,12 mois glissants,Catégorie 3,88
+Paris,12 mois glissants,Catégorie 4,96
+Paris,12 mois glissants,Catégorie 5,96
+Paris,12 mois glissants,Catégorie 6,80
+LILLE,12 mois glissants,Catégorie 1,87
+LILLE,12 mois glissants,Catégorie 2,86
+LILLE,12 mois glissants,Catégorie 3,89
+LILLE,12 mois glissants,Catégorie 4,88
+LILLE,12 mois glissants,Catégorie 5,80
+LILLE,12 mois glissants,Catégorie 6,66
+LYON,12 mois glissants,Catégorie 1,87
+LYON,12 mois glissants,Catégorie 2,80
+LYON,12 mois glissants,Catégorie 3,87
+LYON,12 mois glissants,Catégorie 4,86
+LYON,12 mois glissants,Catégorie 5,89
+LYON,12 mois glissants,Catégorie 6,88
+MARSEILLE,12 mois glissants,Catégorie 1,88
+MARSEILLE,12 mois glissants,Catégorie 2,96
+MARSEILLE,12 mois glissants,Catégorie 3,96
+MARSEILLE,12 mois glissants,Catégorie 4,80
+MARSEILLE,12 mois glissants,Catégorie 5,87
+MARSEILLE,12 mois glissants,Catégorie 6,86
+NANCY,12 mois glissants,Catégorie 1,89
+NANCY,12 mois glissants,Catégorie 2,88
+NANCY,12 mois glissants,Catégorie 3,93
+NANCY,12 mois glissants,Catégorie 4,94
+NANCY,12 mois glissants,Catégorie 5,88
+NANCY,12 mois glissants,Catégorie 6,84
+RENNES,12 mois glissants,Catégorie 1,82
+RENNES,12 mois glissants,Catégorie 2,81
+RENNES,12 mois glissants,Catégorie 3,85
+RENNES,12 mois glissants,Catégorie 4,87
+RENNES,12 mois glissants,Catégorie 5,88
+RENNES,12 mois glissants,Catégorie 6,90
+ILE DE FRANCE,12 mois glissants,Catégorie 1,91
+ILE DE FRANCE,12 mois glissants,Catégorie 2,92
+ILE DE FRANCE,12 mois glissants,Catégorie 3,87
+ILE DE FRANCE,12 mois glissants,Catégorie 4,94
+ILE DE FRANCE,12 mois glissants,Catégorie 5,81
+ILE DE FRANCE,12 mois glissants,Catégorie 6,88

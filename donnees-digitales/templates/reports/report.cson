@@ -11,5 +11,3 @@ dashboards:
   # default: 0
   search: "Recherchez par Business Unit"
 
-slideInfos:
-  {}

@@ -1,0 +1,11 @@
+label,type,anciennete,absenteisme,effectif
+20-30 ans,Cadres,20,15,300
+31-40 ans,Cadres,35,12,350
+41-50 ans,Cadres,67,28,600
+51-60 ans,Cadres,48,32,500
+60+,Cadres,83,29,200
+20-30 ans,Non-Cadres,23,14,450
+31-40 ans,Non-Cadres,38,25,550
+41-50 ans,Non-Cadres,58,28,300
+51-60 ans,Non-Cadres,88,32,250
+60+,Non-Cadres,83,29,200

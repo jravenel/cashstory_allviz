@@ -1,0 +1,11 @@
+secteur,CA,Breakdown
+Éolien,-2,Origine
+Hydrolien,3,Origine
+Solaire,2.4,Origine
+Gaz,-2.3,Origine
+Nucléaire,4.5,Origine
+Industrie,-4,Destination
+Privé,12,Destination
+Public,9,Destination
+Tertiaire,8,Destination
+Primaire,1,Destination

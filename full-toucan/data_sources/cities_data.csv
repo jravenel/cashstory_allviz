@@ -1,0 +1,6 @@
+country,name,latitude,longitude,type,population
+France,Paris,48.8589507,2.2775176,Capital,2.244
+England,London,51.5287718,-0.2416801,Capital,8.674
+Belgium,Brussels,50.8387874,4.2933657,Capital,1.139
+France,Lyon,45.7580101,4.8001017,Secondary,0.484
+France,Strasbourg,48.5692058,7.6920546,Secondary,0.272

@@ -1,0 +1,46 @@
+entityName: "{{ dashboards }}"
+entityGroup: "%%Subsidiaries%%"
+id: "{{ id }}"
+report: "{{ report_id }}"
+default: false
+
+categories: [
+  name: "%%Subsidiary Total%%"
+  kpis: [
+    name: "%%Revenue%%"
+    value: "{{ kpi1 }}"
+    unit: "M€"
+    source: "Bilan 2014"
+    id: 0
+  ,
+    type: "media-img"
+    src: "{{ images }}"
+    chartOptions:
+      bgSize:'contain'
+  ,
+    name: "%%Growth%%"
+    value: "{{ kpi2 }}"
+    unit: "%"
+    source: "Bilan 2014"
+
+    id: 1
+
+  ]
+,
+  name: "Performance"
+  kpis: [
+    name: "%%Profit from Recurring OP%%"
+    value: "{{ kpi8 }}"
+    unit: "M€"
+    badge: "bullet"
+    comment: "In 2013, {{ Compkpi8}} M€"
+  ,
+    name: "%%Operating Investments%%"
+    value: "{{ kpi9 }}"
+    unit: "M€"
+    badge: "bullet"
+    comment: "In 2013, {{ Compkpi9}} M€"
+
+  ]
+
+]

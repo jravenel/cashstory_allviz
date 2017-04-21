@@ -1,0 +1,193 @@
+﻿entityName: "{{ zone }}"
+id: "{{ index }}"
+report: "{{ report_id }}"
+default: true
+
+
+categories: [
+
+  name: "Sales"
+  kpis: [
+
+    name: "Luxury Brand"
+    type: 'value-dynamic'
+    value: "value"
+    comment: "<%=\' \' + evolution + \' vs last year\'%>"
+    unit: " M€"
+    slide: 101
+    badge: 'evolution'
+    sentiment:
+      evolution:
+        domain: [0]
+        range: ['negative','positive']
+    precision:
+      value: ',.0f'
+      evolution: "+,.0%"
+    data:
+      value:
+        query:[
+          $match:
+            domain: "average"
+            type: "luxury-division"
+        ]
+        field: "value"
+      comparison:
+        query:[
+          $match:
+            domain: "average"
+            type: "luxury-division"
+        ]
+        field: "budget"
+    compute:
+      evolution: '(value - comparison)/comparison'
+    source: "July 2017, panelists"
+    id: 0
+
+  ,
+    type: "media-img"
+    src: "lawrencej"
+    chartOptions:
+      bgSize: "contain"
+  ,
+    name: 'Top 3 division'
+    type: 'leaderboard'
+    chartOptions:
+      'units': 'value': ' M€'
+      'data':
+        'query':
+          'domain': 'top-network'
+          type: "division"
+      'value': 'value'
+      'label': 'label'
+    slide: 201
+
+
+  ]
+
+,
+  name: "Market & competitors"
+  kpis: [
+    name: "Value share"
+    type: 'value-dynamic'
+    value: "value"
+    comment: "<%=\' \' + evolution + \' vs previous month\'%>"
+    unit: " %"
+    slide: 10101
+    badge: 'evolution'
+    sentiment:
+      evolution:
+        domain: [0]
+        range: ['negative','positive']
+    precision:
+      value: ',.0f'
+      evolution: "+,.0%"
+    data:
+      value:
+        query:[
+          $match:
+            domain: "average"
+            type: "value-share-division"
+        ]
+        field: "value"
+      comparison:
+        query:[
+          $match:
+            domain: "average"
+
+            type: "value-share-division"
+        ]
+        field: "budget"
+    compute:
+      evolution: '(value - comparison)/comparison'
+    source: "July 2017, panelists"
+    id: 0
+  ,
+    name: "Value share evolution (%)"
+    type: "line"
+    chartOptions:
+      value: "value"
+      date: "date"
+      data:
+        query:
+          domain: 'budget-evolution'
+          type: "value-share"
+    unit: " %"
+    slide: 10101
+    source: "July 2017, panelists"
+  ,
+    type: "separator"
+  ,
+    name: "Leader gap"
+    type: 'value-dynamic'
+    value: "value"
+    comment: "<%=\' \' + evolution + \' vs previous month\'%>"
+    unit: " %"
+    slide: 35201
+    badge: 'evolution'
+    sentiment:
+      evolution:
+        domain: [0]
+        range: ['negative','positive']
+    precision:
+      value: ',.0f'
+      evolution: "+,.0%"
+    data:
+      value:
+        query:[
+          $match:
+            domain: "average"
+            type: "leader-gap"
+        ]
+        field: "value"
+      comparison:
+        query:[
+          $match:
+            domain: "average"
+
+            type: "leader-gap"
+        ]
+        field: "budget"
+    compute:
+      evolution: '(value - comparison)/comparison'
+    source: "July 2017, panelists"
+    id: 0
+  ,
+    name: "Market average gap"
+    type: 'value-dynamic'
+    value: "value"
+    comment: "<%=\' \' + evolution + \' vs previous month\'%>"
+    unit: " %"
+    slide: 10101
+    badge: 'evolution'
+    sentiment:
+      evolution:
+        domain: [0]
+        range: ['negative','positive']
+    precision:
+      value: ',.0f'
+      evolution: "+,.0%"
+    data:
+      value:
+        query:[
+          $match:
+            domain: "average"
+            type: "market-gap"
+        ]
+        field: "value"
+      comparison:
+        query:[
+          $match:
+            domain: "average"
+
+            type: "market-gap"
+        ]
+        field: "budget"
+    compute:
+      evolution: '(value - comparison)/comparison'
+    source: "July 2017, panelists"
+    id: 0
+
+  ]
+
+
+]
